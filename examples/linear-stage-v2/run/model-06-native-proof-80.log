@@ -1,0 +1,6 @@
+$ python model.py --config config-80.json --output generated/80
+Building helical screw...
+Helix source/STEP adaptive volume: 7850.390495 / 7850.493064 mm³; native BREP retained for geometric comparison
+Exported 59 valid single-solid parts; travel=80, base=256, rods=168 mm; elapsed=6.47s
+
+exit_code=0

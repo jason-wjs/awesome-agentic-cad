@@ -1,0 +1,26 @@
+{
+  "started_utc": "2026-10-23T15:38:34.878122+00:00",
+  "duration_seconds": 1.616,
+  "command": [
+    "python",
+    "cadgen_cli.py",
+    "step",
+    "snapshot",
+    "../linear-stage/generated/120/assembly.step",
+    "generated/baseline-cadgen.png",
+    "--preview",
+    "--width",
+    "1600",
+    "--height",
+    "900",
+    "--camera",
+    "{\"direction\":[0.65,-1,0.7]}",
+    "--json"
+  ],
+  "exit_code": 0,
+  "cadgen_version": "0.7.26",
+  "source_sha256": {
+    "render.py": "a78ca83a8c624aac1349be62af967438c26af952b761a7163147149f8cfa08d7",
+    "cadgen_cli.py": "a447463dd5e7f362609a521e39887ea07422a52a9efccf6dc32055f5ce3849dc"
+  }
+}

@@ -1,0 +1,9 @@
+# Preserve CAD exporters’ formatting; collapse generated output in reviews.
+examples/linear-stage/generated/** linguist-generated -whitespace
+examples/linear-stage/run/snapshots/* linguist-generated
+assets/*.png linguist-generated
+examples/linear-stage-v2/generated/** linguist-generated -whitespace
+examples/linear-stage-v2/run/snapshots/** linguist-generated
+examples/linear-stage-v2/video/assets/** linguist-generated -whitespace
+examples/linear-stage-v2/video/run/snapshots/** linguist-generated -whitespace
+examples/linear-stage-v2/video/run/*.log -whitespace

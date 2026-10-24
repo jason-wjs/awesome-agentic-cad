@@ -1,0 +1,83 @@
+part base: 1 solid(s), valid=True, round-trip=True
+part guide_set_screw_left_front: 1 solid(s), valid=True, round-trip=True
+part guide_set_screw_left_rear: 1 solid(s), valid=True, round-trip=True
+part support_bolt_left_0: 1 solid(s), valid=True, round-trip=True
+part support_bolt_left_1: 1 solid(s), valid=True, round-trip=True
+part end_support_left: 1 solid(s), valid=True, round-trip=True
+part screw_bearing_outer_left: 1 solid(s), valid=True, round-trip=True
+part screw_bearing_inner_left: 1 solid(s), valid=True, round-trip=True
+part screw_bearing_seal_left_front: 1 solid(s), valid=True, round-trip=True
+part screw_bearing_seal_left_rear: 1 solid(s), valid=True, round-trip=True
+part guide_set_screw_right_front: 1 solid(s), valid=True, round-trip=True
+part guide_set_screw_right_rear: 1 solid(s), valid=True, round-trip=True
+part support_bolt_right_0: 1 solid(s), valid=True, round-trip=True
+part support_bolt_right_1: 1 solid(s), valid=True, round-trip=True
+part end_support_right: 1 solid(s), valid=True, round-trip=True
+part screw_bearing_outer_right: 1 solid(s), valid=True, round-trip=True
+part screw_bearing_inner_right: 1 solid(s), valid=True, round-trip=True
+part screw_bearing_seal_right_front: 1 solid(s), valid=True, round-trip=True
+part screw_bearing_seal_right_rear: 1 solid(s), valid=True, round-trip=True
+part guide_rod_front: 1 solid(s), valid=True, round-trip=True
+part guide_rod_rear: 1 solid(s), valid=True, round-trip=True
+part lead_screw: 1 solid(s), valid=True, round-trip=True
+part shaft_collar_left: 1 solid(s), valid=True, round-trip=True
+part shaft_collar_set_left: 1 solid(s), valid=True, round-trip=True
+part shaft_collar_right: 1 solid(s), valid=True, round-trip=True
+part shaft_collar_set_right: 1 solid(s), valid=True, round-trip=True
+part motor_bolt_0_0: 1 solid(s), valid=True, round-trip=True
+part motor_bolt_0_1: 1 solid(s), valid=True, round-trip=True
+part motor_bolt_1_0: 1 solid(s), valid=True, round-trip=True
+part motor_bolt_1_1: 1 solid(s), valid=True, round-trip=True
+part mount_bolt_0: 1 solid(s), valid=True, round-trip=True
+part mount_bolt_1: 1 solid(s), valid=True, round-trip=True
+part motor_mount: 1 solid(s), valid=True, round-trip=True
+part motor_body: 1 solid(s), valid=True, round-trip=True
+part motor_frontcap: 1 solid(s), valid=True, round-trip=True
+part motor_rearcap: 1 solid(s), valid=True, round-trip=True
+part motor_face: 1 solid(s), valid=True, round-trip=True
+part motor_connector: 1 solid(s), valid=True, round-trip=True
+part motor_shaft: 1 solid(s), valid=True, round-trip=True
+part coupling_clamp_bolt_0: 1 solid(s), valid=True, round-trip=True
+part coupling_clamp_bolt_1: 1 solid(s), valid=True, round-trip=True
+part coupling: 1 solid(s), valid=True, round-trip=True
+part platform_bolt_front_0: 1 solid(s), valid=True, round-trip=True
+part platform_bolt_front_1: 1 solid(s), valid=True, round-trip=True
+part guide_housing_front: 1 solid(s), valid=True, round-trip=True
+part guide_bushing_front: 1 solid(s), valid=True, round-trip=True
+part platform_bolt_rear_0: 1 solid(s), valid=True, round-trip=True
+part platform_bolt_rear_1: 1 solid(s), valid=True, round-trip=True
+part guide_housing_rear: 1 solid(s), valid=True, round-trip=True
+part guide_bushing_rear: 1 solid(s), valid=True, round-trip=True
+part nut_flange_bolt_0: 1 solid(s), valid=True, round-trip=True
+part nut_flange_bolt_1: 1 solid(s), valid=True, round-trip=True
+part nut_flange_bolt_2: 1 solid(s), valid=True, round-trip=True
+part nut_flange_bolt_3: 1 solid(s), valid=True, round-trip=True
+part nut_bolt_0: 1 solid(s), valid=True, round-trip=True
+part nut_bolt_1: 1 solid(s), valid=True, round-trip=True
+part nut_holder: 1 solid(s), valid=True, round-trip=True
+part drive_nut: 1 solid(s), valid=True, round-trip=True
+part platform: 1 solid(s), valid=True, round-trip=True
+Static geometry: 0 collisions
+x=-60 mm / shaft=-5400°: 0 collisions; end clearance=6.000000 mm
+x=-45 mm / shaft=-4050°: 0 collisions; end clearance=21.000000 mm
+x=-30 mm / shaft=-2700°: 0 collisions; end clearance=36.000000 mm
+x=-15 mm / shaft=-1350°: 0 collisions; end clearance=51.000000 mm
+x=-3 mm / shaft=-270°: 0 collisions; end clearance=63.000000 mm
+x=-2 mm / shaft=-180°: 0 collisions; end clearance=64.000000 mm
+x=-1 mm / shaft=-90°: 0 collisions; end clearance=65.000000 mm
+x=0 mm / shaft=0°: 0 collisions; end clearance=66.000000 mm
+x=1 mm / shaft=90°: 0 collisions; end clearance=65.000000 mm
+x=2 mm / shaft=180°: 0 collisions; end clearance=64.000000 mm
+x=3 mm / shaft=270°: 0 collisions; end clearance=63.000000 mm
+x=15 mm / shaft=1350°: 0 collisions; end clearance=51.000000 mm
+x=30 mm / shaft=2700°: 0 collisions; end clearance=36.000000 mm
+x=45 mm / shaft=4050°: 0 collisions; end clearance=21.000000 mm
+x=60 mm / shaft=5400°: 0 collisions; end clearance=6.000000 mm
+{
+  "passed": false,
+  "part_count": 59,
+  "travel_mm": 120,
+  "errors": [
+    "Platform mounting interface changed"
+  ]
+}

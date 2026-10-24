@@ -1,0 +1,31 @@
+{
+  "started_at_utc": "2026-10-23T15:06:54.111150+00:00",
+  "elapsed_seconds": 1.141,
+  "command": [
+    "/opt/homebrew/bin/ffmpeg",
+    "-hide_banner",
+    "-y",
+    "-i",
+    "../../../assets/stage-motion.mp4",
+    "-filter_complex",
+    "fps=12,scale=800:-1:flags=lanczos,split[s0][s1];[s0]palettegen=stats_mode=diff[p];[s1][p]paletteuse=dither=bayer:bayer_scale=3:diff_mode=rectangle",
+    "-loop",
+    "0",
+    "../../../assets/stage-motion.gif"
+  ],
+  "exit_code": 0,
+  "source_sha256": {
+    "index.html": "b38e8b2f9b1535193ce89dc0b7bd219586c512e29ee34f658545f8aa0db56544",
+    "scene.js": "9c54e6628db70eb7f6db508d6b67c000f2be8f13f456002e74ebf0f47faf3f01",
+    "build.mjs": "019f482211929102a72e2932605c44bce0209a41740fbd00d6f383e41de02607",
+    "export_meshes.py": "9922d295689ed64b2f541069222c747d862a3479181a348c0e6d0815df677f8e",
+    "package.json": "f631f89ddeef150a4a3c22e3506a43790fe78333c3eb4231756e2296f4d58c70",
+    "pnpm-lock.yaml": "faf960f28f405a6cacb9cc45db42e58c859df8c3c66726a509bd16784c9c0af7",
+    "assets/scene.bundle.js": "46bd5a8acceb9b4887ee878a29484ff3f573b970b92bf1d53632402c9b58a56b",
+    "assets/scene.bundle.js.LEGAL.txt": "deb4672f68314b00f516542939fb6a09be951a3385a2cb7128ddc88825123c24",
+    "assets/stage-120.bin.gz": "87d61cbd10cbdb25eedf0bf79fdc628050aafc9debfa12f6900b9d49c969ec51",
+    "assets/stage-120.json": "3686e08ac82c05869a8b4d7c90a0b45ec609ca3f94f7e45096c7a9c26c04c9dd",
+    "assets/stage-80.bin.gz": "6269e7711a847c86b84ac40770a9c6c5c54af800d9f1671fd83b6d162ae2290b",
+    "assets/stage-80.json": "6e3047a5a8b7a7fb50d864d0d9eba217e5736a03c0765a69c65153a38a2890eb"
+  }
+}

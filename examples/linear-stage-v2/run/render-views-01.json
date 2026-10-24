@@ -1,0 +1,18 @@
+{
+  "started_utc": "2026-10-23T15:01:04.119892+00:00",
+  "duration_seconds": 25.288,
+  "command": [
+    "python",
+    "cadgen_cli.py",
+    "snapshot",
+    "--job",
+    "render-jobs.json",
+    "--json"
+  ],
+  "exit_code": 0,
+  "cadgen_version": "0.7.26",
+  "source_sha256": {
+    "render.py": "2c9a51213cfe2fb134d3cd94ae0149567acf7c1e1dc003119c1c3bbf1d9f92b3",
+    "cadgen_cli.py": "a447463dd5e7f362609a521e39887ea07422a52a9efccf6dc32055f5ce3849dc"
+  }
+}

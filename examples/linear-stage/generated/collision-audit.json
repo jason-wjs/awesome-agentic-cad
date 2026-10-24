@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "variants": [
+    {
+      "travel_mm": 80,
+      "candidate_pairs_checked": 116,
+      "passed": true,
+      "collisions": [],
+      "kernel_method_disagreements": []
+    },
+    {
+      "travel_mm": 120,
+      "candidate_pairs_checked": 116,
+      "passed": true,
+      "collisions": [],
+      "kernel_method_disagreements": []
+    }
+  ]
+}

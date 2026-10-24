@@ -1,0 +1,17 @@
+{
+  "started_utc": "2026-10-23T14:45:11.570505+00:00",
+  "duration_seconds": 10.85,
+  "command": [
+    "python",
+    "model.py",
+    "--config",
+    "config-120.json",
+    "--output",
+    "generated/120"
+  ],
+  "exit_code": 0,
+  "source_sha256": {
+    "model.py": "fd06d170f287fa8d255cd4442fac7178f44af62bc332825bb50676d5cf7b9850",
+    "config-120.json": "bb967d237f2639d950cd19381ac0f8dfd9271895bb1aa3a7eb3c19361b47b309"
+  }
+}

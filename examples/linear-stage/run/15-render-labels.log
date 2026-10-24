@@ -1,0 +1,7 @@
+$ python render.py
+findfont: Failed to find font weight bold for PingFang SC, now using 600.
+findfont: Failed to find font weight bold for PingFang SC, now using 600.
+findfont: Failed to find font weight bold for PingFang SC, now using 600.
+Rendered bilingual README images and three detail views from exported STEP parts.
+
+exit_code=0

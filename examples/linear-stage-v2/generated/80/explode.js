@@ -1,0 +1,13 @@
+const parts = [["base", [0, 0, 0], 5], ["guide_set_screw_left_front", [0, 0, 52], 1], ["guide_set_screw_left_rear", [0, 0, 52], 1], ["support_bolt_left_0", [0, 0, 52], 1], ["support_bolt_left_1", [0, 0, 52], 1], ["end_support_left", [-10, 0, 14], 4], ["screw_bearing_outer_left", [-22, 0, 14], 4], ["screw_bearing_inner_left", [-32, 0, 14], 4], ["screw_bearing_seal_left_front", [-32, 0, 14], 4], ["screw_bearing_seal_left_rear", [-32, 0, 14], 4], ["guide_set_screw_right_front", [0, 0, 52], 1], ["guide_set_screw_right_rear", [0, 0, 52], 1], ["support_bolt_right_0", [0, 0, 52], 1], ["support_bolt_right_1", [0, 0, 52], 1], ["end_support_right", [10, 0, 14], 4], ["screw_bearing_outer_right", [22, 0, 14], 4], ["screw_bearing_inner_right", [32, 0, 14], 4], ["screw_bearing_seal_right_front", [32, 0, 14], 4], ["screw_bearing_seal_right_rear", [32, 0, 14], 4], ["guide_rod_front", [0, 0, 14], 4], ["guide_rod_rear", [0, 0, 14], 4], ["lead_screw", [0, 0, 14], 4], ["shaft_collar_left", [-32, 0, 14], 4], ["shaft_collar_set_left", [-32, 0, 38], 1], ["shaft_collar_right", [32, 0, 14], 4], ["shaft_collar_set_right", [32, 0, 38], 1], ["motor_bolt_0_0", [-30, 0, 14], 1], ["motor_bolt_0_1", [-30, 0, 14], 1], ["motor_bolt_1_0", [-30, 0, 14], 1], ["motor_bolt_1_1", [-30, 0, 14], 1], ["mount_bolt_0", [0, 0, 52], 1], ["mount_bolt_1", [0, 0, 52], 1], ["motor_mount", [48, 0, 14], 4], ["motor_body", [68, 0, 14], 5], ["motor_frontcap", [68, 0, 14], 5], ["motor_rearcap", [80, 0, 14], 5], ["motor_face", [68, 0, 14], 5], ["motor_connector", [68, 0, 14], 5], ["motor_shaft", [68, 0, 14], 5], ["coupling_clamp_bolt_0", [34, 0, 44], 1], ["coupling_clamp_bolt_1", [34, 0, 44], 1], ["coupling", [34, 0, 14], 4], ["platform_bolt_front_0", [0, 0, 76], 1], ["platform_bolt_front_1", [0, 0, 76], 1], ["guide_housing_front", [0, -19, 25], 3], ["guide_bushing_front", [-42, -19, 25], 3], ["platform_bolt_rear_0", [0, 0, 76], 1], ["platform_bolt_rear_1", [0, 0, 76], 1], ["guide_housing_rear", [0, 19, 25], 3], ["guide_bushing_rear", [-42, 19, 25], 3], ["nut_flange_bolt_0", [-32, 0, 25], 1], ["nut_flange_bolt_1", [-32, 0, 25], 1], ["nut_flange_bolt_2", [-32, 0, 25], 1], ["nut_flange_bolt_3", [-32, 0, 25], 1], ["nut_bolt_0", [0, 0, 76], 1], ["nut_bolt_1", [0, 0, 76], 1], ["nut_holder", [0, 0, 25], 3], ["drive_nut", [-21, 0, 25], 3], ["platform", [0, 0, 55], 2]];
+
+const ease = x => { x = Math.max(0, Math.min(1, x)); return x*x*(3-2*x); };
+export const clips = {
+  explode: { label: "Layered exploded view", duration: 8, loop: false,
+    update(t, m) {
+      for (const [name, offset, stage] of parts) {
+        const f = stage ? ease((t-(stage-1)*0.6)/1.2) : 0;
+        m.get(name).translate(offset.map(v => v*f));
+      }
+    }
+  }
+};

@@ -1,0 +1,10 @@
+$ python model.py --config config-80.json --output generated/initial-80
+Building helical screw...
+Traceback (most recent call last):
+  File "<example>/model.py", line 358, in <module>
+    export(Stage(**json.loads(args.config.read_text())), args.output)
+  File "<example>/model.py", line 333, in export
+    raise ValueError(f'{name}: valid={shape.is_valid}, solids={len(shape.solids())}')
+ValueError: lead_screw: valid=True, solids=3
+
+exit_code=1

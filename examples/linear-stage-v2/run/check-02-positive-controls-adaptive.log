@@ -1,0 +1,5 @@
+Recovered from the terminal error output. The early record helper captured stdout but did not preserve stderr.
+
+check.self_test -> overlap -> volume
+BRepGProp.VolumeProperties_s(shape.wrapped, properties, 1e-11, True)
+AttributeError: 'ShapeList' object has no attribute 'wrapped'

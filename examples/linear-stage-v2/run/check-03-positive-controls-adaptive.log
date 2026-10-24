@@ -1,0 +1,23 @@
+{
+  "passed": true,
+  "measured": {
+    "known_overlap_common_mm3": 4.000000000000001,
+    "known_overlap_cut_mm3": 4.000000000000001,
+    "touching_cubes_overlap_mm3": 0.0,
+    "separated_cubes_overlap_mm3": 0.0,
+    "initial_arm_probe_overlap_mm3": 0.0,
+    "quarter_turn_arm_probe_overlap_mm3": 1.0000000000000002,
+    "translated_carriage_center_x_mm": 1.0,
+    "fixed_probe_center_z_mm": 30.0
+  },
+  "expected": {
+    "known_overlap_common_mm3": 4,
+    "known_overlap_cut_mm3": 4,
+    "touching_cubes_overlap_mm3": 0,
+    "separated_cubes_overlap_mm3": 0,
+    "initial_arm_probe_overlap_mm3": 0,
+    "quarter_turn_arm_probe_overlap_mm3": 1,
+    "translated_carriage_center_x_mm": 1,
+    "fixed_probe_center_z_mm": 30
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "started_at_utc": null,
+  "duration_seconds": null,
+  "exit_code": 1,
+  "recovered_from_terminal_output": true,
+  "source_sha256": {
+    "check.py": "eba6dad6d51232dc67aaa77ed3081b2d37ebbfba859f245bb19507323a747476",
+    "compare.py": "5132860760215e50f2b407c2ba8bf77dde98d9c8bad4cc5cd182af36bf618b18",
+    "model.py": "fd06d170f287fa8d255cd4442fac7178f44af62bc332825bb50676d5cf7b9850"
+  },
+  "error_type": "AttributeError",
+  "error_message": "'ShapeList' object has no attribute 'wrapped'",
+  "note": "The record helper failed before writing metadata. Missing timing and input hashes are left unset; the source snapshots were written before execution."
+}

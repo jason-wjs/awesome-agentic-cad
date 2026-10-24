@@ -1,0 +1,46 @@
+$ python check.py generated/initial-80
+x=-40 mm: 0 moving/fixed collisions; platform/end-support clearance=6.000000 mm
+x=-30 mm: 0 moving/fixed collisions; platform/end-support clearance=16.000000 mm
+x=-20 mm: 0 moving/fixed collisions; platform/end-support clearance=26.000000 mm
+x=-10 mm: 0 moving/fixed collisions; platform/end-support clearance=36.000000 mm
+x=0 mm: 0 moving/fixed collisions; platform/end-support clearance=46.000000 mm
+x=10 mm: 0 moving/fixed collisions; platform/end-support clearance=36.000000 mm
+x=20 mm: 0 moving/fixed collisions; platform/end-support clearance=26.000000 mm
+x=30 mm: 0 moving/fixed collisions; platform/end-support clearance=16.000000 mm
+x=40 mm: 0 moving/fixed collisions; platform/end-support clearance=6.000000 mm
+{
+  "passed": false,
+  "part_count": 36,
+  "static_collisions": [
+    {
+      "a": "base",
+      "b": "motor_body",
+      "volume_mm3": 1680.0
+    },
+    {
+      "a": "base",
+      "b": "motor_face",
+      "volume_mm3": 84.0
+    },
+    {
+      "a": "mount_bolt_0",
+      "b": "motor_face",
+      "volume_mm3": 0.079145
+    },
+    {
+      "a": "mount_bolt_1",
+      "b": "motor_face",
+      "volume_mm3": 0.079145
+    },
+    {
+      "a": "motor_face",
+      "b": "motor_shaft",
+      "volume_mm3": 78.539816
+    }
+  ],
+  "errors": [
+    "5 collisions within fixed/moving groups"
+  ]
+}
+
+exit_code=1

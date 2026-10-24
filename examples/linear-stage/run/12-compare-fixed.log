@@ -1,0 +1,21 @@
+$ python compare.py
+{
+  "passed": true,
+  "frozen_80_unchanged": true,
+  "expected_changed_parts": [
+    "base",
+    "guide_rod_front",
+    "guide_rod_rear",
+    "lead_screw"
+  ],
+  "changed_parts": [
+    "base",
+    "guide_rod_front",
+    "guide_rod_rear",
+    "lead_screw"
+  ],
+  "original_80_rebuild_matches": true,
+  "all_variant_checks_passed": true
+}
+
+exit_code=0

@@ -1,0 +1,5 @@
+$ python model.py --config config-80.json --output generated/80
+Building helical screw...
+Exported 59 valid single-solid parts; travel=80, base=256, rods=168 mm; elapsed=4.40s
+
+exit_code=0

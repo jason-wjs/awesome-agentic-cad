@@ -1,0 +1,5 @@
+{
+  "passed": false,
+  "error_type": "AttributeError",
+  "error_message": "'ShapeList' object has no attribute 'wrapped'"
+}

@@ -1,0 +1,10 @@
+$ python model.py --config config-80.json --output generated/initial-80
+Traceback (most recent call last):
+  File "<example>/model.py", line 194, in <module>
+    export(Stage(**json.loads(args.config.read_text())),args.output)
+  File "<example>/model.py", line 180, in export
+    'color_rgba':list(shape.color.to_tuple())})
+                      ^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Color' object has no attribute 'to_tuple'
+
+exit_code=1

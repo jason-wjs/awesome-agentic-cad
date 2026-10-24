@@ -1,0 +1,2 @@
+$ python cadgen_cli.py step build generated/120/assembly.step generated/120/view.step --materials generated/120/materials.json --animation generated/120/explode.js --json
+{"ok":true,"document":"<example>/generated/120/view.step","tree":"639059612bcd4045e599ea6e1ac27c5b1b2c9f3fd50178e28ba60999c79c9dbc","skipped":false,"sidecar_only":false}

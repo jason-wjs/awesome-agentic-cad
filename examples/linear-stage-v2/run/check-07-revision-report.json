@@ -1,0 +1,975 @@
+{
+  "passed": true,
+  "symmetric_difference_tolerance_mm3": 1e-05,
+  "expected_changed_parts": [
+    "base",
+    "guide_rod_front",
+    "guide_rod_rear",
+    "lead_screw"
+  ],
+  "changed_parts": [
+    "base",
+    "guide_rod_front",
+    "guide_rod_rear",
+    "lead_screw"
+  ],
+  "original_80_rebuild_matches": true,
+  "all_variant_checks_passed": true,
+  "frozen_80_unchanged": true,
+  "motion_checked_travel_mm": [
+    80,
+    120
+  ],
+  "rebuild_check": "Part geometry equality in assembly coordinates, valid single solids, assembly round-trip",
+  "rebuilt_assembly_round_trip_passed": true,
+  "frozen_80_hash_mismatches": [],
+  "part_comparison": [
+    {
+      "part": "base",
+      "geometry_changed": true,
+      "translation_mm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "aligned_symmetric_difference_mm3": 34241.55474422903
+    },
+    {
+      "part": "coupling",
+      "geometry_changed": false,
+      "translation_mm": [
+        20.0,
+        0.0,
+        0.0
+      ],
+      "aligned_symmetric_difference_mm3": 0.0
+    },
+    {
+      "part": "coupling_clamp_bolt_0",
+      "geometry_changed": false,
+      "translation_mm": [
+        20.0,
+        0.0,
+        0.0
+      ],
+      "aligned_symmetric_difference_mm3": 0.0
+    },
+    {
+      "part": "coupling_clamp_bolt_1",
+      "geometry_changed": false,
+      "translation_mm": [
+        20.0,
+        0.0,
+        0.0
+      ],
+      "aligned_symmetric_difference_mm3": 0.0
+    },
+    {
+      "part": "drive_nut",
+      "geometry_changed": false,
+      "translation_mm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "aligned_symmetric_difference_mm3": 0.0
+    },
+    {
+      "part": "end_support_left",
+      "geometry_changed": false,
+      "translation_mm": [
+        -20.0,
+        0.0,
+        0.0
+      ],
+      "aligned_symmetric_difference_mm3": 0.0
+    },
+    {
+      "part": "end_support_right",
+      "geometry_changed": false,
+      "translation_mm": [
+        20.0,
+        0.0,
+        0.0
+      ],
+      "aligned_symmetric_difference_mm3": 0.0
+    },
+    {
+      "part": "guide_bushing_front",
+      "geometry_changed": false,
+      "translation_mm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "aligned_symmetric_difference_mm3": 0.0
+    },
+    {
+      "part": "guide_bushing_rear",
+      "geometry_changed": false,
+      "translation_mm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "aligned_symmetric_difference_mm3": 0.0
+    },
+    {
+      "part": "guide_housing_front",
+      "geometry_changed": false,
+      "translation_mm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "aligned_symmetric_difference_mm3": 0.0
+    },
+    {
+      "part": "guide_housing_rear",
+      "geometry_changed": false,
+      "translation_mm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "aligned_symmetric_difference_mm3": 0.0
+    },
+    {
+      "part": "guide_rod_front",
+      "geometry_changed": true,
+      "translation_mm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "aligned_symmetric_difference_mm3": 2010.619298297468
+    },
+    {
+      "part": "guide_rod_rear",
+      "geometry_changed": true,
+      "translation_mm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "aligned_symmetric_difference_mm3": 2010.619298297468
+    },
+    {
+      "part": "guide_set_screw_left_front",
+      "geometry_changed": false,
+      "translation_mm": [
+        -20.0,
+        0.0,
+        0.0
+      ],
+      "aligned_symmetric_difference_mm3": 0.0
+    },
+    {
+      "part": "guide_set_screw_left_rear",
+      "geometry_changed": false,
+      "translation_mm": [
+        -20.0,
+        0.0,
+        0.0
+      ],
+      "aligned_symmetric_difference_mm3": 0.0
+    },
+    {
+      "part": "guide_set_screw_right_front",
+      "geometry_changed": false,
+      "translation_mm": [
+        20.0,
+        0.0,
+        0.0
+      ],
+      "aligned_symmetric_difference_mm3": 0.0
+    },
+    {
+      "part": "guide_set_screw_right_rear",
+      "geometry_changed": false,
+      "translation_mm": [
+        20.0,
+        0.0,
+        0.0
+      ],
+      "aligned_symmetric_difference_mm3": 0.0
+    },
+    {
+      "part": "lead_screw",
+      "geometry_changed": true,
+      "translation_mm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "aligned_symmetric_difference_mm3": 2124.393559719352
+    },
+    {
+      "part": "motor_body",
+      "geometry_changed": false,
+      "translation_mm": [
+        20.0,
+        0.0,
+        0.0
+      ],
+      "aligned_symmetric_difference_mm3": 0.0
+    },
+    {
+      "part": "motor_bolt_0_0",
+      "geometry_changed": false,
+      "translation_mm": [
+        20.0,
+        0.0,
+        0.0
+      ],
+      "aligned_symmetric_difference_mm3": 0.0
+    },
+    {
+      "part": "motor_bolt_0_1",
+      "geometry_changed": false,
+      "translation_mm": [
+        20.0,
+        0.0,
+        0.0
+      ],
+      "aligned_symmetric_difference_mm3": 0.0
+    },
+    {
+      "part": "motor_bolt_1_0",
+      "geometry_changed": false,
+      "translation_mm": [
+        20.0,
+        0.0,
+        0.0
+      ],
+      "aligned_symmetric_difference_mm3": 0.0
+    },
+    {
+      "part": "motor_bolt_1_1",
+      "geometry_changed": false,
+      "translation_mm": [
+        20.0,
+        0.0,
+        0.0
+      ],
+      "aligned_symmetric_difference_mm3": 0.0
+    },
+    {
+      "part": "motor_connector",
+      "geometry_changed": false,
+      "translation_mm": [
+        20.0,
+        0.0,
+        0.0
+      ],
+      "aligned_symmetric_difference_mm3": 0.0
+    },
+    {
+      "part": "motor_face",
+      "geometry_changed": false,
+      "translation_mm": [
+        20.0,
+        0.0,
+        0.0
+      ],
+      "aligned_symmetric_difference_mm3": 0.0
+    },
+    {
+      "part": "motor_frontcap",
+      "geometry_changed": false,
+      "translation_mm": [
+        20.0,
+        0.0,
+        0.0
+      ],
+      "aligned_symmetric_difference_mm3": 0.0
+    },
+    {
+      "part": "motor_mount",
+      "geometry_changed": false,
+      "translation_mm": [
+        20.000000000001194,
+        0.0,
+        -3.552713678800501e-15
+      ],
+      "aligned_symmetric_difference_mm3": 0.0
+    },
+    {
+      "part": "motor_rearcap",
+      "geometry_changed": false,
+      "translation_mm": [
+        20.0,
+        0.0,
+        0.0
+      ],
+      "aligned_symmetric_difference_mm3": 0.0
+    },
+    {
+      "part": "motor_shaft",
+      "geometry_changed": false,
+      "translation_mm": [
+        20.0,
+        0.0,
+        0.0
+      ],
+      "aligned_symmetric_difference_mm3": 0.0
+    },
+    {
+      "part": "mount_bolt_0",
+      "geometry_changed": false,
+      "translation_mm": [
+        19.999999999999986,
+        0.0,
+        0.0
+      ],
+      "aligned_symmetric_difference_mm3": 0.0
+    },
+    {
+      "part": "mount_bolt_1",
+      "geometry_changed": false,
+      "translation_mm": [
+        19.999999999999986,
+        0.0,
+        0.0
+      ],
+      "aligned_symmetric_difference_mm3": 0.0
+    },
+    {
+      "part": "nut_bolt_0",
+      "geometry_changed": false,
+      "translation_mm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "aligned_symmetric_difference_mm3": 0.0
+    },
+    {
+      "part": "nut_bolt_1",
+      "geometry_changed": false,
+      "translation_mm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "aligned_symmetric_difference_mm3": 0.0
+    },
+    {
+      "part": "nut_flange_bolt_0",
+      "geometry_changed": false,
+      "translation_mm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "aligned_symmetric_difference_mm3": 0.0
+    },
+    {
+      "part": "nut_flange_bolt_1",
+      "geometry_changed": false,
+      "translation_mm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "aligned_symmetric_difference_mm3": 0.0
+    },
+    {
+      "part": "nut_flange_bolt_2",
+      "geometry_changed": false,
+      "translation_mm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "aligned_symmetric_difference_mm3": 0.0
+    },
+    {
+      "part": "nut_flange_bolt_3",
+      "geometry_changed": false,
+      "translation_mm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "aligned_symmetric_difference_mm3": 0.0
+    },
+    {
+      "part": "nut_holder",
+      "geometry_changed": false,
+      "translation_mm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "aligned_symmetric_difference_mm3": 0.0
+    },
+    {
+      "part": "platform",
+      "geometry_changed": false,
+      "translation_mm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "aligned_symmetric_difference_mm3": 0.0
+    },
+    {
+      "part": "platform_bolt_front_0",
+      "geometry_changed": false,
+      "translation_mm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "aligned_symmetric_difference_mm3": 0.0
+    },
+    {
+      "part": "platform_bolt_front_1",
+      "geometry_changed": false,
+      "translation_mm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "aligned_symmetric_difference_mm3": 0.0
+    },
+    {
+      "part": "platform_bolt_rear_0",
+      "geometry_changed": false,
+      "translation_mm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "aligned_symmetric_difference_mm3": 0.0
+    },
+    {
+      "part": "platform_bolt_rear_1",
+      "geometry_changed": false,
+      "translation_mm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "aligned_symmetric_difference_mm3": 0.0
+    },
+    {
+      "part": "screw_bearing_inner_left",
+      "geometry_changed": false,
+      "translation_mm": [
+        -20.0,
+        0.0,
+        0.0
+      ],
+      "aligned_symmetric_difference_mm3": 0.0
+    },
+    {
+      "part": "screw_bearing_inner_right",
+      "geometry_changed": false,
+      "translation_mm": [
+        20.0,
+        0.0,
+        0.0
+      ],
+      "aligned_symmetric_difference_mm3": 0.0
+    },
+    {
+      "part": "screw_bearing_outer_left",
+      "geometry_changed": false,
+      "translation_mm": [
+        -20.0,
+        0.0,
+        0.0
+      ],
+      "aligned_symmetric_difference_mm3": 0.0
+    },
+    {
+      "part": "screw_bearing_outer_right",
+      "geometry_changed": false,
+      "translation_mm": [
+        20.0,
+        0.0,
+        0.0
+      ],
+      "aligned_symmetric_difference_mm3": 0.0
+    },
+    {
+      "part": "screw_bearing_seal_left_front",
+      "geometry_changed": false,
+      "translation_mm": [
+        -20.0,
+        0.0,
+        0.0
+      ],
+      "aligned_symmetric_difference_mm3": 0.0
+    },
+    {
+      "part": "screw_bearing_seal_left_rear",
+      "geometry_changed": false,
+      "translation_mm": [
+        -20.0,
+        0.0,
+        0.0
+      ],
+      "aligned_symmetric_difference_mm3": 0.0
+    },
+    {
+      "part": "screw_bearing_seal_right_front",
+      "geometry_changed": false,
+      "translation_mm": [
+        20.0,
+        0.0,
+        0.0
+      ],
+      "aligned_symmetric_difference_mm3": 0.0
+    },
+    {
+      "part": "screw_bearing_seal_right_rear",
+      "geometry_changed": false,
+      "translation_mm": [
+        20.0,
+        0.0,
+        0.0
+      ],
+      "aligned_symmetric_difference_mm3": 0.0
+    },
+    {
+      "part": "shaft_collar_left",
+      "geometry_changed": false,
+      "translation_mm": [
+        -20.0,
+        0.0,
+        0.0
+      ],
+      "aligned_symmetric_difference_mm3": 0.0
+    },
+    {
+      "part": "shaft_collar_right",
+      "geometry_changed": false,
+      "translation_mm": [
+        20.0,
+        0.0,
+        0.0
+      ],
+      "aligned_symmetric_difference_mm3": 0.0
+    },
+    {
+      "part": "shaft_collar_set_left",
+      "geometry_changed": false,
+      "translation_mm": [
+        -20.0,
+        0.0,
+        0.0
+      ],
+      "aligned_symmetric_difference_mm3": 0.0
+    },
+    {
+      "part": "shaft_collar_set_right",
+      "geometry_changed": false,
+      "translation_mm": [
+        20.0,
+        0.0,
+        0.0
+      ],
+      "aligned_symmetric_difference_mm3": 0.0
+    },
+    {
+      "part": "support_bolt_left_0",
+      "geometry_changed": false,
+      "translation_mm": [
+        -20.0,
+        0.0,
+        0.0
+      ],
+      "aligned_symmetric_difference_mm3": 0.0
+    },
+    {
+      "part": "support_bolt_left_1",
+      "geometry_changed": false,
+      "translation_mm": [
+        -20.0,
+        0.0,
+        0.0
+      ],
+      "aligned_symmetric_difference_mm3": 0.0
+    },
+    {
+      "part": "support_bolt_right_0",
+      "geometry_changed": false,
+      "translation_mm": [
+        20.0,
+        0.0,
+        0.0
+      ],
+      "aligned_symmetric_difference_mm3": 0.0
+    },
+    {
+      "part": "support_bolt_right_1",
+      "geometry_changed": false,
+      "translation_mm": [
+        20.0,
+        0.0,
+        0.0
+      ],
+      "aligned_symmetric_difference_mm3": 0.0
+    }
+  ],
+  "rebuild_comparison": [
+    {
+      "part": "base",
+      "symmetric_difference_mm3": 0.0,
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "part": "coupling",
+      "symmetric_difference_mm3": 0.0,
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "part": "coupling_clamp_bolt_0",
+      "symmetric_difference_mm3": 0.0,
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "part": "coupling_clamp_bolt_1",
+      "symmetric_difference_mm3": 0.0,
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "part": "drive_nut",
+      "symmetric_difference_mm3": 0.0,
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "part": "end_support_left",
+      "symmetric_difference_mm3": 0.0,
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "part": "end_support_right",
+      "symmetric_difference_mm3": 0.0,
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "part": "guide_bushing_front",
+      "symmetric_difference_mm3": 0.0,
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "part": "guide_bushing_rear",
+      "symmetric_difference_mm3": 0.0,
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "part": "guide_housing_front",
+      "symmetric_difference_mm3": 0.0,
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "part": "guide_housing_rear",
+      "symmetric_difference_mm3": 0.0,
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "part": "guide_rod_front",
+      "symmetric_difference_mm3": 0.0,
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "part": "guide_rod_rear",
+      "symmetric_difference_mm3": 0.0,
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "part": "guide_set_screw_left_front",
+      "symmetric_difference_mm3": 0.0,
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "part": "guide_set_screw_left_rear",
+      "symmetric_difference_mm3": 0.0,
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "part": "guide_set_screw_right_front",
+      "symmetric_difference_mm3": 0.0,
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "part": "guide_set_screw_right_rear",
+      "symmetric_difference_mm3": 0.0,
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "part": "lead_screw",
+      "symmetric_difference_mm3": 0.0,
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "part": "motor_body",
+      "symmetric_difference_mm3": 0.0,
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "part": "motor_bolt_0_0",
+      "symmetric_difference_mm3": 0.0,
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "part": "motor_bolt_0_1",
+      "symmetric_difference_mm3": 0.0,
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "part": "motor_bolt_1_0",
+      "symmetric_difference_mm3": 0.0,
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "part": "motor_bolt_1_1",
+      "symmetric_difference_mm3": 0.0,
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "part": "motor_connector",
+      "symmetric_difference_mm3": 0.0,
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "part": "motor_face",
+      "symmetric_difference_mm3": 0.0,
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "part": "motor_frontcap",
+      "symmetric_difference_mm3": 0.0,
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "part": "motor_mount",
+      "symmetric_difference_mm3": 0.0,
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "part": "motor_rearcap",
+      "symmetric_difference_mm3": 0.0,
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "part": "motor_shaft",
+      "symmetric_difference_mm3": 0.0,
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "part": "mount_bolt_0",
+      "symmetric_difference_mm3": 0.0,
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "part": "mount_bolt_1",
+      "symmetric_difference_mm3": 0.0,
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "part": "nut_bolt_0",
+      "symmetric_difference_mm3": 0.0,
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "part": "nut_bolt_1",
+      "symmetric_difference_mm3": 0.0,
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "part": "nut_flange_bolt_0",
+      "symmetric_difference_mm3": 0.0,
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "part": "nut_flange_bolt_1",
+      "symmetric_difference_mm3": 0.0,
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "part": "nut_flange_bolt_2",
+      "symmetric_difference_mm3": 0.0,
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "part": "nut_flange_bolt_3",
+      "symmetric_difference_mm3": 0.0,
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "part": "nut_holder",
+      "symmetric_difference_mm3": 0.0,
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "part": "platform",
+      "symmetric_difference_mm3": 0.0,
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "part": "platform_bolt_front_0",
+      "symmetric_difference_mm3": 0.0,
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "part": "platform_bolt_front_1",
+      "symmetric_difference_mm3": 0.0,
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "part": "platform_bolt_rear_0",
+      "symmetric_difference_mm3": 0.0,
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "part": "platform_bolt_rear_1",
+      "symmetric_difference_mm3": 0.0,
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "part": "screw_bearing_inner_left",
+      "symmetric_difference_mm3": 0.0,
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "part": "screw_bearing_inner_right",
+      "symmetric_difference_mm3": 0.0,
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "part": "screw_bearing_outer_left",
+      "symmetric_difference_mm3": 0.0,
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "part": "screw_bearing_outer_right",
+      "symmetric_difference_mm3": 0.0,
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "part": "screw_bearing_seal_left_front",
+      "symmetric_difference_mm3": 0.0,
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "part": "screw_bearing_seal_left_rear",
+      "symmetric_difference_mm3": 0.0,
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "part": "screw_bearing_seal_right_front",
+      "symmetric_difference_mm3": 0.0,
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "part": "screw_bearing_seal_right_rear",
+      "symmetric_difference_mm3": 0.0,
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "part": "shaft_collar_left",
+      "symmetric_difference_mm3": 0.0,
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "part": "shaft_collar_right",
+      "symmetric_difference_mm3": 0.0,
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "part": "shaft_collar_set_left",
+      "symmetric_difference_mm3": 0.0,
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "part": "shaft_collar_set_right",
+      "symmetric_difference_mm3": 0.0,
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "part": "support_bolt_left_0",
+      "symmetric_difference_mm3": 0.0,
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "part": "support_bolt_left_1",
+      "symmetric_difference_mm3": 0.0,
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "part": "support_bolt_right_0",
+      "symmetric_difference_mm3": 0.0,
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "part": "support_bolt_right_1",
+      "symmetric_difference_mm3": 0.0,
+      "valid": true,
+      "solids": 1
+    }
+  ],
+  "errors": []
+}

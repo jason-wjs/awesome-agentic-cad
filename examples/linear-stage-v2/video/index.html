@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1280, height=720">
+  <title>Screw-driven linear stage</title>
+  <style>
+    * { box-sizing:border-box; margin:0; padding:0; }
+    html,body { width:1280px; height:720px; overflow:hidden; background:#edf0f1; }
+    #root { width:100%; height:100%; position:relative; color:#20313d; font-family:Montserrat,sans-serif; }
+    #stage-canvas { position:absolute; inset:0; display:block; width:100%; height:100%; }
+    #titles { position:absolute; left:52px; right:52px; top:36px; display:flex; align-items:flex-start; justify-content:space-between; pointer-events:none; }
+    #kicker { font-family:'IBM Plex Mono',monospace; color:#4b5d68; font-size:20px; letter-spacing:0.05em; margin-bottom:11px; }
+    h1 { font-size:36px; line-height:1.2; font-weight:700; letter-spacing:-0.035em; }
+    #counter { padding-top:4px; font-family:'IBM Plex Mono',monospace; font-size:22px; color:#4b5d68; }
+    #note { position:absolute; left:52px; right:52px; bottom:38px; font-family:'IBM Plex Mono',monospace; font-size:21px; color:#4b5d68; }
+    #measure { position:absolute; right:52px; bottom:38px; font-family:'IBM Plex Mono',monospace; font-size:24px; font-weight:700; color:#137785; }
+    #comparison-labels { position:absolute; inset:0; pointer-events:none; opacity:0; }
+    .travel-label { position:absolute; left:54px; font-family:'IBM Plex Mono',monospace; font-size:25px; font-weight:700; color:#137785; }
+    #travel-80 { top:232px; } #travel-120 { top:482px; }
+    #progress-track { position:absolute; left:52px; right:52px; bottom:18px; height:3px; background:#ccd5d8; }
+    #progress { height:3px; width:100%; background:#137785; transform-origin:left center; }
+  </style>
+</head>
+<body>
+<div data-hf-id="hf-rmcl" id="root" data-composition-id="main" data-start="0" data-duration="24" data-width="1280" data-height="720">
+  <canvas data-hf-id="hf-i3ki" id="stage-canvas" class="clip" data-start="0" data-duration="24" data-track-index="0"></canvas>
+  <div data-hf-id="hf-6v04" id="titles"><div data-hf-id="hf-yeow"><p data-hf-id="hf-b6iv" id="kicker">AWESOME AGENTIC CAD</p><h1 data-hf-id="hf-tgq5" id="headline">Screw-driven linear stage</h1></div><p data-hf-id="hf-0hue" id="counter">01 / 04</p></div>
+  <div data-hf-id="hf-brdm" id="comparison-labels"><p data-hf-id="hf-mljd" class="travel-label" id="travel-80">80 mm</p><p data-hf-id="hf-17qt" class="travel-label" id="travel-120">120 mm</p></div>
+  <p data-hf-id="hf-y19n" id="note">Parametric CAD · 4 mm lead</p><p data-hf-id="hf-vq6o" id="measure"></p>
+  <div data-hf-id="hf-o48q" id="progress-track"><div data-hf-id="hf-o6ww" id="progress"></div></div>
+</div>
+<script src="assets/scene.bundle.js"></script>
+<script>window.__timelines["main"] = window.stageTimeline;</script>
+</body>
+</html>

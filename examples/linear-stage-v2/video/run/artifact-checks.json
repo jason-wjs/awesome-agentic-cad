@@ -1,0 +1,41 @@
+{
+  "passed": true,
+  "models": [
+    {
+      "travel_mm": 80,
+      "parts": 59,
+      "source_hashes_match": true,
+      "decompressed_mesh_sha256_matches": true,
+      "rotation_deg_per_mm": -90.0,
+      "triangle_count": 194320
+    },
+    {
+      "travel_mm": 120,
+      "parts": 59,
+      "source_hashes_match": true,
+      "decompressed_mesh_sha256_matches": true,
+      "rotation_deg_per_mm": -90.0,
+      "triangle_count": 223039
+    }
+  ],
+  "artifacts": {
+    "stage-motion.mp4": {
+      "bytes": 4366481,
+      "sha256": "556152f6a8324a8dd87ca2c4da7db08cec3946dbbb36d717f58c521becf39a8c"
+    },
+    "stage-motion.gif": {
+      "bytes": 7282666,
+      "sha256": "e156e050f6e149265b42639fb0e65d376e7ecfa1f65d7e5d9832484f54f8dec7"
+    }
+  },
+  "encoded_frames_visually_inspected_seconds": [
+    0,
+    4.1,
+    6.7,
+    12.5,
+    17.8,
+    21,
+    23.966667
+  ],
+  "all_recorded_source_hashes_recoverable": true
+}

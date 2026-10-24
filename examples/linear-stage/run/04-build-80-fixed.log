@@ -1,0 +1,4 @@
+$ python model.py --config config-80.json --output generated/80
+Exported 36 named parts; travel=80, base=256, rods=168 mm
+
+exit_code=0

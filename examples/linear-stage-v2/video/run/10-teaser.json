@@ -1,0 +1,131 @@
+{
+  "started_at_utc": "2026-10-23T17:57:41.465184+00:00",
+  "elapsed_seconds": 0.671,
+  "working_directory": "repository root",
+  "command": [
+    "python",
+    "examples/linear-stage-v2/make_teaser.py",
+    "assets/stage-motion.mp4",
+    "assets/stage-motion.gif"
+  ],
+  "ffmpeg_command": [
+    "ffmpeg",
+    "-hide_banner",
+    "-y",
+    "-i",
+    "assets/stage-motion.mp4",
+    "-filter_complex",
+    "setpts=0.5*(PTS-STARTPTS),fps=12,scale=800:-1:flags=lanczos,split[s0][s1];[s0]palettegen=max_colors=96:reserve_transparent=1:stats_mode=diff[p];[s1][p]paletteuse=dither=bayer:bayer_scale=4:diff_mode=rectangle",
+    "-an",
+    "-loop",
+    "0",
+    "assets/stage-motion.gif"
+  ],
+  "ffmpeg_version": "ffmpeg version 9.0.2 Copyright (c) 2000-2026 the FFmpeg developers",
+  "exit_code": 0,
+  "script": {
+    "path": "examples/linear-stage-v2/make_teaser.py",
+    "sha256": "e4320e24a0087349ee12f28f1049cd76b97187f78c4ffa51a49a2ccdfbdc3321"
+  },
+  "source": {
+    "path": "assets/stage-motion.mp4",
+    "bytes": 4366481,
+    "sha256": "556152f6a8324a8dd87ca2c4da7db08cec3946dbbb36d717f58c521becf39a8c",
+    "duration_seconds": 24.0,
+    "local_backup": "task work/stage-teaser-2026-10-24/stage-motion-source.mp4",
+    "local_backup_sha256_matches": true
+  },
+  "replaced_gif_sha256": "e156e050f6e149265b42639fb0e65d376e7ecfa1f65d7e5d9832484f54f8dec7",
+  "settings": {
+    "playback_speed": 2.0,
+    "width": 800,
+    "height": 450,
+    "fps": 12,
+    "palette_max_colors": 96,
+    "reserve_transparent": true,
+    "palette_stats_mode": "diff",
+    "dither": "bayer",
+    "bayer_scale": 4,
+    "diff_mode": "rectangle",
+    "scaler": "lanczos",
+    "loop": 0
+  },
+  "output": {
+    "path": "assets/stage-motion.gif",
+    "bytes": 2886402,
+    "sha256": "ac1d2f76dacd658d361294bab56ee2d0ea590218088b6186b7032194f50b8e62",
+    "duration_seconds": 12.0,
+    "frame_count": 144,
+    "width": 800,
+    "height": 450,
+    "loop": 0,
+    "frame_duration_counts_ms": {
+      "80": 96,
+      "90": 48
+    }
+  },
+  "ffprobe_command": [
+    "ffprobe",
+    "-v",
+    "error",
+    "-count_frames",
+    "-select_streams",
+    "v:0",
+    "-show_entries",
+    "stream=width,height,nb_read_frames,duration,r_frame_rate,avg_frame_rate:format=duration,size",
+    "-of",
+    "json",
+    "assets/stage-motion.gif"
+  ],
+  "ffprobe": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "width": 800,
+        "height": 450,
+        "r_frame_rate": "12/1",
+        "avg_frame_rate": "25/2",
+        "duration": "12.000000",
+        "nb_read_frames": "144"
+      }
+    ],
+    "format": {
+      "duration": "12.000000",
+      "size": "2886402"
+    }
+  },
+  "palette_trials": [
+    {
+      "max_colors": 256,
+      "fps": 12,
+      "bayer_scale": 3,
+      "bytes": 4161951
+    },
+    {
+      "max_colors": 128,
+      "fps": 12,
+      "bayer_scale": 4,
+      "bytes": 3150814
+    },
+    {
+      "max_colors": 96,
+      "fps": 12,
+      "bayer_scale": 4,
+      "bytes": 2886402,
+      "selected": true
+    }
+  ],
+  "verification": {
+    "decoded_frames_visually_inspected": [
+      0,
+      40,
+      75,
+      138,
+      143
+    ],
+    "shading_and_labels": "Clean shading and readable labels in assembly, motion, explosion, and common-scale travel comparison.",
+    "duration_and_loop_verified": true,
+    "three_d_scene_rerendered": false
+  }
+}

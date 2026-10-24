@@ -1,0 +1,2 @@
+$ python cadgen_cli.py step snapshot ../linear-stage/generated/120/assembly.step generated/baseline-cadgen.png --preview --width 1600 --height 900 --camera {"direction":[0.65,-1,0.7]} --json
+{"ok":true,"files":[{"path":"<example>/generated/baseline-cadgen.png","kind":"png","view":"custom","input":"../linear-stage/generated/120/assembly.step","tree":"4f3d79d82ebeb96624cc46c347e13a295630daf9a9d2dafe3ebe209ff9dcb07e","frames":0,"fps":0,"seconds":0.0}],"parts":[],"warnings":[],"timings":{"job_count":1,"total_ms":1486.8462500016904},"debug":[]}

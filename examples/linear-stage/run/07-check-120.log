@@ -1,0 +1,18 @@
+$ python check.py generated/120
+x=-60 mm: 0 moving/fixed collisions; platform/end-support clearance=6.000000 mm
+x=-45 mm: 0 moving/fixed collisions; platform/end-support clearance=21.000000 mm
+x=-30 mm: 0 moving/fixed collisions; platform/end-support clearance=36.000000 mm
+x=-15 mm: 0 moving/fixed collisions; platform/end-support clearance=51.000000 mm
+x=0 mm: 0 moving/fixed collisions; platform/end-support clearance=66.000000 mm
+x=15 mm: 0 moving/fixed collisions; platform/end-support clearance=51.000000 mm
+x=30 mm: 0 moving/fixed collisions; platform/end-support clearance=36.000000 mm
+x=45 mm: 0 moving/fixed collisions; platform/end-support clearance=21.000000 mm
+x=60 mm: 0 moving/fixed collisions; platform/end-support clearance=6.000000 mm
+{
+  "passed": true,
+  "part_count": 36,
+  "static_collisions": [],
+  "errors": []
+}
+
+exit_code=0

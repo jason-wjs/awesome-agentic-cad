@@ -1,0 +1,16 @@
+{
+  "started_utc": "2026-10-23T09:54:23.914402+00:00",
+  "duration_seconds": 3.338,
+  "command": [
+    "python",
+    "model.py",
+    "--config",
+    "config-80.json",
+    "--output",
+    "generated/initial-80"
+  ],
+  "exit_code": 1,
+  "source_sha256": {
+    "model.py": "25ddf80b83c65c902a2fa7c2425b7ee4eece6c75d8ec54f17b7a0f54e50356e9"
+  }
+}

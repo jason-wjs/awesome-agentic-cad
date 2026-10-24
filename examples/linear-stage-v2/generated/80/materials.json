@@ -1,0 +1,412 @@
+{
+  "definitions": {
+    "base": {
+      "metalness": 0.68,
+      "roughness": 0.34
+    },
+    "bolt": {
+      "metalness": 0.78,
+      "roughness": 0.32
+    },
+    "support": {
+      "metalness": 0.82,
+      "roughness": 0.28
+    },
+    "bushing": {
+      "metalness": 0.92,
+      "roughness": 0.25
+    },
+    "rod": {
+      "metalness": 0.95,
+      "roughness": 0.2
+    },
+    "seal": {
+      "metalness": 0.05,
+      "roughness": 0.52
+    },
+    "screw": {
+      "metalness": 0.9,
+      "roughness": 0.26
+    },
+    "motor": {
+      "metalness": 0.55,
+      "roughness": 0.4
+    },
+    "connector": {
+      "metalness": 0.02,
+      "roughness": 0.55
+    },
+    "coupling": {
+      "metalness": 0.88,
+      "roughness": 0.24
+    },
+    "guide": {
+      "metalness": 0.65,
+      "roughness": 0.35
+    },
+    "nut": {
+      "metalness": 0.85,
+      "roughness": 0.27
+    },
+    "carriage": {
+      "metalness": 0.68,
+      "roughness": 0.3
+    }
+  },
+  "assignments": [
+    {
+      "targets": [
+        "#base"
+      ],
+      "material": "base"
+    },
+    {
+      "targets": [
+        "#guide_set_screw_left_front"
+      ],
+      "material": "bolt"
+    },
+    {
+      "targets": [
+        "#guide_set_screw_left_rear"
+      ],
+      "material": "bolt"
+    },
+    {
+      "targets": [
+        "#support_bolt_left_0"
+      ],
+      "material": "bolt"
+    },
+    {
+      "targets": [
+        "#support_bolt_left_1"
+      ],
+      "material": "bolt"
+    },
+    {
+      "targets": [
+        "#end_support_left"
+      ],
+      "material": "support"
+    },
+    {
+      "targets": [
+        "#screw_bearing_outer_left"
+      ],
+      "material": "bushing"
+    },
+    {
+      "targets": [
+        "#screw_bearing_inner_left"
+      ],
+      "material": "rod"
+    },
+    {
+      "targets": [
+        "#screw_bearing_seal_left_front"
+      ],
+      "material": "seal"
+    },
+    {
+      "targets": [
+        "#screw_bearing_seal_left_rear"
+      ],
+      "material": "seal"
+    },
+    {
+      "targets": [
+        "#guide_set_screw_right_front"
+      ],
+      "material": "bolt"
+    },
+    {
+      "targets": [
+        "#guide_set_screw_right_rear"
+      ],
+      "material": "bolt"
+    },
+    {
+      "targets": [
+        "#support_bolt_right_0"
+      ],
+      "material": "bolt"
+    },
+    {
+      "targets": [
+        "#support_bolt_right_1"
+      ],
+      "material": "bolt"
+    },
+    {
+      "targets": [
+        "#end_support_right"
+      ],
+      "material": "support"
+    },
+    {
+      "targets": [
+        "#screw_bearing_outer_right"
+      ],
+      "material": "bushing"
+    },
+    {
+      "targets": [
+        "#screw_bearing_inner_right"
+      ],
+      "material": "rod"
+    },
+    {
+      "targets": [
+        "#screw_bearing_seal_right_front"
+      ],
+      "material": "seal"
+    },
+    {
+      "targets": [
+        "#screw_bearing_seal_right_rear"
+      ],
+      "material": "seal"
+    },
+    {
+      "targets": [
+        "#guide_rod_front"
+      ],
+      "material": "rod"
+    },
+    {
+      "targets": [
+        "#guide_rod_rear"
+      ],
+      "material": "rod"
+    },
+    {
+      "targets": [
+        "#lead_screw"
+      ],
+      "material": "screw"
+    },
+    {
+      "targets": [
+        "#shaft_collar_left"
+      ],
+      "material": "bushing"
+    },
+    {
+      "targets": [
+        "#shaft_collar_set_left"
+      ],
+      "material": "bolt"
+    },
+    {
+      "targets": [
+        "#shaft_collar_right"
+      ],
+      "material": "bushing"
+    },
+    {
+      "targets": [
+        "#shaft_collar_set_right"
+      ],
+      "material": "bolt"
+    },
+    {
+      "targets": [
+        "#motor_bolt_0_0"
+      ],
+      "material": "bolt"
+    },
+    {
+      "targets": [
+        "#motor_bolt_0_1"
+      ],
+      "material": "bolt"
+    },
+    {
+      "targets": [
+        "#motor_bolt_1_0"
+      ],
+      "material": "bolt"
+    },
+    {
+      "targets": [
+        "#motor_bolt_1_1"
+      ],
+      "material": "bolt"
+    },
+    {
+      "targets": [
+        "#mount_bolt_0"
+      ],
+      "material": "bolt"
+    },
+    {
+      "targets": [
+        "#mount_bolt_1"
+      ],
+      "material": "bolt"
+    },
+    {
+      "targets": [
+        "#motor_mount"
+      ],
+      "material": "support"
+    },
+    {
+      "targets": [
+        "#motor_body"
+      ],
+      "material": "motor"
+    },
+    {
+      "targets": [
+        "#motor_frontcap"
+      ],
+      "material": "support"
+    },
+    {
+      "targets": [
+        "#motor_rearcap"
+      ],
+      "material": "support"
+    },
+    {
+      "targets": [
+        "#motor_face"
+      ],
+      "material": "support"
+    },
+    {
+      "targets": [
+        "#motor_connector"
+      ],
+      "material": "connector"
+    },
+    {
+      "targets": [
+        "#motor_shaft"
+      ],
+      "material": "rod"
+    },
+    {
+      "targets": [
+        "#coupling_clamp_bolt_0"
+      ],
+      "material": "bolt"
+    },
+    {
+      "targets": [
+        "#coupling_clamp_bolt_1"
+      ],
+      "material": "bolt"
+    },
+    {
+      "targets": [
+        "#coupling"
+      ],
+      "material": "coupling"
+    },
+    {
+      "targets": [
+        "#platform_bolt_front_0"
+      ],
+      "material": "bolt"
+    },
+    {
+      "targets": [
+        "#platform_bolt_front_1"
+      ],
+      "material": "bolt"
+    },
+    {
+      "targets": [
+        "#guide_housing_front"
+      ],
+      "material": "guide"
+    },
+    {
+      "targets": [
+        "#guide_bushing_front"
+      ],
+      "material": "bushing"
+    },
+    {
+      "targets": [
+        "#platform_bolt_rear_0"
+      ],
+      "material": "bolt"
+    },
+    {
+      "targets": [
+        "#platform_bolt_rear_1"
+      ],
+      "material": "bolt"
+    },
+    {
+      "targets": [
+        "#guide_housing_rear"
+      ],
+      "material": "guide"
+    },
+    {
+      "targets": [
+        "#guide_bushing_rear"
+      ],
+      "material": "bushing"
+    },
+    {
+      "targets": [
+        "#nut_flange_bolt_0"
+      ],
+      "material": "bolt"
+    },
+    {
+      "targets": [
+        "#nut_flange_bolt_1"
+      ],
+      "material": "bolt"
+    },
+    {
+      "targets": [
+        "#nut_flange_bolt_2"
+      ],
+      "material": "bolt"
+    },
+    {
+      "targets": [
+        "#nut_flange_bolt_3"
+      ],
+      "material": "bolt"
+    },
+    {
+      "targets": [
+        "#nut_bolt_0"
+      ],
+      "material": "bolt"
+    },
+    {
+      "targets": [
+        "#nut_bolt_1"
+      ],
+      "material": "bolt"
+    },
+    {
+      "targets": [
+        "#nut_holder"
+      ],
+      "material": "nut"
+    },
+    {
+      "targets": [
+        "#drive_nut"
+      ],
+      "material": "nut"
+    },
+    {
+      "targets": [
+        "#platform"
+      ],
+      "material": "carriage"
+    }
+  ]
+}

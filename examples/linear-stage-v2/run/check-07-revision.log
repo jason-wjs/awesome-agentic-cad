@@ -1,0 +1,86 @@
+base: local geometry changed=True; rebuild difference=0 mm³
+coupling: local geometry changed=False; rebuild difference=0 mm³
+coupling_clamp_bolt_0: local geometry changed=False; rebuild difference=0 mm³
+coupling_clamp_bolt_1: local geometry changed=False; rebuild difference=0 mm³
+drive_nut: local geometry changed=False; rebuild difference=0 mm³
+end_support_left: local geometry changed=False; rebuild difference=0 mm³
+end_support_right: local geometry changed=False; rebuild difference=0 mm³
+guide_bushing_front: local geometry changed=False; rebuild difference=0 mm³
+guide_bushing_rear: local geometry changed=False; rebuild difference=0 mm³
+guide_housing_front: local geometry changed=False; rebuild difference=0 mm³
+guide_housing_rear: local geometry changed=False; rebuild difference=0 mm³
+guide_rod_front: local geometry changed=True; rebuild difference=0 mm³
+guide_rod_rear: local geometry changed=True; rebuild difference=0 mm³
+guide_set_screw_left_front: local geometry changed=False; rebuild difference=0 mm³
+guide_set_screw_left_rear: local geometry changed=False; rebuild difference=0 mm³
+guide_set_screw_right_front: local geometry changed=False; rebuild difference=0 mm³
+guide_set_screw_right_rear: local geometry changed=False; rebuild difference=0 mm³
+lead_screw: local geometry changed=True; rebuild difference=0 mm³
+motor_body: local geometry changed=False; rebuild difference=0 mm³
+motor_bolt_0_0: local geometry changed=False; rebuild difference=0 mm³
+motor_bolt_0_1: local geometry changed=False; rebuild difference=0 mm³
+motor_bolt_1_0: local geometry changed=False; rebuild difference=0 mm³
+motor_bolt_1_1: local geometry changed=False; rebuild difference=0 mm³
+motor_connector: local geometry changed=False; rebuild difference=0 mm³
+motor_face: local geometry changed=False; rebuild difference=0 mm³
+motor_frontcap: local geometry changed=False; rebuild difference=0 mm³
+motor_mount: local geometry changed=False; rebuild difference=0 mm³
+motor_rearcap: local geometry changed=False; rebuild difference=0 mm³
+motor_shaft: local geometry changed=False; rebuild difference=0 mm³
+mount_bolt_0: local geometry changed=False; rebuild difference=0 mm³
+mount_bolt_1: local geometry changed=False; rebuild difference=0 mm³
+nut_bolt_0: local geometry changed=False; rebuild difference=0 mm³
+nut_bolt_1: local geometry changed=False; rebuild difference=0 mm³
+nut_flange_bolt_0: local geometry changed=False; rebuild difference=0 mm³
+nut_flange_bolt_1: local geometry changed=False; rebuild difference=0 mm³
+nut_flange_bolt_2: local geometry changed=False; rebuild difference=0 mm³
+nut_flange_bolt_3: local geometry changed=False; rebuild difference=0 mm³
+nut_holder: local geometry changed=False; rebuild difference=0 mm³
+platform: local geometry changed=False; rebuild difference=0 mm³
+platform_bolt_front_0: local geometry changed=False; rebuild difference=0 mm³
+platform_bolt_front_1: local geometry changed=False; rebuild difference=0 mm³
+platform_bolt_rear_0: local geometry changed=False; rebuild difference=0 mm³
+platform_bolt_rear_1: local geometry changed=False; rebuild difference=0 mm³
+screw_bearing_inner_left: local geometry changed=False; rebuild difference=0 mm³
+screw_bearing_inner_right: local geometry changed=False; rebuild difference=0 mm³
+screw_bearing_outer_left: local geometry changed=False; rebuild difference=0 mm³
+screw_bearing_outer_right: local geometry changed=False; rebuild difference=0 mm³
+screw_bearing_seal_left_front: local geometry changed=False; rebuild difference=0 mm³
+screw_bearing_seal_left_rear: local geometry changed=False; rebuild difference=0 mm³
+screw_bearing_seal_right_front: local geometry changed=False; rebuild difference=0 mm³
+screw_bearing_seal_right_rear: local geometry changed=False; rebuild difference=0 mm³
+shaft_collar_left: local geometry changed=False; rebuild difference=0 mm³
+shaft_collar_right: local geometry changed=False; rebuild difference=0 mm³
+shaft_collar_set_left: local geometry changed=False; rebuild difference=0 mm³
+shaft_collar_set_right: local geometry changed=False; rebuild difference=0 mm³
+support_bolt_left_0: local geometry changed=False; rebuild difference=0 mm³
+support_bolt_left_1: local geometry changed=False; rebuild difference=0 mm³
+support_bolt_right_0: local geometry changed=False; rebuild difference=0 mm³
+support_bolt_right_1: local geometry changed=False; rebuild difference=0 mm³
+{
+  "passed": true,
+  "symmetric_difference_tolerance_mm3": 1e-05,
+  "expected_changed_parts": [
+    "base",
+    "guide_rod_front",
+    "guide_rod_rear",
+    "lead_screw"
+  ],
+  "changed_parts": [
+    "base",
+    "guide_rod_front",
+    "guide_rod_rear",
+    "lead_screw"
+  ],
+  "original_80_rebuild_matches": true,
+  "all_variant_checks_passed": true,
+  "frozen_80_unchanged": true,
+  "motion_checked_travel_mm": [
+    80,
+    120
+  ],
+  "rebuild_check": "Part geometry equality in assembly coordinates, valid single solids, assembly round-trip",
+  "rebuilt_assembly_round_trip_passed": true,
+  "frozen_80_hash_mismatches": [],
+  "errors": []
+}

@@ -1,0 +1,71 @@
+{
+  "jobs": [
+    {
+      "input": "generated/80/view.step",
+      "preview": true,
+      "camera": {
+        "direction": [
+          0.65,
+          -1,
+          0.7
+        ]
+      },
+      "outputs": [
+        {
+          "path": "generated/assembly-80.png",
+          "width": 2000,
+          "height": 1150
+        }
+      ],
+      "output": {
+        "padding": 0.08
+      }
+    },
+    {
+      "input": "generated/120/view.step",
+      "preview": true,
+      "camera": {
+        "direction": [
+          0.65,
+          -1,
+          0.7
+        ]
+      },
+      "outputs": [
+        {
+          "path": "generated/assembly-120.png",
+          "width": 2000,
+          "height": 1150
+        }
+      ],
+      "output": {
+        "padding": 0.08
+      }
+    },
+    {
+      "input": "generated/120/view.step",
+      "preview": true,
+      "camera": {
+        "direction": [
+          0.4,
+          -1,
+          0.65
+        ]
+      },
+      "animation": {
+        "clip": "explode",
+        "time": 7
+      },
+      "outputs": [
+        {
+          "path": "generated/exploded.png",
+          "width": 2000,
+          "height": 1450
+        }
+      ],
+      "output": {
+        "padding": 0.08
+      }
+    }
+  ]
+}
