@@ -8,3 +8,5 @@ assets/*.bin.gz
 assets/joint-*.json
 assets/scene.bundle.js
 assets/scene.bundle.js.LEGAL.txt
+assets/timeline.bundle.js
+assets/timeline.bundle.js.LEGAL.txt

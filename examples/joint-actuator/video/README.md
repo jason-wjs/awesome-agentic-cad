@@ -1,8 +1,8 @@
 # Joint actuator animation
 
-A 12-second GIF rendered from the two STEP assemblies with Three.js and HyperFrames. The sequence shows a cutaway, the closed assembly, an axial exploded view, and the 20 → 30 mm bore change. The gears remain rigid throughout.
+The STEP parts are tessellated with CAD surface normals and rendered in Blender Cycles. HyperFrames adds the short phase labels and the bore comparison, then FFmpeg encodes the 12-second GIF.
 
-Python 3.12, Node.js 22+, pnpm and FFmpeg are required. From `examples/joint-actuator`, after installing `requirements.txt`:
+Requires Python 3.12, Blender 4.5, Node.js 22+, pnpm and FFmpeg. Install the example's `requirements.txt` first. From `examples/joint-actuator`:
 
 ```bash
 python model.py --config config-20.json --output generated/bore-20
@@ -10,6 +10,7 @@ python model.py --config config-30.json --output generated/bore-30
 python video/export_meshes.py --source generated/bore-20 --output video/assets/joint-20
 python video/export_meshes.py --source generated/bore-30 --output video/assets/joint-30
 cd video
+python render.py --blender /path/to/blender
 pnpm install --frozen-lockfile
 pnpm run build
 pnpm run check
@@ -17,10 +18,10 @@ pnpm run render
 pnpm run teaser
 ```
 
-The first two commands regenerate the individual STEP parts, which are omitted from Git. `export_meshes.py` tessellates those parts and their cutaway versions. Meshes and the JavaScript bundle are also regenerated locally.
+`BLENDER` can be used instead of `--blender`. On macOS, an installed Blender executable is usually `/Applications/Blender.app/Contents/MacOS/Blender`.
 
-The GIF is written to [`assets/joint-actuator.gif`](../../../assets/joint-actuator.gif). The intermediate MP4 stays in the ignored `out/` directory. `make_teaser.py` produces an 800 × 450, 12 fps GIF with a 96-color palette.
+[`render_cad.py`](render_cad.py) defines the materials, studio lighting, cameras and exploded positions. It renders 128-sample stills and 64-sample animation frames with OpenImageDenoise. The 20 mm and 30 mm comparison views use the same orthographic camera and scale. The gears remain rigid.
 
-[`scene.js`](scene.js) contains the camera, lighting and time-based part positions. The split-screen comparison uses identical cameras and scales. A subtle surface shader adds turning marks to aluminium; it does not change the STEP geometry.
+The GIF is written to [`assets/joint-actuator.gif`](../../../assets/joint-actuator.gif) at 880 × 495, 12 fps and 128 colors. `out/cad/` contains the unlabelled stills and the frame sequence; intermediate MP4 files stay in the ignored `out/` directory. Individual STEP parts, meshes and the JavaScript bundle are regenerated locally.
 
-Validation and output hashes are in [`run/`](run/).
+Run `python render.py --mode stills` for still images only. Final commands, renderer settings and input/output hashes are recorded in [`run/`](run/).

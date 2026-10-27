@@ -3,6 +3,7 @@
 Usage: python check.py generated/bore-20 generated/bore-30 --output run/check.json
 """
 from datetime import datetime, timezone
+from fnmatch import fnmatchcase
 from hashlib import sha256
 from itertools import combinations
 from math import cos, sin, pi, isclose
@@ -12,6 +13,7 @@ import json
 import time
 
 from build123d import Box, Compound, Cylinder, GeomType, Pos, Rot, import_step
+from OCP.BRepExtrema import BRepExtrema_DistShapeShape
 from OCP.BRepGProp import BRepGProp
 from OCP.GProp import GProp_GProps
 
@@ -19,10 +21,12 @@ HERE = Path(__file__).resolve().parent
 VOLUME_TOL = 1e-5  # mm³; face contact has zero intersecting volume.
 LENGTH_TOL = 1e-5  # mm; STEP round-trip tolerance.
 MOUNTING = {
-    'rear_cap': {'pitch_radius': 48, 'hole_x': [-45, -42], 'counterbore_x': [-48, -45],
+    'rear_cap': {'pitch_radius': 48, 'hole_x': [-45, -42], 'counterbore_x': [-47.75, -45],
+                 'counterbore_mouth_x': -48,
                  'bore_x': [-47.55, -42.45], 'bore_extent_x': [-48, -42], 'bore_chamfer': .45,
                  'bbox': [[-48, -55, -55], [-42, 55, 55]]},
-    'output_flange': {'pitch_radius': 40, 'hole_x': [41, 45], 'counterbore_x': [45, 48],
+    'output_flange': {'pitch_radius': 40, 'hole_x': [41, 45], 'counterbore_x': [45, 47.75],
+                      'counterbore_mouth_x': 48,
                       'bore_x': [34, 48], 'bore_extent_x': [34, 48], 'bore_chamfer': 0,
                       'bbox': [[34, -49, -49], [48, 49, 49]]},
 }
@@ -58,6 +62,17 @@ def axial_cylinder(radius, x_min, x_max):
     return Pos((x_min + x_max) / 2, 0, 0) * Rot(0, 90, 0) * Cylinder(radius, x_max - x_min)
 
 
+def native_distance(a, b):
+    calculation = BRepExtrema_DistShapeShape()
+    calculation.LoadS1(a.wrapped)
+    calculation.LoadS2(b.wrapped)
+    calculation.SetMultiThread(True)
+    calculation.Perform()
+    if not calculation.IsDone():
+        raise RuntimeError('Native minimum-distance calculation failed')
+    return calculation.Value()
+
+
 def circular_edges(shape, radius=None):
     found = set()
     for edge in shape.edges():
@@ -79,14 +94,21 @@ def self_test():
     tube = axial_cylinder(3, -5, 5) - axial_cylinder(1, -6, 6)
     bore = axial_cylinder(0.9, -6, 6)
     plug = axial_cylinder(0.9, -1, 1)
+    seated_head = axial_cylinder(3.05, 44, 46.8)
+    head_path = axial_cylinder(3.05, 44, 49)
+    obstructing_lip = axial_cylinder(3.4, 47.3, 47.5) - axial_cylinder(2.8, 47.2, 47.6)
     observed = {
         'overlapping_cubes_mm3': intersection_volume(cube, Pos(1, 0, 0) * cube),
         'touching_cubes_mm3': intersection_volume(cube, Pos(2, 0, 0) * cube),
         'separated_cubes_mm3': intersection_volume(cube, Pos(3, 0, 0) * cube),
         'clear_bore_mm3': intersection_volume(tube, bore),
         'blocked_bore_mm3': intersection_volume(tube + plug, bore),
+        'separated_cubes_distance_mm': native_distance(cube, Pos(3, 0, 0) * cube),
+        'seated_head_lip_intersection_mm3': intersection_volume(seated_head, obstructing_lip),
+        'head_insertion_lip_intersection_mm3': intersection_volume(head_path, obstructing_lip),
     }
-    expected = dict(zip(observed, [4.0, 0.0, 0.0, 0.0, pi * 0.9**2 * 2]))
+    expected = dict(zip(observed, [4.0, 0.0, 0.0, 0.0, pi * 0.9**2 * 2, 1.0, 0.0,
+                                   pi * (3.05**2 - 2.8**2) * .2]))
     return {'passed': all(abs(observed[k] - expected[k]) < VOLUME_TOL for k in observed),
             'measured': observed, 'expected': expected}
 
@@ -107,6 +129,10 @@ def mounting_interfaces(parts, bore_mm):
                 for i in range(8):
                     angle = (22.5 + 45 * i) * pi / 180
                     expected.append([radius, x, spec['pitch_radius'] * cos(angle), spec['pitch_radius'] * sin(angle)])
+        for i in range(8):
+            angle = (22.5 + 45 * i) * pi / 180
+            expected.append([4.05, spec['counterbore_mouth_x'],
+                             spec['pitch_radius'] * cos(angle), spec['pitch_radius'] * sin(angle)])
         expected_bore = [[bore_mm / 2, x, 0, 0] for x in spec['bore_x']]
         if spec['bore_chamfer']:
             expected_bore += [[bore_mm / 2 + spec['bore_chamfer'], x, 0, 0] for x in spec['bore_extent_x']]
@@ -116,7 +142,8 @@ def mounting_interfaces(parts, bore_mm):
         records[name] = {'passed': not missing and bbox_error < LENGTH_TOL,
                          'bolt_count': 8, 'pitch_diameter_mm': spec['pitch_radius'] * 2,
                          'hole_diameter_mm': 4.4, 'counterbore_diameter_mm': 7.6,
-                         'counterbore_depth_mm': 3.0, 'bore_diameter_mm': bore_mm,
+                         'counterbore_depth_mm': 3.0, 'counterbore_mouth_chamfer_mm': .25,
+                         'bore_diameter_mm': bore_mm,
                          'bbox_mm': measured_bbox, 'bbox_error_mm': bbox_error,
                          'expected_edges_radius_xyz_mm': expected + expected_bore,
                          'missing_edges_radius_xyz_mm': missing}
@@ -135,10 +162,96 @@ def clearances(parts):
     }
     records = {}
     for name, (a, b, minimum) in specifications.items():
-        measured = a.distance_to(b)
+        print(f'Native clearance: {name}', flush=True)
+        measured = native_distance(a, b)
         records[name] = {'passed': measured >= minimum - LENGTH_TOL,
                          'measured_minimum_mm': measured, 'required_minimum_mm': minimum}
     return records
+
+
+def bearing_proximity(parts):
+    """Measure every rolling element against both raceways in the nominal pose."""
+    specifications = {
+        'rear': ('rear_bearing_balls', 'rear_bearing_inner', 'rear_bearing_outer', .09, .11),
+        'wave': ('wave_bearing_balls', 'wave_generator', 'wave_bearing_outer', .09, .11),
+        'output': ('output_bearing_rollers', 'output_bearing_inner', 'output_bearing_outer', 0, .25),
+    }
+    records = {}
+    for name, (elements, inner, outer, lower, upper) in specifications.items():
+        measurements = [{'index': i, 'inner_gap_mm': solid.distance_to(parts[inner]),
+                         'outer_gap_mm': solid.distance_to(parts[outer])}
+                        for i, solid in enumerate(parts[elements].solids())]
+        gaps = [row[key] for row in measurements for key in ('inner_gap_mm', 'outer_gap_mm')]
+        records[name] = {'passed': bool(gaps) and all(lower - LENGTH_TOL <= gap <= upper + LENGTH_TOL for gap in gaps),
+                         'rolling_element_count': len(measurements), 'nominal_gap_limits_mm': [lower, upper],
+                         'minimum_gap_mm': min(gaps), 'maximum_gap_mm': max(gaps),
+                         'measurements': measurements}
+    return records
+
+
+def front_screw_insertion(parts):
+    """Sweep the head and shank envelopes into each front fixing along -X."""
+    screws = list(parts['output_flange_screws'].solids())
+    records = []
+    fixed_parts = {name: shape for name, shape in parts.items() if name != 'output_flange_screws'}
+    for i in range(6):
+        angle = 2 * pi * (i + .5) / 6
+        y, z = 25 * cos(angle), 25 * sin(angle)
+        head_path = Pos(0, y, z) * axial_cylinder(3.05, 44, 49)
+        shank_path = Pos(0, y, z) * axial_cylinder(1.8, 30.2, 49)
+        matching = [s for s in screws if abs(s.bounding_box().center().Y - y) < LENGTH_TOL
+                    and abs(s.bounding_box().center().Z - z) < LENGTH_TOL]
+        cylindrical_radii = [face.radius for screw in matching for face in screw.faces()
+                             if face.geom_type == GeomType.CYLINDER]
+        head_matches = (len(matching) == 1 and any(abs(r - 3.05) < LENGTH_TOL for r in cylindrical_radii)
+                        and any(abs(r - 1.8) < LENGTH_TOL for r in cylindrical_radii))
+        obstructions = []
+        for name, shape in fixed_parts.items():
+            head_hit, shank_hit = intersection_volume(shape, head_path), intersection_volume(shape, shank_path)
+            if head_hit > VOLUME_TOL or shank_hit > VOLUME_TOL:
+                obstructions.append({'part': name, 'head_sweep_intersection_mm3': head_hit,
+                                     'shank_sweep_intersection_mm3': shank_hit})
+        records.append({'index': i, 'axis_yz_mm': [y, z], 'head_radius_mm': 3.05,
+                        'shank_radius_mm': 1.8, 'entry_x_mm': 49, 'head_seating_x_mm': 44,
+                        'shank_tip_x_mm': 30.2, 'native_screw_matches': head_matches,
+                        'obstructions': obstructions, 'passed': head_matches and not obstructions})
+    return {'passed': len(screws) == 6 and all(r['passed'] for r in records),
+            'insertion_direction': '-X from the front face', 'screw_count': len(screws), 'screws': records}
+
+
+def focused_collisions(folder, patterns):
+    """Inspect only pairs involving matching parts while a design is being edited."""
+    manifest = json.loads((folder / 'manifest.json').read_text())
+    parts = {entry['name']: import_step(str(folder / entry['canonical_step'])) for entry in manifest['parts']}
+    selected = {name for name in parts if any(fnmatchcase(name, pattern) for pattern in patterns)}
+    if not selected:
+        raise ValueError(f'No parts match {patterns}')
+    boxes = {name: bounds(shape) for name, shape in parts.items()}
+    overlaps, internal_overlaps, invalid = [], [], []
+    exact_tests = 0
+    for name in sorted(selected):
+        shape = parts[name]
+        solids = list(shape.solids())
+        if not shape.is_valid or not solids or any(not s.is_valid or volume(s) <= VOLUME_TOL for s in solids):
+            invalid.append(name)
+        for i, j in combinations(range(len(solids)), 2):
+            if not broad_phase(bounds(solids[i]), bounds(solids[j])):
+                continue
+            exact_tests += 1
+            hit = volume(solids[i].intersect(solids[j]))
+            if hit > VOLUME_TOL:
+                internal_overlaps.append({'part': name, 'solid_indices': [i, j], 'intersection_mm3': hit})
+    for a, b in combinations(parts, 2):
+        if not ({a, b} & selected) or not broad_phase(boxes[a], boxes[b]):
+            continue
+        exact_tests += 1
+        hit = volume(parts[a].intersect(parts[b]))
+        if hit > VOLUME_TOL:
+            overlaps.append({'parts': [a, b], 'intersection_mm3': hit})
+    return {'scope': 'selected parts only', 'complete_assembly_check': False,
+            'selected_parts': sorted(selected), 'invalid_parts': invalid,
+            'passed': not (invalid or overlaps or internal_overlaps), 'exact_tests': exact_tests,
+            'overlaps': overlaps, 'within_part_overlaps': internal_overlaps}
 
 
 def inspect(folder):
@@ -215,6 +328,13 @@ def inspect(folder):
     for name, record in gap_records.items():
         if not record['passed']:
             errors.append(f'Insufficient geometric clearance: {name}')
+    bearing_records = bearing_proximity(parts)
+    for name, record in bearing_records.items():
+        if not record['passed']:
+            errors.append(f'Rolling elements outside nominal raceway gap: {name}')
+    insertion = front_screw_insertion(parts)
+    if not insertion['passed']:
+        errors.append('A front fixing screw cannot enter along its axis')
 
     presentation = []
     for name, entry in entries.items():
@@ -254,7 +374,9 @@ def inspect(folder):
                      'bbox_mm': assembly_bbox, 'matches_parts': assembly_good},
         'through_bore': {'diameter_mm': bore_mm, 'probe_radius_mm': bore_mm / 2 - LENGTH_TOL,
                          'passed': not bore_hits, 'obstructions': bore_hits},
-        'mounting_interfaces': interfaces, 'clearances': gap_records, 'cutaway_parts': presentation,
+        'mounting_interfaces': interfaces, 'clearances': gap_records,
+        'bearing_proximity': bearing_records, 'cutaway_parts': presentation,
+        'front_screw_insertion': insertion,
         'collisions': {'pairs': len(parts) * (len(parts) - 1) // 2, 'exact_tests': exact_tests,
                        'intersection_tolerance_mm3': VOLUME_TOL, 'overlaps': collisions,
                        'within_part_exact_tests': internal_exact_tests, 'within_part_overlaps': internal_overlaps},
@@ -300,6 +422,8 @@ def main():
     parser.add_argument('folders', type=Path, nargs='*')
     parser.add_argument('--output', type=Path, default=HERE / 'run' / 'check.json')
     parser.add_argument('--self-test', action='store_true', help='Run known overlap and bore-obstruction controls')
+    parser.add_argument('--focus', action='append', metavar='PART_GLOB',
+                        help='Print a partial collision check for matching parts; may be repeated; no reports are overwritten')
     args = parser.parse_args()
     if args.self_test:
         controls = self_test()
@@ -307,6 +431,12 @@ def main():
         return 0 if controls['passed'] else 1
     if len(args.folders) not in (1, 2):
         parser.error('Give one assembly, or two variants to compare')
+    if args.focus:
+        if len(args.folders) != 1:
+            parser.error('--focus takes one assembly')
+        result = focused_collisions(args.folders[0], args.focus)
+        print(json.dumps(result, indent=2))
+        return 0 if result['passed'] else 1
     start = time.perf_counter()
     controls = self_test()
     records, shapes = [], []

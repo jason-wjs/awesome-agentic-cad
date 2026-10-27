@@ -1,0 +1,889 @@
+{
+  "purpose": "Verify equivalence after a volume-integration correction; retain the render only when mesh bytes and every non-metrology render field agree.",
+  "variants": {
+    "20": {
+      "rendered_manifest_sha256": "55e3f4ddd7cb03f9877eeb60271bc56d828c241fe3c2927b2d8ac8a7a8c392c8",
+      "final_manifest_sha256": "84378a1ceef1c27d67cad8db4edf5df392dd888c6a1673adb96e355e46dbd886",
+      "before_compressed_mesh_sha256": "ec28e2d54749b578fdc99b44c31f7828d5e1754233c6c698f61e555c72c7b373",
+      "after_compressed_mesh_sha256": "ec28e2d54749b578fdc99b44c31f7828d5e1754233c6c698f61e555c72c7b373",
+      "mesh_buffer_sha256": "22a2d6d10c29c9999d63caa15d9bcd580ac89e5839221cb75ab8e293fe6644ad",
+      "compressed_bytes_identical": true,
+      "uncompressed_bytes_identical": true,
+      "render_fields_identical": true,
+      "checked_fields": "Every mesh JSON field except source_sha256 and per-part volume_mm3; includes names, vertex/index/normal buffers and offsets, materials, colors, section flags, and explosion offsets.",
+      "volume_changes": [
+        {
+          "part": "case_screw_01",
+          "before_mm3": 94.41307350899258,
+          "after_mm3": 94.41307350899255
+        },
+        {
+          "part": "case_screw_03",
+          "before_mm3": 94.41307350899258,
+          "after_mm3": 94.41307350899255
+        },
+        {
+          "part": "rear_cap",
+          "before_mm3": 53045.8338437657,
+          "after_mm3": 53045.833843765686
+        },
+        {
+          "part": "motor_housing",
+          "before_mm3": 42418.56335942689,
+          "after_mm3": 42418.56336819037
+        },
+        {
+          "part": "stator",
+          "before_mm3": 24029.50689166787,
+          "after_mm3": 24029.506891667872
+        },
+        {
+          "part": "winding_01",
+          "before_mm3": 526.6442535670938,
+          "after_mm3": 526.6442535670942
+        },
+        {
+          "part": "bobbin_01",
+          "before_mm3": 206.46772316997803,
+          "after_mm3": 206.46772316997792
+        },
+        {
+          "part": "winding_02",
+          "before_mm3": 526.6442535670939,
+          "after_mm3": 526.6442535670943
+        },
+        {
+          "part": "bobbin_02",
+          "before_mm3": 206.46772316997797,
+          "after_mm3": 206.4677231699778
+        },
+        {
+          "part": "winding_03",
+          "before_mm3": 526.6442535670938,
+          "after_mm3": 526.6442535670942
+        },
+        {
+          "part": "bobbin_03",
+          "before_mm3": 206.467723169978,
+          "after_mm3": 206.46772316997786
+        },
+        {
+          "part": "winding_04",
+          "before_mm3": 526.6442535670938,
+          "after_mm3": 526.6442535670946
+        },
+        {
+          "part": "bobbin_04",
+          "before_mm3": 206.46772316997794,
+          "after_mm3": 206.46772316997783
+        },
+        {
+          "part": "winding_05",
+          "before_mm3": 526.644253567094,
+          "after_mm3": 526.6442535670944
+        },
+        {
+          "part": "bobbin_05",
+          "before_mm3": 206.467723169978,
+          "after_mm3": 206.46772316997811
+        },
+        {
+          "part": "winding_06",
+          "before_mm3": 526.6442535670939,
+          "after_mm3": 526.6442535670943
+        },
+        {
+          "part": "bobbin_06",
+          "before_mm3": 206.46772316997794,
+          "after_mm3": 206.46772316997786
+        },
+        {
+          "part": "winding_07",
+          "before_mm3": 526.644253567094,
+          "after_mm3": 526.6442535670942
+        },
+        {
+          "part": "bobbin_07",
+          "before_mm3": 206.46772316997806,
+          "after_mm3": 206.46772316997792
+        },
+        {
+          "part": "winding_08",
+          "before_mm3": 526.6442535670942,
+          "after_mm3": 526.6442535670947
+        },
+        {
+          "part": "bobbin_08",
+          "before_mm3": 206.46772316997803,
+          "after_mm3": 206.46772316997806
+        },
+        {
+          "part": "winding_09",
+          "before_mm3": 526.6442535670941,
+          "after_mm3": 526.6442535670947
+        },
+        {
+          "part": "bobbin_09",
+          "before_mm3": 206.46772316997806,
+          "after_mm3": 206.46772316997803
+        },
+        {
+          "part": "winding_10",
+          "before_mm3": 526.644253567094,
+          "after_mm3": 526.6442535670942
+        },
+        {
+          "part": "bobbin_10",
+          "before_mm3": 206.467723169978,
+          "after_mm3": 206.46772316997794
+        },
+        {
+          "part": "winding_11",
+          "before_mm3": 526.6442535670942,
+          "after_mm3": 526.6442535670947
+        },
+        {
+          "part": "bobbin_11",
+          "before_mm3": 206.467723169978,
+          "after_mm3": 206.4677231699781
+        },
+        {
+          "part": "winding_12",
+          "before_mm3": 526.6442535670938,
+          "after_mm3": 526.6442535670942
+        },
+        {
+          "part": "bobbin_12",
+          "before_mm3": 206.467723169978,
+          "after_mm3": 206.46772316997786
+        },
+        {
+          "part": "winding_13",
+          "before_mm3": 526.6442535670936,
+          "after_mm3": 526.6442535670941
+        },
+        {
+          "part": "bobbin_13",
+          "before_mm3": 206.467723169978,
+          "after_mm3": 206.46772316997797
+        },
+        {
+          "part": "winding_14",
+          "before_mm3": 526.6442535670939,
+          "after_mm3": 526.6442535670944
+        },
+        {
+          "part": "bobbin_14",
+          "before_mm3": 206.467723169978,
+          "after_mm3": 206.46772316997811
+        },
+        {
+          "part": "winding_15",
+          "before_mm3": 526.6442535670938,
+          "after_mm3": 526.6442535670942
+        },
+        {
+          "part": "winding_16",
+          "before_mm3": 526.6442535670939,
+          "after_mm3": 526.6442535670943
+        },
+        {
+          "part": "bobbin_16",
+          "before_mm3": 206.467723169978,
+          "after_mm3": 206.4677231699779
+        },
+        {
+          "part": "winding_17",
+          "before_mm3": 526.6442535670939,
+          "after_mm3": 526.6442535670943
+        },
+        {
+          "part": "bobbin_17",
+          "before_mm3": 206.46772316997806,
+          "after_mm3": 206.46772316997811
+        },
+        {
+          "part": "winding_18",
+          "before_mm3": 526.6442535670938,
+          "after_mm3": 526.6442535670943
+        },
+        {
+          "part": "bobbin_18",
+          "before_mm3": 206.46772316997803,
+          "after_mm3": 206.4677231699779
+        },
+        {
+          "part": "rotor_drum",
+          "before_mm3": 26274.772990151298,
+          "after_mm3": 26274.77299015128
+        },
+        {
+          "part": "magnet_01",
+          "before_mm3": 832.0174619759973,
+          "after_mm3": 832.0174619759969
+        },
+        {
+          "part": "magnet_02",
+          "before_mm3": 832.0174619759973,
+          "after_mm3": 832.0174619759968
+        },
+        {
+          "part": "magnet_03",
+          "before_mm3": 832.0174619759973,
+          "after_mm3": 832.0174619759969
+        },
+        {
+          "part": "magnet_04",
+          "before_mm3": 832.0174619759973,
+          "after_mm3": 832.0174619759968
+        },
+        {
+          "part": "magnet_05",
+          "before_mm3": 832.0174619759973,
+          "after_mm3": 832.0174619759969
+        },
+        {
+          "part": "magnet_06",
+          "before_mm3": 832.0174619759975,
+          "after_mm3": 832.0174619759972
+        },
+        {
+          "part": "magnet_07",
+          "before_mm3": 832.0174619759974,
+          "after_mm3": 832.0174619759972
+        },
+        {
+          "part": "magnet_08",
+          "before_mm3": 832.0174619759973,
+          "after_mm3": 832.0174619759969
+        },
+        {
+          "part": "magnet_09",
+          "before_mm3": 832.0174619759973,
+          "after_mm3": 832.0174619759969
+        },
+        {
+          "part": "magnet_10",
+          "before_mm3": 832.0174619759971,
+          "after_mm3": 832.0174619759968
+        },
+        {
+          "part": "magnet_11",
+          "before_mm3": 832.0174619759979,
+          "after_mm3": 832.0174619759973
+        },
+        {
+          "part": "magnet_12",
+          "before_mm3": 832.0174619759975,
+          "after_mm3": 832.0174619759971
+        },
+        {
+          "part": "magnet_13",
+          "before_mm3": 832.0174619759973,
+          "after_mm3": 832.0174619759969
+        },
+        {
+          "part": "magnet_14",
+          "before_mm3": 832.0174619759973,
+          "after_mm3": 832.0174619759965
+        },
+        {
+          "part": "magnet_15",
+          "before_mm3": 832.0174619759973,
+          "after_mm3": 832.0174619759969
+        },
+        {
+          "part": "magnet_16",
+          "before_mm3": 832.0174619759974,
+          "after_mm3": 832.017461975997
+        },
+        {
+          "part": "rotor_shaft",
+          "before_mm3": 11922.344120373262,
+          "after_mm3": 11922.344120373253
+        },
+        {
+          "part": "rear_bearing_carrier",
+          "before_mm3": 4991.345391063258,
+          "after_mm3": 4991.345391063256
+        },
+        {
+          "part": "rear_bearing_retainer",
+          "before_mm3": 459.7787450292935,
+          "after_mm3": 459.77874502929353
+        },
+        {
+          "part": "rear_bearing_inner",
+          "before_mm3": 3904.6218162213477,
+          "after_mm3": 3904.6218162213445
+        },
+        {
+          "part": "rear_bearing_outer",
+          "before_mm3": 1776.9219807501631,
+          "after_mm3": 1776.9219807501654
+        },
+        {
+          "part": "rear_bearing_balls",
+          "before_mm3": 109.93061013441405,
+          "after_mm3": 109.9306101344141
+        },
+        {
+          "part": "gear_housing",
+          "before_mm3": 51697.61673848376,
+          "after_mm3": 51697.61673848378
+        },
+        {
+          "part": "circular_spline",
+          "before_mm3": 24178.464566506536,
+          "after_mm3": 24178.464566506496
+        },
+        {
+          "part": "circular_spline_pilot",
+          "before_mm3": 3216.694248097592,
+          "after_mm3": 3216.6942480975995
+        },
+        {
+          "part": "circular_spline_screws",
+          "before_mm3": 669.4486716104412,
+          "after_mm3": 669.4486716104411
+        },
+        {
+          "part": "flexspline",
+          "before_mm3": 17292.65098030555,
+          "after_mm3": 17292.650980305567
+        },
+        {
+          "part": "wave_generator",
+          "before_mm3": 16047.377430558863,
+          "after_mm3": 16047.38094038545
+        },
+        {
+          "part": "wave_bearing_outer",
+          "before_mm3": 1199.3957525107708,
+          "after_mm3": 1199.3871212813683
+        },
+        {
+          "part": "wave_bearing_balls",
+          "before_mm3": 413.78545158961873,
+          "after_mm3": 413.7854515896191
+        },
+        {
+          "part": "output_bearing_seal_23.5",
+          "before_mm3": 137.02056358631899,
+          "after_mm3": 137.0205635863174
+        },
+        {
+          "part": "output_bearing_seal_36",
+          "before_mm3": 137.0205635863192,
+          "after_mm3": 137.02056358631762
+        },
+        {
+          "part": "output_bearing_inner",
+          "before_mm3": 16156.771194440817,
+          "after_mm3": 16156.771194440811
+        },
+        {
+          "part": "output_bearing_outer",
+          "before_mm3": 18905.45113803145,
+          "after_mm3": 18905.451138031436
+        },
+        {
+          "part": "output_bearing_rollers",
+          "before_mm3": 2220.8287416867483,
+          "after_mm3": 2220.828741686747
+        },
+        {
+          "part": "output_bearing_separators",
+          "before_mm3": 246.40000000000006,
+          "after_mm3": 246.40000000000015
+        },
+        {
+          "part": "output_spacer",
+          "before_mm3": 2518.112175558362,
+          "after_mm3": 2518.1121755583604
+        },
+        {
+          "part": "output_flange_screws",
+          "before_mm3": 1271.8900835161635,
+          "after_mm3": 1271.8900835161637
+        },
+        {
+          "part": "output_flange",
+          "before_mm3": 69309.31104526967,
+          "after_mm3": 69309.31104526964
+        },
+        {
+          "part": "encoder_post_-30_-13",
+          "before_mm3": 1.5550883635269468,
+          "after_mm3": 1.5550883635269481
+        },
+        {
+          "part": "encoder_post_-30_-1",
+          "before_mm3": 1.5550883635269475,
+          "after_mm3": 1.5550883635269477
+        },
+        {
+          "part": "encoder_post_-10_-1",
+          "before_mm3": 1.5550883635269472,
+          "after_mm3": 1.5550883635269477
+        },
+        {
+          "part": "encoder_pcb",
+          "before_mm3": 469.10495667735097,
+          "after_mm3": 469.1049566773509
+        },
+        {
+          "part": "encoder_connector",
+          "before_mm3": 42.0,
+          "after_mm3": 42.00000000000001
+        },
+        {
+          "part": "encoder_contacts",
+          "before_mm3": 2.3099999999999925,
+          "after_mm3": 2.3099999999999934
+        }
+      ],
+      "pass": true
+    },
+    "30": {
+      "rendered_manifest_sha256": "8a63290a80fb7d425a19dab924084ae888af80b334fb270b412e8c9bc53eea50",
+      "final_manifest_sha256": "86191bb4b74f73406f4a4ba5ea852792181dd628d1dbc58617216f5bce860ebc",
+      "before_compressed_mesh_sha256": "80e85a254de4457202132809339e5264de01484b9078f9de15dc4d1dbc3be550",
+      "after_compressed_mesh_sha256": "80e85a254de4457202132809339e5264de01484b9078f9de15dc4d1dbc3be550",
+      "mesh_buffer_sha256": "c079e692a7dbf280278d1c81caca54941b107f8c08449803a2721b1d490945f5",
+      "compressed_bytes_identical": true,
+      "uncompressed_bytes_identical": true,
+      "render_fields_identical": true,
+      "checked_fields": "Every mesh JSON field except source_sha256 and per-part volume_mm3; includes names, vertex/index/normal buffers and offsets, materials, colors, section flags, and explosion offsets.",
+      "volume_changes": [
+        {
+          "part": "case_screw_01",
+          "before_mm3": 94.41307350899258,
+          "after_mm3": 94.41307350899255
+        },
+        {
+          "part": "case_screw_03",
+          "before_mm3": 94.41307350899258,
+          "after_mm3": 94.41307350899255
+        },
+        {
+          "part": "rear_cap",
+          "before_mm3": 50683.277628449825,
+          "after_mm3": 50683.27762844985
+        },
+        {
+          "part": "motor_housing",
+          "before_mm3": 42418.56335942689,
+          "after_mm3": 42418.56336819037
+        },
+        {
+          "part": "stator",
+          "before_mm3": 24029.50689166787,
+          "after_mm3": 24029.506891667872
+        },
+        {
+          "part": "winding_01",
+          "before_mm3": 526.6442535670938,
+          "after_mm3": 526.6442535670942
+        },
+        {
+          "part": "bobbin_01",
+          "before_mm3": 206.46772316997803,
+          "after_mm3": 206.46772316997792
+        },
+        {
+          "part": "winding_02",
+          "before_mm3": 526.6442535670939,
+          "after_mm3": 526.6442535670943
+        },
+        {
+          "part": "bobbin_02",
+          "before_mm3": 206.46772316997797,
+          "after_mm3": 206.4677231699778
+        },
+        {
+          "part": "winding_03",
+          "before_mm3": 526.6442535670938,
+          "after_mm3": 526.6442535670942
+        },
+        {
+          "part": "bobbin_03",
+          "before_mm3": 206.467723169978,
+          "after_mm3": 206.46772316997786
+        },
+        {
+          "part": "winding_04",
+          "before_mm3": 526.6442535670938,
+          "after_mm3": 526.6442535670946
+        },
+        {
+          "part": "bobbin_04",
+          "before_mm3": 206.46772316997794,
+          "after_mm3": 206.46772316997783
+        },
+        {
+          "part": "winding_05",
+          "before_mm3": 526.644253567094,
+          "after_mm3": 526.6442535670944
+        },
+        {
+          "part": "bobbin_05",
+          "before_mm3": 206.467723169978,
+          "after_mm3": 206.46772316997811
+        },
+        {
+          "part": "winding_06",
+          "before_mm3": 526.6442535670939,
+          "after_mm3": 526.6442535670943
+        },
+        {
+          "part": "bobbin_06",
+          "before_mm3": 206.46772316997794,
+          "after_mm3": 206.46772316997786
+        },
+        {
+          "part": "winding_07",
+          "before_mm3": 526.644253567094,
+          "after_mm3": 526.6442535670942
+        },
+        {
+          "part": "bobbin_07",
+          "before_mm3": 206.46772316997806,
+          "after_mm3": 206.46772316997792
+        },
+        {
+          "part": "winding_08",
+          "before_mm3": 526.6442535670942,
+          "after_mm3": 526.6442535670947
+        },
+        {
+          "part": "bobbin_08",
+          "before_mm3": 206.46772316997803,
+          "after_mm3": 206.46772316997806
+        },
+        {
+          "part": "winding_09",
+          "before_mm3": 526.6442535670941,
+          "after_mm3": 526.6442535670947
+        },
+        {
+          "part": "bobbin_09",
+          "before_mm3": 206.46772316997806,
+          "after_mm3": 206.46772316997803
+        },
+        {
+          "part": "winding_10",
+          "before_mm3": 526.644253567094,
+          "after_mm3": 526.6442535670942
+        },
+        {
+          "part": "bobbin_10",
+          "before_mm3": 206.467723169978,
+          "after_mm3": 206.46772316997794
+        },
+        {
+          "part": "winding_11",
+          "before_mm3": 526.6442535670942,
+          "after_mm3": 526.6442535670947
+        },
+        {
+          "part": "bobbin_11",
+          "before_mm3": 206.467723169978,
+          "after_mm3": 206.4677231699781
+        },
+        {
+          "part": "winding_12",
+          "before_mm3": 526.6442535670938,
+          "after_mm3": 526.6442535670942
+        },
+        {
+          "part": "bobbin_12",
+          "before_mm3": 206.467723169978,
+          "after_mm3": 206.46772316997786
+        },
+        {
+          "part": "winding_13",
+          "before_mm3": 526.6442535670936,
+          "after_mm3": 526.6442535670941
+        },
+        {
+          "part": "bobbin_13",
+          "before_mm3": 206.467723169978,
+          "after_mm3": 206.46772316997797
+        },
+        {
+          "part": "winding_14",
+          "before_mm3": 526.6442535670939,
+          "after_mm3": 526.6442535670944
+        },
+        {
+          "part": "bobbin_14",
+          "before_mm3": 206.467723169978,
+          "after_mm3": 206.46772316997811
+        },
+        {
+          "part": "winding_15",
+          "before_mm3": 526.6442535670938,
+          "after_mm3": 526.6442535670942
+        },
+        {
+          "part": "winding_16",
+          "before_mm3": 526.6442535670939,
+          "after_mm3": 526.6442535670943
+        },
+        {
+          "part": "bobbin_16",
+          "before_mm3": 206.467723169978,
+          "after_mm3": 206.4677231699779
+        },
+        {
+          "part": "winding_17",
+          "before_mm3": 526.6442535670939,
+          "after_mm3": 526.6442535670943
+        },
+        {
+          "part": "bobbin_17",
+          "before_mm3": 206.46772316997806,
+          "after_mm3": 206.46772316997811
+        },
+        {
+          "part": "winding_18",
+          "before_mm3": 526.6442535670938,
+          "after_mm3": 526.6442535670943
+        },
+        {
+          "part": "bobbin_18",
+          "before_mm3": 206.46772316997803,
+          "after_mm3": 206.4677231699779
+        },
+        {
+          "part": "rotor_drum",
+          "before_mm3": 24813.93240623206,
+          "after_mm3": 24813.932406232067
+        },
+        {
+          "part": "magnet_01",
+          "before_mm3": 832.0174619759973,
+          "after_mm3": 832.0174619759969
+        },
+        {
+          "part": "magnet_02",
+          "before_mm3": 832.0174619759973,
+          "after_mm3": 832.0174619759968
+        },
+        {
+          "part": "magnet_03",
+          "before_mm3": 832.0174619759973,
+          "after_mm3": 832.0174619759969
+        },
+        {
+          "part": "magnet_04",
+          "before_mm3": 832.0174619759973,
+          "after_mm3": 832.0174619759968
+        },
+        {
+          "part": "magnet_05",
+          "before_mm3": 832.0174619759973,
+          "after_mm3": 832.0174619759969
+        },
+        {
+          "part": "magnet_06",
+          "before_mm3": 832.0174619759975,
+          "after_mm3": 832.0174619759972
+        },
+        {
+          "part": "magnet_07",
+          "before_mm3": 832.0174619759974,
+          "after_mm3": 832.0174619759972
+        },
+        {
+          "part": "magnet_08",
+          "before_mm3": 832.0174619759973,
+          "after_mm3": 832.0174619759969
+        },
+        {
+          "part": "magnet_09",
+          "before_mm3": 832.0174619759973,
+          "after_mm3": 832.0174619759969
+        },
+        {
+          "part": "magnet_10",
+          "before_mm3": 832.0174619759971,
+          "after_mm3": 832.0174619759968
+        },
+        {
+          "part": "magnet_11",
+          "before_mm3": 832.0174619759979,
+          "after_mm3": 832.0174619759973
+        },
+        {
+          "part": "magnet_12",
+          "before_mm3": 832.0174619759975,
+          "after_mm3": 832.0174619759971
+        },
+        {
+          "part": "magnet_13",
+          "before_mm3": 832.0174619759973,
+          "after_mm3": 832.0174619759969
+        },
+        {
+          "part": "magnet_14",
+          "before_mm3": 832.0174619759973,
+          "after_mm3": 832.0174619759965
+        },
+        {
+          "part": "magnet_15",
+          "before_mm3": 832.0174619759973,
+          "after_mm3": 832.0174619759969
+        },
+        {
+          "part": "magnet_16",
+          "before_mm3": 832.0174619759974,
+          "after_mm3": 832.017461975997
+        },
+        {
+          "part": "rotor_shaft",
+          "before_mm3": 17105.971998796413,
+          "after_mm3": 17105.971998796424
+        },
+        {
+          "part": "rear_bearing_carrier",
+          "before_mm3": 4991.345391063258,
+          "after_mm3": 4991.345391063256
+        },
+        {
+          "part": "rear_bearing_retainer",
+          "before_mm3": 459.7787450292935,
+          "after_mm3": 459.77874502929353
+        },
+        {
+          "part": "rear_bearing_inner",
+          "before_mm3": 1453.4726880742487,
+          "after_mm3": 1453.472688074248
+        },
+        {
+          "part": "rear_bearing_outer",
+          "before_mm3": 1776.9219807501631,
+          "after_mm3": 1776.9219807501654
+        },
+        {
+          "part": "rear_bearing_balls",
+          "before_mm3": 109.93061013441405,
+          "after_mm3": 109.9306101344141
+        },
+        {
+          "part": "gear_housing",
+          "before_mm3": 51697.61673848376,
+          "after_mm3": 51697.61673848378
+        },
+        {
+          "part": "circular_spline",
+          "before_mm3": 24178.464566506536,
+          "after_mm3": 24178.464566506496
+        },
+        {
+          "part": "circular_spline_pilot",
+          "before_mm3": 3216.694248097592,
+          "after_mm3": 3216.6942480975995
+        },
+        {
+          "part": "circular_spline_screws",
+          "before_mm3": 669.4486716104412,
+          "after_mm3": 669.4486716104411
+        },
+        {
+          "part": "flexspline",
+          "before_mm3": 15737.562616777588,
+          "after_mm3": 15737.562616777668
+        },
+        {
+          "part": "wave_generator",
+          "before_mm3": 11606.343499324295,
+          "after_mm3": 11606.347030112129
+        },
+        {
+          "part": "wave_bearing_outer",
+          "before_mm3": 1199.3957525107708,
+          "after_mm3": 1199.3871212813683
+        },
+        {
+          "part": "wave_bearing_balls",
+          "before_mm3": 413.78545158961873,
+          "after_mm3": 413.7854515896191
+        },
+        {
+          "part": "output_bearing_seal_23.5",
+          "before_mm3": 137.02056358631899,
+          "after_mm3": 137.0205635863174
+        },
+        {
+          "part": "output_bearing_seal_36",
+          "before_mm3": 137.0205635863192,
+          "after_mm3": 137.02056358631762
+        },
+        {
+          "part": "output_bearing_inner",
+          "before_mm3": 16156.771194440817,
+          "after_mm3": 16156.771194440811
+        },
+        {
+          "part": "output_bearing_outer",
+          "before_mm3": 18905.45113803145,
+          "after_mm3": 18905.451138031436
+        },
+        {
+          "part": "output_bearing_rollers",
+          "before_mm3": 2220.8287416867483,
+          "after_mm3": 2220.828741686747
+        },
+        {
+          "part": "output_bearing_separators",
+          "before_mm3": 246.40000000000006,
+          "after_mm3": 246.40000000000015
+        },
+        {
+          "part": "output_spacer",
+          "before_mm3": 1999.7493877160466,
+          "after_mm3": 1999.7493877160455
+        },
+        {
+          "part": "output_flange_screws",
+          "before_mm3": 1271.8900835161635,
+          "after_mm3": 1271.8900835161637
+        },
+        {
+          "part": "encoder_post_-30_-13",
+          "before_mm3": 1.5550883635269468,
+          "after_mm3": 1.5550883635269481
+        },
+        {
+          "part": "encoder_post_-30_-1",
+          "before_mm3": 1.5550883635269475,
+          "after_mm3": 1.5550883635269477
+        },
+        {
+          "part": "encoder_post_-10_-1",
+          "before_mm3": 1.5550883635269472,
+          "after_mm3": 1.5550883635269477
+        },
+        {
+          "part": "encoder_pcb",
+          "before_mm3": 469.10495667735097,
+          "after_mm3": 469.1049566773509
+        },
+        {
+          "part": "encoder_connector",
+          "before_mm3": 42.0,
+          "after_mm3": 42.00000000000001
+        },
+        {
+          "part": "encoder_contacts",
+          "before_mm3": 2.3099999999999925,
+          "after_mm3": 2.3099999999999934
+        }
+      ],
+      "pass": true
+    }
+  },
+  "pass": true
+}

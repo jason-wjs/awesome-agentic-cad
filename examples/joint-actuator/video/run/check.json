@@ -65,8 +65,8 @@
       8.3,
       11.9
     ],
-    "checked": 13,
-    "passed": 13
+    "checked": 8,
+    "passed": 8
   },
   "craft": {
     "ok": true,
@@ -89,10 +89,10 @@
     "findingFiles": []
   },
   "saved": {
-    "id": "346c25bb-11f6-4123-8c5e-55002b6baf72",
+    "id": "64076e27-95e5-4379-bcd5-66dfa8629787",
     "revision": null,
-    "report": ".hyperframes/artifacts/checks/346c25bb-11f6-4123-8c5e-55002b6baf72.json",
-    "attribution": "unversioned"
+    "report": ".hyperframes/artifacts/checks/64076e27-95e5-4379-bcd5-66dfa8629787.json",
+    "attribution": "inputs-changed"
   },
   "_meta": {
     "version": "0.8.185",

@@ -6,36 +6,38 @@
 <title>Humanoid joint actuator</title>
 <style>
   * {box-sizing:border-box;margin:0;padding:0}
-  html,body {width:1280px;height:720px;overflow:hidden;background:#f0f2f3}
+  html,body {width:1280px;height:720px;overflow:hidden;background:#fff}
   #root {position:relative;width:100%;height:100%;font-family:Arial,sans-serif;color:#23313c}
-  #joint-canvas {position:absolute;inset:0;display:block;width:100%;height:100%}
-  #header {position:absolute;left:44px;right:44px;top:33px;display:flex;justify-content:space-between;align-items:center;pointer-events:none}
-  h1 {font-size:32px;line-height:1.2;letter-spacing:-0.035em;font-weight:600}
-  #phase {font-size:19px;line-height:1.4;letter-spacing:0.09em;color:#53616a;text-transform:uppercase}
-  #note {position:absolute;left:44px;right:44px;bottom:35px;font-size:21px;color:#475963;letter-spacing:-0.015em}
-  #comparison {position:absolute;inset:0;pointer-events:none;opacity:0}
+  #cad-motion {position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+  .phase {position:absolute;right:44px;top:33px;font-size:19px;line-height:1.4;letter-spacing:0.09em;color:#53616a;text-transform:uppercase}
+  .comparison-image {position:absolute;top:72px;width:640px;height:548px;object-fit:contain}
+  #comparison-20 {left:0} #comparison-30 {left:50%}
   .bore {position:absolute;top:88px;width:50%;font-size:26px;line-height:1.3;color:#16717c;text-align:center;font-weight:600}
   #bore-20 {left:0} #bore-30 {left:50%}
   #divider {position:absolute;top:173px;bottom:104px;left:50%;width:1px;background:#d2dadd}
-  #labels {position:absolute;inset:0;pointer-events:none;opacity:0}
-  .part-label {position:absolute;bottom:121px;text-align:center;font-size:19px;color:#53616a;line-height:1.3}
-  #motor-label {left:155px;width:240px}
-  #gear-label {left:620px;width:240px}
-  #output-label {right:30px;width:220px}
+  #note {position:absolute;left:44px;right:44px;bottom:35px;font-size:21px;color:#475963;letter-spacing:-0.015em}
+  .part-label {position:absolute;bottom:75px;text-align:center;font-size:19px;color:#53616a;line-height:1.3}
+  #motor-label {left:155px;width:240px} #gear-label {left:620px;width:240px} #output-label {right:30px;width:220px}
   #progress-track {position:absolute;left:44px;right:44px;bottom:16px;height:2px;background:#d6dfe1}
   #progress {height:2px;width:100%;background:#247c85;transform-origin:left center}
 </style>
 </head>
 <body>
 <div data-hf-id="hf-e9vk" id="root" data-composition-id="main" data-start="0" data-duration="12" data-width="1280" data-height="720">
-  <canvas data-hf-id="hf-d1mz" id="joint-canvas" class="clip" data-start="0" data-duration="12" data-track-index="0"></canvas>
-  <div data-hf-id="hf-rw2y" id="header"><h1 data-hf-id="hf-qu1w">Humanoid joint actuator</h1><p data-hf-id="hf-cipp" id="phase">Section view</p></div>
-  <div data-hf-id="hf-5ra2" id="comparison"><p data-hf-id="hf-a5oa" class="bore" id="bore-20">Ø20 mm bore</p><p data-hf-id="hf-k0ru" class="bore" id="bore-30">Ø30 mm bore</p><div data-hf-id="hf-5i2k" id="divider"></div></div>
-  <div data-hf-id="hf-33rw" id="labels"><p data-hf-id="hf-22hc" class="part-label" id="motor-label">Frameless motor</p><p data-hf-id="hf-ey1w" class="part-label" id="gear-label">Harmonic reducer</p><p data-hf-id="hf-a799" class="part-label" id="output-label">Output flange</p></div>
-  <p data-hf-id="hf-us9w" id="note"></p>
+  <video data-hf-id="hf-p3xp" id="cad-motion" class="clip" data-start="0" data-duration="9" data-track-index="0" src="out/cad-motion.mp4" muted playsinline></video>
+  <img data-hf-id="hf-t6tl" id="comparison-20" class="clip comparison-image" data-start="9" data-duration="3" data-track-index="0" src="out/cad/comparison-20.png" alt="20 mm bore">
+  <img data-hf-id="hf-jt1c" id="comparison-30" class="clip comparison-image" data-start="9" data-duration="3" data-track-index="0" src="out/cad/comparison-30.png" alt="30 mm bore">
+  <p data-hf-id="hf-w1hf" id="phase" class="phase">Section view</p>
+  <p data-hf-id="hf-dr9b" id="motor-label" class="clip part-label" data-start="5.9" data-duration="1.8" data-track-index="2">Frameless motor</p>
+  <p data-hf-id="hf-uerr" id="gear-label" class="clip part-label" data-start="5.9" data-duration="1.8" data-track-index="2">Harmonic reducer</p>
+  <p data-hf-id="hf-wsts" id="output-label" class="clip part-label" data-start="5.9" data-duration="1.8" data-track-index="2">Output flange</p>
+  <p data-hf-id="hf-hqzd" id="bore-20" class="clip bore" data-start="9" data-duration="3" data-track-index="3">Ø20 mm bore</p>
+  <p data-hf-id="hf-egxl" id="bore-30" class="clip bore" data-start="9" data-duration="3" data-track-index="3">Ø30 mm bore</p>
+  <div data-hf-id="hf-1sz3" id="divider" class="clip" data-start="9" data-duration="3" data-track-index="4"></div>
+  <p data-hf-id="hf-refw" id="note" class="clip" data-start="9" data-duration="3" data-track-index="4">20 → 30 mm through-bore · same outer envelope</p>
   <div data-hf-id="hf-o48q" id="progress-track"><div data-hf-id="hf-o6ww" id="progress"></div></div>
 </div>
-<script src="assets/scene.bundle.js"></script>
+<script src="assets/timeline.bundle.js"></script>
 <script>window.__timelines["main"] = window.jointTimeline;</script>
 </body>
 </html>

@@ -1,0 +1,21 @@
+{
+  "exporter_sha256": "cd842987eab31973f7d90cfe201180304a632ce77601fb07d47183a3f3e12022",
+  "checks": {
+    "20": {
+      "triangles": 2623710,
+      "max_unit_normal_error": 5.960464477539063e-08,
+      "opposed_triangle_normals": 0,
+      "zero_area_triangles": 144,
+      "pass": true,
+      "mesh_sha256": "22a2d6d10c29c9999d63caa15d9bcd580ac89e5839221cb75ab8e293fe6644ad"
+    },
+    "30": {
+      "triangles": 2623710,
+      "max_unit_normal_error": 5.960464477539063e-08,
+      "opposed_triangle_normals": 0,
+      "zero_area_triangles": 144,
+      "pass": true,
+      "mesh_sha256": "c079e692a7dbf280278d1c81caca54941b107f8c08449803a2721b1d490945f5"
+    }
+  }
+}

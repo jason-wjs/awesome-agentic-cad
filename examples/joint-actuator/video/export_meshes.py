@@ -10,6 +10,36 @@ import hashlib
 import json
 import numpy as np
 from build123d import import_step
+from OCP.BRepMesh import BRepMesh_IncrementalMesh
+from OCP.BRep import BRep_Tool
+from OCP.StdPrs import StdPrs_ToolTriangulatedShape
+from OCP.TopLoc import TopLoc_Location
+from OCP.TopAbs import TopAbs_Orientation
+
+
+def cad_tessellation(shape, linear_tolerance=0.045, angular_tolerance=0.12):
+    """Use absolute millimetre deflection and analytic surface normals."""
+    BRepMesh_IncrementalMesh(shape.wrapped, linear_tolerance, False, angular_tolerance, True)
+    positions, normals, indices = [], [], []
+    for face in shape.faces():
+        location = TopLoc_Location()
+        tri = BRep_Tool.Triangulation_s(face.wrapped, location)
+        transform = location.Transformation()
+        reverse = face.wrapped.Orientation() == TopAbs_Orientation.TopAbs_REVERSED
+        StdPrs_ToolTriangulatedShape.ComputeNormals_s(face.wrapped, tri)
+        offset = len(positions)
+        for i in range(1, tri.NbNodes()+1):
+            point = tri.Node(i).Transformed(transform)
+            normal = tri.Normal(i).Transformed(transform)
+            if reverse:
+                normal.Reverse()
+            positions.append((point.X(), point.Y(), point.Z()))
+            normals.append((normal.X(), normal.Y(), normal.Z()))
+        for triangle in tri.Triangles():
+            a, b, c = (triangle.Value(i)+offset-1 for i in (1, 2, 3))
+            indices.append((a, c, b) if reverse else (a, b, c))
+    return (np.asarray(positions, dtype='<f4'), np.asarray(normals, dtype='<f4'),
+            np.asarray(indices, dtype='<u4').flatten())
 
 
 def export(source: Path, output: Path):
@@ -28,14 +58,15 @@ def export(source: Path, output: Path):
         hashes[relative] = digest
         if digest in cached:
             return cached[digest]
-        vertices, triangles = import_step(path).tessellate(0.12, 0.24)
-        positions = np.array([list(v) for v in vertices], dtype='<f4')
-        indices = np.array(triangles, dtype='<u4').flatten()
+        angular_tolerance = 0.24 if path.name.startswith('winding_') else 0.12
+        positions, normals, indices = cad_tessellation(import_step(path), angular_tolerance=angular_tolerance)
         spec = {'position_offset': len(data), 'vertex_count': len(positions)}
         data.extend(positions.tobytes())
+        spec.update(normal_offset=len(data))
+        data.extend(normals.tobytes())
         spec.update(index_offset=len(data), index_count=len(indices))
         data.extend(indices.tobytes())
-        triangle_count += len(triangles)
+        triangle_count += len(indices)//3
         cached[digest] = spec
         return spec
 
@@ -46,7 +77,7 @@ def export(source: Path, output: Path):
     manifest['mesh_file'] = output.with_suffix('.bin.gz').name
     manifest['source_sha256'] = hashes
     manifest['mesh_sha256'] = hashlib.sha256(data).hexdigest()
-    manifest['tessellation'] = {'linear_tolerance_mm': 0.12, 'angular_tolerance_rad': 0.24,
+    manifest['tessellation'] = {'linear_tolerance_mm': 0.045, 'angular_tolerance_rad': {'windings': 0.24, 'other': 0.12}, 'relative_deflection': False, 'normals': 'analytic CAD surface normals',
                                 'triangle_count': triangle_count, 'face_boundaries_preserved': True}
     output.parent.mkdir(parents=True, exist_ok=True)
     output.with_suffix('.bin.gz').write_bytes(gzip.compress(data, compresslevel=9, mtime=0))

@@ -1,67 +1,107 @@
 {
-  "completed_at_utc": "2026-10-27T07:02:57.581829+00:00",
-  "model_sha256": "4b7ee111497cfa27a2e3fea0e6717c813c2a1a32b0d60930718ab4af147f758a",
+  "completed_at_utc": "2026-10-27T08:20:10.555693+00:00",
+  "model_sha256": "811fffef6eb5125d8f10def8b0ec7c77176e4a4d23e236b2eb748e542d378371",
   "cli_version": "0.8.185",
   "capture": "screenshot",
   "gpu": "hardware",
   "render_command": "npx hyperframes@0.8.185 render --quality delivery --fps 30 --workers 2 --browser-gpu --output out/joint-actuator.mp4",
-  "gif_command": "python ../make_teaser.py out/joint-actuator.mp4 ../../../assets/joint-actuator.gif",
+  "gif_command": "python ../make_teaser.py out/joint-actuator.mp4 ../../../assets/joint-actuator.gif --width 880 --fps 12 --colors 128",
   "source_sha256": {
-    "index.html": "4dcdc60594c7327b522bd5f405629689a4ac34f699140953829963a906b26887",
-    "scene.js": "df3deeb5d50316be9d37450af49c0d30502f8d51b72b698632dbe98bfc8aea0c",
-    "export_meshes.py": "3966785c4c01982dfa75fcc5b2e20fdd5d12598f4042c7a12240debc2bba023e",
-    "build.mjs": "019f482211929102a72e2932605c44bce0209a41740fbd00d6f383e41de02607",
-    "package.json": "0d5feee1014174032660e8524980e129ce9d4f56c8b73c1e6b1b25b3b84f4494",
-    "pnpm-lock.yaml": "faf960f28f405a6cacb9cc45db42e58c859df8c3c66726a509bd16784c9c0af7"
+    "index.html": "23c3694ea828996006c0788000fd3d10d6984cce31456493482deaadc4c77cd8",
+    "index.motion.json": "28c43041e038c493357564b1b8fceed93fa6191c353fc4ea25cd8edbc929b59f",
+    "timeline.js": "85ae2b1f4d29a01d2c511128e1371229d89437cff1dbcda042070729462c5d65",
+    "render.py": "1c2f44b734832fab889a0fa2a1a2b561da88456753f4a1f5e4de991e12fd2ee4",
+    "render_cad.py": "d838dbaabff1b4d8a9bc899025322d4db6f36e703b697a1d7f7b42e9a336d0db",
+    "export_meshes.py": "cd842987eab31973f7d90cfe201180304a632ce77601fb07d47183a3f3e12022",
+    "build.mjs": "ea24d18ed634a72b587c0f05f9037cd85a33220cfa993365c26a8c302618113c",
+    "package.json": "78da6301e0ab7579cd91a68591c7acec6d3118d7df50ffdac90522c9590cd7a1",
+    "pnpm-lock.yaml": "754aac9d42062ddbc92589c848b7c4cfb8e0cc8250bb2e0bf002ec9b608a8d8e",
+    "../make_teaser.py": "0b5a5859fd84ca04f40d606bb7b24228d0d46a54151f9caebb710bb94e669f9c",
+    "README.md": "3526140ae34383c7adc6a6ac63b2bb0e708b85b06a4c59f980b12e12373bfb93"
   },
   "variants": {
     "20": {
-      "assembly_sha256": "2fe9b5011d586c06086c4e017389473cf44541e0be8e7367a741a42a25eaa17b",
-      "cutaway_sha256": "63480ac50bcc85fab83284b2cdad34f65583d366206624a940e6be2c38307f03",
-      "manifest_sha256": "08437ea2137129d78b21c67c6e97917efdd321bcd383b2b0a9f1b8c91bfac057",
-      "mesh_sha256": "b38873906da0ec3c3cf1e2e15c5d9b9a12620663819d7f16a83a96d5caab1b2f",
+      "assembly_sha256": "db756868c7f09e2a8f9bd035969ef111dc522dfc94693c45a95065f9b2368db9",
+      "cutaway_sha256": "fdfd2c8de2c54a63c6103f956ea7d291cacbc63fc5495dd41df8f035878a4bee",
+      "manifest_sha256": "84378a1ceef1c27d67cad8db4edf5df392dd888c6a1673adb96e355e46dbd886",
+      "mesh_sha256": "22a2d6d10c29c9999d63caa15d9bcd580ac89e5839221cb75ab8e293fe6644ad",
       "tessellation": {
-        "linear_tolerance_mm": 0.12,
-        "angular_tolerance_rad": 0.24,
-        "triangle_count": 792788,
+        "linear_tolerance_mm": 0.045,
+        "angular_tolerance_rad": {
+          "windings": 0.24,
+          "other": 0.12
+        },
+        "relative_deflection": false,
+        "normals": "analytic CAD surface normals",
+        "triangle_count": 2623710,
         "face_boundaries_preserved": true
       },
-      "source_step_count": 63
+      "source_step_count": 105
     },
     "30": {
-      "assembly_sha256": "5b0e4aea8ad781a4f4f915343ce33a42481308068a99175c93d72b06aa1445ed",
-      "cutaway_sha256": "fc858091b2722fde5c8569fad97fb27c4310d16f29ba63c473ebecd6ab5a870d",
-      "manifest_sha256": "4d4f17613a003ffebf213aa1061eec888ee05d4472fcd6f404c5873464d5e4b1",
-      "mesh_sha256": "e4abf4cf8cc1596878a6d2f86128e6bf738eb51e477c6a9ecdd2a7661be016bd",
+      "assembly_sha256": "ab63212407efc1e6881898dd1fa5496d6dac4b8d87d2322af95adc8496c111de",
+      "cutaway_sha256": "276a14e1ef4b97340d0263a30c4d21e83c8eaeea8a00e6ed052631e6a2db7dd0",
+      "manifest_sha256": "86191bb4b74f73406f4a4ba5ea852792181dd628d1dbc58617216f5bce860ebc",
+      "mesh_sha256": "c079e692a7dbf280278d1c81caca54941b107f8c08449803a2721b1d490945f5",
       "tessellation": {
-        "linear_tolerance_mm": 0.12,
-        "angular_tolerance_rad": 0.24,
-        "triangle_count": 792788,
+        "linear_tolerance_mm": 0.045,
+        "angular_tolerance_rad": {
+          "windings": 0.24,
+          "other": 0.12
+        },
+        "relative_deflection": false,
+        "normals": "analytic CAD surface normals",
+        "triangle_count": 2623710,
         "face_boundaries_preserved": true
       },
-      "source_step_count": 63
+      "source_step_count": 105
     }
   },
+  "cycles_record": "cycles-all.json",
+  "metrology_revision_equivalence": "mesh-equivalence.json",
   "intermediate_mp4": {
     "tracked": false,
     "width": 1280,
     "height": 720,
     "fps": 30,
     "frames": 360,
-    "duration_seconds": 12,
-    "sha256": "59efb9e4eb0adc9d6284e764e2ec5ba3a725a7a4b889655980e45731a2cf5bcf"
+    "duration_seconds": 12.0,
+    "sha256": "0ada1b19253caabaa657df66fb2f8d806e48c9904ab09f8b35bdf8a27aa73c42"
   },
   "gif": {
     "file": "assets/joint-actuator.gif",
-    "width": 800,
-    "height": 450,
+    "width": 880,
+    "height": 495,
     "frames": 144,
     "duration_ms": 12000,
     "nominal_fps": 12,
-    "palette_max_colors": 96,
+    "palette_max_colors": 128,
+    "dither": "bayer",
+    "bayer_scale": 4,
+    "palette_stats_mode": "diff",
     "loop": 0,
-    "bytes": 4498733,
-    "sha256": "a6f2b4998488d16285ed6b402653c5046c80ccf498d4f403daaf164ac36316f0"
+    "bytes": 7793819,
+    "sha256": "71408fd1812f08cdbe868b5df4c8a00d3c0a8a1418784dfcfc70be5697a27a20"
+  },
+  "palette_comparison": {
+    "same_size_and_timing": true,
+    "variants": [
+      {
+        "colors": 96,
+        "bytes": 8051503
+      },
+      {
+        "colors": 128,
+        "bytes": 9155831
+      },
+      {
+        "colors": 192,
+        "bytes": 10805125
+      }
+    ],
+    "selection": "128 colors preserve the copper turns and metal gradients better than 96; the visual gain from 192 is small relative to its larger file. No dithering was also reviewed and rejected because the contact shadow showed visible bands.",
+    "comparison_width": 960,
+    "comparison_height": 540
   },
   "inspection": {
     "times_seconds": [
@@ -72,7 +112,34 @@
       10.5,
       11.64
     ],
-    "findings": "Sectioned stator supports retained coils; full assembly and explosion remain in frame; 20/30 mm bores use the same camera and scale; labels clear the model. No text overlaps in the final check."
+    "findings": "Cutaway, assembly, exploded stack, and bore comparison remain in frame. Part labels sit below the exploded geometry. Metal and winding detail is visible at the GIF resolution. The bore variants share a camera and scale. The opening frame is the cutaway."
   },
-  "version_probe": "The latest probe reported CLI 0.8.201 but npm latest 0.8.75. The existing tested 0.8.185 pin was retained."
+  "check": {
+    "file": "check.json",
+    "ok": true,
+    "errors": 0,
+    "warnings": 0
+  },
+  "preview": {
+    "http_status": 200
+  },
+  "version_probe": "The latest probe reported CLI 0.8.201 but npm latest 0.8.75. The existing tested 0.8.185 pin was retained.",
+  "size_comparison": {
+    "palette_max_colors": 128,
+    "fps": 12,
+    "duration_seconds": 12,
+    "variants": [
+      {
+        "width": 960,
+        "height": 540,
+        "bytes": 9155831
+      },
+      {
+        "width": 880,
+        "height": 495,
+        "bytes": 7793819
+      }
+    ],
+    "selection": "880 pixels preserves readable copper turns and gear teeth at README display size while reducing the GIF by 14.9%. The lossless 1280-pixel PNG stills are unchanged."
+  }
 }

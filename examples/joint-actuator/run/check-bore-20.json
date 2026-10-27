@@ -1,6 +1,6 @@
 {
-  "checked_at_utc": "2026-10-27T06:57:32.910187+00:00",
-  "checker_sha256": "a40fe42ea54185ed73b28d0019f6135cee0ebd15f0882e226b10097a004c56c3",
+  "checked_at_utc": "2026-10-27T08:12:46.191155+00:00",
+  "checker_sha256": "43328cb527aaa2dc0a875fe08bbb9205d4f72bc99a772ba98ba239b324ec8e55",
   "positive_controls": {
     "passed": true,
     "measured": {
@@ -8,65 +8,71 @@
       "touching_cubes_mm3": 0.0,
       "separated_cubes_mm3": 0.0,
       "clear_bore_mm3": 0.0,
-      "blocked_bore_mm3": 5.0893800988154645
+      "blocked_bore_mm3": 5.0893800988154645,
+      "separated_cubes_distance_mm": 1.0,
+      "seated_head_lip_intersection_mm3": 0.0,
+      "head_insertion_lip_intersection_mm3": 0.9189158511750284
     },
     "expected": {
       "overlapping_cubes_mm3": 4.0,
       "touching_cubes_mm3": 0.0,
       "separated_cubes_mm3": 0.0,
       "clear_bore_mm3": 0.0,
-      "blocked_bore_mm3": 5.089380098815465
+      "blocked_bore_mm3": 5.089380098815465,
+      "separated_cubes_distance_mm": 1.0,
+      "seated_head_lip_intersection_mm3": 0.0,
+      "head_insertion_lip_intersection_mm3": 0.9189158511750142
     }
   },
   "variant": "bore-20",
   "bore_mm": 20,
   "passed": true,
   "errors": [],
-  "part_count": 56,
-  "solid_count": 254,
+  "part_count": 91,
+  "solid_count": 510,
   "geometry": [
     {
       "name": "case_screw_01",
       "valid": true,
       "solid_count": 1,
-      "volume_mm3": 95.63698564695545,
-      "volume_round_trip_error_mm3": 1.8332002582610585e-12,
-      "bbox_round_trip_error_mm": 0.0,
+      "volume_mm3": 94.41307350899217,
+      "volume_round_trip_error_mm3": 3.836930773104541e-13,
+      "bbox_round_trip_error_mm": 7.105427357601002e-15,
       "round_trip_matches": true
     },
     {
       "name": "case_screw_02",
       "valid": true,
       "solid_count": 1,
-      "volume_mm3": 95.63698564695557,
-      "volume_round_trip_error_mm3": 1.8900436771218665e-12,
-      "bbox_round_trip_error_mm": 0.0,
+      "volume_mm3": 94.4130735089923,
+      "volume_round_trip_error_mm3": 3.126388037344441e-13,
+      "bbox_round_trip_error_mm": 7.105427357601002e-15,
       "round_trip_matches": true
     },
     {
       "name": "case_screw_03",
       "valid": true,
       "solid_count": 1,
-      "volume_mm3": 95.63698564695545,
-      "volume_round_trip_error_mm3": 1.8332002582610585e-12,
-      "bbox_round_trip_error_mm": 5.773159728050814e-15,
+      "volume_mm3": 94.41307350899216,
+      "volume_round_trip_error_mm3": 3.979039320256561e-13,
+      "bbox_round_trip_error_mm": 7.105427357601002e-15,
       "round_trip_matches": true
     },
     {
       "name": "case_screw_04",
       "valid": true,
       "solid_count": 1,
-      "volume_mm3": 95.63698564698034,
-      "volume_round_trip_error_mm3": 2.6687985155149363e-11,
-      "bbox_round_trip_error_mm": 0.0,
+      "volume_mm3": 94.41307350901452,
+      "volume_round_trip_error_mm3": 2.191313797084149e-11,
+      "bbox_round_trip_error_mm": 7.105427357601002e-15,
       "round_trip_matches": true
     },
     {
       "name": "rear_cap",
       "valid": true,
       "solid_count": 1,
-      "volume_mm3": 53051.9337695002,
-      "volume_round_trip_error_mm3": 1.229636836796999e-09,
+      "volume_mm3": 53045.83384376445,
+      "volume_round_trip_error_mm3": 1.2369127944111824e-09,
       "bbox_round_trip_error_mm": 0.0,
       "round_trip_matches": true
     },
@@ -75,7 +81,7 @@
       "valid": true,
       "solid_count": 1,
       "volume_mm3": 42418.5633596167,
-      "volume_round_trip_error_mm3": 1.8981518223881721e-07,
+      "volume_round_trip_error_mm3": 8.573668310418725e-06,
       "bbox_round_trip_error_mm": 1.4210854715202004e-14,
       "round_trip_matches": true
     },
@@ -83,117 +89,333 @@
       "name": "stator",
       "valid": true,
       "solid_count": 1,
-      "volume_mm3": 22721.426555774233,
-      "volume_round_trip_error_mm3": 1.3707904145121574e-08,
-      "bbox_round_trip_error_mm": 3.552713678800501e-15,
+      "volume_mm3": 24029.506891671794,
+      "volume_round_trip_error_mm3": 3.9217411540448666e-09,
+      "bbox_round_trip_error_mm": 0.0,
       "round_trip_matches": true
     },
     {
       "name": "winding_01",
       "valid": true,
-      "solid_count": 9,
-      "volume_mm3": 305.20534346213617,
-      "volume_round_trip_error_mm3": 2.034994395216927e-11,
-      "bbox_round_trip_error_mm": 1.000000082740371e-07,
+      "solid_count": 16,
+      "volume_mm3": 526.6442535671298,
+      "volume_round_trip_error_mm3": 3.558398020686582e-11,
+      "bbox_round_trip_error_mm": 1.000000260376055e-07,
+      "round_trip_matches": true
+    },
+    {
+      "name": "bobbin_01",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 206.4677231700331,
+      "volume_round_trip_error_mm3": 5.519495971384458e-11,
+      "bbox_round_trip_error_mm": 1.1102230246251565e-14,
       "round_trip_matches": true
     },
     {
       "name": "winding_02",
       "valid": true,
-      "solid_count": 9,
-      "volume_mm3": 305.2053434621331,
-      "volume_round_trip_error_mm3": 1.716671249596402e-11,
-      "bbox_round_trip_error_mm": 1.0000012906630218e-07,
+      "solid_count": 16,
+      "volume_mm3": 526.6442535671299,
+      "volume_round_trip_error_mm3": 3.558398020686582e-11,
+      "bbox_round_trip_error_mm": 1.0000032979462503e-07,
+      "round_trip_matches": true
+    },
+    {
+      "name": "bobbin_02",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 206.46772316997811,
+      "volume_round_trip_error_mm3": 3.126388037344441e-13,
+      "bbox_round_trip_error_mm": 2.227551476607914e-12,
       "round_trip_matches": true
     },
     {
       "name": "winding_03",
       "valid": true,
-      "solid_count": 9,
-      "volume_mm3": 305.20534346213105,
-      "volume_round_trip_error_mm3": 1.517719283583574e-11,
-      "bbox_round_trip_error_mm": 1.00000075775597e-07,
+      "solid_count": 16,
+      "volume_mm3": 526.6442535671285,
+      "volume_round_trip_error_mm3": 3.433342499192804e-11,
+      "bbox_round_trip_error_mm": 1.0000009353916539e-07,
+      "round_trip_matches": true
+    },
+    {
+      "name": "bobbin_03",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 206.46772317003592,
+      "volume_round_trip_error_mm3": 5.806555236631539e-11,
+      "bbox_round_trip_error_mm": 2.0534685063466895e-12,
       "round_trip_matches": true
     },
     {
       "name": "winding_04",
       "valid": true,
-      "solid_count": 9,
-      "volume_mm3": 305.2053434621362,
-      "volume_round_trip_error_mm3": 2.0520474208751693e-11,
+      "solid_count": 16,
+      "volume_mm3": 526.6442535671316,
+      "volume_round_trip_error_mm3": 3.7061909097246826e-11,
       "bbox_round_trip_error_mm": 1.0000000116860974e-07,
+      "round_trip_matches": true
+    },
+    {
+      "name": "bobbin_04",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 206.46772317007122,
+      "volume_round_trip_error_mm3": 9.339373718830757e-11,
+      "bbox_round_trip_error_mm": 4.298783551348606e-13,
       "round_trip_matches": true
     },
     {
       "name": "winding_05",
       "valid": true,
-      "solid_count": 9,
-      "volume_mm3": 305.2053434621321,
-      "volume_round_trip_error_mm3": 1.6086687537608668e-11,
-      "bbox_round_trip_error_mm": 1.0000012906630218e-07,
+      "solid_count": 16,
+      "volume_mm3": 526.6442535671242,
+      "volume_round_trip_error_mm3": 2.97859514830634e-11,
+      "bbox_round_trip_error_mm": 1.0000000116860974e-07,
+      "round_trip_matches": true
+    },
+    {
+      "name": "bobbin_05",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 206.46772316993594,
+      "volume_round_trip_error_mm3": 4.217781679471955e-11,
+      "bbox_round_trip_error_mm": 4.405364961712621e-13,
       "round_trip_matches": true
     },
     {
       "name": "winding_06",
       "valid": true,
-      "solid_count": 9,
-      "volume_mm3": 305.20534346213606,
-      "volume_round_trip_error_mm3": 2.0122570276726037e-11,
-      "bbox_round_trip_error_mm": 9.999060068821564e-08,
+      "solid_count": 16,
+      "volume_mm3": 526.6442535671295,
+      "volume_round_trip_error_mm3": 3.512923285597935e-11,
+      "bbox_round_trip_error_mm": 1.0000000116860974e-07,
+      "round_trip_matches": true
+    },
+    {
+      "name": "bobbin_06",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 206.4677231703664,
+      "volume_round_trip_error_mm3": 3.885531896230532e-10,
+      "bbox_round_trip_error_mm": 1.0258460747536446e-12,
       "round_trip_matches": true
     },
     {
       "name": "winding_07",
       "valid": true,
-      "solid_count": 9,
-      "volume_mm3": 305.20534346213617,
-      "volume_round_trip_error_mm3": 2.034994395216927e-11,
-      "bbox_round_trip_error_mm": 9.999978001218324e-08,
+      "solid_count": 16,
+      "volume_mm3": 526.6442535670906,
+      "volume_round_trip_error_mm3": 3.637978807091713e-12,
+      "bbox_round_trip_error_mm": 1.0000015038258425e-07,
+      "round_trip_matches": true
+    },
+    {
+      "name": "bobbin_07",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 206.46772317003007,
+      "volume_round_trip_error_mm3": 5.2153836804791354e-11,
+      "bbox_round_trip_error_mm": 9.034550885189674e-12,
       "round_trip_matches": true
     },
     {
       "name": "winding_08",
       "valid": true,
-      "solid_count": 9,
-      "volume_mm3": 305.20534346213424,
-      "volume_round_trip_error_mm3": 1.8530954548623413e-11,
-      "bbox_round_trip_error_mm": 9.999206618260814e-08,
+      "solid_count": 16,
+      "volume_mm3": 526.6442535671193,
+      "volume_round_trip_error_mm3": 2.467004378559068e-11,
+      "bbox_round_trip_error_mm": 1.0000000116860974e-07,
+      "round_trip_matches": true
+    },
+    {
+      "name": "bobbin_08",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 206.46772316944867,
+      "volume_round_trip_error_mm3": 5.29382759850705e-10,
+      "bbox_round_trip_error_mm": 5.094591415399918e-12,
       "round_trip_matches": true
     },
     {
       "name": "winding_09",
       "valid": true,
-      "solid_count": 9,
-      "volume_mm3": 305.205343462136,
-      "volume_round_trip_error_mm3": 2.0236257114447653e-11,
-      "bbox_round_trip_error_mm": 1.0000208305882552e-07,
+      "solid_count": 16,
+      "volume_mm3": 526.6442535671267,
+      "volume_round_trip_error_mm3": 3.205968823749572e-11,
+      "bbox_round_trip_error_mm": 1.0000020722600311e-07,
+      "round_trip_matches": true
+    },
+    {
+      "name": "bobbin_09",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 206.46772316992434,
+      "volume_round_trip_error_mm3": 5.368860911403317e-11,
+      "bbox_round_trip_error_mm": 6.73594513500575e-12,
       "round_trip_matches": true
     },
     {
       "name": "winding_10",
       "valid": true,
-      "solid_count": 9,
-      "volume_mm3": 305.2053434621362,
-      "volume_round_trip_error_mm3": 2.0520474208751693e-11,
-      "bbox_round_trip_error_mm": 1.0000000116860974e-07,
+      "solid_count": 16,
+      "volume_mm3": 526.6442535671299,
+      "volume_round_trip_error_mm3": 3.5697667044587433e-11,
+      "bbox_round_trip_error_mm": 1.0000003136667601e-07,
+      "round_trip_matches": true
+    },
+    {
+      "name": "bobbin_10",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 206.46772317003305,
+      "volume_round_trip_error_mm3": 5.510969458555337e-11,
+      "bbox_round_trip_error_mm": 1.509903313490213e-14,
       "round_trip_matches": true
     },
     {
       "name": "winding_11",
       "valid": true,
-      "solid_count": 9,
-      "volume_mm3": 305.2053434621342,
-      "volume_round_trip_error_mm3": 1.836042429204099e-11,
-      "bbox_round_trip_error_mm": 1.0000006867016964e-07,
+      "solid_count": 16,
+      "volume_mm3": 526.6442535671139,
+      "volume_round_trip_error_mm3": 1.921307557495311e-11,
+      "bbox_round_trip_error_mm": 1.0000033068280345e-07,
+      "round_trip_matches": true
+    },
+    {
+      "name": "bobbin_11",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 206.46772316978345,
+      "volume_round_trip_error_mm3": 1.9463186617940664e-10,
+      "bbox_round_trip_error_mm": 7.288392112059228e-12,
       "round_trip_matches": true
     },
     {
       "name": "winding_12",
       "valid": true,
-      "solid_count": 9,
-      "volume_mm3": 305.2053434621307,
-      "volume_round_trip_error_mm3": 1.4665602066088468e-11,
-      "bbox_round_trip_error_mm": 1.0000209371696656e-07,
+      "solid_count": 16,
+      "volume_mm3": 526.6442535671393,
+      "volume_round_trip_error_mm3": 4.5133674575481564e-11,
+      "bbox_round_trip_error_mm": 1.0000321992720274e-07,
+      "round_trip_matches": true
+    },
+    {
+      "name": "bobbin_12",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 206.46772316933158,
+      "volume_round_trip_error_mm3": 6.462812507379567e-10,
+      "bbox_round_trip_error_mm": 9.816147894525784e-12,
+      "round_trip_matches": true
+    },
+    {
+      "name": "winding_13",
+      "valid": true,
+      "solid_count": 16,
+      "volume_mm3": 526.6442535671737,
+      "volume_round_trip_error_mm3": 7.958078640513122e-11,
+      "bbox_round_trip_error_mm": 1.0000662342690703e-07,
+      "round_trip_matches": true
+    },
+    {
+      "name": "bobbin_13",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 206.46772317050917,
+      "volume_round_trip_error_mm3": 5.312017492542509e-10,
+      "bbox_round_trip_error_mm": 7.579714633720869e-12,
+      "round_trip_matches": true
+    },
+    {
+      "name": "winding_14",
+      "valid": true,
+      "solid_count": 16,
+      "volume_mm3": 526.64425356713,
+      "volume_round_trip_error_mm3": 3.558398020686582e-11,
+      "bbox_round_trip_error_mm": 1.0000000116860974e-07,
+      "round_trip_matches": true
+    },
+    {
+      "name": "bobbin_14",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 206.4677231700365,
+      "volume_round_trip_error_mm3": 5.837819117004983e-11,
+      "bbox_round_trip_error_mm": 8.704148513061227e-12,
+      "round_trip_matches": true
+    },
+    {
+      "name": "winding_15",
+      "valid": true,
+      "solid_count": 16,
+      "volume_mm3": 526.6442535671254,
+      "volume_round_trip_error_mm3": 3.115019353572279e-11,
+      "bbox_round_trip_error_mm": 1.0000088934702944e-07,
+      "round_trip_matches": true
+    },
+    {
+      "name": "bobbin_15",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 206.4677231699301,
+      "volume_round_trip_error_mm3": 4.786215868080035e-11,
+      "bbox_round_trip_error_mm": 8.711253940418828e-12,
+      "round_trip_matches": true
+    },
+    {
+      "name": "winding_16",
+      "valid": true,
+      "solid_count": 16,
+      "volume_mm3": 526.6442535671337,
+      "volume_round_trip_error_mm3": 3.9335645851679146e-11,
+      "bbox_round_trip_error_mm": 1.0000513128716193e-07,
+      "round_trip_matches": true
+    },
+    {
+      "name": "bobbin_16",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 206.46772317007492,
+      "volume_round_trip_error_mm3": 9.703171599539928e-11,
+      "bbox_round_trip_error_mm": 5.545786052607582e-12,
+      "round_trip_matches": true
+    },
+    {
+      "name": "winding_17",
+      "valid": true,
+      "solid_count": 16,
+      "volume_mm3": 526.6442535671356,
+      "volume_round_trip_error_mm3": 4.126832209294662e-11,
+      "bbox_round_trip_error_mm": 1.0000437100643467e-07,
+      "round_trip_matches": true
+    },
+    {
+      "name": "bobbin_17",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 206.46772316984942,
+      "volume_round_trip_error_mm3": 1.2869350030086935e-10,
+      "bbox_round_trip_error_mm": 5.588418616753188e-12,
+      "round_trip_matches": true
+    },
+    {
+      "name": "winding_18",
+      "valid": true,
+      "solid_count": 16,
+      "volume_mm3": 526.6442535671196,
+      "volume_round_trip_error_mm3": 2.523847797419876e-11,
+      "bbox_round_trip_error_mm": 1.000041969234644e-07,
+      "round_trip_matches": true
+    },
+    {
+      "name": "bobbin_18",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 206.46772317043119,
+      "volume_round_trip_error_mm3": 4.532978437055135e-10,
+      "bbox_round_trip_error_mm": 1.3713474800169934e-12,
       "round_trip_matches": true
     },
     {
@@ -201,7 +423,7 @@
       "valid": true,
       "solid_count": 1,
       "volume_mm3": 26274.77299015128,
-      "volume_round_trip_error_mm3": 1.8189894035458565e-11,
+      "volume_round_trip_error_mm3": 0.0,
       "bbox_round_trip_error_mm": 0.0,
       "round_trip_matches": true
     },
@@ -209,144 +431,144 @@
       "name": "magnet_01",
       "valid": true,
       "solid_count": 1,
-      "volume_mm3": 832.7997099126273,
-      "volume_round_trip_error_mm3": 1.8667378753889352e-10,
-      "bbox_round_trip_error_mm": 5.151434834260726e-12,
+      "volume_mm3": 832.0174619768266,
+      "volume_round_trip_error_mm3": 8.296865416923538e-10,
+      "bbox_round_trip_error_mm": 8.924416761146858e-12,
       "round_trip_matches": true
     },
     {
       "name": "magnet_02",
       "valid": true,
       "solid_count": 1,
-      "volume_mm3": 832.7997099116967,
-      "volume_round_trip_error_mm3": 7.437392923748121e-10,
-      "bbox_round_trip_error_mm": 4.924061158817494e-12,
+      "volume_mm3": 832.0174619760681,
+      "volume_round_trip_error_mm3": 7.139533408917487e-11,
+      "bbox_round_trip_error_mm": 1.0171863351615684e-11,
       "round_trip_matches": true
     },
     {
       "name": "magnet_03",
       "valid": true,
       "solid_count": 1,
-      "volume_mm3": 832.7997099130755,
-      "volume_round_trip_error_mm3": 6.348273018375039e-10,
-      "bbox_round_trip_error_mm": 7.064571150294796e-12,
+      "volume_mm3": 832.0174619769374,
+      "volume_round_trip_error_mm3": 9.405312084709294e-10,
+      "bbox_round_trip_error_mm": 9.684697488410166e-12,
       "round_trip_matches": true
     },
     {
       "name": "magnet_04",
       "valid": true,
       "solid_count": 1,
-      "volume_mm3": 832.7997099122626,
-      "volume_round_trip_error_mm3": 1.7769252735888585e-10,
-      "bbox_round_trip_error_mm": 3.4852121189032914e-12,
+      "volume_mm3": 832.0174619764712,
+      "volume_round_trip_error_mm3": 4.744151738123037e-10,
+      "bbox_round_trip_error_mm": 8.853362487570848e-12,
       "round_trip_matches": true
     },
     {
       "name": "magnet_05",
       "valid": true,
       "solid_count": 1,
-      "volume_mm3": 832.7997099124307,
-      "volume_round_trip_error_mm3": 1.000444171950221e-11,
-      "bbox_round_trip_error_mm": 4.725109192804666e-13,
+      "volume_mm3": 832.0174619764,
+      "volume_round_trip_error_mm3": 4.0313352656085044e-10,
+      "bbox_round_trip_error_mm": 8.419931418757187e-12,
       "round_trip_matches": true
     },
     {
       "name": "magnet_06",
       "valid": true,
       "solid_count": 1,
-      "volume_mm3": 832.799709912394,
-      "volume_round_trip_error_mm3": 4.695266397902742e-11,
-      "bbox_round_trip_error_mm": 9.894307595459395e-13,
+      "volume_mm3": 832.0174619761711,
+      "volume_round_trip_error_mm3": 1.7394086171407253e-10,
+      "bbox_round_trip_error_mm": 1.0157208407690632e-11,
       "round_trip_matches": true
     },
     {
       "name": "magnet_07",
       "valid": true,
       "solid_count": 1,
-      "volume_mm3": 832.7997099124436,
-      "volume_round_trip_error_mm3": 2.8421709430404007e-12,
-      "bbox_round_trip_error_mm": 5.613287612504791e-13,
+      "volume_mm3": 832.0174619762448,
+      "volume_round_trip_error_mm3": 2.476099325576797e-10,
+      "bbox_round_trip_error_mm": 1.0153655694011832e-11,
       "round_trip_matches": true
     },
     {
       "name": "magnet_08",
       "valid": true,
       "solid_count": 1,
-      "volume_mm3": 832.7997099124437,
-      "volume_round_trip_error_mm3": 3.296918293926865e-12,
-      "bbox_round_trip_error_mm": 3.197442310920451e-13,
+      "volume_mm3": 832.0174619765637,
+      "volume_round_trip_error_mm3": 5.668425728799775e-10,
+      "bbox_round_trip_error_mm": 8.423484132435988e-12,
       "round_trip_matches": true
     },
     {
       "name": "magnet_09",
       "valid": true,
       "solid_count": 1,
-      "volume_mm3": 832.7997099120938,
-      "volume_round_trip_error_mm3": 3.466311682132073e-10,
-      "bbox_round_trip_error_mm": 3.47633033470629e-12,
+      "volume_mm3": 832.017461976302,
+      "volume_round_trip_error_mm3": 3.051354724448174e-10,
+      "bbox_round_trip_error_mm": 8.853362487570848e-12,
       "round_trip_matches": true
     },
     {
       "name": "magnet_10",
       "valid": true,
       "solid_count": 1,
-      "volume_mm3": 832.7997099125722,
-      "volume_round_trip_error_mm3": 1.318767317570746e-10,
-      "bbox_round_trip_error_mm": 7.059242079776595e-12,
+      "volume_mm3": 832.0174619768259,
+      "volume_round_trip_error_mm3": 8.291181075037457e-10,
+      "bbox_round_trip_error_mm": 9.681588863941215e-12,
       "round_trip_matches": true
     },
     {
       "name": "magnet_11",
       "valid": true,
       "solid_count": 1,
-      "volume_mm3": 832.7997099120414,
-      "volume_round_trip_error_mm3": 3.9972292142920196e-10,
-      "bbox_round_trip_error_mm": 4.956035581926699e-12,
+      "volume_mm3": 832.0174619759122,
+      "volume_round_trip_error_mm3": 8.51514414534904e-11,
+      "bbox_round_trip_error_mm": 1.0174971976084635e-11,
       "round_trip_matches": true
     },
     {
       "name": "magnet_12",
       "valid": true,
       "solid_count": 1,
-      "volume_mm3": 832.7997099124273,
-      "volume_round_trip_error_mm3": 1.3415046851150692e-11,
-      "bbox_round_trip_error_mm": 5.154987547939527e-12,
+      "volume_mm3": 832.017461976964,
+      "volume_round_trip_error_mm3": 9.669065548223443e-10,
+      "bbox_round_trip_error_mm": 8.913758620110457e-12,
       "round_trip_matches": true
     },
     {
       "name": "magnet_13",
       "valid": true,
       "solid_count": 1,
-      "volume_mm3": 832.79970991229,
-      "volume_round_trip_error_mm3": 1.5063505998114124e-10,
-      "bbox_round_trip_error_mm": 5.151434834260726e-12,
+      "volume_mm3": 832.0174619767541,
+      "volume_round_trip_error_mm3": 7.572680260636844e-10,
+      "bbox_round_trip_error_mm": 9.563905223330949e-12,
       "round_trip_matches": true
     },
     {
       "name": "magnet_14",
       "valid": true,
       "solid_count": 1,
-      "volume_mm3": 832.7997099118754,
-      "volume_round_trip_error_mm3": 5.651372703141533e-10,
-      "bbox_round_trip_error_mm": 7.071676577652397e-12,
+      "volume_mm3": 832.017461976719,
+      "volume_round_trip_error_mm3": 7.224798537208699e-10,
+      "bbox_round_trip_error_mm": 9.709566484161769e-12,
       "round_trip_matches": true
     },
     {
       "name": "magnet_15",
       "valid": true,
       "solid_count": 1,
-      "volume_mm3": 832.7997099126735,
-      "volume_round_trip_error_mm3": 2.3283064365386963e-10,
-      "bbox_round_trip_error_mm": 8.620659741609416e-12,
+      "volume_mm3": 832.0174619766025,
+      "volume_round_trip_error_mm3": 6.056097845430486e-10,
+      "bbox_round_trip_error_mm": 9.698908343125368e-12,
       "round_trip_matches": true
     },
     {
       "name": "magnet_16",
       "valid": true,
       "solid_count": 1,
-      "volume_mm3": 832.7997099122329,
-      "volume_round_trip_error_mm3": 2.0793322619283572e-10,
-      "bbox_round_trip_error_mm": 5.151434834260726e-12,
+      "volume_mm3": 832.0174619768948,
+      "volume_round_trip_error_mm3": 8.977849574876018e-10,
+      "bbox_round_trip_error_mm": 9.57101065068855e-12,
       "round_trip_matches": true
     },
     {
@@ -354,7 +576,52 @@
       "valid": true,
       "solid_count": 1,
       "volume_mm3": 11922.344120373253,
-      "volume_round_trip_error_mm3": 9.094947017729282e-12,
+      "volume_round_trip_error_mm3": 0.0,
+      "bbox_round_trip_error_mm": 0.0,
+      "round_trip_matches": true
+    },
+    {
+      "name": "rear_bearing_carrier",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 4991.345391063127,
+      "volume_round_trip_error_mm3": 1.291482476517558e-10,
+      "bbox_round_trip_error_mm": 0.0,
+      "round_trip_matches": true
+    },
+    {
+      "name": "rear_bearing_retainer",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 459.7787450290954,
+      "volume_round_trip_error_mm3": 1.9815615814877674e-10,
+      "bbox_round_trip_error_mm": 0.0,
+      "round_trip_matches": true
+    },
+    {
+      "name": "rear_bearing_inner",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 3904.6218162245027,
+      "volume_round_trip_error_mm3": 3.1582203519064933e-09,
+      "bbox_round_trip_error_mm": 8.562039965909207e-13,
+      "round_trip_matches": true
+    },
+    {
+      "name": "rear_bearing_outer",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 1776.9219807465329,
+      "volume_round_trip_error_mm3": 3.6325218388810754e-09,
+      "bbox_round_trip_error_mm": 0.0,
+      "round_trip_matches": true
+    },
+    {
+      "name": "rear_bearing_balls",
+      "valid": true,
+      "solid_count": 36,
+      "volume_mm3": 109.9306101344141,
+      "volume_round_trip_error_mm3": 0.0,
       "bbox_round_trip_error_mm": 0.0,
       "round_trip_matches": true
     },
@@ -362,8 +629,8 @@
       "name": "gear_housing",
       "valid": true,
       "solid_count": 1,
-      "volume_mm3": 45503.46416710691,
-      "volume_round_trip_error_mm3": 4.3655745685100555e-11,
+      "volume_mm3": 51697.616738483615,
+      "volume_round_trip_error_mm3": 1.673470251262188e-10,
       "bbox_round_trip_error_mm": 1.6282089083761684e-27,
       "round_trip_matches": true
     },
@@ -371,44 +638,80 @@
       "name": "circular_spline",
       "valid": true,
       "solid_count": 1,
-      "volume_mm3": 25151.728041939063,
-      "volume_round_trip_error_mm3": 1.1918018572032452e-08,
+      "volume_mm3": 24178.46456650457,
+      "volume_round_trip_error_mm3": 1.928128767758608e-09,
       "bbox_round_trip_error_mm": 1.7763568394002505e-15,
+      "round_trip_matches": true
+    },
+    {
+      "name": "circular_spline_pilot",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 3216.694248097301,
+      "volume_round_trip_error_mm3": 2.9831426218152046e-10,
+      "bbox_round_trip_error_mm": 0.0,
+      "round_trip_matches": true
+    },
+    {
+      "name": "circular_spline_screws",
+      "valid": true,
+      "solid_count": 8,
+      "volume_mm3": 669.4486716103908,
+      "volume_round_trip_error_mm3": 5.03632691106759e-11,
+      "bbox_round_trip_error_mm": 1.8474111129762605e-13,
       "round_trip_matches": true
     },
     {
       "name": "flexspline",
       "valid": true,
       "solid_count": 1,
-      "volume_mm3": 16883.595628778836,
-      "volume_round_trip_error_mm3": 9.105860954150558e-09,
-      "bbox_round_trip_error_mm": 9.876544027065393e-13,
+      "volume_mm3": 17292.650980291735,
+      "volume_round_trip_error_mm3": 1.3831595424562693e-08,
+      "bbox_round_trip_error_mm": 1.7053025658242404e-12,
       "round_trip_matches": true
     },
     {
       "name": "wave_generator",
       "valid": true,
       "solid_count": 1,
-      "volume_mm3": 15498.85894424363,
-      "volume_round_trip_error_mm3": 8.331759636348579e-05,
-      "bbox_round_trip_error_mm": 1.7763568394002505e-15,
+      "volume_mm3": 16047.380940385585,
+      "volume_round_trip_error_mm3": 1.3460521586239338e-10,
+      "bbox_round_trip_error_mm": 4.61142235508305e-12,
       "round_trip_matches": true
     },
     {
       "name": "wave_bearing_outer",
       "valid": true,
       "solid_count": 1,
-      "volume_mm3": 756.0871061140522,
-      "volume_round_trip_error_mm3": 2.174597511839238e-06,
-      "bbox_round_trip_error_mm": 0.0,
+      "volume_mm3": 1199.3871212817976,
+      "volume_round_trip_error_mm3": 4.2928149923682213e-10,
+      "bbox_round_trip_error_mm": 3.2720492981752614e-12,
       "round_trip_matches": true
     },
     {
       "name": "wave_bearing_balls",
       "valid": true,
       "solid_count": 36,
-      "volume_mm3": 92.6078682425199,
-      "volume_round_trip_error_mm3": 4.263256414560601e-14,
+      "volume_mm3": 413.785451589619,
+      "volume_round_trip_error_mm3": 5.684341886080802e-14,
+      "bbox_round_trip_error_mm": 0.0,
+      "round_trip_matches": true
+    },
+    {
+      "name": "output_bearing_seal_23.5",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 137.0205635863174,
+      "volume_round_trip_error_mm3": 0.0,
+      "bbox_round_trip_error_mm": 0.0,
+      "round_trip_matches": true
+    },
+    {
+      "name": "output_bearing_seal_36",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 137.02056358631762,
+      "volume_round_trip_error_mm3": 0.0,
       "bbox_round_trip_error_mm": 0.0,
       "round_trip_matches": true
     },
@@ -416,8 +719,8 @@
       "name": "output_bearing_inner",
       "valid": true,
       "solid_count": 1,
-      "volume_mm3": 7037.167544041149,
-      "volume_round_trip_error_mm3": 1.4551915228366852e-11,
+      "volume_mm3": 16156.771194448034,
+      "volume_round_trip_error_mm3": 7.223206921480596e-09,
       "bbox_round_trip_error_mm": 0.0,
       "round_trip_matches": true
     },
@@ -425,35 +728,53 @@
       "name": "output_bearing_outer",
       "valid": true,
       "solid_count": 1,
-      "volume_mm3": 8846.724912508857,
-      "volume_round_trip_error_mm3": 2.9103830456733704e-11,
-      "bbox_round_trip_error_mm": 7.105427357601002e-15,
+      "volume_mm3": 18905.45113802016,
+      "volume_round_trip_error_mm3": 1.127773430198431e-08,
+      "bbox_round_trip_error_mm": 0.0,
       "round_trip_matches": true
     },
     {
       "name": "output_bearing_rollers",
       "valid": true,
       "solid_count": 28,
-      "volume_mm3": 2233.596978478606,
-      "volume_round_trip_error_mm3": 5.047695594839752e-11,
-      "bbox_round_trip_error_mm": 6.778577699151356e-12,
+      "volume_mm3": 2220.8287416864323,
+      "volume_round_trip_error_mm3": 3.1468516681343317e-10,
+      "bbox_round_trip_error_mm": 3.204547738278052e-12,
       "round_trip_matches": true
     },
     {
       "name": "output_bearing_separators",
       "valid": true,
       "solid_count": 28,
-      "volume_mm3": 473.0880000002806,
-      "volume_round_trip_error_mm3": 2.8052227207808755e-10,
-      "bbox_round_trip_error_mm": 4.689582056016661e-13,
+      "volume_mm3": 246.39999999987856,
+      "volume_round_trip_error_mm3": 1.2158807294326834e-10,
+      "bbox_round_trip_error_mm": 3.055333763768431e-12,
+      "round_trip_matches": true
+    },
+    {
+      "name": "output_spacer",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 2518.1121755583627,
+      "volume_round_trip_error_mm3": 2.2737367544323206e-12,
+      "bbox_round_trip_error_mm": 0.0,
+      "round_trip_matches": true
+    },
+    {
+      "name": "output_flange_screws",
+      "valid": true,
+      "solid_count": 6,
+      "volume_mm3": 1271.8900835160537,
+      "volume_round_trip_error_mm3": 1.1004885891452432e-10,
+      "bbox_round_trip_error_mm": 9.698908343125368e-13,
       "round_trip_matches": true
     },
     {
       "name": "output_flange",
       "valid": true,
       "solid_count": 1,
-      "volume_mm3": 70663.15711920042,
-      "volume_round_trip_error_mm3": 1.4551915228366852e-11,
+      "volume_mm3": 69309.31104526854,
+      "volume_round_trip_error_mm3": 1.1059455573558807e-09,
       "bbox_round_trip_error_mm": 0.0,
       "round_trip_matches": true
     },
@@ -462,7 +783,7 @@
       "valid": true,
       "solid_count": 1,
       "volume_mm3": 1.5550883635269674,
-      "volume_round_trip_error_mm3": 2.0650148258027912e-14,
+      "volume_round_trip_error_mm3": 1.9317880628477724e-14,
       "bbox_round_trip_error_mm": 7.105427357601002e-15,
       "round_trip_matches": true
     },
@@ -471,7 +792,7 @@
       "valid": true,
       "solid_count": 1,
       "volume_mm3": 1.5550883635269668,
-      "volume_round_trip_error_mm3": 1.9317880628477724e-14,
+      "volume_round_trip_error_mm3": 1.9095836023552692e-14,
       "bbox_round_trip_error_mm": 7.105427357601002e-15,
       "round_trip_matches": true
     },
@@ -489,7 +810,7 @@
       "valid": true,
       "solid_count": 1,
       "volume_mm3": 1.5550883635269699,
-      "volume_round_trip_error_mm3": 2.2648549702353193e-14,
+      "volume_round_trip_error_mm3": 2.220446049250313e-14,
       "bbox_round_trip_error_mm": 7.105427357601002e-15,
       "round_trip_matches": true
     },
@@ -498,7 +819,7 @@
       "valid": true,
       "solid_count": 1,
       "volume_mm3": 469.1049566773491,
-      "volume_round_trip_error_mm3": 1.8758328224066645e-12,
+      "volume_round_trip_error_mm3": 1.8189894035458565e-12,
       "bbox_round_trip_error_mm": 7.105427357601002e-15,
       "round_trip_matches": true
     },
@@ -516,7 +837,7 @@
       "valid": true,
       "solid_count": 1,
       "volume_mm3": 42.00000000000001,
-      "volume_round_trip_error_mm3": 7.105427357601002e-15,
+      "volume_round_trip_error_mm3": 0.0,
       "bbox_round_trip_error_mm": 0.0,
       "round_trip_matches": true
     },
@@ -525,16 +846,16 @@
       "valid": true,
       "solid_count": 14,
       "volume_mm3": 2.310000000000034,
-      "volume_round_trip_error_mm3": 4.1300296516055823e-14,
+      "volume_round_trip_error_mm3": 4.04121180963557e-14,
       "bbox_round_trip_error_mm": 7.105427357601002e-15,
       "round_trip_matches": true
     }
   ],
   "assembly": {
     "valid": true,
-    "solid_count": 254,
-    "volume_mm3": 367460.559838933,
-    "part_volume_sum_mm3": 367460.5598389325,
+    "solid_count": 510,
+    "volume_mm3": 421999.4365497479,
+    "part_volume_sum_mm3": 421999.4365497501,
     "bbox_mm": [
       [
         -48.000000000000014,
@@ -563,6 +884,7 @@
       "hole_diameter_mm": 4.4,
       "counterbore_diameter_mm": 7.6,
       "counterbore_depth_mm": 3.0,
+      "counterbore_mouth_chamfer_mm": 0.25,
       "bore_diameter_mm": 20,
       "bbox_mm": [
         [
@@ -676,49 +998,49 @@
         ],
         [
           3.8,
-          -48,
+          -47.75,
           44.34621756054176,
           18.36880475352431
         ],
         [
           3.8,
-          -48,
+          -47.75,
           18.368804753524312,
           44.34621756054176
         ],
         [
           3.8,
-          -48,
+          -47.75,
           -18.36880475352431,
           44.34621756054176
         ],
         [
           3.8,
-          -48,
+          -47.75,
           -44.34621756054176,
           18.368804753524316
         ],
         [
           3.8,
-          -48,
+          -47.75,
           -44.346217560541774,
           -18.368804753524284
         ],
         [
           3.8,
-          -48,
+          -47.75,
           -18.368804753524294,
           -44.34621756054177
         ],
         [
           3.8,
-          -48,
+          -47.75,
           18.36880475352432,
           -44.34621756054176
         ],
         [
           3.8,
-          -48,
+          -47.75,
           44.34621756054177,
           -18.368804753524298
         ],
@@ -767,6 +1089,54 @@
         [
           3.8,
           -45,
+          44.34621756054177,
+          -18.368804753524298
+        ],
+        [
+          4.05,
+          -48,
+          44.34621756054176,
+          18.36880475352431
+        ],
+        [
+          4.05,
+          -48,
+          18.368804753524312,
+          44.34621756054176
+        ],
+        [
+          4.05,
+          -48,
+          -18.36880475352431,
+          44.34621756054176
+        ],
+        [
+          4.05,
+          -48,
+          -44.34621756054176,
+          18.368804753524316
+        ],
+        [
+          4.05,
+          -48,
+          -44.346217560541774,
+          -18.368804753524284
+        ],
+        [
+          4.05,
+          -48,
+          -18.368804753524294,
+          -44.34621756054177
+        ],
+        [
+          4.05,
+          -48,
+          18.36880475352432,
+          -44.34621756054176
+        ],
+        [
+          4.05,
+          -48,
           44.34621756054177,
           -18.368804753524298
         ],
@@ -804,6 +1174,7 @@
       "hole_diameter_mm": 4.4,
       "counterbore_diameter_mm": 7.6,
       "counterbore_depth_mm": 3.0,
+      "counterbore_mouth_chamfer_mm": 0.25,
       "bore_diameter_mm": 20,
       "bbox_mm": [
         [
@@ -965,48 +1336,96 @@
         ],
         [
           3.8,
-          48,
+          47.75,
           36.95518130045147,
           15.307337294603592
         ],
         [
           3.8,
-          48,
+          47.75,
           15.307337294603593,
           36.95518130045147
         ],
         [
           3.8,
-          48,
+          47.75,
           -15.307337294603588,
           36.95518130045147
         ],
         [
           3.8,
-          48,
+          47.75,
           -36.95518130045147,
           15.307337294603595
         ],
         [
           3.8,
-          48,
+          47.75,
           -36.95518130045148,
           -15.307337294603569
         ],
         [
           3.8,
-          48,
+          47.75,
           -15.307337294603581,
           -36.95518130045147
         ],
         [
           3.8,
-          48,
+          47.75,
           15.3073372946036,
           -36.955181300451464
         ],
         [
           3.8,
+          47.75,
+          36.95518130045147,
+          -15.307337294603583
+        ],
+        [
+          4.05,
+          48,
+          36.95518130045147,
+          15.307337294603592
+        ],
+        [
+          4.05,
+          48,
+          15.307337294603593,
+          36.95518130045147
+        ],
+        [
+          4.05,
+          48,
+          -15.307337294603588,
+          36.95518130045147
+        ],
+        [
+          4.05,
+          48,
+          -36.95518130045147,
+          15.307337294603595
+        ],
+        [
+          4.05,
+          48,
+          -36.95518130045148,
+          -15.307337294603569
+        ],
+        [
+          4.05,
+          48,
+          -15.307337294603581,
+          -36.95518130045147
+        ],
+        [
+          4.05,
+          48,
+          15.3073372946036,
+          -36.955181300451464
+        ],
+        [
+          4.05,
           48,
           36.95518130045147,
           -15.307337294603583
@@ -1030,18 +1449,556 @@
   "clearances": {
     "motor_air_gap": {
       "passed": true,
-      "measured_minimum_mm": 1.4003484056138142,
+      "measured_minimum_mm": 1.3999999999916892,
       "required_minimum_mm": 1.4
     },
     "shaft_to_wave_generator": {
       "passed": true,
-      "measured_minimum_mm": 0.19999999999999413,
+      "measured_minimum_mm": 0.19999999999999465,
       "required_minimum_mm": 0.2
     },
     "undeformed_tooth_gap": {
       "passed": true,
-      "measured_minimum_mm": 0.5963569562059677,
+      "measured_minimum_mm": 0.597305485546887,
       "required_minimum_mm": 0.596354475595426
+    }
+  },
+  "bearing_proximity": {
+    "rear": {
+      "passed": true,
+      "rolling_element_count": 36,
+      "nominal_gap_limits_mm": [
+        0.09,
+        0.11
+      ],
+      "minimum_gap_mm": 0.09999999998877175,
+      "maximum_gap_mm": 0.09999999999675459,
+      "measurements": [
+        {
+          "index": 0,
+          "inner_gap_mm": 0.09999999999337757,
+          "outer_gap_mm": 0.09999999999337757
+        },
+        {
+          "index": 1,
+          "inner_gap_mm": 0.09999999999328739,
+          "outer_gap_mm": 0.09999999999346103
+        },
+        {
+          "index": 2,
+          "inner_gap_mm": 0.09999999999335331,
+          "outer_gap_mm": 0.09999999999340317
+        },
+        {
+          "index": 3,
+          "inner_gap_mm": 0.09999999999332093,
+          "outer_gap_mm": 0.09999999999342835
+        },
+        {
+          "index": 4,
+          "inner_gap_mm": 0.09999999999341967,
+          "outer_gap_mm": 0.09999999999333599
+        },
+        {
+          "index": 5,
+          "inner_gap_mm": 0.09999999999341934,
+          "outer_gap_mm": 0.09999999999334312
+        },
+        {
+          "index": 6,
+          "inner_gap_mm": 0.0999999999933277,
+          "outer_gap_mm": 0.09999999999343538
+        },
+        {
+          "index": 7,
+          "inner_gap_mm": 0.09999999999335331,
+          "outer_gap_mm": 0.09999999999341004
+        },
+        {
+          "index": 8,
+          "inner_gap_mm": 0.09999999999329519,
+          "outer_gap_mm": 0.09999999999346892
+        },
+        {
+          "index": 9,
+          "inner_gap_mm": 0.09999999999338541,
+          "outer_gap_mm": 0.09999999999338541
+        },
+        {
+          "index": 10,
+          "inner_gap_mm": 0.09999999999329519,
+          "outer_gap_mm": 0.09999999999346892
+        },
+        {
+          "index": 11,
+          "inner_gap_mm": 0.09999999999336018,
+          "outer_gap_mm": 0.09999999999340996
+        },
+        {
+          "index": 12,
+          "inner_gap_mm": 0.09999999999332745,
+          "outer_gap_mm": 0.09999999999343565
+        },
+        {
+          "index": 13,
+          "inner_gap_mm": 0.0999999999920703,
+          "outer_gap_mm": 0.0999999999946933
+        },
+        {
+          "index": 14,
+          "inner_gap_mm": 0.09999999999135083,
+          "outer_gap_mm": 0.09999999999539844
+        },
+        {
+          "index": 15,
+          "inner_gap_mm": 0.09999999999254247,
+          "outer_gap_mm": 0.0999999999942132
+        },
+        {
+          "index": 16,
+          "inner_gap_mm": 0.09999999999221973,
+          "outer_gap_mm": 0.09999999999452934
+        },
+        {
+          "index": 17,
+          "inner_gap_mm": 0.09999999999151654,
+          "outer_gap_mm": 0.09999999999523204
+        },
+        {
+          "index": 18,
+          "inner_gap_mm": 0.09999999999337757,
+          "outer_gap_mm": 0.09999999999337757
+        },
+        {
+          "index": 19,
+          "inner_gap_mm": 0.09999999999151656,
+          "outer_gap_mm": 0.09999999999523201
+        },
+        {
+          "index": 20,
+          "inner_gap_mm": 0.09999999999221981,
+          "outer_gap_mm": 0.09999999999452924
+        },
+        {
+          "index": 21,
+          "inner_gap_mm": 0.09999999999254221,
+          "outer_gap_mm": 0.0999999999942132
+        },
+        {
+          "index": 22,
+          "inner_gap_mm": 0.09999999999000143,
+          "outer_gap_mm": 0.09999999999675459
+        },
+        {
+          "index": 23,
+          "inner_gap_mm": 0.09999999998877175,
+          "outer_gap_mm": 0.09999999999674664
+        },
+        {
+          "index": 24,
+          "inner_gap_mm": 0.09999999999253449,
+          "outer_gap_mm": 0.09999999999420642
+        },
+        {
+          "index": 25,
+          "inner_gap_mm": 0.09999999999221286,
+          "outer_gap_mm": 0.09999999999452146
+        },
+        {
+          "index": 26,
+          "inner_gap_mm": 0.09999999999150973,
+          "outer_gap_mm": 0.09999999999522526
+        },
+        {
+          "index": 27,
+          "inner_gap_mm": 0.09999999999337757,
+          "outer_gap_mm": 0.09999999999337757
+        },
+        {
+          "index": 28,
+          "inner_gap_mm": 0.09999999999150977,
+          "outer_gap_mm": 0.09999999999522521
+        },
+        {
+          "index": 29,
+          "inner_gap_mm": 0.09999999999221296,
+          "outer_gap_mm": 0.09999999999452137
+        },
+        {
+          "index": 30,
+          "inner_gap_mm": 0.09999999999253449,
+          "outer_gap_mm": 0.09999999999420642
+        },
+        {
+          "index": 31,
+          "inner_gap_mm": 0.09999999999135083,
+          "outer_gap_mm": 0.09999999999539762
+        },
+        {
+          "index": 32,
+          "inner_gap_mm": 0.0999999999920703,
+          "outer_gap_mm": 0.09999999999468537
+        },
+        {
+          "index": 33,
+          "inner_gap_mm": 0.09999999999332067,
+          "outer_gap_mm": 0.09999999999342861
+        },
+        {
+          "index": 34,
+          "inner_gap_mm": 0.09999999999335321,
+          "outer_gap_mm": 0.09999999999340226
+        },
+        {
+          "index": 35,
+          "inner_gap_mm": 0.09999999999328839,
+          "outer_gap_mm": 0.09999999999346107
+        }
+      ]
+    },
+    "wave": {
+      "passed": true,
+      "rolling_element_count": 36,
+      "nominal_gap_limits_mm": [
+        0.09,
+        0.11
+      ],
+      "minimum_gap_mm": 0.0999964717248942,
+      "maximum_gap_mm": 0.10000045892813664,
+      "measurements": [
+        {
+          "index": 0,
+          "inner_gap_mm": 0.09999999999999093,
+          "outer_gap_mm": 0.09999999999789475
+        },
+        {
+          "index": 1,
+          "inner_gap_mm": 0.09999796050618455,
+          "outer_gap_mm": 0.09999934065672827
+        },
+        {
+          "index": 2,
+          "inner_gap_mm": 0.0999976755768434,
+          "outer_gap_mm": 0.09999829699621612
+        },
+        {
+          "index": 3,
+          "inner_gap_mm": 0.09999966752348124,
+          "outer_gap_mm": 0.09999987981959113
+        },
+        {
+          "index": 4,
+          "inner_gap_mm": 0.1000001064305275,
+          "outer_gap_mm": 0.1000001465410515
+        },
+        {
+          "index": 5,
+          "inner_gap_mm": 0.10000031643641275,
+          "outer_gap_mm": 0.10000045888655706
+        },
+        {
+          "index": 6,
+          "inner_gap_mm": 0.10000011587671366,
+          "outer_gap_mm": 0.10000014070355714
+        },
+        {
+          "index": 7,
+          "inner_gap_mm": 0.09999647172598626,
+          "outer_gap_mm": 0.0999990485494706
+        },
+        {
+          "index": 8,
+          "inner_gap_mm": 0.09999716090167411,
+          "outer_gap_mm": 0.09999926495574174
+        },
+        {
+          "index": 9,
+          "inner_gap_mm": 0.09999999999293072,
+          "outer_gap_mm": 0.09999999999990213
+        },
+        {
+          "index": 10,
+          "inner_gap_mm": 0.09999716090117114,
+          "outer_gap_mm": 0.0999992650172936
+        },
+        {
+          "index": 11,
+          "inner_gap_mm": 0.0999964717248942,
+          "outer_gap_mm": 0.09999902886380178
+        },
+        {
+          "index": 12,
+          "inner_gap_mm": 0.10000011581699261,
+          "outer_gap_mm": 0.10000014068326085
+        },
+        {
+          "index": 13,
+          "inner_gap_mm": 0.10000031640458044,
+          "outer_gap_mm": 0.10000045892813664
+        },
+        {
+          "index": 14,
+          "inner_gap_mm": 0.10000010640097942,
+          "outer_gap_mm": 0.10000014652957334
+        },
+        {
+          "index": 15,
+          "inner_gap_mm": 0.09999966752521301,
+          "outer_gap_mm": 0.09999974073085081
+        },
+        {
+          "index": 16,
+          "inner_gap_mm": 0.09999767558296335,
+          "outer_gap_mm": 0.09999926954358028
+        },
+        {
+          "index": 17,
+          "inner_gap_mm": 0.09999796051136832,
+          "outer_gap_mm": 0.09999822499249066
+        },
+        {
+          "index": 18,
+          "inner_gap_mm": 0.09999999999999198,
+          "outer_gap_mm": 0.09999999999838315
+        },
+        {
+          "index": 19,
+          "inner_gap_mm": 0.09999796051134338,
+          "outer_gap_mm": 0.09999822499213673
+        },
+        {
+          "index": 20,
+          "inner_gap_mm": 0.09999767558299495,
+          "outer_gap_mm": 0.09999926954303515
+        },
+        {
+          "index": 21,
+          "inner_gap_mm": 0.09999966752550674,
+          "outer_gap_mm": 0.0999997407293849
+        },
+        {
+          "index": 22,
+          "inner_gap_mm": 0.10000010639920189,
+          "outer_gap_mm": 0.10000014653054179
+        },
+        {
+          "index": 23,
+          "inner_gap_mm": 0.10000031640579715,
+          "outer_gap_mm": 0.10000045892708086
+        },
+        {
+          "index": 24,
+          "inner_gap_mm": 0.10000011581819382,
+          "outer_gap_mm": 0.10000014068256133
+        },
+        {
+          "index": 25,
+          "inner_gap_mm": 0.09999647172492235,
+          "outer_gap_mm": 0.0999990288631588
+        },
+        {
+          "index": 26,
+          "inner_gap_mm": 0.0999971609011403,
+          "outer_gap_mm": 0.09999926501435484
+        },
+        {
+          "index": 27,
+          "inner_gap_mm": 0.09999999999353483,
+          "outer_gap_mm": 0.09999999999780364
+        },
+        {
+          "index": 28,
+          "inner_gap_mm": 0.09999716090171047,
+          "outer_gap_mm": 0.09999926495290484
+        },
+        {
+          "index": 29,
+          "inner_gap_mm": 0.09999647172619186,
+          "outer_gap_mm": 0.09999904854849956
+        },
+        {
+          "index": 30,
+          "inner_gap_mm": 0.1000001158789067,
+          "outer_gap_mm": 0.1000001407011385
+        },
+        {
+          "index": 31,
+          "inner_gap_mm": 0.10000031643735671,
+          "outer_gap_mm": 0.1000004588857285
+        },
+        {
+          "index": 32,
+          "inner_gap_mm": 0.10000010642948272,
+          "outer_gap_mm": 0.10000014654039001
+        },
+        {
+          "index": 33,
+          "inner_gap_mm": 0.09999966752389682,
+          "outer_gap_mm": 0.0999998798182252
+        },
+        {
+          "index": 34,
+          "inner_gap_mm": 0.09999767557697727,
+          "outer_gap_mm": 0.09999829699541804
+        },
+        {
+          "index": 35,
+          "inner_gap_mm": 0.09999796050618988,
+          "outer_gap_mm": 0.09999934065664201
+        }
+      ]
+    },
+    "output": {
+      "passed": true,
+      "rolling_element_count": 28,
+      "nominal_gap_limits_mm": [
+        0,
+        0.25
+      ],
+      "minimum_gap_mm": 0.036315524853191054,
+      "maximum_gap_mm": 0.07487373415266435,
+      "measurements": [
+        {
+          "index": 0,
+          "inner_gap_mm": 0.07487373415250907,
+          "outer_gap_mm": 0.036315524855693344
+        },
+        {
+          "index": 1,
+          "inner_gap_mm": 0.07487373415254411,
+          "outer_gap_mm": 0.03631552485319281
+        },
+        {
+          "index": 2,
+          "inner_gap_mm": 0.07487373415075908,
+          "outer_gap_mm": 0.036315524856457525
+        },
+        {
+          "index": 3,
+          "inner_gap_mm": 0.07487373415170448,
+          "outer_gap_mm": 0.036315524853582595
+        },
+        {
+          "index": 4,
+          "inner_gap_mm": 0.07487373414980293,
+          "outer_gap_mm": 0.03631552485630916
+        },
+        {
+          "index": 5,
+          "inner_gap_mm": 0.07487373415265765,
+          "outer_gap_mm": 0.03631552485342695
+        },
+        {
+          "index": 6,
+          "inner_gap_mm": 0.07487373415064642,
+          "outer_gap_mm": 0.03631552485509273
+        },
+        {
+          "index": 7,
+          "inner_gap_mm": 0.07487373415250907,
+          "outer_gap_mm": 0.036315524853792865
+        },
+        {
+          "index": 8,
+          "inner_gap_mm": 0.07487373415064712,
+          "outer_gap_mm": 0.03631552485509797
+        },
+        {
+          "index": 9,
+          "inner_gap_mm": 0.07487373415266435,
+          "outer_gap_mm": 0.03631552485693315
+        },
+        {
+          "index": 10,
+          "inner_gap_mm": 0.07487373414892312,
+          "outer_gap_mm": 0.036315524858773394
+        },
+        {
+          "index": 11,
+          "inner_gap_mm": 0.07487373415115076,
+          "outer_gap_mm": 0.03631552485599185
+        },
+        {
+          "index": 12,
+          "inner_gap_mm": 0.07487373414502967,
+          "outer_gap_mm": 0.036315524856628215
+        },
+        {
+          "index": 13,
+          "inner_gap_mm": 0.07487373415255123,
+          "outer_gap_mm": 0.036315524855907756
+        },
+        {
+          "index": 14,
+          "inner_gap_mm": 0.07487373414935884,
+          "outer_gap_mm": 0.036315524861342215
+        },
+        {
+          "index": 15,
+          "inner_gap_mm": 0.0748737341525469,
+          "outer_gap_mm": 0.03631552485590837
+        },
+        {
+          "index": 16,
+          "inner_gap_mm": 0.0748737341450313,
+          "outer_gap_mm": 0.03631552485854128
+        },
+        {
+          "index": 17,
+          "inner_gap_mm": 0.07487373415027172,
+          "outer_gap_mm": 0.03631552485859735
+        },
+        {
+          "index": 18,
+          "inner_gap_mm": 0.0748737341483676,
+          "outer_gap_mm": 0.03631552486164462
+        },
+        {
+          "index": 19,
+          "inner_gap_mm": 0.07487373414693242,
+          "outer_gap_mm": 0.03631552485664625
+        },
+        {
+          "index": 20,
+          "inner_gap_mm": 0.07487373415064376,
+          "outer_gap_mm": 0.036315524857808354
+        },
+        {
+          "index": 21,
+          "inner_gap_mm": 0.07487373415109726,
+          "outer_gap_mm": 0.03631552485943956
+        },
+        {
+          "index": 22,
+          "inner_gap_mm": 0.07487373415064684,
+          "outer_gap_mm": 0.036315524857812316
+        },
+        {
+          "index": 23,
+          "inner_gap_mm": 0.0748737341469346,
+          "outer_gap_mm": 0.036315524854732203
+        },
+        {
+          "index": 24,
+          "inner_gap_mm": 0.07487373414925055,
+          "outer_gap_mm": 0.03631552485720346
+        },
+        {
+          "index": 25,
+          "inner_gap_mm": 0.07487373415082176,
+          "outer_gap_mm": 0.036315524858153876
+        },
+        {
+          "index": 26,
+          "inner_gap_mm": 0.07487373415076085,
+          "outer_gap_mm": 0.03631552485723796
+        },
+        {
+          "index": 27,
+          "inner_gap_mm": 0.07487373415254243,
+          "outer_gap_mm": 0.036315524853191054
+        }
+      ]
     }
   },
   "cutaway_parts": [
@@ -1055,119 +2012,307 @@
     {
       "name": "stator",
       "valid": true,
-      "volume_mm3": 19734.97360140822,
+      "volume_mm3": 21357.417406501758,
+      "material_outside_canonical_part_mm3": 0.0,
+      "passed": true
+    },
+    {
+      "name": "rear_bearing_carrier",
+      "valid": true,
+      "volume_mm3": 3743.5090432974775,
+      "material_outside_canonical_part_mm3": 0.0,
+      "passed": true
+    },
+    {
+      "name": "rear_bearing_retainer",
+      "valid": true,
+      "volume_mm3": 344.83405877199345,
+      "material_outside_canonical_part_mm3": 0.0,
+      "passed": true
+    },
+    {
+      "name": "rear_bearing_outer",
+      "valid": true,
+      "volume_mm3": 1332.6914855589703,
       "material_outside_canonical_part_mm3": 0.0,
       "passed": true
     },
     {
       "name": "gear_housing",
       "valid": true,
-      "volume_mm3": 34127.59812532905,
+      "volume_mm3": 38773.21255386154,
       "material_outside_canonical_part_mm3": 0.0,
       "passed": true
     },
     {
       "name": "circular_spline",
       "valid": true,
-      "volume_mm3": 18861.409443539276,
+      "volume_mm3": 18131.46509075122,
+      "material_outside_canonical_part_mm3": 0.0,
+      "passed": true
+    },
+    {
+      "name": "circular_spline_pilot",
+      "valid": true,
+      "volume_mm3": 2412.5206860701787,
+      "material_outside_canonical_part_mm3": 0.0,
+      "passed": true
+    },
+    {
+      "name": "circular_spline_screws",
+      "valid": true,
+      "volume_mm3": 502.08650370778315,
       "material_outside_canonical_part_mm3": 0.0,
       "passed": true
     },
     {
       "name": "flexspline",
       "valid": true,
-      "volume_mm3": 12662.696721590923,
+      "volume_mm3": 12969.488217222473,
       "material_outside_canonical_part_mm3": 0.0,
       "passed": true
     },
     {
       "name": "wave_bearing_outer",
       "valid": true,
-      "volume_mm3": 567.0653279649359,
+      "volume_mm3": 899.5403080482571,
+      "material_outside_canonical_part_mm3": 0.0,
+      "passed": true
+    },
+    {
+      "name": "output_bearing_seal_23.5",
+      "valid": true,
+      "volume_mm3": 102.76542268974421,
+      "material_outside_canonical_part_mm3": 0.0,
+      "passed": true
+    },
+    {
+      "name": "output_bearing_seal_36",
+      "valid": true,
+      "volume_mm3": 102.76542268973365,
       "material_outside_canonical_part_mm3": 0.0,
       "passed": true
     },
     {
       "name": "output_bearing_outer",
       "valid": true,
-      "volume_mm3": 6635.043684381646,
+      "volume_mm3": 14179.088353523905,
       "material_outside_canonical_part_mm3": 0.0,
       "passed": true
     }
   ],
+  "front_screw_insertion": {
+    "passed": true,
+    "insertion_direction": "-X from the front face",
+    "screw_count": 6,
+    "screws": [
+      {
+        "index": 0,
+        "axis_yz_mm": [
+          21.65063509461097,
+          12.499999999999998
+        ],
+        "head_radius_mm": 3.05,
+        "shank_radius_mm": 1.8,
+        "entry_x_mm": 49,
+        "head_seating_x_mm": 44,
+        "shank_tip_x_mm": 30.2,
+        "native_screw_matches": true,
+        "obstructions": [],
+        "passed": true
+      },
+      {
+        "index": 1,
+        "axis_yz_mm": [
+          1.5308084989341915e-15,
+          25.0
+        ],
+        "head_radius_mm": 3.05,
+        "shank_radius_mm": 1.8,
+        "entry_x_mm": 49,
+        "head_seating_x_mm": 44,
+        "shank_tip_x_mm": 30.2,
+        "native_screw_matches": true,
+        "obstructions": [],
+        "passed": true
+      },
+      {
+        "index": 2,
+        "axis_yz_mm": [
+          -21.65063509461097,
+          12.499999999999998
+        ],
+        "head_radius_mm": 3.05,
+        "shank_radius_mm": 1.8,
+        "entry_x_mm": 49,
+        "head_seating_x_mm": 44,
+        "shank_tip_x_mm": 30.2,
+        "native_screw_matches": true,
+        "obstructions": [],
+        "passed": true
+      },
+      {
+        "index": 3,
+        "axis_yz_mm": [
+          -21.65063509461097,
+          -12.499999999999995
+        ],
+        "head_radius_mm": 3.05,
+        "shank_radius_mm": 1.8,
+        "entry_x_mm": 49,
+        "head_seating_x_mm": 44,
+        "shank_tip_x_mm": 30.2,
+        "native_screw_matches": true,
+        "obstructions": [],
+        "passed": true
+      },
+      {
+        "index": 4,
+        "axis_yz_mm": [
+          -4.592425496802574e-15,
+          -25.0
+        ],
+        "head_radius_mm": 3.05,
+        "shank_radius_mm": 1.8,
+        "entry_x_mm": 49,
+        "head_seating_x_mm": 44,
+        "shank_tip_x_mm": 30.2,
+        "native_screw_matches": true,
+        "obstructions": [],
+        "passed": true
+      },
+      {
+        "index": 5,
+        "axis_yz_mm": [
+          21.65063509461096,
+          -12.50000000000001
+        ],
+        "head_radius_mm": 3.05,
+        "shank_radius_mm": 1.8,
+        "entry_x_mm": 49,
+        "head_seating_x_mm": 44,
+        "shank_tip_x_mm": 30.2,
+        "native_screw_matches": true,
+        "obstructions": [],
+        "passed": true
+      }
+    ]
+  },
   "collisions": {
-    "pairs": 1540,
-    "exact_tests": 154,
+    "pairs": 4095,
+    "exact_tests": 328,
     "intersection_tolerance_mm3": 1e-05,
     "overlaps": [],
-    "within_part_exact_tests": 268,
+    "within_part_exact_tests": 1608,
     "within_part_overlaps": []
   },
   "input_sha256": {
-    "manifest.json": "08437ea2137129d78b21c67c6e97917efdd321bcd383b2b0a9f1b8c91bfac057",
-    "parts/case_screw_01.step": "9b26b15c8b5a819864a19351e3b10291839158a52b70ad708e1ba527df5f0d1b",
-    "parts/case_screw_02.step": "824a1330dc203e7d4a4b9e7eb429e2bdf47bce024d62b0a97eb26d9d0ac34496",
-    "parts/case_screw_03.step": "95cc5e0912a6bf03b2ca19bd8712a49b48c66e7afb6aa635639b2b68dfdbc76c",
-    "parts/case_screw_04.step": "b7c892c6fe7e20754d9bf9b5f03727f7ae1e4e6688a2fb5cd880e894c22b299a",
-    "parts/rear_cap.step": "699e56bd767d768becf543803abd0a33d4754ccbac0e85cb0343cba4f46be157",
-    "parts/motor_housing.step": "6ba3949be5b3b84ec416f4ebb88b8a59314ee201e0da6cff281466178bd5a924",
-    "parts/stator.step": "b842fc133d526e483bffb6dd9573631a9d77e74d727b136c3cbb054c746cd759",
-    "parts/winding_01.step": "d7429f8a242feb154c724d6a102add527a2d2f066d3eea26a60821aeb4a35e8e",
-    "parts/winding_02.step": "67702d5ee17624a14f3303b10d0af8f3127185995917e22216341383dfabbb43",
-    "parts/winding_03.step": "1761279b480b287169012de9cffbd9b52346cccd3cd8a2a59eeb1c9b9e2620af",
-    "parts/winding_04.step": "1dde568d312c33e739e31d719bd0d3ad5da460bf4c0a9b454abb3c75afc23409",
-    "parts/winding_05.step": "26c3c1e72d8f0ea86cfb48fcb8ff2b8005e2dae26db7e61201d5db7e85a41aa9",
-    "parts/winding_06.step": "aad6d6ca667da7fb5dba23ad50f7baae8f5628a144795cb386acf996fe0ac389",
-    "parts/winding_07.step": "113b4c865f69f51c2119c9be8fc15c1214083279a28db680f54ac12e22f97b50",
-    "parts/winding_08.step": "4188ab3eb2e35a2ffa551503a87ce63e2b4999e488b1000bca76384611194bad",
-    "parts/winding_09.step": "b0d4a4daf8e6ecb1733a5768aff4c62d0387dec22e8b5e9e9e1368e1a4416f32",
-    "parts/winding_10.step": "17a962a2b4c497e5a3e3c1fbc6b8d4bd793900be38e476c235dd31f6a3cb0a81",
-    "parts/winding_11.step": "97dc6236b253dcbf7c2ce970690b79bbdf9ff119f822a6baff95869b287984b7",
-    "parts/winding_12.step": "cbf3000288093e5ffbbf72fa7622e48c8af97fbacd32792d37f6c5a31359c302",
-    "parts/rotor_drum.step": "94b81e2a2e4189ef432e9781e6b04d2a601a44e2e870d94ffe351975863d3b22",
-    "parts/magnet_01.step": "d26d5417a4fd991cb1c148de342943780d393f31e72c8b8e06c1c06fafcaeae8",
-    "parts/magnet_02.step": "2bb04ac4563dbe804e5dbb3b8fe75114175d65169fc658d519f0074ea34f5c75",
-    "parts/magnet_03.step": "c35c110e1503a9f89428b89a5bb892236ce7865eadb0845da0bd37ecb1b2ddab",
-    "parts/magnet_04.step": "002c497abbcc78a6e15fb10be899bba4386b885ceac62efd332e37c318a61582",
-    "parts/magnet_05.step": "6b345a758eccc4b76e9896e657c1a50c427674e8bf6f1f074f0492e1f709a608",
-    "parts/magnet_06.step": "9322d48372cdd64f9a48d50e3b338a33a3e331a35ef44c9206c252bffa0fc20b",
-    "parts/magnet_07.step": "919045488831189b6046eab3b7d967fcaf3644ce89af887cde0bcce026413fb5",
-    "parts/magnet_08.step": "c4ff0047b605d0f663565f4723e3171958b8a720fa38e66675ceb775b1cf47e7",
-    "parts/magnet_09.step": "a3f9f5d8ec34145c726ab87f2c6cade8f511c8c770a1426512f3f3438dd9e5ac",
-    "parts/magnet_10.step": "028a389437abc5a14a1ba77cdf806dd433ee66f2766041f0c81ee36a92f771d8",
-    "parts/magnet_11.step": "0e86070b6fbb41f1e032c9cd9795b9ae7785a03286cd80c751bfb0ff769d4577",
-    "parts/magnet_12.step": "5cbefe98a8f9698deb289238ba200f2eed09eaceb2d8557e7ce84255e07e6438",
-    "parts/magnet_13.step": "859c260af98644d719d225eb420e989813a0d2fb8f81aa3945099a5f54503232",
-    "parts/magnet_14.step": "3cc1229c5801324e4bfd1f0abfda0956acc887ba72d4e0ca1c81d53dd88efc75",
-    "parts/magnet_15.step": "edd06edd86f2031e87c3dbca046f059100d6e83764cbbe07e44fdf0cc41fc9cc",
-    "parts/magnet_16.step": "5a29368138b336edbf608940f0b1d34d99fc49ddf27b790553f40a913b6f2ee1",
-    "parts/rotor_shaft.step": "41df66a9959999e455235356e6c417499300b4013f151f63b0242031f2f7858d",
-    "parts/gear_housing.step": "01e3f55848b014ac342bacbfcff482745fae874437ce3b247f3a403133b15d19",
-    "parts/circular_spline.step": "8685e99a0ffe3c35bc82c33f73623e17513f5d8e6ba0522802c262ee5e42e207",
-    "parts/flexspline.step": "933958f994decee5c481274aedf4f73a122052b3a412bc7a4d116aa037419310",
-    "parts/wave_generator.step": "cb421244cbd82a9002702f2721fd78b5228616ebda1745fcff224f112050f505",
-    "parts/wave_bearing_outer.step": "fe129f0f05bf66cb764030993aa5a4e8003f848a3c79e7cb474a4cf3910b06ae",
-    "parts/wave_bearing_balls.step": "a86640bbfd02f61484b1abf47c802ddc4954a4efb33b2ddb79ca9aea54ddc085",
-    "parts/output_bearing_inner.step": "5ec194cd6709244f79e4aba940723c4052151d755117d29eb9d143e6198806f0",
-    "parts/output_bearing_outer.step": "17129b49c0bc704a7a07114dec7ae5b4937bc15e3327c440e498710543e53f9e",
-    "parts/output_bearing_rollers.step": "519664fbc1e7e8e7512bf4c479a4665567b4bc53726f3cf0e51f21f5bfc97803",
-    "parts/output_bearing_separators.step": "5b02da86d81589e40ceff90d654097f09e38b79dba3b793e1d2f09eec74e4086",
-    "parts/output_flange.step": "ab313c29903068e8056cb93f8cbee0f50d743b9d1ff365930d3a548b6a962be4",
-    "parts/encoder_post_-30_-13.step": "b3913c284935883c7c3a497a3c262ab67f970b0581a27c59e5b45ac78dda2022",
-    "parts/encoder_post_-30_-1.step": "dbc3d2210f30fbedea7070be6f220092372e0594ba10e79a8b91f173ca81b694",
-    "parts/encoder_post_-10_-13.step": "ca63125ffc448d23caed3465dbc333f942cde61346dc5769b366eb3c422a0336",
-    "parts/encoder_post_-10_-1.step": "10c1f193075f58d3c630b6ec6a99ff0e61852ad8407aa15924061061cbafc65e",
-    "parts/encoder_pcb.step": "d057992c36438a2bfcee48469293103bbc3bd33dd5aee6024a8b245e01d0e395",
-    "parts/encoder_ic.step": "4412ea31d623637b09f5e126ea6e3541bce1861a25daff7f939b0218c66ca7a7",
-    "parts/encoder_connector.step": "42ea747784b3f3ce28768c38dba07e44d8176a6c451918ab6377e8d49295c393",
-    "parts/encoder_contacts.step": "0a8120240137486714680b4f62dc91d24ffc82047fc4802a1427f439e61b6e19",
-    "assembly.step": "2fe9b5011d586c06086c4e017389473cf44541e0be8e7367a741a42a25eaa17b",
-    "presentation-parts/motor_housing.step": "77cec4b3cd4823c284eaa76802f01856ca8f0d48e7591ca6c698ab5b6e5ce5be",
-    "presentation-parts/stator.step": "89bfa287ede318e47d18be856e8bb1be1a788ce593273a408d44324006ba0fca",
-    "presentation-parts/gear_housing.step": "245f43743bba8882f2ebbf23e5e02a0e198abfd7e1de191f4f836c3e060dd53c",
-    "presentation-parts/circular_spline.step": "53ddbb83fcb9ff1fb5e51db4dd460bbe2b6265cab3675a3ba60369072d460a98",
-    "presentation-parts/flexspline.step": "be8f950954a2593b72216f0fd0ba7009d663bec5289029fe4452bfc6f966857a",
-    "presentation-parts/wave_bearing_outer.step": "056f7de2430fb8f340250cc729c8ca27547138df056369afef8bf2fcb2e0ddb1",
-    "presentation-parts/output_bearing_outer.step": "b655b23743023f8557120c4b0f82218ca76aacb5d3e2e2329019ebabb7f67bc9"
+    "manifest.json": "84378a1ceef1c27d67cad8db4edf5df392dd888c6a1673adb96e355e46dbd886",
+    "parts/case_screw_01.step": "118282ae3b0e0e7ceaaade267410919bc48d845a236bec48663546ca876e0a40",
+    "parts/case_screw_02.step": "cb89efdaad2ff46a57a46cfa64f07a93b2b1385525326434731a26b1bf0693ec",
+    "parts/case_screw_03.step": "4d1ad7bfca8ea07ff6a417cbad40309257551ced4b44b81271d9d838814449b3",
+    "parts/case_screw_04.step": "f577ddd60492c5947632ea774547afe86531c803ec92139b7a5ca5b0f3b68bc4",
+    "parts/rear_cap.step": "5c1481cbcc1ca36cb132390c0037981c5da43dfa08318313ac3ccb56bd32568a",
+    "parts/motor_housing.step": "c953882b071ec7ff2b1a2c0d832cd53a67224ed809bd00e57222842c7bdf1264",
+    "parts/stator.step": "12618a455d89da05c886340cf488f76aeffcd4f216439a1f4e5a5427d00bdd78",
+    "parts/winding_01.step": "bcddbf0c6f360c36dccc350bbbf65013928555174a879f64e93f9a01d0c8b433",
+    "parts/bobbin_01.step": "34f3a731695c7591535439fe690208228a80b4e35fe6eb5bf8e327721e8709f2",
+    "parts/winding_02.step": "d7722b1e681cfa72a69f1abde4a7ed2267e2f091960e716c2ef1df556efb2cfd",
+    "parts/bobbin_02.step": "431a315b4a6f7302dc96973bcadaff740380336ad35d17335b8eda80fe9c59ac",
+    "parts/winding_03.step": "d61a2cf700920cc344bd0e97509d6d710e1cc1828ee642ca4c57af9fee01585e",
+    "parts/bobbin_03.step": "4adeeb49dd634cfc644f533c89f92d532cfbabd108af7b3d947d821c14b6e3ab",
+    "parts/winding_04.step": "2c45c677075b135dd8b25ba3493883c7417a6b01e400f68105e10f8855a490bd",
+    "parts/bobbin_04.step": "4ab465d034538d8a9a2bf0f849d32810e056fe17ea0d1860f335c8a0ea25e250",
+    "parts/winding_05.step": "924927578a0525582748d659911b572359e8467d84fe59b6a71c956bb2788a59",
+    "parts/bobbin_05.step": "211569b7f58d6f0ef18e4124239f259c51d8682eb37b081bdb01688ef986eaea",
+    "parts/winding_06.step": "4ac02741aa6de6eae281007028ea442a452f947102a0611e0fb818b6627b8da0",
+    "parts/bobbin_06.step": "4815d686dd4e9d9dad07658c2f393f75a591689fc8583f0edd4dfa5b8c6b8ec4",
+    "parts/winding_07.step": "94bccf83c2bb7865bce99f97bf31349ea0affd4f885ba82a7b7faf8e041a752b",
+    "parts/bobbin_07.step": "ab73c9bdde5a49601e910e7295cf3609b1653066154f4712755137cc95e5eb4c",
+    "parts/winding_08.step": "4cfe42ee8d3bce021f2dc63e832172e62d697afc925dd9ea1af806679442f71e",
+    "parts/bobbin_08.step": "1914d1be1d5f08234ee1b0a41c3d91bc4f97a76dbb3c62037d116c11714aa4ce",
+    "parts/winding_09.step": "0d29eb637718777d14002914462ca9a94c12a58e25d8d9bab76b8950c8d4c70d",
+    "parts/bobbin_09.step": "e7382eb6970d4695f23ef614d9252ef60349443127542a670b24497a3815e616",
+    "parts/winding_10.step": "2af8d442de1825aa8c3d5eec6f8e8c5de2675cdce821084e1537e8614baf17e5",
+    "parts/bobbin_10.step": "35f6bcd1ea4ad5bdb9c085ce4c63bab0b7dc0edc02dd0fc988a8d5e1e2df3c09",
+    "parts/winding_11.step": "5940f0e9ad27775c7fdd6053ee4f0cd1f1150e7c6f6fe7819c09d5d17362f83a",
+    "parts/bobbin_11.step": "cf41e354c24c10bad2326abacd20b3112aae1f602c1bdd1e1e77587f74e13a18",
+    "parts/winding_12.step": "5bbbaf480c142f89170c6b0815da5020cb40765c23d1fe67cd99d0d9be010e4c",
+    "parts/bobbin_12.step": "34d9019a2f5d85124580aa19ea5206e8adbd7f438bdb76986cc2dc21cc8459bd",
+    "parts/winding_13.step": "7fadadb4d4b264a11536f77d07f9a39e7c73f6ce90ed91223f68b02c836e2ed9",
+    "parts/bobbin_13.step": "03dfcd707ca754d749c9c3ae37547cfe210667e649c05ce5c89f2571a7d52c7b",
+    "parts/winding_14.step": "b41bd8d8608f7c48223145ccf1bf7d03fd5b866025a19a461e1ae6380478632b",
+    "parts/bobbin_14.step": "3f1baf92443c66ed9ff9ff88b4af8720d11c950594998581b8919ffcbeb9cd55",
+    "parts/winding_15.step": "f7f242ab7d8333d3e86df6fcaf862879d7a4cd8b81323f472d31874f2274aa76",
+    "parts/bobbin_15.step": "bd7b51c23eb7956bb41def2acfa85690daa5646c57ec4244fffb15ce2f8c11a3",
+    "parts/winding_16.step": "a3501b9ba7092dcbde116bcc500317af541748d60f806f1f65c8af3040d8a856",
+    "parts/bobbin_16.step": "b3000e85ce6008e77ea452c9bcba13746720acdf98c82feb2383f3f409d819f0",
+    "parts/winding_17.step": "5f9dfff7a973dd1399cda81d011ee1503e3f08427a709c06f5d2f3d63267e3c3",
+    "parts/bobbin_17.step": "a7a8cd3ea8ceef8b6c1c0b18579653da62deb9233f8168fe2e4073ac12997e3c",
+    "parts/winding_18.step": "8ea6c784e79f1a41ca2ca532d03e85b5ec3a93c32ca5ae5214866228cd986b99",
+    "parts/bobbin_18.step": "9f87551da4863548469060b69532ee047795a4cefa400b103c068861373d021d",
+    "parts/rotor_drum.step": "e43786fda76a4acf4556bec103052dfef642fe58cbe3d7e6cb2b10bedca4517b",
+    "parts/magnet_01.step": "69bd82df946a0f5e1aeb18e4822a054c788f0707274cc503b0043675d174b748",
+    "parts/magnet_02.step": "728f06db45c6a054a0d77d2c5cba85f3c41018b4628ea0a276d88a3e67e5aa6f",
+    "parts/magnet_03.step": "afccbd9ca4c1c6764336e970f8c3f324ff26344b81fea96683915a52f3f6a65d",
+    "parts/magnet_04.step": "3a7ebdfad659b65a048ee2137b5cd14bd9d5f1751516e3e6e0b8c35a449115f1",
+    "parts/magnet_05.step": "0593a1d8795e11947512dba46dd5a085d399bf28552092202df011dfa7b8c3e5",
+    "parts/magnet_06.step": "14a4a46c9912dac225f3f5168488ef6972a35a4b29579340573d8578c3efdc85",
+    "parts/magnet_07.step": "324799637cfae78797ae1b517864c1c63af54282a1911ca6311528029efa4128",
+    "parts/magnet_08.step": "2fb89a8b3eb95eeddb10d9313e95088dc2949998e27f0425ecc6715bcbeb1482",
+    "parts/magnet_09.step": "5c9414bb919d422cf6345fc5af7ef1b6b27f7d73f8a327331fc41208970c458b",
+    "parts/magnet_10.step": "15cf9bb5aea53733b85bfaab2b567a155eaf373126a18f40913903bb97bdba84",
+    "parts/magnet_11.step": "a6c5a999096a1179633bffc38dcef611f6a87f18972184c3cd5fcdb8252c426a",
+    "parts/magnet_12.step": "0f3ca49ea8be7b6627d2c889ab9f286ef1f85e26459768be8f4d2a40c0b0f3ef",
+    "parts/magnet_13.step": "84372252f7f93a89f9b0f55988ea6a6e2606e5449487bb07acd73ffff070924f",
+    "parts/magnet_14.step": "b815c5ec3b11fce2e5827e3936bcf04201078ff1a605b92622e5fa90004554f1",
+    "parts/magnet_15.step": "7c6163cd639865c973d5fc386169e85df64cc8ca265d08dae78ccb179a71d7e3",
+    "parts/magnet_16.step": "ec843214e4ba6c2b94e423bdd1ad74e0a7c73319b1c8cf7a128cd7887e0a4fa2",
+    "parts/rotor_shaft.step": "7a5a4c98cf3be09bdfb10acc370dc48f9a84858675b312b5386072ef4143a2a0",
+    "parts/rear_bearing_carrier.step": "03449bac61a925648a31a1b4af1134e756613a31269d232f5523a7b01be15b9c",
+    "parts/rear_bearing_retainer.step": "e85dab5a2ba3f8fe4c95af3adb5c64924d9313eb73b40a29bebcb298ab561c67",
+    "parts/rear_bearing_inner.step": "24c230397546015a5215736911ae163d877a286669cf19511405077a7aeb0049",
+    "parts/rear_bearing_outer.step": "043d5675f7027fe3810de2586f8384967fef46702531bb43c51c8d4bb872e427",
+    "parts/rear_bearing_balls.step": "159c9d450391f3fecdee4808bec17a5156eb55a5f3f6c03a9bb4f571698311ef",
+    "parts/gear_housing.step": "edef022835102bc0f362e41363760317ea7e3a6da77411e9935830b37b78c1e0",
+    "parts/circular_spline.step": "58a24b255f740f13a50064980e49036c77a7e4b6bf851feba5c171ded5960562",
+    "parts/circular_spline_pilot.step": "7b03c88ec9d79787d239abec32f9b78e409c63dae9d3d0c1208c8f4bdc27199f",
+    "parts/circular_spline_screws.step": "37a42f76034cb06afd1e2ce5503817c629aec74c8110e5c7fae4291f0d2c0b94",
+    "parts/flexspline.step": "165049df79d2a901d4db36b58b267fd347404479a5b17acc9c6431ab0d972c9a",
+    "parts/wave_generator.step": "147979b64d53fb2e48e63d7765c8504bbe076cba5dae35847b4250fee111932e",
+    "parts/wave_bearing_outer.step": "8424e2daabc7368432b5a048b014b6a2944c104403ee1979a7fba32258401c64",
+    "parts/wave_bearing_balls.step": "950a5ca360baee4d7e1665634c5cca291b10f403f764b131d7412650e6cec473",
+    "parts/output_bearing_seal_23.5.step": "d7183ff233c4e3a91db589936dc3d180a25ce156aec5deaecf17aa2ae9456839",
+    "parts/output_bearing_seal_36.step": "c92bb6c07df3f66d5969a1fc5642f8eaa9e444045ed8e332697e931d9d31f897",
+    "parts/output_bearing_inner.step": "a2d5f9508d469d04343695dddebf7722debde44eb6af82b95ec740bdd20eb763",
+    "parts/output_bearing_outer.step": "1b7276578855bb95802749190392f96e3fc57f413cde2f9842f9bc0dd82945c0",
+    "parts/output_bearing_rollers.step": "26cc7aefec907a2fdbcd8e09b870401e77daeadcfb6a2ca0d8b1e43b3f93b9a8",
+    "parts/output_bearing_separators.step": "de22e0d97b0a7b3d4783fb3cbece97cdfb97b7d0067d4387ece414213c67c6d6",
+    "parts/output_spacer.step": "33c6f1c14f1d98184d43a305a054563c08f00338500b22e28774eee04f5f23a2",
+    "parts/output_flange_screws.step": "3f373c6a9d7a8605ea34858e660b245b7f7f8a0c33dbd8bac769e74706ed6092",
+    "parts/output_flange.step": "a005f44b5ce079db5be708876ad549f49b39444e69905f9722ae0d474006e825",
+    "parts/encoder_post_-30_-13.step": "7d608ee0776f760dc0acc3c0e845c0cf5b760847b3915d9e7ca14fa13e08b8dd",
+    "parts/encoder_post_-30_-1.step": "5965089455101dabd8263d000bc6ef8c41ffc3eb180f4525f911a40c3ab9c65c",
+    "parts/encoder_post_-10_-13.step": "19b15869718cce1f8acc4589afcac207565b2a690d4fd431c41a6a81c2820e67",
+    "parts/encoder_post_-10_-1.step": "9e50a6fe24686f697b016f89e6432fb1679a7690c20ca63f5527644bce813f79",
+    "parts/encoder_pcb.step": "a9a6123b7302eb061012ad1cff18f983a7cfb8fb864506c5b114b8c656d21b00",
+    "parts/encoder_ic.step": "dd6c3e7c3aea269d5ee78e7fb7c0dd429fb9b006022aca523d23c3c578653a8b",
+    "parts/encoder_connector.step": "ead2e9998db72263bb013a7c69cd3626c8d8549d2d05ac03280eedb4d199123f",
+    "parts/encoder_contacts.step": "a329b949dc64db7d1157f7f72b35affe75fa9c6d4652b9181d2e362ff3868a3c",
+    "assembly.step": "db756868c7f09e2a8f9bd035969ef111dc522dfc94693c45a95065f9b2368db9",
+    "presentation-parts/motor_housing.step": "f37bdfa1d6c59c80b318ea86fc4f764cd9b277b8275f3f2463b40242405a077e",
+    "presentation-parts/stator.step": "64ae2b1fc5290f1b9d8f251bc1f253692efe966ff673d5c043e7dc1f7a1d3638",
+    "presentation-parts/rear_bearing_carrier.step": "fea8b36e66cbfad2adf243898892b4288ad6bafc49e980de8fac09c1df777a5a",
+    "presentation-parts/rear_bearing_retainer.step": "ceed39de34df2859148732f5a12ce771baddac97a133f0b79f57adc400e19925",
+    "presentation-parts/rear_bearing_outer.step": "4c80d7caee3b55e54f3f8216cad6e84950d89e46a0cdc7c6ac9a1faf918c016f",
+    "presentation-parts/gear_housing.step": "a82f7793d5f2f07dc0b407e0612e653fc61d1cc426f865d5a9f7fd7273907a39",
+    "presentation-parts/circular_spline.step": "1cd9850089a5ad232c71d1a68ba9cff1e9adb73892f4c855536b42103c9f68a7",
+    "presentation-parts/circular_spline_pilot.step": "204537ac124ba9c5c17376ff9adf4a96e72f28ff5f54f7ef4e81ab595775da11",
+    "presentation-parts/circular_spline_screws.step": "928a626100c31a3209ee19edec5aac7d6a1872433983a20c035bbf8ad2a964ba",
+    "presentation-parts/flexspline.step": "3d5e191072c38779380ec423e7f7eccbe95ef1dacd01ff82b309900a2bcc9529",
+    "presentation-parts/wave_bearing_outer.step": "b598eb2ef8adfba1b31a80f87bc727cafb9f7c6c2935170b5e4dd720fc323bfc",
+    "presentation-parts/output_bearing_seal_23.5.step": "46c8a453b49589e738baf84290c5488519119e7f20cef21a68247574d8358b0f",
+    "presentation-parts/output_bearing_seal_36.step": "5e0509acc30e2cc26c7b068b71f62827bc9828eea92de5edcd730b463fbb17bc",
+    "presentation-parts/output_bearing_outer.step": "f1d8629de6c7080d98bf40f569aa30350a41c4d5f1d1262a444726a828f76a47"
   }
 }

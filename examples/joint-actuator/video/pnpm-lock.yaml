@@ -11,9 +11,6 @@ importers:
       gsap:
         specifier: 3.14.2
         version: 3.14.2
-      three:
-        specifier: 0.181.2
-        version: 0.181.2
     devDependencies:
       esbuild:
         specifier: 0.27.4
@@ -185,9 +182,6 @@ packages:
   gsap@3.14.2:
     resolution: {integrity: sha512-P8/mMxVLU7o4+55+1TCnQrPmgjPKnwkzkXOK1asnR9Jg2lna4tEY5qBJjMmAaOBDDZWtlRjBXjLa0w53G/uBLA==}
 
-  three@0.181.2:
-    resolution: {integrity: sha512-k/CjiZ80bYss6Qs7/ex1TBlPD11whT9oKfT8oTGiHa34W4JRd1NiH/Tr1DbHWQ2/vMUypxksLnF2CfmlmM5XFQ==}
-
 snapshots:
 
   '@esbuild/aix-ppc64@0.27.4':
@@ -298,5 +292,3 @@ snapshots:
       '@esbuild/win32-x64': 0.27.4
 
   gsap@3.14.2: {}
-
-  three@0.181.2: {}

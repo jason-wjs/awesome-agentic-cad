@@ -64,8 +64,8 @@
     "Rigid undeformed flexspline; simplified trapezoidal teeth with 0.6 mm radial clearance.",
     "Nominal unthreaded fasteners and simplified bearing contacts."
   ],
-  "part_count": 56,
-  "solid_count": 254,
+  "part_count": 91,
+  "solid_count": 510,
   "parts": [
     {
       "name": "case_screw_01",
@@ -75,16 +75,16 @@
       "cutaway": false,
       "omitted_from_cutaway": false,
       "solid_count": 1,
-      "volume_mm3": 95.63698564695362,
+      "volume_mm3": 94.41307350899255,
       "bbox_min_mm": [
         -47.7,
         47.8,
         -3.2000000000000006
       ],
       "bbox_max_mm": [
-        -39.0,
+        -39.00000000000001,
         54.2,
-        3.2000000000000006
+        3.2
       ],
       "color_rgba": [
         0.2078431,
@@ -114,14 +114,14 @@
       "cutaway": false,
       "omitted_from_cutaway": false,
       "solid_count": 1,
-      "volume_mm3": 95.63698564695368,
+      "volume_mm3": 94.41307350899261,
       "bbox_min_mm": [
         -47.7,
         -3.199999999999997,
         47.8
       ],
       "bbox_max_mm": [
-        -39.0,
+        -39.00000000000001,
         3.2000000000000033,
         54.2
       ],
@@ -153,14 +153,14 @@
       "cutaway": false,
       "omitted_from_cutaway": false,
       "solid_count": 1,
-      "volume_mm3": 95.63698564695362,
+      "volume_mm3": 94.41307350899255,
       "bbox_min_mm": [
         -47.7,
         -54.2,
         -3.1999999999999944
       ],
       "bbox_max_mm": [
-        -39.0,
+        -39.00000000000001,
         -47.8,
         3.200000000000007
       ],
@@ -192,14 +192,14 @@
       "cutaway": false,
       "omitted_from_cutaway": false,
       "solid_count": 1,
-      "volume_mm3": 95.63698564695365,
+      "volume_mm3": 94.41307350899261,
       "bbox_min_mm": [
         -47.7,
         -3.2000000000000095,
         -54.2
       ],
       "bbox_max_mm": [
-        -39.0,
+        -39.00000000000001,
         3.199999999999991,
         -47.8
       ],
@@ -231,7 +231,7 @@
       "cutaway": false,
       "omitted_from_cutaway": false,
       "solid_count": 1,
-      "volume_mm3": 53051.93376950143,
+      "volume_mm3": 53045.833843765686,
       "bbox_min_mm": [
         -48.000000000000014,
         -55.0,
@@ -270,7 +270,7 @@
       "cutaway": true,
       "omitted_from_cutaway": false,
       "solid_count": 1,
-      "volume_mm3": 42418.56335942689,
+      "volume_mm3": 42418.56336819037,
       "bbox_min_mm": [
         -42.000000100000015,
         -55.0,
@@ -309,14 +309,14 @@
       "cutaway": true,
       "omitted_from_cutaway": false,
       "solid_count": 1,
-      "volume_mm3": 22721.426555760525,
+      "volume_mm3": 24029.506891667872,
       "bbox_min_mm": [
-        -36.000000000000014,
+        -36.00000010000001,
         -48.7,
         -48.7
       ],
       "bbox_max_mm": [
-        -13.999999999999986,
+        -15.99999989999999,
         48.7,
         48.7
       ],
@@ -347,17 +347,17 @@
       "presentation_step": "parts/winding_01.step",
       "cutaway": false,
       "omitted_from_cutaway": false,
-      "solid_count": 9,
-      "volume_mm3": 305.2053434621158,
+      "solid_count": 16,
+      "volume_mm3": 526.6442535670942,
       "bbox_min_mm": [
-        -37.9200001,
-        38.2799999,
-        -4.920000125636775
+        -38.4400001,
+        38.20999989999999,
+        -6.240000100031026
       ],
       "bbox_max_mm": [
-        -13.0799999,
-        46.32000010000001,
-        4.920000124064543
+        -15.5599999,
+        46.090000100000005,
+        6.240000080653066
       ],
       "color_rgba": [
         0.7764706,
@@ -369,6 +369,45 @@
         "name": "copper",
         "metalness": 0.88,
         "roughness": 0.25
+      },
+      "explode": {
+        "offset_mm": [
+          -36,
+          0,
+          0
+        ],
+        "stage": 2
+      }
+    },
+    {
+      "name": "bobbin_01",
+      "group": "windings",
+      "canonical_step": "parts/bobbin_01.step",
+      "presentation_step": "parts/bobbin_01.step",
+      "cutaway": false,
+      "omitted_from_cutaway": false,
+      "solid_count": 1,
+      "volume_mm3": 206.46772316997792,
+      "bbox_min_mm": [
+        -34.1,
+        38.2,
+        -3.7000000000000095
+      ],
+      "bbox_max_mm": [
+        -19.9,
+        46.1,
+        3.7000000000000113
+      ],
+      "color_rgba": [
+        0.545098,
+        0.4392157,
+        0.2901961,
+        1.0
+      ],
+      "material": {
+        "name": "insulation",
+        "metalness": 0.08,
+        "roughness": 0.4
       },
       "explode": {
         "offset_mm": [
@@ -386,17 +425,17 @@
       "presentation_step": "parts/winding_02.step",
       "cutaway": false,
       "omitted_from_cutaway": false,
-      "solid_count": 9,
-      "volume_mm3": 305.20534346211593,
+      "solid_count": 16,
+      "volume_mm3": 526.6442535670943,
       "bbox_min_mm": [
-        -37.9200001,
-        30.84518301442551,
-        15.032885560767925
+        -38.4400001,
+        33.89540286870352,
+        7.32886123894967
       ],
       "bbox_max_mm": [
-        -13.0799999,
-        42.42056614652413,
-        27.267114437870482
+        -15.5599999,
+        45.320685070176204,
+        21.503436825194875
       ],
       "color_rgba": [
         0.7764706,
@@ -408,6 +447,45 @@
         "name": "copper",
         "metalness": 0.88,
         "roughness": 0.25
+      },
+      "explode": {
+        "offset_mm": [
+          -36,
+          0,
+          0
+        ],
+        "stage": 2
+      }
+    },
+    {
+      "name": "bobbin_02",
+      "group": "windings",
+      "canonical_step": "parts/bobbin_02.step",
+      "presentation_step": "parts/bobbin_02.step",
+      "cutaway": false,
+      "omitted_from_cutaway": false,
+      "solid_count": 1,
+      "volume_mm3": 206.4677231699778,
+      "bbox_min_mm": [
+        -34.1,
+        34.630783583716735,
+        9.588306778132676
+      ],
+      "bbox_max_mm": [
+        -19.9,
+        44.58530434853536,
+        19.243991304221197
+      ],
+      "color_rgba": [
+        0.545098,
+        0.4392157,
+        0.2901961,
+        1.0
+      ],
+      "material": {
+        "name": "insulation",
+        "metalness": 0.08,
+        "roughness": 0.4
       },
       "explode": {
         "offset_mm": [
@@ -425,17 +503,17 @@
       "presentation_step": "parts/winding_03.step",
       "cutaway": false,
       "omitted_from_cutaway": false,
-      "solid_count": 9,
-      "volume_mm3": 305.2053434621159,
+      "solid_count": 16,
+      "volume_mm3": 526.6442535670942,
       "bbox_min_mm": [
-        -37.9200001,
-        15.032885562129527,
-        30.84518301363939
+        -38.4400001,
+        25.439449502802546,
+        19.960683244270903
       ],
       "bbox_max_mm": [
-        -13.0799999,
-        27.267114439232078,
-        42.420566145738015
+        -15.5599999,
+        39.13809706458322,
+        34.226312237459986
       ],
       "color_rgba": [
         0.7764706,
@@ -447,6 +525,45 @@
         "name": "copper",
         "metalness": 0.88,
         "roughness": 0.25
+      },
+      "explode": {
+        "offset_mm": [
+          -36,
+          0,
+          0
+        ],
+        "stage": 2
+      }
+    },
+    {
+      "name": "bobbin_03",
+      "group": "windings",
+      "canonical_step": "parts/bobbin_03.step",
+      "presentation_step": "parts/bobbin_03.step",
+      "cutaway": false,
+      "omitted_from_cutaway": false,
+      "solid_count": 1,
+      "volume_mm3": 206.46772316997786,
+      "bbox_min_mm": [
+        -34.1,
+        26.884583571304763,
+        21.72012225048558
+      ],
+      "bbox_max_mm": [
+        -19.9,
+        37.692962983625094,
+        32.46687324608969
+      ],
+      "color_rgba": [
+        0.545098,
+        0.4392157,
+        0.2901961,
+        1.0
+      ],
+      "material": {
+        "name": "insulation",
+        "metalness": 0.08,
+        "roughness": 0.4
       },
       "explode": {
         "offset_mm": [
@@ -464,17 +581,17 @@
       "presentation_step": "parts/winding_04.step",
       "cutaway": false,
       "omitted_from_cutaway": false,
-      "solid_count": 9,
-      "volume_mm3": 305.2053434621157,
+      "solid_count": 16,
+      "volume_mm3": 526.6442535670946,
       "bbox_min_mm": [
-        -37.9200001,
-        -4.920000124064534,
-        38.2799999
+        -38.4400001,
+        13.862052574805196,
+        30.131881756253037
       ],
       "bbox_max_mm": [
-        -13.0799999,
-        4.9200001256367845,
-        46.32000010000001
+        -15.5599999,
+        28.287947441976616,
+        42.87405977308615
       ],
       "color_rgba": [
         0.7764706,
@@ -486,6 +603,45 @@
         "name": "copper",
         "metalness": 0.88,
         "roughness": 0.25
+      },
+      "explode": {
+        "offset_mm": [
+          -36,
+          0,
+          0
+        ],
+        "stage": 2
+      }
+    },
+    {
+      "name": "bobbin_04",
+      "group": "windings",
+      "canonical_step": "parts/bobbin_04.step",
+      "presentation_step": "parts/bobbin_04.step",
+      "cutaway": false,
+      "omitted_from_cutaway": false,
+      "solid_count": 1,
+      "volume_mm3": 206.46772316997783,
+      "bbox_min_mm": [
+        -34.1,
+        15.895706005997571,
+        31.23217042456555
+      ],
+      "bbox_max_mm": [
+        -19.9,
+        26.254293994002435,
+        41.773771114462626
+      ],
+      "color_rgba": [
+        0.545098,
+        0.4392157,
+        0.2901961,
+        1.0
+      ],
+      "material": {
+        "name": "insulation",
+        "metalness": 0.08,
+        "roughness": 0.4
       },
       "explode": {
         "offset_mm": [
@@ -503,17 +659,17 @@
       "presentation_step": "parts/winding_05.step",
       "cutaway": false,
       "omitted_from_cutaway": false,
-      "solid_count": 9,
-      "volume_mm3": 305.205343462116,
+      "solid_count": 16,
+      "volume_mm3": 526.6442535670944,
       "bbox_min_mm": [
-        -37.9200001,
-        -27.26711443787047,
-        30.845183014425515
+        -38.4400001,
+        0.5596170184090651,
+        36.61566012344826
       ],
       "bbox_max_mm": [
-        -13.0799999,
-        -15.032885560767921,
-        42.42056614652413
+        -15.5599999,
+        14.078924377996737,
+        46.40363345211594
       ],
       "color_rgba": [
         0.7764706,
@@ -525,6 +681,45 @@
         "name": "copper",
         "metalness": 0.88,
         "roughness": 0.25
+      },
+      "explode": {
+        "offset_mm": [
+          -36,
+          0,
+          0
+        ],
+        "stage": 2
+      }
+    },
+    {
+      "name": "bobbin_05",
+      "group": "windings",
+      "canonical_step": "parts/bobbin_05.step",
+      "presentation_step": "parts/bobbin_05.step",
+      "cutaway": false,
+      "omitted_from_cutaway": false,
+      "solid_count": 1,
+      "volume_mm3": 206.46772316997811,
+      "bbox_min_mm": [
+        -34.1,
+        2.989571700731561,
+        36.977157907698704
+      ],
+      "bbox_max_mm": [
+        -19.9,
+        11.64896967659067,
+        46.04213567123044
+      ],
+      "color_rgba": [
+        0.545098,
+        0.4392157,
+        0.2901961,
+        1.0
+      ],
+      "material": {
+        "name": "insulation",
+        "metalness": 0.08,
+        "roughness": 0.4
       },
       "explode": {
         "offset_mm": [
@@ -542,17 +737,17 @@
       "presentation_step": "parts/winding_06.step",
       "cutaway": false,
       "omitted_from_cutaway": false,
-      "solid_count": 9,
-      "volume_mm3": 305.20534346211593,
+      "solid_count": 16,
+      "volume_mm3": 526.6442535670943,
       "bbox_min_mm": [
-        -37.9200001,
-        -42.420566145738015,
-        15.03288556212952
+        -38.4400001,
+        -14.078924358913165,
+        36.615660126813204
       ],
       "bbox_max_mm": [
-        -13.0799999,
-        -30.845183013639396,
-        27.267114439232074
+        -15.5599999,
+        -0.559616999325493,
+        46.403633455480886
       ],
       "color_rgba": [
         0.7764706,
@@ -564,6 +759,45 @@
         "name": "copper",
         "metalness": 0.88,
         "roughness": 0.25
+      },
+      "explode": {
+        "offset_mm": [
+          -36,
+          0,
+          0
+        ],
+        "stage": 2
+      }
+    },
+    {
+      "name": "bobbin_06",
+      "group": "windings",
+      "canonical_step": "parts/bobbin_06.step",
+      "presentation_step": "parts/bobbin_06.step",
+      "cutaway": false,
+      "omitted_from_cutaway": false,
+      "solid_count": 1,
+      "volume_mm3": 206.46772316997786,
+      "bbox_min_mm": [
+        -34.1,
+        -11.648969676590665,
+        36.97715790769871
+      ],
+      "bbox_max_mm": [
+        -19.9,
+        -2.9895717007315596,
+        46.04213567123045
+      ],
+      "color_rgba": [
+        0.545098,
+        0.4392157,
+        0.2901961,
+        1.0
+      ],
+      "material": {
+        "name": "insulation",
+        "metalness": 0.08,
+        "roughness": 0.4
       },
       "explode": {
         "offset_mm": [
@@ -581,17 +815,17 @@
       "presentation_step": "parts/winding_07.step",
       "cutaway": false,
       "omitted_from_cutaway": false,
-      "solid_count": 9,
-      "volume_mm3": 305.2053434621158,
+      "solid_count": 16,
+      "volume_mm3": 526.6442535670942,
       "bbox_min_mm": [
-        -37.9200001,
-        -46.32000010000001,
-        -4.920000124064538
+        -38.4400001,
+        -28.287947425194798,
+        30.13188176594203
       ],
       "bbox_max_mm": [
-        -13.0799999,
-        -38.2799999,
-        4.92000012563678
+        -15.5599999,
+        -13.862052558023377,
+        42.87405978277515
       ],
       "color_rgba": [
         0.7764706,
@@ -603,6 +837,45 @@
         "name": "copper",
         "metalness": 0.88,
         "roughness": 0.25
+      },
+      "explode": {
+        "offset_mm": [
+          -36,
+          0,
+          0
+        ],
+        "stage": 2
+      }
+    },
+    {
+      "name": "bobbin_07",
+      "group": "windings",
+      "canonical_step": "parts/bobbin_07.step",
+      "presentation_step": "parts/bobbin_07.step",
+      "cutaway": false,
+      "omitted_from_cutaway": false,
+      "solid_count": 1,
+      "volume_mm3": 206.46772316997792,
+      "bbox_min_mm": [
+        -34.1,
+        -26.25429399400242,
+        31.232170424565556
+      ],
+      "bbox_max_mm": [
+        -19.9,
+        -15.895706005997562,
+        41.77377111446263
+      ],
+      "color_rgba": [
+        0.545098,
+        0.4392157,
+        0.2901961,
+        1.0
+      ],
+      "material": {
+        "name": "insulation",
+        "metalness": 0.08,
+        "roughness": 0.4
       },
       "explode": {
         "offset_mm": [
@@ -620,17 +893,17 @@
       "presentation_step": "parts/winding_08.step",
       "cutaway": false,
       "omitted_from_cutaway": false,
-      "solid_count": 9,
-      "volume_mm3": 305.2053434621157,
+      "solid_count": 16,
+      "volume_mm3": 526.6442535670947,
       "bbox_min_mm": [
-        -37.9200001,
-        -42.42056614652411,
-        -27.267114437870486
+        -38.4400001,
+        -39.138097052127314,
+        19.960683259115292
       ],
       "bbox_max_mm": [
-        -13.0799999,
-        -30.8451830144255,
-        -15.032885560767934
+        -15.5599999,
+        -25.43944949034663,
+        34.226312252304375
       ],
       "color_rgba": [
         0.7764706,
@@ -642,6 +915,45 @@
         "name": "copper",
         "metalness": 0.88,
         "roughness": 0.25
+      },
+      "explode": {
+        "offset_mm": [
+          -36,
+          0,
+          0
+        ],
+        "stage": 2
+      }
+    },
+    {
+      "name": "bobbin_08",
+      "group": "windings",
+      "canonical_step": "parts/bobbin_08.step",
+      "presentation_step": "parts/bobbin_08.step",
+      "cutaway": false,
+      "omitted_from_cutaway": false,
+      "solid_count": 1,
+      "volume_mm3": 206.46772316997806,
+      "bbox_min_mm": [
+        -34.1,
+        -37.692962983625094,
+        21.720122250485584
+      ],
+      "bbox_max_mm": [
+        -19.9,
+        -26.884583571304763,
+        32.466873246089705
+      ],
+      "color_rgba": [
+        0.545098,
+        0.4392157,
+        0.2901961,
+        1.0
+      ],
+      "material": {
+        "name": "insulation",
+        "metalness": 0.08,
+        "roughness": 0.4
       },
       "explode": {
         "offset_mm": [
@@ -659,17 +971,17 @@
       "presentation_step": "parts/winding_09.step",
       "cutaway": false,
       "omitted_from_cutaway": false,
-      "solid_count": 9,
-      "volume_mm3": 305.20534346211576,
+      "solid_count": 16,
+      "volume_mm3": 526.6442535670947,
       "bbox_min_mm": [
-        -37.9200001,
-        -27.267114439232085,
-        -42.420566145738
+        -38.4400001,
+        -45.320685063548574,
+        7.328861257159005
       ],
       "bbox_max_mm": [
-        -13.0799999,
-        -15.03288556212953,
-        -30.84518301363938
+        -15.5599999,
+        -33.895402862075876,
+        21.50343684340421
       ],
       "color_rgba": [
         0.7764706,
@@ -681,6 +993,45 @@
         "name": "copper",
         "metalness": 0.88,
         "roughness": 0.25
+      },
+      "explode": {
+        "offset_mm": [
+          -36,
+          0,
+          0
+        ],
+        "stage": 2
+      }
+    },
+    {
+      "name": "bobbin_09",
+      "group": "windings",
+      "canonical_step": "parts/bobbin_09.step",
+      "presentation_step": "parts/bobbin_09.step",
+      "cutaway": false,
+      "omitted_from_cutaway": false,
+      "solid_count": 1,
+      "volume_mm3": 206.46772316997803,
+      "bbox_min_mm": [
+        -34.1,
+        -44.58530434853537,
+        9.588306778132681
+      ],
+      "bbox_max_mm": [
+        -19.9,
+        -34.630783583716735,
+        19.24399130422121
+      ],
+      "color_rgba": [
+        0.545098,
+        0.4392157,
+        0.2901961,
+        1.0
+      ],
+      "material": {
+        "name": "insulation",
+        "metalness": 0.08,
+        "roughness": 0.4
       },
       "explode": {
         "offset_mm": [
@@ -698,17 +1049,17 @@
       "presentation_step": "parts/winding_10.step",
       "cutaway": false,
       "omitted_from_cutaway": false,
-      "solid_count": 9,
-      "volume_mm3": 305.2053434621157,
+      "solid_count": 16,
+      "volume_mm3": 526.6442535670942,
       "bbox_min_mm": [
-        -37.9200001,
-        -4.9200001256367845,
-        -46.32000010000001
+        -38.4400001,
+        -46.090000100000005,
+        -6.240000080653061
       ],
       "bbox_max_mm": [
-        -13.0799999,
-        4.920000124064534,
-        -38.2799999
+        -15.5599999,
+        -38.20999989999999,
+        6.240000100031032
       ],
       "color_rgba": [
         0.7764706,
@@ -720,6 +1071,45 @@
         "name": "copper",
         "metalness": 0.88,
         "roughness": 0.25
+      },
+      "explode": {
+        "offset_mm": [
+          -36,
+          0,
+          0
+        ],
+        "stage": 2
+      }
+    },
+    {
+      "name": "bobbin_10",
+      "group": "windings",
+      "canonical_step": "parts/bobbin_10.step",
+      "presentation_step": "parts/bobbin_10.step",
+      "cutaway": false,
+      "omitted_from_cutaway": false,
+      "solid_count": 1,
+      "volume_mm3": 206.46772316997794,
+      "bbox_min_mm": [
+        -34.1,
+        -46.1,
+        -3.7000000000000064
+      ],
+      "bbox_max_mm": [
+        -19.9,
+        -38.2,
+        3.7000000000000153
+      ],
+      "color_rgba": [
+        0.545098,
+        0.4392157,
+        0.2901961,
+        1.0
+      ],
+      "material": {
+        "name": "insulation",
+        "metalness": 0.08,
+        "roughness": 0.4
       },
       "explode": {
         "offset_mm": [
@@ -737,17 +1127,17 @@
       "presentation_step": "parts/winding_11.step",
       "cutaway": false,
       "omitted_from_cutaway": false,
-      "solid_count": 9,
-      "volume_mm3": 305.2053434621158,
+      "solid_count": 16,
+      "volume_mm3": 526.6442535670947,
       "bbox_min_mm": [
-        -37.9200001,
-        15.032885560767932,
-        -42.42056614652412
+        -38.4400001,
+        -45.32068507017622,
+        -21.503436825194875
       ],
       "bbox_max_mm": [
-        -13.0799999,
-        27.267114437870486,
-        -30.84518301442551
+        -15.5599999,
+        -33.895402868703535,
+        -7.328861238949669
       ],
       "color_rgba": [
         0.7764706,
@@ -770,23 +1160,62 @@
       }
     },
     {
+      "name": "bobbin_11",
+      "group": "windings",
+      "canonical_step": "parts/bobbin_11.step",
+      "presentation_step": "parts/bobbin_11.step",
+      "cutaway": false,
+      "omitted_from_cutaway": false,
+      "solid_count": 1,
+      "volume_mm3": 206.4677231699781,
+      "bbox_min_mm": [
+        -34.1,
+        -44.58530434853537,
+        -19.2439913042212
+      ],
+      "bbox_max_mm": [
+        -19.9,
+        -34.630783583716735,
+        -9.588306778132676
+      ],
+      "color_rgba": [
+        0.545098,
+        0.4392157,
+        0.2901961,
+        1.0
+      ],
+      "material": {
+        "name": "insulation",
+        "metalness": 0.08,
+        "roughness": 0.4
+      },
+      "explode": {
+        "offset_mm": [
+          -36,
+          0,
+          0
+        ],
+        "stage": 2
+      }
+    },
+    {
       "name": "winding_12",
       "group": "windings",
       "canonical_step": "parts/winding_12.step",
       "presentation_step": "parts/winding_12.step",
       "cutaway": false,
       "omitted_from_cutaway": false,
-      "solid_count": 9,
-      "volume_mm3": 305.20534346211605,
+      "solid_count": 16,
+      "volume_mm3": 526.6442535670942,
       "bbox_min_mm": [
-        -37.9200001,
-        30.84518301363938,
-        -27.267114439232095
+        -38.4400001,
+        -39.13809706458322,
+        -34.226312237459986
       ],
       "bbox_max_mm": [
-        -13.0799999,
-        42.420566145738,
-        -15.032885562129541
+        -15.5599999,
+        -25.439449502802546,
+        -19.960683244270903
       ],
       "color_rgba": [
         0.7764706,
@@ -798,6 +1227,513 @@
         "name": "copper",
         "metalness": 0.88,
         "roughness": 0.25
+      },
+      "explode": {
+        "offset_mm": [
+          -36,
+          0,
+          0
+        ],
+        "stage": 2
+      }
+    },
+    {
+      "name": "bobbin_12",
+      "group": "windings",
+      "canonical_step": "parts/bobbin_12.step",
+      "presentation_step": "parts/bobbin_12.step",
+      "cutaway": false,
+      "omitted_from_cutaway": false,
+      "solid_count": 1,
+      "volume_mm3": 206.46772316997786,
+      "bbox_min_mm": [
+        -34.1,
+        -37.692962983625094,
+        -32.46687324608969
+      ],
+      "bbox_max_mm": [
+        -19.9,
+        -26.884583571304763,
+        -21.72012225048558
+      ],
+      "color_rgba": [
+        0.545098,
+        0.4392157,
+        0.2901961,
+        1.0
+      ],
+      "material": {
+        "name": "insulation",
+        "metalness": 0.08,
+        "roughness": 0.4
+      },
+      "explode": {
+        "offset_mm": [
+          -36,
+          0,
+          0
+        ],
+        "stage": 2
+      }
+    },
+    {
+      "name": "winding_13",
+      "group": "windings",
+      "canonical_step": "parts/winding_13.step",
+      "presentation_step": "parts/winding_13.step",
+      "cutaway": false,
+      "omitted_from_cutaway": false,
+      "solid_count": 16,
+      "volume_mm3": 526.6442535670941,
+      "bbox_min_mm": [
+        -38.4400001,
+        -28.287947441976623,
+        -42.874059773086145
+      ],
+      "bbox_max_mm": [
+        -15.5599999,
+        -13.862052574805201,
+        -30.131881756253023
+      ],
+      "color_rgba": [
+        0.7764706,
+        0.4901961,
+        0.2588235,
+        1.0
+      ],
+      "material": {
+        "name": "copper",
+        "metalness": 0.88,
+        "roughness": 0.25
+      },
+      "explode": {
+        "offset_mm": [
+          -36,
+          0,
+          0
+        ],
+        "stage": 2
+      }
+    },
+    {
+      "name": "bobbin_13",
+      "group": "windings",
+      "canonical_step": "parts/bobbin_13.step",
+      "presentation_step": "parts/bobbin_13.step",
+      "cutaway": false,
+      "omitted_from_cutaway": false,
+      "solid_count": 1,
+      "volume_mm3": 206.46772316997797,
+      "bbox_min_mm": [
+        -34.1,
+        -26.254293994002442,
+        -41.77377111446262
+      ],
+      "bbox_max_mm": [
+        -19.9,
+        -15.89570600599758,
+        -31.232170424565542
+      ],
+      "color_rgba": [
+        0.545098,
+        0.4392157,
+        0.2901961,
+        1.0
+      ],
+      "material": {
+        "name": "insulation",
+        "metalness": 0.08,
+        "roughness": 0.4
+      },
+      "explode": {
+        "offset_mm": [
+          -36,
+          0,
+          0
+        ],
+        "stage": 2
+      }
+    },
+    {
+      "name": "winding_14",
+      "group": "windings",
+      "canonical_step": "parts/winding_14.step",
+      "presentation_step": "parts/winding_14.step",
+      "cutaway": false,
+      "omitted_from_cutaway": false,
+      "solid_count": 16,
+      "volume_mm3": 526.6442535670944,
+      "bbox_min_mm": [
+        -38.4400001,
+        -14.07892437799673,
+        -46.40363345211594
+      ],
+      "bbox_max_mm": [
+        -15.5599999,
+        -0.5596170184090615,
+        -36.61566012344826
+      ],
+      "color_rgba": [
+        0.7764706,
+        0.4901961,
+        0.2588235,
+        1.0
+      ],
+      "material": {
+        "name": "copper",
+        "metalness": 0.88,
+        "roughness": 0.25
+      },
+      "explode": {
+        "offset_mm": [
+          -36,
+          0,
+          0
+        ],
+        "stage": 2
+      }
+    },
+    {
+      "name": "bobbin_14",
+      "group": "windings",
+      "canonical_step": "parts/bobbin_14.step",
+      "presentation_step": "parts/bobbin_14.step",
+      "cutaway": false,
+      "omitted_from_cutaway": false,
+      "solid_count": 1,
+      "volume_mm3": 206.46772316997811,
+      "bbox_min_mm": [
+        -34.1,
+        -11.648969676590667,
+        -46.04213567123044
+      ],
+      "bbox_max_mm": [
+        -19.9,
+        -2.9895717007315565,
+        -36.977157907698704
+      ],
+      "color_rgba": [
+        0.545098,
+        0.4392157,
+        0.2901961,
+        1.0
+      ],
+      "material": {
+        "name": "insulation",
+        "metalness": 0.08,
+        "roughness": 0.4
+      },
+      "explode": {
+        "offset_mm": [
+          -36,
+          0,
+          0
+        ],
+        "stage": 2
+      }
+    },
+    {
+      "name": "winding_15",
+      "group": "windings",
+      "canonical_step": "parts/winding_15.step",
+      "presentation_step": "parts/winding_15.step",
+      "cutaway": false,
+      "omitted_from_cutaway": false,
+      "solid_count": 16,
+      "volume_mm3": 526.6442535670942,
+      "bbox_min_mm": [
+        -38.4400001,
+        0.5596169993254806,
+        -46.403633455480886
+      ],
+      "bbox_max_mm": [
+        -15.5599999,
+        14.078924358913149,
+        -36.61566012681321
+      ],
+      "color_rgba": [
+        0.7764706,
+        0.4901961,
+        0.2588235,
+        1.0
+      ],
+      "material": {
+        "name": "copper",
+        "metalness": 0.88,
+        "roughness": 0.25
+      },
+      "explode": {
+        "offset_mm": [
+          -36,
+          0,
+          0
+        ],
+        "stage": 2
+      }
+    },
+    {
+      "name": "bobbin_15",
+      "group": "windings",
+      "canonical_step": "parts/bobbin_15.step",
+      "presentation_step": "parts/bobbin_15.step",
+      "cutaway": false,
+      "omitted_from_cutaway": false,
+      "solid_count": 1,
+      "volume_mm3": 206.46772316997797,
+      "bbox_min_mm": [
+        -34.1,
+        2.989571700731548,
+        -46.04213567123044
+      ],
+      "bbox_max_mm": [
+        -19.9,
+        11.648969676590651,
+        -36.97715790769871
+      ],
+      "color_rgba": [
+        0.545098,
+        0.4392157,
+        0.2901961,
+        1.0
+      ],
+      "material": {
+        "name": "insulation",
+        "metalness": 0.08,
+        "roughness": 0.4
+      },
+      "explode": {
+        "offset_mm": [
+          -36,
+          0,
+          0
+        ],
+        "stage": 2
+      }
+    },
+    {
+      "name": "winding_16",
+      "group": "windings",
+      "canonical_step": "parts/winding_16.step",
+      "presentation_step": "parts/winding_16.step",
+      "cutaway": false,
+      "omitted_from_cutaway": false,
+      "solid_count": 16,
+      "volume_mm3": 526.6442535670943,
+      "bbox_min_mm": [
+        -38.4400001,
+        13.862052558023388,
+        -42.87405978277513
+      ],
+      "bbox_max_mm": [
+        -15.5599999,
+        28.28794742519481,
+        -30.13188176594202
+      ],
+      "color_rgba": [
+        0.7764706,
+        0.4901961,
+        0.2588235,
+        1.0
+      ],
+      "material": {
+        "name": "copper",
+        "metalness": 0.88,
+        "roughness": 0.25
+      },
+      "explode": {
+        "offset_mm": [
+          -36,
+          0,
+          0
+        ],
+        "stage": 2
+      }
+    },
+    {
+      "name": "bobbin_16",
+      "group": "windings",
+      "canonical_step": "parts/bobbin_16.step",
+      "presentation_step": "parts/bobbin_16.step",
+      "cutaway": false,
+      "omitted_from_cutaway": false,
+      "solid_count": 1,
+      "volume_mm3": 206.4677231699779,
+      "bbox_min_mm": [
+        -34.1,
+        15.895706005997573,
+        -41.77377111446262
+      ],
+      "bbox_max_mm": [
+        -19.9,
+        26.254293994002435,
+        -31.232170424565545
+      ],
+      "color_rgba": [
+        0.545098,
+        0.4392157,
+        0.2901961,
+        1.0
+      ],
+      "material": {
+        "name": "insulation",
+        "metalness": 0.08,
+        "roughness": 0.4
+      },
+      "explode": {
+        "offset_mm": [
+          -36,
+          0,
+          0
+        ],
+        "stage": 2
+      }
+    },
+    {
+      "name": "winding_17",
+      "group": "windings",
+      "canonical_step": "parts/winding_17.step",
+      "presentation_step": "parts/winding_17.step",
+      "cutaway": false,
+      "omitted_from_cutaway": false,
+      "solid_count": 16,
+      "volume_mm3": 526.6442535670943,
+      "bbox_min_mm": [
+        -38.4400001,
+        25.439449490346618,
+        -34.22631225230437
+      ],
+      "bbox_max_mm": [
+        -15.5599999,
+        39.13809705212731,
+        -19.960683259115296
+      ],
+      "color_rgba": [
+        0.7764706,
+        0.4901961,
+        0.2588235,
+        1.0
+      ],
+      "material": {
+        "name": "copper",
+        "metalness": 0.88,
+        "roughness": 0.25
+      },
+      "explode": {
+        "offset_mm": [
+          -36,
+          0,
+          0
+        ],
+        "stage": 2
+      }
+    },
+    {
+      "name": "bobbin_17",
+      "group": "windings",
+      "canonical_step": "parts/bobbin_17.step",
+      "presentation_step": "parts/bobbin_17.step",
+      "cutaway": false,
+      "omitted_from_cutaway": false,
+      "solid_count": 1,
+      "volume_mm3": 206.46772316997811,
+      "bbox_min_mm": [
+        -34.1,
+        26.88458357130475,
+        -32.466873246089705
+      ],
+      "bbox_max_mm": [
+        -19.9,
+        37.69296298362508,
+        -21.720122250485588
+      ],
+      "color_rgba": [
+        0.545098,
+        0.4392157,
+        0.2901961,
+        1.0
+      ],
+      "material": {
+        "name": "insulation",
+        "metalness": 0.08,
+        "roughness": 0.4
+      },
+      "explode": {
+        "offset_mm": [
+          -36,
+          0,
+          0
+        ],
+        "stage": 2
+      }
+    },
+    {
+      "name": "winding_18",
+      "group": "windings",
+      "canonical_step": "parts/winding_18.step",
+      "presentation_step": "parts/winding_18.step",
+      "cutaway": false,
+      "omitted_from_cutaway": false,
+      "solid_count": 16,
+      "volume_mm3": 526.6442535670943,
+      "bbox_min_mm": [
+        -38.4400001,
+        33.89540286207586,
+        -21.5034368434042
+      ],
+      "bbox_max_mm": [
+        -15.5599999,
+        45.32068506354855,
+        -7.328861257158996
+      ],
+      "color_rgba": [
+        0.7764706,
+        0.4901961,
+        0.2588235,
+        1.0
+      ],
+      "material": {
+        "name": "copper",
+        "metalness": 0.88,
+        "roughness": 0.25
+      },
+      "explode": {
+        "offset_mm": [
+          -36,
+          0,
+          0
+        ],
+        "stage": 2
+      }
+    },
+    {
+      "name": "bobbin_18",
+      "group": "windings",
+      "canonical_step": "parts/bobbin_18.step",
+      "presentation_step": "parts/bobbin_18.step",
+      "cutaway": false,
+      "omitted_from_cutaway": false,
+      "solid_count": 1,
+      "volume_mm3": 206.4677231699779,
+      "bbox_min_mm": [
+        -34.1,
+        34.63078358371673,
+        -19.243991304221197
+      ],
+      "bbox_max_mm": [
+        -19.9,
+        44.58530434853536,
+        -9.588306778132672
+      ],
+      "color_rgba": [
+        0.545098,
+        0.4392157,
+        0.2901961,
+        1.0
+      ],
+      "material": {
+        "name": "insulation",
+        "metalness": 0.08,
+        "roughness": 0.4
       },
       "explode": {
         "offset_mm": [
@@ -816,7 +1752,7 @@
       "cutaway": false,
       "omitted_from_cutaway": false,
       "solid_count": 1,
-      "volume_mm3": 26274.772990151298,
+      "volume_mm3": 26274.77299015128,
       "bbox_min_mm": [
         -34.00000000000001,
         -33.8,
@@ -855,16 +1791,16 @@
       "cutaway": false,
       "omitted_from_cutaway": false,
       "solid_count": 1,
-      "volume_mm3": 832.7997099124407,
+      "volume_mm3": 832.0174619759969,
       "bbox_min_mm": [
-        -29.999999999999993,
-        0.7417060911750781,
-        -36.59129019112468
+        -30.000000000000004,
+        0.741706091175078,
+        -36.59129019112469
       ],
       "bbox_max_mm": [
-        -3.999999999999992,
-        13.26523220118348,
-        -31.688267555615145
+        -3.9999999999999916,
+        13.26523220118349,
+        -31.68826755561515
       ],
       "color_rgba": [
         0.3254902,
@@ -894,16 +1830,16 @@
       "cutaway": false,
       "omitted_from_cutaway": false,
       "solid_count": 1,
-      "volume_mm3": 832.7997099124404,
+      "volume_mm3": 832.0174619759968,
       "bbox_min_mm": [
-        -29.999999999999993,
+        -30.000000000000007,
         13.693387455197062,
-        -33.50040013577177
+        -33.500400135771784
       ],
       "bbox_max_mm": [
-        -3.999999999999992,
-        25.30937784163106,
-        -24.560374710031684
+        -3.9999999999999916,
+        25.30937784163107,
+        -24.560374710031688
       ],
       "color_rgba": [
         0.3254902,
@@ -933,15 +1869,15 @@
       "cutaway": false,
       "omitted_from_cutaway": false,
       "solid_count": 1,
-      "volume_mm3": 832.7997099124407,
+      "volume_mm3": 832.0174619759969,
       "bbox_min_mm": [
-        -29.999999999999993,
-        24.560374710031688,
-        -25.30937784163106
+        -30.000000000000004,
+        24.560374710031684,
+        -25.309377841631083
       ],
       "bbox_max_mm": [
-        -3.999999999999992,
-        33.50040013577177,
+        -3.9999999999999916,
+        33.50040013577178,
         -13.693387455197062
       ],
       "color_rgba": [
@@ -972,16 +1908,16 @@
       "cutaway": false,
       "omitted_from_cutaway": false,
       "solid_count": 1,
-      "volume_mm3": 832.7997099124403,
+      "volume_mm3": 832.0174619759968,
       "bbox_min_mm": [
-        -29.999999999999993,
-        31.688267555615138,
-        -13.265232201183485
+        -30.000000000000004,
+        31.688267555615134,
+        -13.265232201183508
       ],
       "bbox_max_mm": [
-        -3.999999999999992,
-        36.59129019112468,
-        -0.7417060911750801
+        -3.9999999999999916,
+        36.591290191124685,
+        -0.7417060911750788
       ],
       "color_rgba": [
         0.3254902,
@@ -1011,16 +1947,16 @@
       "cutaway": false,
       "omitted_from_cutaway": false,
       "solid_count": 1,
-      "volume_mm3": 832.7997099124407,
+      "volume_mm3": 832.0174619759969,
       "bbox_min_mm": [
-        -29.999999999999993,
-        31.688267555615145,
-        0.7417060911750706
+        -30.000000000000004,
+        31.688267555615152,
+        0.7417060911750705
       ],
       "bbox_max_mm": [
-        -3.999999999999992,
-        36.59129019112468,
-        13.265232201183473
+        -3.9999999999999916,
+        36.59129019112469,
+        13.265232201183483
       ],
       "color_rgba": [
         0.3254902,
@@ -1050,16 +1986,16 @@
       "cutaway": false,
       "omitted_from_cutaway": false,
       "solid_count": 1,
-      "volume_mm3": 832.7997099124409,
+      "volume_mm3": 832.0174619759972,
       "bbox_min_mm": [
-        -29.999999999999993,
+        -30.000000000000004,
         24.560374710031688,
-        13.693387455197065
+        13.693387455197062
       ],
       "bbox_max_mm": [
-        -3.999999999999992,
-        33.50040013577178,
-        25.309377841631065
+        -3.9999999999999916,
+        33.500400135771784,
+        25.309377841631076
       ],
       "color_rgba": [
         0.3254902,
@@ -1089,15 +2025,15 @@
       "cutaway": false,
       "omitted_from_cutaway": false,
       "solid_count": 1,
-      "volume_mm3": 832.7997099124408,
+      "volume_mm3": 832.0174619759972,
       "bbox_min_mm": [
-        -29.999999999999993,
-        13.693387455197069,
-        24.560374710031684
+        -30.000000000000004,
+        13.69338745519707,
+        24.56037471003168
       ],
       "bbox_max_mm": [
-        -3.999999999999992,
-        25.30937784163107,
+        -3.9999999999999916,
+        25.30937784163109,
         33.50040013577177
       ],
       "color_rgba": [
@@ -1128,16 +2064,16 @@
       "cutaway": false,
       "omitted_from_cutaway": false,
       "solid_count": 1,
-      "volume_mm3": 832.7997099124404,
+      "volume_mm3": 832.0174619759969,
       "bbox_min_mm": [
-        -29.999999999999993,
-        0.7417060911750819,
+        -30.000000000000004,
+        0.7417060911750788,
         31.68826755561514
       ],
       "bbox_max_mm": [
-        -3.999999999999992,
-        13.265232201183487,
-        36.59129019112468
+        -3.9999999999999916,
+        13.265232201183505,
+        36.591290191124685
       ],
       "color_rgba": [
         0.3254902,
@@ -1167,16 +2103,16 @@
       "cutaway": false,
       "omitted_from_cutaway": false,
       "solid_count": 1,
-      "volume_mm3": 832.7997099124404,
+      "volume_mm3": 832.0174619759969,
       "bbox_min_mm": [
-        -29.999999999999993,
-        -13.265232201183476,
-        31.688267555615145
+        -30.000000000000004,
+        -13.265232201183487,
+        31.68826755561515
       ],
       "bbox_max_mm": [
-        -3.999999999999992,
-        -0.741706091175074,
-        36.59129019112468
+        -3.9999999999999916,
+        -0.7417060911750739,
+        36.59129019112469
       ],
       "color_rgba": [
         0.3254902,
@@ -1206,16 +2142,16 @@
       "cutaway": false,
       "omitted_from_cutaway": false,
       "solid_count": 1,
-      "volume_mm3": 832.7997099124403,
+      "volume_mm3": 832.0174619759968,
       "bbox_min_mm": [
-        -29.999999999999993,
-        -25.309377841631058,
+        -30.000000000000007,
+        -25.30937784163107,
         24.560374710031688
       ],
       "bbox_max_mm": [
-        -3.999999999999992,
-        -13.693387455197058,
-        33.50040013577177
+        -3.9999999999999916,
+        -13.693387455197056,
+        33.50040013577179
       ],
       "color_rgba": [
         0.3254902,
@@ -1245,16 +2181,16 @@
       "cutaway": false,
       "omitted_from_cutaway": false,
       "solid_count": 1,
-      "volume_mm3": 832.7997099124411,
+      "volume_mm3": 832.0174619759973,
       "bbox_min_mm": [
-        -29.999999999999993,
+        -30.000000000000004,
         -33.50040013577178,
-        13.693387455197076
+        13.69338745519707
       ],
       "bbox_max_mm": [
-        -3.999999999999992,
-        -24.560374710031688,
-        25.309377841631076
+        -3.9999999999999916,
+        -24.560374710031684,
+        25.30937784163109
       ],
       "color_rgba": [
         0.3254902,
@@ -1284,16 +2220,16 @@
       "cutaway": false,
       "omitted_from_cutaway": false,
       "solid_count": 1,
-      "volume_mm3": 832.7997099124407,
+      "volume_mm3": 832.0174619759971,
       "bbox_min_mm": [
-        -29.999999999999993,
-        -36.59129019112468,
-        0.7417060911750625
+        -30.000000000000004,
+        -36.591290191124685,
+        0.741706091175061
       ],
       "bbox_max_mm": [
-        -3.999999999999992,
+        -3.9999999999999916,
         -31.68826755561515,
-        13.26523220118347
+        13.26523220118349
       ],
       "color_rgba": [
         0.3254902,
@@ -1323,16 +2259,16 @@
       "cutaway": false,
       "omitted_from_cutaway": false,
       "solid_count": 1,
-      "volume_mm3": 832.7997099124407,
+      "volume_mm3": 832.0174619759969,
       "bbox_min_mm": [
-        -29.999999999999993,
-        -36.59129019112468,
-        -13.265232201183473
+        -30.000000000000004,
+        -36.59129019112469,
+        -13.265232201183483
       ],
       "bbox_max_mm": [
-        -3.999999999999992,
-        -31.688267555615145,
-        -0.7417060911750706
+        -3.9999999999999916,
+        -31.688267555615152,
+        -0.7417060911750705
       ],
       "color_rgba": [
         0.3254902,
@@ -1362,16 +2298,16 @@
       "cutaway": false,
       "omitted_from_cutaway": false,
       "solid_count": 1,
-      "volume_mm3": 832.7997099124406,
+      "volume_mm3": 832.0174619759965,
       "bbox_min_mm": [
-        -29.999999999999993,
-        -33.50040013577176,
-        -25.30937784163107
+        -30.000000000000004,
+        -33.500400135771784,
+        -25.309377841631076
       ],
       "bbox_max_mm": [
-        -3.999999999999992,
+        -3.9999999999999916,
         -24.56037471003168,
-        -13.69338745519707
+        -13.693387455197067
       ],
       "color_rgba": [
         0.3254902,
@@ -1401,16 +2337,16 @@
       "cutaway": false,
       "omitted_from_cutaway": false,
       "solid_count": 1,
-      "volume_mm3": 832.7997099124407,
+      "volume_mm3": 832.0174619759969,
       "bbox_min_mm": [
-        -29.999999999999993,
-        -25.30937784163107,
+        -30.000000000000004,
+        -25.30937784163109,
         -33.50040013577177
       ],
       "bbox_max_mm": [
-        -3.999999999999992,
-        -13.69338745519707,
-        -24.56037471003168
+        -3.9999999999999916,
+        -13.693387455197072,
+        -24.560374710031677
       ],
       "color_rgba": [
         0.3254902,
@@ -1440,16 +2376,16 @@
       "cutaway": false,
       "omitted_from_cutaway": false,
       "solid_count": 1,
-      "volume_mm3": 832.7997099124408,
+      "volume_mm3": 832.017461975997,
       "bbox_min_mm": [
-        -29.999999999999993,
-        -13.26523220118348,
+        -30.000000000000004,
+        -13.265232201183501,
         -36.591290191124685
       ],
       "bbox_max_mm": [
-        -3.999999999999992,
-        -0.7417060911750731,
-        -31.688267555615145
+        -3.9999999999999916,
+        -0.741706091175074,
+        -31.68826755561514
       ],
       "color_rgba": [
         0.3254902,
@@ -1479,7 +2415,7 @@
       "cutaway": false,
       "omitted_from_cutaway": false,
       "solid_count": 1,
-      "volume_mm3": 11922.344120373262,
+      "volume_mm3": 11922.344120373253,
       "bbox_min_mm": [
         -40.0,
         -13.0,
@@ -1511,6 +2447,201 @@
       }
     },
     {
+      "name": "rear_bearing_carrier",
+      "group": "rear_cap",
+      "canonical_step": "parts/rear_bearing_carrier.step",
+      "presentation_step": "presentation-parts/rear_bearing_carrier.step",
+      "cutaway": true,
+      "omitted_from_cutaway": false,
+      "solid_count": 1,
+      "volume_mm3": 4991.345391063256,
+      "bbox_min_mm": [
+        -42.00000000000001,
+        -28.0,
+        -28.0
+      ],
+      "bbox_max_mm": [
+        -34.99999999999999,
+        28.0,
+        28.0
+      ],
+      "color_rgba": [
+        0.7294118,
+        0.7647059,
+        0.8,
+        1.0
+      ],
+      "material": {
+        "name": "aluminium",
+        "metalness": 0.88,
+        "roughness": 0.28
+      },
+      "explode": {
+        "offset_mm": [
+          -80,
+          0,
+          0
+        ],
+        "stage": 2
+      }
+    },
+    {
+      "name": "rear_bearing_retainer",
+      "group": "rear_cap",
+      "canonical_step": "parts/rear_bearing_retainer.step",
+      "presentation_step": "presentation-parts/rear_bearing_retainer.step",
+      "cutaway": true,
+      "omitted_from_cutaway": false,
+      "solid_count": 1,
+      "volume_mm3": 459.77874502929353,
+      "bbox_min_mm": [
+        -35.00000000000001,
+        -28.0,
+        -28.0
+      ],
+      "bbox_max_mm": [
+        -34.49999999999999,
+        28.0,
+        28.0
+      ],
+      "color_rgba": [
+        0.2078431,
+        0.2431373,
+        0.2862745,
+        1.0
+      ],
+      "material": {
+        "name": "dark_steel",
+        "metalness": 0.82,
+        "roughness": 0.3
+      },
+      "explode": {
+        "offset_mm": [
+          -72,
+          0,
+          0
+        ],
+        "stage": 2
+      }
+    },
+    {
+      "name": "rear_bearing_inner",
+      "group": "shaft",
+      "canonical_step": "parts/rear_bearing_inner.step",
+      "presentation_step": "parts/rear_bearing_inner.step",
+      "cutaway": false,
+      "omitted_from_cutaway": false,
+      "solid_count": 1,
+      "volume_mm3": 3904.6218162213445,
+      "bbox_min_mm": [
+        -40.00000000000001,
+        -20.7,
+        -20.700000000000017
+      ],
+      "bbox_max_mm": [
+        -34.99999999999999,
+        20.7,
+        20.7
+      ],
+      "color_rgba": [
+        0.7960784,
+        0.8313726,
+        0.8666667,
+        1.0
+      ],
+      "material": {
+        "name": "polished",
+        "metalness": 0.97,
+        "roughness": 0.18
+      },
+      "explode": {
+        "offset_mm": [
+          -52,
+          0,
+          0
+        ],
+        "stage": 2
+      }
+    },
+    {
+      "name": "rear_bearing_outer",
+      "group": "shaft",
+      "canonical_step": "parts/rear_bearing_outer.step",
+      "presentation_step": "presentation-parts/rear_bearing_outer.step",
+      "cutaway": true,
+      "omitted_from_cutaway": false,
+      "solid_count": 1,
+      "volume_mm3": 1776.9219807501654,
+      "bbox_min_mm": [
+        -40.00000000000001,
+        -24.0,
+        -24.0
+      ],
+      "bbox_max_mm": [
+        -34.99999999999999,
+        24.0,
+        24.0
+      ],
+      "color_rgba": [
+        0.7960784,
+        0.8313726,
+        0.8666667,
+        1.0
+      ],
+      "material": {
+        "name": "polished",
+        "metalness": 0.97,
+        "roughness": 0.18
+      },
+      "explode": {
+        "offset_mm": [
+          -52,
+          0,
+          0
+        ],
+        "stage": 2
+      }
+    },
+    {
+      "name": "rear_bearing_balls",
+      "group": "shaft",
+      "canonical_step": "parts/rear_bearing_balls.step",
+      "presentation_step": "parts/rear_bearing_balls.step",
+      "cutaway": false,
+      "omitted_from_cutaway": false,
+      "solid_count": 36,
+      "volume_mm3": 109.9306101344141,
+      "bbox_min_mm": [
+        -38.4,
+        -21.9,
+        -21.9
+      ],
+      "bbox_max_mm": [
+        -36.6,
+        21.9,
+        21.9
+      ],
+      "color_rgba": [
+        0.7960784,
+        0.8313726,
+        0.8666667,
+        1.0
+      ],
+      "material": {
+        "name": "polished",
+        "metalness": 0.97,
+        "roughness": 0.18
+      },
+      "explode": {
+        "offset_mm": [
+          -52,
+          0,
+          0
+        ],
+        "stage": 2
+      }
+    },
+    {
       "name": "gear_housing",
       "group": "gear_housing",
       "canonical_step": "parts/gear_housing.step",
@@ -1518,7 +2649,7 @@
       "cutaway": true,
       "omitted_from_cutaway": false,
       "solid_count": 1,
-      "volume_mm3": 45503.464167106955,
+      "volume_mm3": 51697.61673848378,
       "bbox_min_mm": [
         -1.1546319456101628e-14,
         -52.0,
@@ -1557,7 +2688,7 @@
       "cutaway": true,
       "omitted_from_cutaway": false,
       "solid_count": 1,
-      "volume_mm3": 25151.728041927145,
+      "volume_mm3": 24178.464566506496,
       "bbox_min_mm": [
         2.9999999999999902,
         -44.0,
@@ -1589,6 +2720,84 @@
       }
     },
     {
+      "name": "circular_spline_pilot",
+      "group": "circular_spline",
+      "canonical_step": "parts/circular_spline_pilot.step",
+      "presentation_step": "presentation-parts/circular_spline_pilot.step",
+      "cutaway": true,
+      "omitted_from_cutaway": false,
+      "solid_count": 1,
+      "volume_mm3": 3216.6942480975995,
+      "bbox_min_mm": [
+        2.9999999999999902,
+        -45.1,
+        -45.1
+      ],
+      "bbox_max_mm": [
+        14.00000000000001,
+        45.1,
+        45.1
+      ],
+      "color_rgba": [
+        0.5490196,
+        0.6,
+        0.654902,
+        1.0
+      ],
+      "material": {
+        "name": "steel",
+        "metalness": 0.93,
+        "roughness": 0.24
+      },
+      "explode": {
+        "offset_mm": [
+          18,
+          0,
+          0
+        ],
+        "stage": 2
+      }
+    },
+    {
+      "name": "circular_spline_screws",
+      "group": "circular_spline",
+      "canonical_step": "parts/circular_spline_screws.step",
+      "presentation_step": "presentation-parts/circular_spline_screws.step",
+      "cutaway": true,
+      "omitted_from_cutaway": false,
+      "solid_count": 8,
+      "volume_mm3": 669.4486716104411,
+      "bbox_min_mm": [
+        0.4999999999999942,
+        -38.181301767940184,
+        -38.181301767940184
+      ],
+      "bbox_max_mm": [
+        13.800000000000006,
+        38.181301767940184,
+        38.181301767940184
+      ],
+      "color_rgba": [
+        0.2078431,
+        0.2431373,
+        0.2862745,
+        1.0
+      ],
+      "material": {
+        "name": "dark_steel",
+        "metalness": 0.82,
+        "roughness": 0.3
+      },
+      "explode": {
+        "offset_mm": [
+          30,
+          0,
+          0
+        ],
+        "stage": 1
+      }
+    },
+    {
       "name": "flexspline",
       "group": "flexspline",
       "canonical_step": "parts/flexspline.step",
@@ -1596,16 +2805,16 @@
       "cutaway": true,
       "omitted_from_cutaway": false,
       "solid_count": 1,
-      "volume_mm3": 16883.59562878794,
+      "volume_mm3": 17292.650980305567,
       "bbox_min_mm": [
         2.9999999999999925,
-        -33.79495453702116,
-        -33.79495453702116
+        -33.792788304901705,
+        -33.792788304901705
       ],
       "bbox_max_mm": [
         33.00000000000001,
-        33.79495453702116,
-        33.79495453702116
+        33.792788304901705,
+        33.792788304901705
       ],
       "color_rgba": [
         0.7960784,
@@ -1635,16 +2844,16 @@
       "cutaway": false,
       "omitted_from_cutaway": false,
       "solid_count": 1,
-      "volume_mm3": 15498.858860926033,
+      "volume_mm3": 16047.38094038545,
       "bbox_min_mm": [
-        3.999999999999994,
-        -25.8,
-        -28.0
+        3.999999899999963,
+        -26.350000836877495,
+        -28.55000010000001
       ],
       "bbox_max_mm": [
-        13.000000000000007,
-        25.8,
-        28.000000000000004
+        13.000000100000284,
+        26.350000836877484,
+        28.55000010000037
       ],
       "color_rgba": [
         0.2078431,
@@ -1674,16 +2883,16 @@
       "cutaway": true,
       "omitted_from_cutaway": false,
       "solid_count": 1,
-      "volume_mm3": 756.0871039394547,
+      "volume_mm3": 1199.3871212813683,
       "bbox_min_mm": [
-        4.399999999999993,
-        -28.5,
-        -30.7
+        4.399999899999945,
+        -28.75000090399347,
+        -30.9500001
       ],
       "bbox_max_mm": [
-        12.600000000000007,
-        28.5,
-        30.700000000000003
+        12.600000100000079,
+        28.750000903993456,
+        30.950000099999905
       ],
       "color_rgba": [
         0.7960784,
@@ -1713,16 +2922,16 @@
       "cutaway": false,
       "omitted_from_cutaway": false,
       "solid_count": 36,
-      "volume_mm3": 92.60786824251994,
+      "volume_mm3": 413.7854515896191,
       "bbox_min_mm": [
-        7.65,
-        -27.950000000000003,
-        -30.150000000000002
+        7.1,
+        -28.4,
+        -30.599999999999998
       ],
       "bbox_max_mm": [
-        9.35,
-        27.950000000000003,
-        30.150000000000002
+        9.9,
+        28.4,
+        30.599999999999998
       ],
       "color_rgba": [
         0.7960784,
@@ -1745,6 +2954,84 @@
       }
     },
     {
+      "name": "output_bearing_seal_23.5",
+      "group": "output_bearing",
+      "canonical_step": "parts/output_bearing_seal_23.5.step",
+      "presentation_step": "presentation-parts/output_bearing_seal_23.5.step",
+      "cutaway": true,
+      "omitted_from_cutaway": false,
+      "solid_count": 1,
+      "volume_mm3": 137.0205635863174,
+      "bbox_min_mm": [
+        23.54999999999999,
+        -40.2,
+        -40.2
+      ],
+      "bbox_max_mm": [
+        24.05000000000001,
+        40.2,
+        40.2
+      ],
+      "color_rgba": [
+        0.2,
+        0.227451,
+        0.2627451,
+        1.0
+      ],
+      "material": {
+        "name": "polymer",
+        "metalness": 0.05,
+        "roughness": 0.48
+      },
+      "explode": {
+        "offset_mm": [
+          70,
+          0,
+          0
+        ],
+        "stage": 2
+      }
+    },
+    {
+      "name": "output_bearing_seal_36",
+      "group": "output_bearing",
+      "canonical_step": "parts/output_bearing_seal_36.step",
+      "presentation_step": "presentation-parts/output_bearing_seal_36.step",
+      "cutaway": true,
+      "omitted_from_cutaway": false,
+      "solid_count": 1,
+      "volume_mm3": 137.02056358631762,
+      "bbox_min_mm": [
+        36.04999999999999,
+        -40.2,
+        -40.2
+      ],
+      "bbox_max_mm": [
+        36.550000000000004,
+        40.2,
+        40.2
+      ],
+      "color_rgba": [
+        0.2,
+        0.227451,
+        0.2627451,
+        1.0
+      ],
+      "material": {
+        "name": "polymer",
+        "metalness": 0.05,
+        "roughness": 0.48
+      },
+      "explode": {
+        "offset_mm": [
+          70,
+          0,
+          0
+        ],
+        "stage": 2
+      }
+    },
+    {
       "name": "output_bearing_inner",
       "group": "output_bearing",
       "canonical_step": "parts/output_bearing_inner.step",
@@ -1752,16 +3039,16 @@
       "cutaway": false,
       "omitted_from_cutaway": false,
       "solid_count": 1,
-      "volume_mm3": 7037.1675440411345,
+      "volume_mm3": 16156.771194440811,
       "bbox_min_mm": [
-        21.999999999999993,
-        -36.0,
-        -36.0
+        22.0,
+        -39.0,
+        -39.0
       ],
       "bbox_max_mm": [
-        38.00000000000001,
-        36.0,
-        36.0
+        38.0,
+        39.0,
+        39.0
       ],
       "color_rgba": [
         0.7960784,
@@ -1791,14 +3078,14 @@
       "cutaway": true,
       "omitted_from_cutaway": false,
       "solid_count": 1,
-      "volume_mm3": 8846.724912508827,
+      "volume_mm3": 18905.451138031436,
       "bbox_min_mm": [
-        21.99999999999999,
+        22.0,
         -45.0,
         -45.0
       ],
       "bbox_max_mm": [
-        38.000000000000014,
+        38.0,
         45.0,
         45.0
       ],
@@ -1830,16 +3117,16 @@
       "cutaway": false,
       "omitted_from_cutaway": false,
       "solid_count": 28,
-      "volume_mm3": 2233.5969784786566,
+      "volume_mm3": 2220.828741686747,
       "bbox_min_mm": [
-        26.676598128423226,
-        -42.823401871576785,
-        -42.82340187157678
+        26.803877349036807,
+        -42.696122650963204,
+        -42.696122650963204
       ],
       "bbox_max_mm": [
-        33.323401871576785,
-        42.823401871576785,
-        42.82340187157678
+        33.196122650963204,
+        42.696122650963204,
+        42.696122650963204
       ],
       "color_rgba": [
         0.7960784,
@@ -1869,16 +3156,16 @@
       "cutaway": false,
       "omitted_from_cutaway": false,
       "solid_count": 28,
-      "volume_mm3": 473.0880000000001,
+      "volume_mm3": 246.40000000000015,
       "bbox_min_mm": [
-        28.4,
-        -41.69812205638369,
-        -41.69812205638369
+        29.0,
+        -41.30063717242639,
+        -41.30063717242639
       ],
       "bbox_max_mm": [
-        31.599999999999998,
-        41.69812205638369,
-        41.69812205638369
+        31.0,
+        41.30063717242639,
+        41.30063717242639
       ],
       "color_rgba": [
         0.6862745,
@@ -1901,6 +3188,84 @@
       }
     },
     {
+      "name": "output_spacer",
+      "group": "output_flange",
+      "canonical_step": "parts/output_spacer.step",
+      "presentation_step": "parts/output_spacer.step",
+      "cutaway": false,
+      "omitted_from_cutaway": false,
+      "solid_count": 1,
+      "volume_mm3": 2518.1121755583604,
+      "bbox_min_mm": [
+        32.99999999999999,
+        -32.0,
+        -32.0
+      ],
+      "bbox_max_mm": [
+        34.00000000000001,
+        32.0,
+        32.0
+      ],
+      "color_rgba": [
+        0.5490196,
+        0.6,
+        0.654902,
+        1.0
+      ],
+      "material": {
+        "name": "steel",
+        "metalness": 0.93,
+        "roughness": 0.24
+      },
+      "explode": {
+        "offset_mm": [
+          92,
+          0,
+          0
+        ],
+        "stage": 2
+      }
+    },
+    {
+      "name": "output_flange_screws",
+      "group": "output_flange",
+      "canonical_step": "parts/output_flange_screws.step",
+      "presentation_step": "parts/output_flange_screws.step",
+      "cutaway": false,
+      "omitted_from_cutaway": false,
+      "solid_count": 6,
+      "volume_mm3": 1271.8900835161637,
+      "bbox_min_mm": [
+        30.2,
+        -24.70063509461097,
+        -28.049999999999994
+      ],
+      "bbox_max_mm": [
+        46.8,
+        24.70063509461097,
+        28.050000000000008
+      ],
+      "color_rgba": [
+        0.2078431,
+        0.2431373,
+        0.2862745,
+        1.0
+      ],
+      "material": {
+        "name": "dark_steel",
+        "metalness": 0.82,
+        "roughness": 0.3
+      },
+      "explode": {
+        "offset_mm": [
+          118,
+          0,
+          0
+        ],
+        "stage": 1
+      }
+    },
+    {
       "name": "output_flange",
       "group": "output_flange",
       "canonical_step": "parts/output_flange.step",
@@ -1908,7 +3273,7 @@
       "cutaway": false,
       "omitted_from_cutaway": false,
       "solid_count": 1,
-      "volume_mm3": 70663.15711920043,
+      "volume_mm3": 69309.31104526964,
       "bbox_min_mm": [
         33.99999999999999,
         -49.0,
@@ -1947,7 +3312,7 @@
       "cutaway": false,
       "omitted_from_cutaway": false,
       "solid_count": 1,
-      "volume_mm3": 1.5550883635269468,
+      "volume_mm3": 1.5550883635269481,
       "bbox_min_mm": [
         -31.4,
         -52.199999999999996,
@@ -1986,7 +3351,7 @@
       "cutaway": false,
       "omitted_from_cutaway": false,
       "solid_count": 1,
-      "volume_mm3": 1.5550883635269475,
+      "volume_mm3": 1.5550883635269477,
       "bbox_min_mm": [
         -31.4,
         -52.199999999999996,
@@ -2064,7 +3429,7 @@
       "cutaway": false,
       "omitted_from_cutaway": false,
       "solid_count": 1,
-      "volume_mm3": 1.5550883635269472,
+      "volume_mm3": 1.5550883635269477,
       "bbox_min_mm": [
         -11.4,
         -52.199999999999996,
@@ -2103,7 +3468,7 @@
       "cutaway": false,
       "omitted_from_cutaway": false,
       "solid_count": 1,
-      "volume_mm3": 469.10495667735097,
+      "volume_mm3": 469.1049566773509,
       "bbox_min_mm": [
         -32.5,
         -53.4,
@@ -2181,7 +3546,7 @@
       "cutaway": false,
       "omitted_from_cutaway": false,
       "solid_count": 1,
-      "volume_mm3": 42.0,
+      "volume_mm3": 42.00000000000001,
       "bbox_min_mm": [
         -23.5,
         -55.4,
@@ -2220,7 +3585,7 @@
       "cutaway": false,
       "omitted_from_cutaway": false,
       "solid_count": 14,
-      "volume_mm3": 2.3099999999999925,
+      "volume_mm3": 2.3099999999999934,
       "bbox_min_mm": [
         -23.25,
         -53.699999999999996,

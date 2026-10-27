@@ -1,8 +1,22 @@
 {
   "duration": 12,
   "assertions": [
-    {"kind": "staysInFrame", "selector": "#header"},
-    {"kind": "staysInFrame", "selector": "#comparison"},
-    {"kind": "keepsMoving", "withinSelector": "#root", "maxStaticSec": 3.2}
+    {
+      "kind": "staysInFrame",
+      "selector": "#phase"
+    },
+    {
+      "kind": "staysInFrame",
+      "selector": "#comparison-20"
+    },
+    {
+      "kind": "staysInFrame",
+      "selector": "#comparison-30"
+    },
+    {
+      "kind": "keepsMoving",
+      "withinSelector": "#root",
+      "maxStaticSec": 3.2
+    }
   ]
 }

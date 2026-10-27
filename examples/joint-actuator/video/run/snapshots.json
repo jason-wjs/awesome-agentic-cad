@@ -1,33 +1,36 @@
 {
-  "source": "HyperFrames snapshot, final scene",
   "frames": [
     {
       "file": "generated/cutaway.png",
       "time_seconds": 0,
+      "source": "Blender Cycles, 128 samples",
       "width": 1280,
       "height": 720,
-      "sha256": "fc2f300ee96a91d4c060b86d34db5b6903acefd6a367e8e1ce5efaebaa1a8f0f"
+      "sha256": "63d9124a65df5d1a1d9a020eb518709b8af2b89a896ebe9f7f2ab082e6d5dea3"
     },
     {
       "file": "generated/assembly.png",
       "time_seconds": 3.5,
+      "source": "Blender Cycles, 128 samples",
       "width": 1280,
       "height": 720,
-      "sha256": "be546c3b0dcd816a6233175061114c866a9556653e09bdd218a99b23b35fa81d"
+      "sha256": "e3e2c002f17563324ce9768112c551243e6ca2db7ca0a97968b28ce0af325e7d"
     },
     {
       "file": "generated/exploded.png",
       "time_seconds": 6.5,
+      "source": "Blender Cycles, 128 samples",
       "width": 1280,
       "height": 720,
-      "sha256": "187a4f05789837c3d6a32399b613e633f91ccca34fb44d57e8b1bf7ed158331e"
+      "sha256": "078b99a9e506dcc448235aece91251ddec1df47d17cc55d13b8d5fa6d3c74efa"
     },
     {
       "file": "generated/bore-comparison.png",
       "time_seconds": 10.5,
+      "source": "HyperFrames composition of two Cycles stills",
       "width": 1280,
       "height": 720,
-      "sha256": "ad79b19be602c4b80e399b1c3beca2f614e4a4d6160f35fd52d76bb7b992d60e"
+      "sha256": "d40d622ef9c50be17ddeaac83a848502f0d59fb8c30f8de4cab348909490bf29"
     }
   ]
 }

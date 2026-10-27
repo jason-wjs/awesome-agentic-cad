@@ -7,12 +7,12 @@ Codex modeled the supplied joint-actuator cutaway in build123d, generated the 20
 | Record | Contents |
 |---|---|
 | [20 mm build](model-20.json), [30 mm build](model-30.json) | Source and configuration hashes, exported STEP hashes, part counts, elapsed time. |
-| [Checks](check.json) | Run time and checker controls for overlap, contact, and an obstructed bore. |
-| [20 mm geometry](check-bore-20.json), [30 mm geometry](check-bore-30.json) | Solid validity, STEP round trips, bore and mounting measurements, clearances, interference, cutaway checks. |
-| [Revision](revision.json) | Six changed parts; unchanged outer envelope and mounting geometry outside the enlarged bore. |
+| [Checks](check.json) | Run time and controls for overlap, contact, a blocked bore, and a blocked screw-entry path. |
+| [20 mm geometry](check-bore-20.json), [30 mm geometry](check-bore-30.json) | Solid validity, STEP round trips, bore and mounting measurements, bearing clearances, interference, screw insertion, cutaway checks. |
+| [Revision](revision.json) | Eight changed parts; unchanged outer envelope and mounting geometry outside the enlarged bore. |
 
-Early checks caught reversed magnet extrusion, housing intrusion into the stator, overlapping encoder contacts, and duplicated STEP assembly instances. Those were corrected before the final exports. The cutaway was then adjusted to retain copper coils and their pole teeth.
+The detail pass added denser windings, insulating bobbins, curved magnet faces, rounded teeth, and grooved bearing races. Inspection of the front screws exposed a lip across their entry holes. Opening the counterbores removed it; the checker now sweeps each screw's head and shank from the front to its installed position.
 
-Each variant contains 56 named parts and 254 solids. The interference check screens all 1,540 part pairs, performs exact intersections for overlapping bounding boxes, and also checks solids within compound parts. The reports cover the modeled static geometry; tooth deformation, bearing preload, and torque are not calculated.
+Each variant contains 91 named components and 510 solids. The interference check screens all 4,095 component pairs, performs exact intersections for overlapping bounding boxes, and also checks solids within compound components. The reports cover the modeled static geometry; tooth deformation, bearing preload, and torque are not calculated.
 
-The animation uses meshes tessellated from these STEP parts. Its source and render records are in [video/](../video/).
+Blender Cycles renders meshes and surface normals exported from these STEP parts. HyperFrames adds the labels and comparison layout. Source files and render records are in [video/](../video/).

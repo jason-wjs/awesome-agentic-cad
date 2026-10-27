@@ -1,0 +1,74 @@
+{
+  "mode": "all",
+  "command": [
+    "blender",
+    "--background",
+    "--factory-startup",
+    "--python",
+    "render_cad.py",
+    "--",
+    "--assets",
+    "assets",
+    "--output",
+    "out/cad",
+    "--mode",
+    "all",
+    "--samples",
+    "64",
+    "--width",
+    "1280",
+    "--height",
+    "720",
+    "--fps",
+    "12"
+  ],
+  "elapsed_seconds": 1275.24,
+  "source_sha256": {
+    "render.py": "1c2f44b734832fab889a0fa2a1a2b561da88456753f4a1f5e4de991e12fd2ee4",
+    "render_cad.py": "d838dbaabff1b4d8a9bc899025322d4db6f36e703b697a1d7f7b42e9a336d0db",
+    "export_meshes.py": "cd842987eab31973f7d90cfe201180304a632ce77601fb07d47183a3f3e12022"
+  },
+  "meshes": {
+    "20": {
+      "manifest_sha256": "55e3f4ddd7cb03f9877eeb60271bc56d828c241fe3c2927b2d8ac8a7a8c392c8",
+      "mesh_sha256": "22a2d6d10c29c9999d63caa15d9bcd580ac89e5839221cb75ab8e293fe6644ad",
+      "tessellation": {
+        "linear_tolerance_mm": 0.045,
+        "angular_tolerance_rad": {
+          "windings": 0.24,
+          "other": 0.12
+        },
+        "relative_deflection": false,
+        "normals": "analytic CAD surface normals",
+        "triangle_count": 2623710,
+        "face_boundaries_preserved": true
+      },
+      "equivalent_final_manifest_sha256": "84378a1ceef1c27d67cad8db4edf5df392dd888c6a1673adb96e355e46dbd886"
+    },
+    "30": {
+      "manifest_sha256": "8a63290a80fb7d425a19dab924084ae888af80b334fb270b412e8c9bc53eea50",
+      "mesh_sha256": "c079e692a7dbf280278d1c81caca54941b107f8c08449803a2721b1d490945f5",
+      "tessellation": {
+        "linear_tolerance_mm": 0.045,
+        "angular_tolerance_rad": {
+          "windings": 0.24,
+          "other": 0.12
+        },
+        "relative_deflection": false,
+        "normals": "analytic CAD surface normals",
+        "triangle_count": 2623710,
+        "face_boundaries_preserved": true
+      },
+      "equivalent_final_manifest_sha256": "86191bb4b74f73406f4a4ba5ea852792181dd628d1dbc58617216f5bce860ebc"
+    }
+  },
+  "engine": "Blender Cycles",
+  "blender_version": "Blender 4.5.15 LTS",
+  "animation_samples": 64,
+  "stills_samples": 128,
+  "denoiser": "OpenImageDenoise",
+  "seed": 7,
+  "metrology_revision_equivalence": "mesh-equivalence.json",
+  "rendered_model_sha256": "bec88440891e04fce54e72c4603af37885f4da96581c1a73aff5d69a27026174",
+  "equivalent_final_model_sha256": "811fffef6eb5125d8f10def8b0ec7c77176e4a4d23e236b2eb748e542d378371"
+}

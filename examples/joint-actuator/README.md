@@ -10,11 +10,11 @@ A build123d model of a frameless motor and strain-wave reducer, based on a cutaw
 
 ## Assembly
 
-Copper windings surround a segmented rotor. The reducer contains an elliptical wave generator, a thin-wall flexspline, and a circular spline. Bearing races, rollers, an encoder board, and socket-head fasteners complete the assembly.
+Eighteen double-layer copper coils, 16 turns each, sit on insulating bobbins around the rotor. The magnets have cylindrical faces; the gear teeth, bearing races, and fasteners have rounded or chamfered edges. The shaft, wave generator, and output each have a bearing with modeled raceways.
 
 ![Axial exploded view of the joint actuator.](generated/exploded.png)
 
-The flexspline and circular spline have 80 and 82 teeth. Their profiles are simplified, with clearance between the undeformed parts; flexspline deformation and tooth contact are not simulated. The cutaway and exploded views use the same CAD parts as the full assembly.
+The flexspline and circular spline have 80 and 82 teeth. Their profiles are simplified, with clearance between the undeformed parts; flexspline deformation and tooth contact are not simulated. Both views are rendered from the exported STEP geometry with Blender Cycles.
 
 ## Enlarge the bore
 
@@ -28,9 +28,9 @@ The flexspline and circular spline have 80 and 82 teeth. Their profiles are simp
 | Rear mounting holes | 8 × Ø4.4 on Ø96 mm | unchanged |
 | Front mounting holes | 8 × Ø4.4 on Ø80 mm | unchanged |
 
-The two [configurations](config-20.json) differ only in [bore diameter](config-30.json). Six parts change: rear cover, rotor drum, hollow shaft, wave generator, flexspline, and output flange.
+The two [configurations](config-20.json) differ only in [bore diameter](config-30.json). The revision changes eight parts.
 
-The [checker](check.py) reads the exported STEP geometry. Both variants pass: 56 named parts, 254 valid solids, clear through-bores, and no detected interference. The [revision report](run/revision.json) confirms unchanged outer dimensions and mounting interfaces.
+The [checker](check.py) reads the exported STEP geometry. Both variants pass: 91 named components, 510 valid solids, clear through-bores, and no detected interference. The [revision report](run/revision.json) confirms unchanged outer dimensions and mounting interfaces.
 
 ## Run it
 
