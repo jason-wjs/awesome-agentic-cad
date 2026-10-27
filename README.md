@@ -6,14 +6,12 @@ Open-source tools for automating mechanical CAD with AI agents.
 
 [![A screw-driven linear stage: assembly, motion, exploded view, and travel revision.](assets/stage-motion.gif)](examples/linear-stage-v2)
 
-A linear stage built and revised by Codex with build123d. This 12-second teaser shows the assembly, screw-driven motion, exploded view, and an 80 → 120 mm travel revision at 2× speed. [Models, checks & run record →](examples/linear-stage-v2)
-
 ## Common setups
 
 | Start with | Tools & first steps |
 |---|---|
 | **Your coding agent** | Add [text-to-cad](https://www.texttocad.dev/install) to create and edit models from natural language. For full multi-agent workflows, see [MAC](https://github.com/Pan-Chera/Multi-Agent-CAD#quick-start) or [AI-CAD](https://github.com/ai-cad-labs/ai-cad#get-exploring--quickstart). |
-| **Python scripts** | [CadQuery](https://cadquery.readthedocs.io/en/latest/examples.html) or [build123d](https://build123d.readthedocs.io/en/latest/introductory_examples.html) + [OCP CAD Viewer](https://bernhard-42.github.io/ocp_viewer_docs/viewers/ocp_vscode/installation/). Inspect geometry as you write; try the [linear stage above](examples/linear-stage-v2). |
+| **Python scripts** | Model with [CadQuery](https://cadquery.readthedocs.io/en/latest/examples.html) or [build123d](https://build123d.readthedocs.io/en/latest/introductory_examples.html), and inspect the result in [OCP CAD Viewer](https://bernhard-42.github.io/ocp_viewer_docs/viewers/ocp_vscode/installation/). See the [linear stage example](examples/linear-stage-v2). |
 | **Desktop CAD** | [FreeCAD](https://wiki.freecad.org/Getting_started) + [FreeCAD MCP](https://github.com/neka-nat/freecad-mcp/blob/main/docs/installation.md) to let an agent inspect and work on an open model. |
 
 [Modeling](#modeling) · [Agents & integrations](#agents--integrations) · [Viewing & debugging](#viewing--debugging) · [Drawings & file exchange](#drawings--file-exchange) · [Benchmarks](#benchmarks)
@@ -22,8 +20,8 @@ A linear stage built and revised by Codex with build123d. This 12-second teaser 
 
 | Tool | What it does |
 |---|---|
-| [CadQuery](https://github.com/CadQuery/cadquery) | A Python parametric modeling library with workplanes, solid operations, nested assemblies, and STEP/DXF export.<br>[Docs](https://cadquery.readthedocs.io/en/latest/) · [Examples](https://cadquery.readthedocs.io/en/latest/examples.html) |
-| [build123d](https://github.com/gumyr/build123d) | An Open CASCADE-based Python library for sketches, solids, and assemblies, with builder and algebraic APIs.<br>[Docs](https://build123d.readthedocs.io/en/latest/) · [Examples](https://build123d.readthedocs.io/en/latest/introductory_examples.html) |
+| [CadQuery](https://github.com/CadQuery/cadquery) | Python parametric modeling with workplanes, solid operations, nested assemblies, and STEP/DXF export.<br>[Docs](https://cadquery.readthedocs.io/en/latest/) · [Examples](https://cadquery.readthedocs.io/en/latest/examples.html) |
+| [build123d](https://github.com/gumyr/build123d) | Open CASCADE-based Python modeling for sketches, solids, and assemblies, with builder and algebraic APIs.<br>[Docs](https://build123d.readthedocs.io/en/latest/) · [Examples](https://build123d.readthedocs.io/en/latest/introductory_examples.html) |
 | [FreeCAD](https://github.com/FreeCAD/FreeCAD) | A desktop parametric modeler with a Python API, constrained sketches, model history, and engineering drawings.<br>[Docs](https://wiki.freecad.org/Getting_started) |
 
 ## Agents & integrations
@@ -48,7 +46,7 @@ A linear stage built and revised by Codex with build123d. This 12-second teaser 
 |---|---|
 | [ezdxf](https://github.com/mozman/ezdxf) | Reads, edits, and writes DXF drawings in Python, with tools for inspecting files and rendering SVG and PDF.<br>[Docs](https://ezdxf.readthedocs.io/) |
 
-For STEP import/export, see CadQuery and build123d above. FreeCAD and text-to-cad also generate engineering drawings.
+CadQuery and build123d support STEP import/export; FreeCAD and text-to-cad also generate engineering drawings.
 
 ## Benchmarks
 
@@ -63,6 +61,4 @@ For STEP import/export, see CadQuery and build123d above. FreeCAD and text-to-ca
 
 ## Contributing
 
-Found a useful tool? [Suggest it](https://github.com/jason-wjs/awesome-agentic-cad/issues/new) with a repository link and a sentence about what it does. For broken links, outdated descriptions, or setup problems, [report an issue](https://github.com/jason-wjs/awesome-agentic-cad/issues/new).
-
-Issues and PRs are welcome in English or Chinese. Editing one README is enough; maintainers can help sync the translation. See the [contribution guide](CONTRIBUTING.md) and [source notes](docs/curation-notes.md).
+Tool suggestions and pull requests are welcome in English or Chinese. You can edit either README; maintainers can help sync the translation. See the [contribution guide](CONTRIBUTING.md) and [source notes](docs/curation-notes.md).

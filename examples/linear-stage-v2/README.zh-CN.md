@@ -2,19 +2,19 @@
 
 [English](README.md) · **简体中文** · [返回工具列表](../../README.zh-CN.md)
 
-Codex 使用 build123d 建模和修改的 59 零件装配。任务是把行程从 80 mm 增至 120 mm，保留平台与电机接口。这一轮补上了螺旋丝杆、轴承套圈、轴环、开缝联轴器、沉入式紧固件和底座铣槽。
+Codex 使用 build123d 建立了这个 59 零件滑台，并将行程从 80 mm 增至 120 mm，同时保留平台与电机接口。
 
 ![以 2 倍速展示装配、丝杆联动、分层爆炸和行程变更。](../../assets/stage-motion.gif)
 
-12 秒循环动图，2 倍速。[装配渲染图](generated/assembly-120.png) · [80 mm STEP](generated/80/assembly.step) · [120 mm STEP](generated/120/assembly.step) · [Agent 运行记录](run/README.zh-CN.md)
+[装配渲染图](generated/assembly-120.png) · [80 mm STEP](generated/80/assembly.step) · [120 mm STEP](generated/120/assembly.step) · [Agent 运行记录](run/README.zh-CN.md)
 
 ## 看装配内部
 
 ![120 mm 滑台的爆炸图。](generated/exploded.png)
 
-平台向上离开导向座和黄铜螺母，驱动与轴承部件沿丝杆轴线展开。59 个零件在[清单](generated/120/manifest.json)中各有名称、材质、运动分组和爆炸偏移。爆炸图用于说明零件关系，其中的路径尚未作为拆装顺序进行检查。
+丝杆导程为 4 mm，每转四分之一圈，平台移动 1 mm。[零件清单](generated/120/manifest.json)列出了材质、运动分组和爆炸偏移。爆炸图用于说明零件关系，其中的路径尚未作为拆装顺序进行检查。
 
-静态图由 [text-to-cad](https://github.com/earthtojake/text-to-cad) 渲染。[动画](video/README.md)将同一批 STEP 零件转为网格，使用 Three.js 和 HyperFrames 制作。运动按模型的 4 mm 导程联动：每转四分之一圈，平台前进 1 mm；丝杆、联轴器、轴环和电机轴一起旋转。
+静态图由 [text-to-cad](https://github.com/earthtojake/text-to-cad) 渲染；[动画](video/README.md)使用同一批 STEP 零件生成的网格。
 
 ## 修改行程
 
@@ -37,7 +37,7 @@ Codex 使用 build123d 建模和修改的 59 零件装配。任务是把行程�
 
 [80 mm](generated/80/checks.json) 与 [120 mm](generated/120/checks.json) 两份报告均通过：59 个有效单实体零件，实测安装孔和沉孔尺寸符合要求，各 15 个采样姿态未发现干涉。采样包含两端行程极限和丝杆的四分之一转相位；部分传动零件对使用两种布尔方法交叉检查。独立重建的 80 mm 模型中，59 个零件的几何均与原版一致。
 
-STEP 回读时发现一处需要进一步核对的结果：两种行程的丝杆体积积分分别相差 0.103 mm³ 和 0.501 mm³。报告保留了这些数值；将原生 BREP 与 STEP 双向相减，两种行程的结果均为空几何。
+两种行程的丝杆原生 BREP 与 STEP 体积积分分别相差 0.103 mm³ 和 0.501 mm³，双向几何相减的结果均为空。测量值保留在检查报告中。
 
 所有零件均按名义尺寸在本例中建模。螺母采用间隙孔，未建配合内螺纹和轴承滚珠，也未计算配合、载荷及制造公差。上述检查针对已建几何和采样的工作姿态。
 
@@ -71,14 +71,14 @@ python3.12 -m venv .venv-render
 本次 macOS 渲染通过 `CADGEN_CHROME_PATH="/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"` 使用已安装的 Chrome。采用同一环境时设置该变量即可；否则 cadgen 使用自己的浏览器。渲染会另存带材质和动画信息的 `view.step`，几何检查仍以 `assembly.step` 为源文件。动画的复现方法见[动画说明](video/README.md)。
 
 <details>
-<summary>与第一版相比，变化在哪里？</summary>
+<summary>第一版的渲染对比</summary>
 
-[第一版](../linear-stage/README.zh-CN.md)完整保留。将它的原始 STEP 交给 text-to-cad 渲染，已经能改善层次和接触阴影；第二版再补上上图中的机械细节。
+左图为[第一版](../linear-stage/README.zh-CN.md)的原渲染；右图使用 text-to-cad 渲染同一份 STEP。
 
 | 原渲染 | 同一份 v1 STEP，使用 text-to-cad |
 |---|---|
 | ![原渲染。](../linear-stage/generated/assembly.png) | ![不改模型，使用 text-to-cad 渲染。](generated/baseline-cadgen.png) |
 
-执行 `.venv-render/bin/python render.py --baseline-only` 可复现右图。[运行记录](run/README.zh-CN.md)保留了建模修正、检查结果和渲染命令。
+执行 `.venv-render/bin/python render.py --baseline-only` 可复现右图。
 
 </details>

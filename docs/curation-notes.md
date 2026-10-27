@@ -1,6 +1,6 @@
 # Source notes
 
-Reviewed on 2026-10-23 against upstream documentation. The catalog descriptions summarize upstream documentation. The local linear-stage example was built, revised, and checked with build123d 0.11.0; its execution record is linked below.
+Catalog descriptions were reviewed against upstream documentation on 2026-10-23.
 
 | Project | Source used |
 |---|---|
@@ -19,10 +19,8 @@ Reviewed on 2026-10-23 against upstream documentation. The catalog descriptions 
 | neuralCAD-Edit | [Project page](https://autodeskailab.github.io/neuralCAD-Edit/): editing requests, expert references, evaluation. |
 | CADWorld | [Project page](https://cad-world.github.io/) and [paper](https://arxiv.org/abs/2609.16251): GUI interaction, saved-artifact evaluation. |
 
-The current scope includes the software underneath agent workflows. New entries should fill a practical role; standalone paper curation has been removed. Older review notes remain in Git history.
-
 ## README entry points and example
 
 Documentation and example links were checked against upstream READMEs on 2026-10-23. FreeCAD's wiki is linked from its official repository; automated access encounters an anti-bot page. CadQuery's examples page exceeds the browser fetch size limit; the URL is linked in its official README.
 
-The [linear-stage example](../examples/linear-stage) was authored and executed by Codex in the repository-maintenance conversation using Python 3.12 and build123d 0.11.0. It includes 36 named parts, an 80 → 120 mm travel revision, and actual failures and repairs in the [run record](../examples/linear-stage/run). Geometry, saved STEP files, interface holes, nine carriage positions per variant, and a rebuild of the old configuration were checked. A separate cut-volume audit cross-checked the collision results after a coincident-cylinder issue appeared in the geometry comparison. Images are rendered from the saved STEP parts. Threads, bearing internals, and motor internals are simplified; checks cover geometric layout rather than mechanical performance.
+The [first linear-stage example](../examples/linear-stage) and its [run record](../examples/linear-stage/run) cover the 80 → 120 mm revision and geometry checks. The [current example](../examples/linear-stage-v2) adds mechanical detail, motion checks, and its own run record.
