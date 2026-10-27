@@ -4,14 +4,14 @@
 
 [English](README.md) · **简体中文** · [推荐工具](https://github.com/jason-wjs/awesome-agentic-cad/issues/new)
 
-[![丝杆驱动直线滑台：装配、联动、分层爆炸和行程变更。](assets/stage-motion.gif)](examples/linear-stage-v2/README.zh-CN.md)
+[![中空机器人关节：剖切、爆炸图和孔径变更。](assets/joint-actuator.gif)](examples/joint-actuator/README.zh-CN.md)
 
 ## 常见搭配
 
 | 从哪里开始 | 工具与入口 |
 |---|---|
 | **已有 coding agent** | 给 agent 接入 [text-to-cad](https://www.texttocad.dev/install)，用自然语言创建和修改模型。完整的多 agent 工作流可看 [MAC](https://github.com/Pan-Chera/Multi-Agent-CAD#quick-start) 或 [AI-CAD](https://github.com/ai-cad-labs/ai-cad#get-exploring--quickstart)。 |
-| **用 Python 建模** | 用 [CadQuery](https://cadquery.readthedocs.io/en/latest/examples.html) 或 [build123d](https://build123d.readthedocs.io/en/latest/introductory_examples.html) 建模，用 [OCP CAD Viewer](https://bernhard-42.github.io/ocp_viewer_docs/viewers/ocp_vscode/installation/) 查看几何。参见[滑台示例](examples/linear-stage-v2/README.zh-CN.md)。 |
+| **用 Python 建模** | 用 [CadQuery](https://cadquery.readthedocs.io/en/latest/examples.html) 或 [build123d](https://build123d.readthedocs.io/en/latest/introductory_examples.html) 建模，用 [OCP CAD Viewer](https://bernhard-42.github.io/ocp_viewer_docs/viewers/ocp_vscode/installation/) 查看几何。参见[关节模组示例](examples/joint-actuator/README.zh-CN.md)。 |
 | **在桌面 CAD 中工作** | [FreeCAD](https://wiki.freecad.org/Getting_started) + [FreeCAD MCP](https://github.com/neka-nat/freecad-mcp/blob/main/docs/installation.md)，让 agent 读取和操作打开的模型。 |
 
 [建模](#建模) · [Agents 与接入工具](#agents-与接入工具) · [查看与调试](#查看与调试) · [图纸与文件交换](#图纸与文件交换) · [Benchmarks](#benchmarks)

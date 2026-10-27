@@ -4,7 +4,7 @@
 
 Codex built this 59-part stage in build123d, then extended its travel from 80 to 120 mm while keeping the platform and motor interfaces.
 
-![Assembly, screw-driven motion, exploded view, and travel revision at 2× speed.](../../assets/stage-motion.gif)
+![Assembly of the 120 mm linear stage.](generated/assembly-120.png)
 
 [Assembly render](generated/assembly-120.png) · [80 mm STEP](generated/80/assembly.step) · [120 mm STEP](generated/120/assembly.step) · [Agent run record](run/README.md)
 

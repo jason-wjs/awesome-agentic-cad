@@ -1,8 +1,8 @@
 # Linear-stage motion
 
-The homepage teaser is a 12-second GIF at 2× speed. It shows the assembly, a carriage traverse, a staged exploded view, and an 80/120 mm comparison at the same scale, using the exported STEP parts from both travel variants.
+This composition renders a 12-second GIF at 2× speed. It shows the assembly, a carriage traverse, a staged exploded view, and an 80/120 mm comparison at the same scale, using the exported STEP parts from both travel variants.
 
-Only the GIF is stored as the animation asset. The 24-second source sequence renders to a local MP4 in the ignored `out/` directory, then FFmpeg converts it with [make_teaser.py](../make_teaser.py).
+The 24-second source sequence renders to a local MP4 in the ignored `out/` directory, then FFmpeg converts it with [make_teaser.py](../make_teaser.py).
 
 `scene.js` drives a Three.js scene from HyperFrames time. Every pose is computed from its timestamp. Carriage motion follows the model's signed rotation-per-millimeter value; the screw, coupling, shaft collars, and motor shaft turn together. Exploded offsets come from the part manifest. They illustrate component relationships, not a verified installation sequence.
 
@@ -28,4 +28,4 @@ The pinned rendering libraries are bundled into `assets/scene.bundle.js`. Mesh f
 
 Three.js's license is retained in `licenses/`; the bundle's license notices also retain the GSAP copyright and license URL.
 
-`run/` contains the render log, source hashes, checks and media metadata for the published output. The English labels are short; the surrounding example and main README provide the Chinese explanation.
+`run/` contains the render log, source hashes, checks and media metadata from the earlier homepage teaser.

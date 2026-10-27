@@ -23,4 +23,6 @@ Catalog descriptions were reviewed against upstream documentation on 2026-10-23.
 
 Documentation and example links were checked against upstream READMEs on 2026-10-23. FreeCAD's wiki is linked from its official repository; automated access encounters an anti-bot page. CadQuery's examples page exceeds the browser fetch size limit; the URL is linked in its official README.
 
-The [first linear-stage example](../examples/linear-stage) and its [run record](../examples/linear-stage/run) cover the 80 → 120 mm revision and geometry checks. The [current example](../examples/linear-stage-v2) adds mechanical detail, motion checks, and its own run record.
+The [joint actuator example](../examples/joint-actuator) models a frameless motor and strain-wave reducer from a supplied cutaway image. Dimensions are chosen for the example. The component arrangement follows the [strain-wave gearing principle](https://www.harmonicdrive.net/technology/harmonicdrive); the teeth are simplified rigid geometry.
+
+Earlier examples cover a [linear stage](../examples/linear-stage) and a [more detailed revision](../examples/linear-stage-v2), with an 80 → 120 mm travel change and geometry checks.

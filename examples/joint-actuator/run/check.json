@@ -1,0 +1,39 @@
+{
+  "checked_at_utc": "2026-10-27T06:57:32.910187+00:00",
+  "checker_sha256": "a40fe42ea54185ed73b28d0019f6135cee0ebd15f0882e226b10097a004c56c3",
+  "duration_seconds": 53.73613212500641,
+  "passed": true,
+  "positive_controls": {
+    "passed": true,
+    "measured": {
+      "overlapping_cubes_mm3": 4.000000000000001,
+      "touching_cubes_mm3": 0.0,
+      "separated_cubes_mm3": 0.0,
+      "clear_bore_mm3": 0.0,
+      "blocked_bore_mm3": 5.0893800988154645
+    },
+    "expected": {
+      "overlapping_cubes_mm3": 4.0,
+      "touching_cubes_mm3": 0.0,
+      "separated_cubes_mm3": 0.0,
+      "clear_bore_mm3": 0.0,
+      "blocked_bore_mm3": 5.089380098815465
+    }
+  },
+  "variants": [
+    {
+      "variant": "bore-20",
+      "passed": true,
+      "report": "check-bore-20.json"
+    },
+    {
+      "variant": "bore-30",
+      "passed": true,
+      "report": "check-bore-30.json"
+    }
+  ],
+  "revision": {
+    "passed": true,
+    "report": "revision.json"
+  }
+}

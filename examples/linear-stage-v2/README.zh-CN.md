@@ -4,7 +4,7 @@
 
 Codex 使用 build123d 建立了这个 59 零件滑台，并将行程从 80 mm 增至 120 mm，同时保留平台与电机接口。
 
-![以 2 倍速展示装配、丝杆联动、分层爆炸和行程变更。](../../assets/stage-motion.gif)
+![120 mm 行程的直线滑台装配图。](generated/assembly-120.png)
 
 [装配渲染图](generated/assembly-120.png) · [80 mm STEP](generated/80/assembly.step) · [120 mm STEP](generated/120/assembly.step) · [Agent 运行记录](run/README.zh-CN.md)
 

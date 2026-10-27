@@ -1,0 +1,78 @@
+{
+  "completed_at_utc": "2026-10-27T07:02:57.581829+00:00",
+  "model_sha256": "4b7ee111497cfa27a2e3fea0e6717c813c2a1a32b0d60930718ab4af147f758a",
+  "cli_version": "0.8.185",
+  "capture": "screenshot",
+  "gpu": "hardware",
+  "render_command": "npx hyperframes@0.8.185 render --quality delivery --fps 30 --workers 2 --browser-gpu --output out/joint-actuator.mp4",
+  "gif_command": "python ../make_teaser.py out/joint-actuator.mp4 ../../../assets/joint-actuator.gif",
+  "source_sha256": {
+    "index.html": "4dcdc60594c7327b522bd5f405629689a4ac34f699140953829963a906b26887",
+    "scene.js": "df3deeb5d50316be9d37450af49c0d30502f8d51b72b698632dbe98bfc8aea0c",
+    "export_meshes.py": "3966785c4c01982dfa75fcc5b2e20fdd5d12598f4042c7a12240debc2bba023e",
+    "build.mjs": "019f482211929102a72e2932605c44bce0209a41740fbd00d6f383e41de02607",
+    "package.json": "0d5feee1014174032660e8524980e129ce9d4f56c8b73c1e6b1b25b3b84f4494",
+    "pnpm-lock.yaml": "faf960f28f405a6cacb9cc45db42e58c859df8c3c66726a509bd16784c9c0af7"
+  },
+  "variants": {
+    "20": {
+      "assembly_sha256": "2fe9b5011d586c06086c4e017389473cf44541e0be8e7367a741a42a25eaa17b",
+      "cutaway_sha256": "63480ac50bcc85fab83284b2cdad34f65583d366206624a940e6be2c38307f03",
+      "manifest_sha256": "08437ea2137129d78b21c67c6e97917efdd321bcd383b2b0a9f1b8c91bfac057",
+      "mesh_sha256": "b38873906da0ec3c3cf1e2e15c5d9b9a12620663819d7f16a83a96d5caab1b2f",
+      "tessellation": {
+        "linear_tolerance_mm": 0.12,
+        "angular_tolerance_rad": 0.24,
+        "triangle_count": 792788,
+        "face_boundaries_preserved": true
+      },
+      "source_step_count": 63
+    },
+    "30": {
+      "assembly_sha256": "5b0e4aea8ad781a4f4f915343ce33a42481308068a99175c93d72b06aa1445ed",
+      "cutaway_sha256": "fc858091b2722fde5c8569fad97fb27c4310d16f29ba63c473ebecd6ab5a870d",
+      "manifest_sha256": "4d4f17613a003ffebf213aa1061eec888ee05d4472fcd6f404c5873464d5e4b1",
+      "mesh_sha256": "e4abf4cf8cc1596878a6d2f86128e6bf738eb51e477c6a9ecdd2a7661be016bd",
+      "tessellation": {
+        "linear_tolerance_mm": 0.12,
+        "angular_tolerance_rad": 0.24,
+        "triangle_count": 792788,
+        "face_boundaries_preserved": true
+      },
+      "source_step_count": 63
+    }
+  },
+  "intermediate_mp4": {
+    "tracked": false,
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "frames": 360,
+    "duration_seconds": 12,
+    "sha256": "59efb9e4eb0adc9d6284e764e2ec5ba3a725a7a4b889655980e45731a2cf5bcf"
+  },
+  "gif": {
+    "file": "assets/joint-actuator.gif",
+    "width": 800,
+    "height": 450,
+    "frames": 144,
+    "duration_ms": 12000,
+    "nominal_fps": 12,
+    "palette_max_colors": 96,
+    "loop": 0,
+    "bytes": 4498733,
+    "sha256": "a6f2b4998488d16285ed6b402653c5046c80ccf498d4f403daaf164ac36316f0"
+  },
+  "inspection": {
+    "times_seconds": [
+      0,
+      1.5,
+      3.5,
+      6.5,
+      10.5,
+      11.64
+    ],
+    "findings": "Sectioned stator supports retained coils; full assembly and explosion remain in frame; 20/30 mm bores use the same camera and scale; labels clear the model. No text overlaps in the final check."
+  },
+  "version_probe": "The latest probe reported CLI 0.8.201 but npm latest 0.8.75. The existing tested 0.8.185 pin was retained."
+}

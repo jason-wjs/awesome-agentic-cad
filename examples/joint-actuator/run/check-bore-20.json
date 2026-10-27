@@ -1,0 +1,1173 @@
+{
+  "checked_at_utc": "2026-10-27T06:57:32.910187+00:00",
+  "checker_sha256": "a40fe42ea54185ed73b28d0019f6135cee0ebd15f0882e226b10097a004c56c3",
+  "positive_controls": {
+    "passed": true,
+    "measured": {
+      "overlapping_cubes_mm3": 4.000000000000001,
+      "touching_cubes_mm3": 0.0,
+      "separated_cubes_mm3": 0.0,
+      "clear_bore_mm3": 0.0,
+      "blocked_bore_mm3": 5.0893800988154645
+    },
+    "expected": {
+      "overlapping_cubes_mm3": 4.0,
+      "touching_cubes_mm3": 0.0,
+      "separated_cubes_mm3": 0.0,
+      "clear_bore_mm3": 0.0,
+      "blocked_bore_mm3": 5.089380098815465
+    }
+  },
+  "variant": "bore-20",
+  "bore_mm": 20,
+  "passed": true,
+  "errors": [],
+  "part_count": 56,
+  "solid_count": 254,
+  "geometry": [
+    {
+      "name": "case_screw_01",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 95.63698564695545,
+      "volume_round_trip_error_mm3": 1.8332002582610585e-12,
+      "bbox_round_trip_error_mm": 0.0,
+      "round_trip_matches": true
+    },
+    {
+      "name": "case_screw_02",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 95.63698564695557,
+      "volume_round_trip_error_mm3": 1.8900436771218665e-12,
+      "bbox_round_trip_error_mm": 0.0,
+      "round_trip_matches": true
+    },
+    {
+      "name": "case_screw_03",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 95.63698564695545,
+      "volume_round_trip_error_mm3": 1.8332002582610585e-12,
+      "bbox_round_trip_error_mm": 5.773159728050814e-15,
+      "round_trip_matches": true
+    },
+    {
+      "name": "case_screw_04",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 95.63698564698034,
+      "volume_round_trip_error_mm3": 2.6687985155149363e-11,
+      "bbox_round_trip_error_mm": 0.0,
+      "round_trip_matches": true
+    },
+    {
+      "name": "rear_cap",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 53051.9337695002,
+      "volume_round_trip_error_mm3": 1.229636836796999e-09,
+      "bbox_round_trip_error_mm": 0.0,
+      "round_trip_matches": true
+    },
+    {
+      "name": "motor_housing",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 42418.5633596167,
+      "volume_round_trip_error_mm3": 1.8981518223881721e-07,
+      "bbox_round_trip_error_mm": 1.4210854715202004e-14,
+      "round_trip_matches": true
+    },
+    {
+      "name": "stator",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 22721.426555774233,
+      "volume_round_trip_error_mm3": 1.3707904145121574e-08,
+      "bbox_round_trip_error_mm": 3.552713678800501e-15,
+      "round_trip_matches": true
+    },
+    {
+      "name": "winding_01",
+      "valid": true,
+      "solid_count": 9,
+      "volume_mm3": 305.20534346213617,
+      "volume_round_trip_error_mm3": 2.034994395216927e-11,
+      "bbox_round_trip_error_mm": 1.000000082740371e-07,
+      "round_trip_matches": true
+    },
+    {
+      "name": "winding_02",
+      "valid": true,
+      "solid_count": 9,
+      "volume_mm3": 305.2053434621331,
+      "volume_round_trip_error_mm3": 1.716671249596402e-11,
+      "bbox_round_trip_error_mm": 1.0000012906630218e-07,
+      "round_trip_matches": true
+    },
+    {
+      "name": "winding_03",
+      "valid": true,
+      "solid_count": 9,
+      "volume_mm3": 305.20534346213105,
+      "volume_round_trip_error_mm3": 1.517719283583574e-11,
+      "bbox_round_trip_error_mm": 1.00000075775597e-07,
+      "round_trip_matches": true
+    },
+    {
+      "name": "winding_04",
+      "valid": true,
+      "solid_count": 9,
+      "volume_mm3": 305.2053434621362,
+      "volume_round_trip_error_mm3": 2.0520474208751693e-11,
+      "bbox_round_trip_error_mm": 1.0000000116860974e-07,
+      "round_trip_matches": true
+    },
+    {
+      "name": "winding_05",
+      "valid": true,
+      "solid_count": 9,
+      "volume_mm3": 305.2053434621321,
+      "volume_round_trip_error_mm3": 1.6086687537608668e-11,
+      "bbox_round_trip_error_mm": 1.0000012906630218e-07,
+      "round_trip_matches": true
+    },
+    {
+      "name": "winding_06",
+      "valid": true,
+      "solid_count": 9,
+      "volume_mm3": 305.20534346213606,
+      "volume_round_trip_error_mm3": 2.0122570276726037e-11,
+      "bbox_round_trip_error_mm": 9.999060068821564e-08,
+      "round_trip_matches": true
+    },
+    {
+      "name": "winding_07",
+      "valid": true,
+      "solid_count": 9,
+      "volume_mm3": 305.20534346213617,
+      "volume_round_trip_error_mm3": 2.034994395216927e-11,
+      "bbox_round_trip_error_mm": 9.999978001218324e-08,
+      "round_trip_matches": true
+    },
+    {
+      "name": "winding_08",
+      "valid": true,
+      "solid_count": 9,
+      "volume_mm3": 305.20534346213424,
+      "volume_round_trip_error_mm3": 1.8530954548623413e-11,
+      "bbox_round_trip_error_mm": 9.999206618260814e-08,
+      "round_trip_matches": true
+    },
+    {
+      "name": "winding_09",
+      "valid": true,
+      "solid_count": 9,
+      "volume_mm3": 305.205343462136,
+      "volume_round_trip_error_mm3": 2.0236257114447653e-11,
+      "bbox_round_trip_error_mm": 1.0000208305882552e-07,
+      "round_trip_matches": true
+    },
+    {
+      "name": "winding_10",
+      "valid": true,
+      "solid_count": 9,
+      "volume_mm3": 305.2053434621362,
+      "volume_round_trip_error_mm3": 2.0520474208751693e-11,
+      "bbox_round_trip_error_mm": 1.0000000116860974e-07,
+      "round_trip_matches": true
+    },
+    {
+      "name": "winding_11",
+      "valid": true,
+      "solid_count": 9,
+      "volume_mm3": 305.2053434621342,
+      "volume_round_trip_error_mm3": 1.836042429204099e-11,
+      "bbox_round_trip_error_mm": 1.0000006867016964e-07,
+      "round_trip_matches": true
+    },
+    {
+      "name": "winding_12",
+      "valid": true,
+      "solid_count": 9,
+      "volume_mm3": 305.2053434621307,
+      "volume_round_trip_error_mm3": 1.4665602066088468e-11,
+      "bbox_round_trip_error_mm": 1.0000209371696656e-07,
+      "round_trip_matches": true
+    },
+    {
+      "name": "rotor_drum",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 26274.77299015128,
+      "volume_round_trip_error_mm3": 1.8189894035458565e-11,
+      "bbox_round_trip_error_mm": 0.0,
+      "round_trip_matches": true
+    },
+    {
+      "name": "magnet_01",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 832.7997099126273,
+      "volume_round_trip_error_mm3": 1.8667378753889352e-10,
+      "bbox_round_trip_error_mm": 5.151434834260726e-12,
+      "round_trip_matches": true
+    },
+    {
+      "name": "magnet_02",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 832.7997099116967,
+      "volume_round_trip_error_mm3": 7.437392923748121e-10,
+      "bbox_round_trip_error_mm": 4.924061158817494e-12,
+      "round_trip_matches": true
+    },
+    {
+      "name": "magnet_03",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 832.7997099130755,
+      "volume_round_trip_error_mm3": 6.348273018375039e-10,
+      "bbox_round_trip_error_mm": 7.064571150294796e-12,
+      "round_trip_matches": true
+    },
+    {
+      "name": "magnet_04",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 832.7997099122626,
+      "volume_round_trip_error_mm3": 1.7769252735888585e-10,
+      "bbox_round_trip_error_mm": 3.4852121189032914e-12,
+      "round_trip_matches": true
+    },
+    {
+      "name": "magnet_05",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 832.7997099124307,
+      "volume_round_trip_error_mm3": 1.000444171950221e-11,
+      "bbox_round_trip_error_mm": 4.725109192804666e-13,
+      "round_trip_matches": true
+    },
+    {
+      "name": "magnet_06",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 832.799709912394,
+      "volume_round_trip_error_mm3": 4.695266397902742e-11,
+      "bbox_round_trip_error_mm": 9.894307595459395e-13,
+      "round_trip_matches": true
+    },
+    {
+      "name": "magnet_07",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 832.7997099124436,
+      "volume_round_trip_error_mm3": 2.8421709430404007e-12,
+      "bbox_round_trip_error_mm": 5.613287612504791e-13,
+      "round_trip_matches": true
+    },
+    {
+      "name": "magnet_08",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 832.7997099124437,
+      "volume_round_trip_error_mm3": 3.296918293926865e-12,
+      "bbox_round_trip_error_mm": 3.197442310920451e-13,
+      "round_trip_matches": true
+    },
+    {
+      "name": "magnet_09",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 832.7997099120938,
+      "volume_round_trip_error_mm3": 3.466311682132073e-10,
+      "bbox_round_trip_error_mm": 3.47633033470629e-12,
+      "round_trip_matches": true
+    },
+    {
+      "name": "magnet_10",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 832.7997099125722,
+      "volume_round_trip_error_mm3": 1.318767317570746e-10,
+      "bbox_round_trip_error_mm": 7.059242079776595e-12,
+      "round_trip_matches": true
+    },
+    {
+      "name": "magnet_11",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 832.7997099120414,
+      "volume_round_trip_error_mm3": 3.9972292142920196e-10,
+      "bbox_round_trip_error_mm": 4.956035581926699e-12,
+      "round_trip_matches": true
+    },
+    {
+      "name": "magnet_12",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 832.7997099124273,
+      "volume_round_trip_error_mm3": 1.3415046851150692e-11,
+      "bbox_round_trip_error_mm": 5.154987547939527e-12,
+      "round_trip_matches": true
+    },
+    {
+      "name": "magnet_13",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 832.79970991229,
+      "volume_round_trip_error_mm3": 1.5063505998114124e-10,
+      "bbox_round_trip_error_mm": 5.151434834260726e-12,
+      "round_trip_matches": true
+    },
+    {
+      "name": "magnet_14",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 832.7997099118754,
+      "volume_round_trip_error_mm3": 5.651372703141533e-10,
+      "bbox_round_trip_error_mm": 7.071676577652397e-12,
+      "round_trip_matches": true
+    },
+    {
+      "name": "magnet_15",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 832.7997099126735,
+      "volume_round_trip_error_mm3": 2.3283064365386963e-10,
+      "bbox_round_trip_error_mm": 8.620659741609416e-12,
+      "round_trip_matches": true
+    },
+    {
+      "name": "magnet_16",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 832.7997099122329,
+      "volume_round_trip_error_mm3": 2.0793322619283572e-10,
+      "bbox_round_trip_error_mm": 5.151434834260726e-12,
+      "round_trip_matches": true
+    },
+    {
+      "name": "rotor_shaft",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 11922.344120373253,
+      "volume_round_trip_error_mm3": 9.094947017729282e-12,
+      "bbox_round_trip_error_mm": 0.0,
+      "round_trip_matches": true
+    },
+    {
+      "name": "gear_housing",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 45503.46416710691,
+      "volume_round_trip_error_mm3": 4.3655745685100555e-11,
+      "bbox_round_trip_error_mm": 1.6282089083761684e-27,
+      "round_trip_matches": true
+    },
+    {
+      "name": "circular_spline",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 25151.728041939063,
+      "volume_round_trip_error_mm3": 1.1918018572032452e-08,
+      "bbox_round_trip_error_mm": 1.7763568394002505e-15,
+      "round_trip_matches": true
+    },
+    {
+      "name": "flexspline",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 16883.595628778836,
+      "volume_round_trip_error_mm3": 9.105860954150558e-09,
+      "bbox_round_trip_error_mm": 9.876544027065393e-13,
+      "round_trip_matches": true
+    },
+    {
+      "name": "wave_generator",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 15498.85894424363,
+      "volume_round_trip_error_mm3": 8.331759636348579e-05,
+      "bbox_round_trip_error_mm": 1.7763568394002505e-15,
+      "round_trip_matches": true
+    },
+    {
+      "name": "wave_bearing_outer",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 756.0871061140522,
+      "volume_round_trip_error_mm3": 2.174597511839238e-06,
+      "bbox_round_trip_error_mm": 0.0,
+      "round_trip_matches": true
+    },
+    {
+      "name": "wave_bearing_balls",
+      "valid": true,
+      "solid_count": 36,
+      "volume_mm3": 92.6078682425199,
+      "volume_round_trip_error_mm3": 4.263256414560601e-14,
+      "bbox_round_trip_error_mm": 0.0,
+      "round_trip_matches": true
+    },
+    {
+      "name": "output_bearing_inner",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 7037.167544041149,
+      "volume_round_trip_error_mm3": 1.4551915228366852e-11,
+      "bbox_round_trip_error_mm": 0.0,
+      "round_trip_matches": true
+    },
+    {
+      "name": "output_bearing_outer",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 8846.724912508857,
+      "volume_round_trip_error_mm3": 2.9103830456733704e-11,
+      "bbox_round_trip_error_mm": 7.105427357601002e-15,
+      "round_trip_matches": true
+    },
+    {
+      "name": "output_bearing_rollers",
+      "valid": true,
+      "solid_count": 28,
+      "volume_mm3": 2233.596978478606,
+      "volume_round_trip_error_mm3": 5.047695594839752e-11,
+      "bbox_round_trip_error_mm": 6.778577699151356e-12,
+      "round_trip_matches": true
+    },
+    {
+      "name": "output_bearing_separators",
+      "valid": true,
+      "solid_count": 28,
+      "volume_mm3": 473.0880000002806,
+      "volume_round_trip_error_mm3": 2.8052227207808755e-10,
+      "bbox_round_trip_error_mm": 4.689582056016661e-13,
+      "round_trip_matches": true
+    },
+    {
+      "name": "output_flange",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 70663.15711920042,
+      "volume_round_trip_error_mm3": 1.4551915228366852e-11,
+      "bbox_round_trip_error_mm": 0.0,
+      "round_trip_matches": true
+    },
+    {
+      "name": "encoder_post_-30_-13",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 1.5550883635269674,
+      "volume_round_trip_error_mm3": 2.0650148258027912e-14,
+      "bbox_round_trip_error_mm": 7.105427357601002e-15,
+      "round_trip_matches": true
+    },
+    {
+      "name": "encoder_post_-30_-1",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 1.5550883635269668,
+      "volume_round_trip_error_mm3": 1.9317880628477724e-14,
+      "bbox_round_trip_error_mm": 7.105427357601002e-15,
+      "round_trip_matches": true
+    },
+    {
+      "name": "encoder_post_-10_-13",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 1.5550883635269703,
+      "volume_round_trip_error_mm3": 2.2648549702353193e-14,
+      "bbox_round_trip_error_mm": 7.105427357601002e-15,
+      "round_trip_matches": true
+    },
+    {
+      "name": "encoder_post_-10_-1",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 1.5550883635269699,
+      "volume_round_trip_error_mm3": 2.2648549702353193e-14,
+      "bbox_round_trip_error_mm": 7.105427357601002e-15,
+      "round_trip_matches": true
+    },
+    {
+      "name": "encoder_pcb",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 469.1049566773491,
+      "volume_round_trip_error_mm3": 1.8758328224066645e-12,
+      "bbox_round_trip_error_mm": 7.105427357601002e-15,
+      "round_trip_matches": true
+    },
+    {
+      "name": "encoder_ic",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 42.0,
+      "volume_round_trip_error_mm3": 0.0,
+      "bbox_round_trip_error_mm": 0.0,
+      "round_trip_matches": true
+    },
+    {
+      "name": "encoder_connector",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 42.00000000000001,
+      "volume_round_trip_error_mm3": 7.105427357601002e-15,
+      "bbox_round_trip_error_mm": 0.0,
+      "round_trip_matches": true
+    },
+    {
+      "name": "encoder_contacts",
+      "valid": true,
+      "solid_count": 14,
+      "volume_mm3": 2.310000000000034,
+      "volume_round_trip_error_mm3": 4.1300296516055823e-14,
+      "bbox_round_trip_error_mm": 7.105427357601002e-15,
+      "round_trip_matches": true
+    }
+  ],
+  "assembly": {
+    "valid": true,
+    "solid_count": 254,
+    "volume_mm3": 367460.559838933,
+    "part_volume_sum_mm3": 367460.5598389325,
+    "bbox_mm": [
+      [
+        -48.000000000000014,
+        -55.4,
+        -55.00000000000001
+      ],
+      [
+        48.000000000000014,
+        55.0,
+        55.00000000000001
+      ]
+    ],
+    "matches_parts": true
+  },
+  "through_bore": {
+    "diameter_mm": 20,
+    "probe_radius_mm": 9.99999,
+    "passed": true,
+    "obstructions": []
+  },
+  "mounting_interfaces": {
+    "rear_cap": {
+      "passed": true,
+      "bolt_count": 8,
+      "pitch_diameter_mm": 96,
+      "hole_diameter_mm": 4.4,
+      "counterbore_diameter_mm": 7.6,
+      "counterbore_depth_mm": 3.0,
+      "bore_diameter_mm": 20,
+      "bbox_mm": [
+        [
+          -48.000000000000014,
+          -55.0,
+          -55.0
+        ],
+        [
+          -41.999999999999986,
+          55.0,
+          55.0
+        ]
+      ],
+      "bbox_error_mm": 1.4210854715202004e-14,
+      "expected_edges_radius_xyz_mm": [
+        [
+          2.2,
+          -45,
+          44.34621756054176,
+          18.36880475352431
+        ],
+        [
+          2.2,
+          -45,
+          18.368804753524312,
+          44.34621756054176
+        ],
+        [
+          2.2,
+          -45,
+          -18.36880475352431,
+          44.34621756054176
+        ],
+        [
+          2.2,
+          -45,
+          -44.34621756054176,
+          18.368804753524316
+        ],
+        [
+          2.2,
+          -45,
+          -44.346217560541774,
+          -18.368804753524284
+        ],
+        [
+          2.2,
+          -45,
+          -18.368804753524294,
+          -44.34621756054177
+        ],
+        [
+          2.2,
+          -45,
+          18.36880475352432,
+          -44.34621756054176
+        ],
+        [
+          2.2,
+          -45,
+          44.34621756054177,
+          -18.368804753524298
+        ],
+        [
+          2.2,
+          -42,
+          44.34621756054176,
+          18.36880475352431
+        ],
+        [
+          2.2,
+          -42,
+          18.368804753524312,
+          44.34621756054176
+        ],
+        [
+          2.2,
+          -42,
+          -18.36880475352431,
+          44.34621756054176
+        ],
+        [
+          2.2,
+          -42,
+          -44.34621756054176,
+          18.368804753524316
+        ],
+        [
+          2.2,
+          -42,
+          -44.346217560541774,
+          -18.368804753524284
+        ],
+        [
+          2.2,
+          -42,
+          -18.368804753524294,
+          -44.34621756054177
+        ],
+        [
+          2.2,
+          -42,
+          18.36880475352432,
+          -44.34621756054176
+        ],
+        [
+          2.2,
+          -42,
+          44.34621756054177,
+          -18.368804753524298
+        ],
+        [
+          3.8,
+          -48,
+          44.34621756054176,
+          18.36880475352431
+        ],
+        [
+          3.8,
+          -48,
+          18.368804753524312,
+          44.34621756054176
+        ],
+        [
+          3.8,
+          -48,
+          -18.36880475352431,
+          44.34621756054176
+        ],
+        [
+          3.8,
+          -48,
+          -44.34621756054176,
+          18.368804753524316
+        ],
+        [
+          3.8,
+          -48,
+          -44.346217560541774,
+          -18.368804753524284
+        ],
+        [
+          3.8,
+          -48,
+          -18.368804753524294,
+          -44.34621756054177
+        ],
+        [
+          3.8,
+          -48,
+          18.36880475352432,
+          -44.34621756054176
+        ],
+        [
+          3.8,
+          -48,
+          44.34621756054177,
+          -18.368804753524298
+        ],
+        [
+          3.8,
+          -45,
+          44.34621756054176,
+          18.36880475352431
+        ],
+        [
+          3.8,
+          -45,
+          18.368804753524312,
+          44.34621756054176
+        ],
+        [
+          3.8,
+          -45,
+          -18.36880475352431,
+          44.34621756054176
+        ],
+        [
+          3.8,
+          -45,
+          -44.34621756054176,
+          18.368804753524316
+        ],
+        [
+          3.8,
+          -45,
+          -44.346217560541774,
+          -18.368804753524284
+        ],
+        [
+          3.8,
+          -45,
+          -18.368804753524294,
+          -44.34621756054177
+        ],
+        [
+          3.8,
+          -45,
+          18.36880475352432,
+          -44.34621756054176
+        ],
+        [
+          3.8,
+          -45,
+          44.34621756054177,
+          -18.368804753524298
+        ],
+        [
+          10.0,
+          -47.55,
+          0,
+          0
+        ],
+        [
+          10.0,
+          -42.45,
+          0,
+          0
+        ],
+        [
+          10.45,
+          -48,
+          0,
+          0
+        ],
+        [
+          10.45,
+          -42,
+          0,
+          0
+        ]
+      ],
+      "missing_edges_radius_xyz_mm": []
+    },
+    "output_flange": {
+      "passed": true,
+      "bolt_count": 8,
+      "pitch_diameter_mm": 80,
+      "hole_diameter_mm": 4.4,
+      "counterbore_diameter_mm": 7.6,
+      "counterbore_depth_mm": 3.0,
+      "bore_diameter_mm": 20,
+      "bbox_mm": [
+        [
+          33.99999999999999,
+          -49.0,
+          -49.0
+        ],
+        [
+          48.000000000000014,
+          49.0,
+          49.0
+        ]
+      ],
+      "bbox_error_mm": 1.4210854715202004e-14,
+      "expected_edges_radius_xyz_mm": [
+        [
+          2.2,
+          41,
+          36.95518130045147,
+          15.307337294603592
+        ],
+        [
+          2.2,
+          41,
+          15.307337294603593,
+          36.95518130045147
+        ],
+        [
+          2.2,
+          41,
+          -15.307337294603588,
+          36.95518130045147
+        ],
+        [
+          2.2,
+          41,
+          -36.95518130045147,
+          15.307337294603595
+        ],
+        [
+          2.2,
+          41,
+          -36.95518130045148,
+          -15.307337294603569
+        ],
+        [
+          2.2,
+          41,
+          -15.307337294603581,
+          -36.95518130045147
+        ],
+        [
+          2.2,
+          41,
+          15.3073372946036,
+          -36.955181300451464
+        ],
+        [
+          2.2,
+          41,
+          36.95518130045147,
+          -15.307337294603583
+        ],
+        [
+          2.2,
+          45,
+          36.95518130045147,
+          15.307337294603592
+        ],
+        [
+          2.2,
+          45,
+          15.307337294603593,
+          36.95518130045147
+        ],
+        [
+          2.2,
+          45,
+          -15.307337294603588,
+          36.95518130045147
+        ],
+        [
+          2.2,
+          45,
+          -36.95518130045147,
+          15.307337294603595
+        ],
+        [
+          2.2,
+          45,
+          -36.95518130045148,
+          -15.307337294603569
+        ],
+        [
+          2.2,
+          45,
+          -15.307337294603581,
+          -36.95518130045147
+        ],
+        [
+          2.2,
+          45,
+          15.3073372946036,
+          -36.955181300451464
+        ],
+        [
+          2.2,
+          45,
+          36.95518130045147,
+          -15.307337294603583
+        ],
+        [
+          3.8,
+          45,
+          36.95518130045147,
+          15.307337294603592
+        ],
+        [
+          3.8,
+          45,
+          15.307337294603593,
+          36.95518130045147
+        ],
+        [
+          3.8,
+          45,
+          -15.307337294603588,
+          36.95518130045147
+        ],
+        [
+          3.8,
+          45,
+          -36.95518130045147,
+          15.307337294603595
+        ],
+        [
+          3.8,
+          45,
+          -36.95518130045148,
+          -15.307337294603569
+        ],
+        [
+          3.8,
+          45,
+          -15.307337294603581,
+          -36.95518130045147
+        ],
+        [
+          3.8,
+          45,
+          15.3073372946036,
+          -36.955181300451464
+        ],
+        [
+          3.8,
+          45,
+          36.95518130045147,
+          -15.307337294603583
+        ],
+        [
+          3.8,
+          48,
+          36.95518130045147,
+          15.307337294603592
+        ],
+        [
+          3.8,
+          48,
+          15.307337294603593,
+          36.95518130045147
+        ],
+        [
+          3.8,
+          48,
+          -15.307337294603588,
+          36.95518130045147
+        ],
+        [
+          3.8,
+          48,
+          -36.95518130045147,
+          15.307337294603595
+        ],
+        [
+          3.8,
+          48,
+          -36.95518130045148,
+          -15.307337294603569
+        ],
+        [
+          3.8,
+          48,
+          -15.307337294603581,
+          -36.95518130045147
+        ],
+        [
+          3.8,
+          48,
+          15.3073372946036,
+          -36.955181300451464
+        ],
+        [
+          3.8,
+          48,
+          36.95518130045147,
+          -15.307337294603583
+        ],
+        [
+          10.0,
+          34,
+          0,
+          0
+        ],
+        [
+          10.0,
+          48,
+          0,
+          0
+        ]
+      ],
+      "missing_edges_radius_xyz_mm": []
+    }
+  },
+  "clearances": {
+    "motor_air_gap": {
+      "passed": true,
+      "measured_minimum_mm": 1.4003484056138142,
+      "required_minimum_mm": 1.4
+    },
+    "shaft_to_wave_generator": {
+      "passed": true,
+      "measured_minimum_mm": 0.19999999999999413,
+      "required_minimum_mm": 0.2
+    },
+    "undeformed_tooth_gap": {
+      "passed": true,
+      "measured_minimum_mm": 0.5963569562059677,
+      "required_minimum_mm": 0.596354475595426
+    }
+  },
+  "cutaway_parts": [
+    {
+      "name": "motor_housing",
+      "valid": true,
+      "volume_mm3": 31869.992332011036,
+      "material_outside_canonical_part_mm3": 0.0,
+      "passed": true
+    },
+    {
+      "name": "stator",
+      "valid": true,
+      "volume_mm3": 19734.97360140822,
+      "material_outside_canonical_part_mm3": 0.0,
+      "passed": true
+    },
+    {
+      "name": "gear_housing",
+      "valid": true,
+      "volume_mm3": 34127.59812532905,
+      "material_outside_canonical_part_mm3": 0.0,
+      "passed": true
+    },
+    {
+      "name": "circular_spline",
+      "valid": true,
+      "volume_mm3": 18861.409443539276,
+      "material_outside_canonical_part_mm3": 0.0,
+      "passed": true
+    },
+    {
+      "name": "flexspline",
+      "valid": true,
+      "volume_mm3": 12662.696721590923,
+      "material_outside_canonical_part_mm3": 0.0,
+      "passed": true
+    },
+    {
+      "name": "wave_bearing_outer",
+      "valid": true,
+      "volume_mm3": 567.0653279649359,
+      "material_outside_canonical_part_mm3": 0.0,
+      "passed": true
+    },
+    {
+      "name": "output_bearing_outer",
+      "valid": true,
+      "volume_mm3": 6635.043684381646,
+      "material_outside_canonical_part_mm3": 0.0,
+      "passed": true
+    }
+  ],
+  "collisions": {
+    "pairs": 1540,
+    "exact_tests": 154,
+    "intersection_tolerance_mm3": 1e-05,
+    "overlaps": [],
+    "within_part_exact_tests": 268,
+    "within_part_overlaps": []
+  },
+  "input_sha256": {
+    "manifest.json": "08437ea2137129d78b21c67c6e97917efdd321bcd383b2b0a9f1b8c91bfac057",
+    "parts/case_screw_01.step": "9b26b15c8b5a819864a19351e3b10291839158a52b70ad708e1ba527df5f0d1b",
+    "parts/case_screw_02.step": "824a1330dc203e7d4a4b9e7eb429e2bdf47bce024d62b0a97eb26d9d0ac34496",
+    "parts/case_screw_03.step": "95cc5e0912a6bf03b2ca19bd8712a49b48c66e7afb6aa635639b2b68dfdbc76c",
+    "parts/case_screw_04.step": "b7c892c6fe7e20754d9bf9b5f03727f7ae1e4e6688a2fb5cd880e894c22b299a",
+    "parts/rear_cap.step": "699e56bd767d768becf543803abd0a33d4754ccbac0e85cb0343cba4f46be157",
+    "parts/motor_housing.step": "6ba3949be5b3b84ec416f4ebb88b8a59314ee201e0da6cff281466178bd5a924",
+    "parts/stator.step": "b842fc133d526e483bffb6dd9573631a9d77e74d727b136c3cbb054c746cd759",
+    "parts/winding_01.step": "d7429f8a242feb154c724d6a102add527a2d2f066d3eea26a60821aeb4a35e8e",
+    "parts/winding_02.step": "67702d5ee17624a14f3303b10d0af8f3127185995917e22216341383dfabbb43",
+    "parts/winding_03.step": "1761279b480b287169012de9cffbd9b52346cccd3cd8a2a59eeb1c9b9e2620af",
+    "parts/winding_04.step": "1dde568d312c33e739e31d719bd0d3ad5da460bf4c0a9b454abb3c75afc23409",
+    "parts/winding_05.step": "26c3c1e72d8f0ea86cfb48fcb8ff2b8005e2dae26db7e61201d5db7e85a41aa9",
+    "parts/winding_06.step": "aad6d6ca667da7fb5dba23ad50f7baae8f5628a144795cb386acf996fe0ac389",
+    "parts/winding_07.step": "113b4c865f69f51c2119c9be8fc15c1214083279a28db680f54ac12e22f97b50",
+    "parts/winding_08.step": "4188ab3eb2e35a2ffa551503a87ce63e2b4999e488b1000bca76384611194bad",
+    "parts/winding_09.step": "b0d4a4daf8e6ecb1733a5768aff4c62d0387dec22e8b5e9e9e1368e1a4416f32",
+    "parts/winding_10.step": "17a962a2b4c497e5a3e3c1fbc6b8d4bd793900be38e476c235dd31f6a3cb0a81",
+    "parts/winding_11.step": "97dc6236b253dcbf7c2ce970690b79bbdf9ff119f822a6baff95869b287984b7",
+    "parts/winding_12.step": "cbf3000288093e5ffbbf72fa7622e48c8af97fbacd32792d37f6c5a31359c302",
+    "parts/rotor_drum.step": "94b81e2a2e4189ef432e9781e6b04d2a601a44e2e870d94ffe351975863d3b22",
+    "parts/magnet_01.step": "d26d5417a4fd991cb1c148de342943780d393f31e72c8b8e06c1c06fafcaeae8",
+    "parts/magnet_02.step": "2bb04ac4563dbe804e5dbb3b8fe75114175d65169fc658d519f0074ea34f5c75",
+    "parts/magnet_03.step": "c35c110e1503a9f89428b89a5bb892236ce7865eadb0845da0bd37ecb1b2ddab",
+    "parts/magnet_04.step": "002c497abbcc78a6e15fb10be899bba4386b885ceac62efd332e37c318a61582",
+    "parts/magnet_05.step": "6b345a758eccc4b76e9896e657c1a50c427674e8bf6f1f074f0492e1f709a608",
+    "parts/magnet_06.step": "9322d48372cdd64f9a48d50e3b338a33a3e331a35ef44c9206c252bffa0fc20b",
+    "parts/magnet_07.step": "919045488831189b6046eab3b7d967fcaf3644ce89af887cde0bcce026413fb5",
+    "parts/magnet_08.step": "c4ff0047b605d0f663565f4723e3171958b8a720fa38e66675ceb775b1cf47e7",
+    "parts/magnet_09.step": "a3f9f5d8ec34145c726ab87f2c6cade8f511c8c770a1426512f3f3438dd9e5ac",
+    "parts/magnet_10.step": "028a389437abc5a14a1ba77cdf806dd433ee66f2766041f0c81ee36a92f771d8",
+    "parts/magnet_11.step": "0e86070b6fbb41f1e032c9cd9795b9ae7785a03286cd80c751bfb0ff769d4577",
+    "parts/magnet_12.step": "5cbefe98a8f9698deb289238ba200f2eed09eaceb2d8557e7ce84255e07e6438",
+    "parts/magnet_13.step": "859c260af98644d719d225eb420e989813a0d2fb8f81aa3945099a5f54503232",
+    "parts/magnet_14.step": "3cc1229c5801324e4bfd1f0abfda0956acc887ba72d4e0ca1c81d53dd88efc75",
+    "parts/magnet_15.step": "edd06edd86f2031e87c3dbca046f059100d6e83764cbbe07e44fdf0cc41fc9cc",
+    "parts/magnet_16.step": "5a29368138b336edbf608940f0b1d34d99fc49ddf27b790553f40a913b6f2ee1",
+    "parts/rotor_shaft.step": "41df66a9959999e455235356e6c417499300b4013f151f63b0242031f2f7858d",
+    "parts/gear_housing.step": "01e3f55848b014ac342bacbfcff482745fae874437ce3b247f3a403133b15d19",
+    "parts/circular_spline.step": "8685e99a0ffe3c35bc82c33f73623e17513f5d8e6ba0522802c262ee5e42e207",
+    "parts/flexspline.step": "933958f994decee5c481274aedf4f73a122052b3a412bc7a4d116aa037419310",
+    "parts/wave_generator.step": "cb421244cbd82a9002702f2721fd78b5228616ebda1745fcff224f112050f505",
+    "parts/wave_bearing_outer.step": "fe129f0f05bf66cb764030993aa5a4e8003f848a3c79e7cb474a4cf3910b06ae",
+    "parts/wave_bearing_balls.step": "a86640bbfd02f61484b1abf47c802ddc4954a4efb33b2ddb79ca9aea54ddc085",
+    "parts/output_bearing_inner.step": "5ec194cd6709244f79e4aba940723c4052151d755117d29eb9d143e6198806f0",
+    "parts/output_bearing_outer.step": "17129b49c0bc704a7a07114dec7ae5b4937bc15e3327c440e498710543e53f9e",
+    "parts/output_bearing_rollers.step": "519664fbc1e7e8e7512bf4c479a4665567b4bc53726f3cf0e51f21f5bfc97803",
+    "parts/output_bearing_separators.step": "5b02da86d81589e40ceff90d654097f09e38b79dba3b793e1d2f09eec74e4086",
+    "parts/output_flange.step": "ab313c29903068e8056cb93f8cbee0f50d743b9d1ff365930d3a548b6a962be4",
+    "parts/encoder_post_-30_-13.step": "b3913c284935883c7c3a497a3c262ab67f970b0581a27c59e5b45ac78dda2022",
+    "parts/encoder_post_-30_-1.step": "dbc3d2210f30fbedea7070be6f220092372e0594ba10e79a8b91f173ca81b694",
+    "parts/encoder_post_-10_-13.step": "ca63125ffc448d23caed3465dbc333f942cde61346dc5769b366eb3c422a0336",
+    "parts/encoder_post_-10_-1.step": "10c1f193075f58d3c630b6ec6a99ff0e61852ad8407aa15924061061cbafc65e",
+    "parts/encoder_pcb.step": "d057992c36438a2bfcee48469293103bbc3bd33dd5aee6024a8b245e01d0e395",
+    "parts/encoder_ic.step": "4412ea31d623637b09f5e126ea6e3541bce1861a25daff7f939b0218c66ca7a7",
+    "parts/encoder_connector.step": "42ea747784b3f3ce28768c38dba07e44d8176a6c451918ab6377e8d49295c393",
+    "parts/encoder_contacts.step": "0a8120240137486714680b4f62dc91d24ffc82047fc4802a1427f439e61b6e19",
+    "assembly.step": "2fe9b5011d586c06086c4e017389473cf44541e0be8e7367a741a42a25eaa17b",
+    "presentation-parts/motor_housing.step": "77cec4b3cd4823c284eaa76802f01856ca8f0d48e7591ca6c698ab5b6e5ce5be",
+    "presentation-parts/stator.step": "89bfa287ede318e47d18be856e8bb1be1a788ce593273a408d44324006ba0fca",
+    "presentation-parts/gear_housing.step": "245f43743bba8882f2ebbf23e5e02a0e198abfd7e1de191f4f836c3e060dd53c",
+    "presentation-parts/circular_spline.step": "53ddbb83fcb9ff1fb5e51db4dd460bbe2b6265cab3675a3ba60369072d460a98",
+    "presentation-parts/flexspline.step": "be8f950954a2593b72216f0fd0ba7009d663bec5289029fe4452bfc6f966857a",
+    "presentation-parts/wave_bearing_outer.step": "056f7de2430fb8f340250cc729c8ca27547138df056369afef8bf2fcb2e0ddb1",
+    "presentation-parts/output_bearing_outer.step": "b655b23743023f8557120c4b0f82218ca76aacb5d3e2e2329019ebabb7f67bc9"
+  }
+}

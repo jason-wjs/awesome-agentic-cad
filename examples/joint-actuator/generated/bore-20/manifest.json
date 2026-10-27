@@ -1,0 +1,2255 @@
+{
+  "name": "Hollow-shaft joint actuator",
+  "units": "mm",
+  "axis": "X",
+  "bore_mm": 20,
+  "parameters": {
+    "bore_mm": 20,
+    "rear_mount": {
+      "x_min_mm": -48,
+      "x_max_mm": -42,
+      "pitch_radius_mm": 48,
+      "count": 8,
+      "hole_radius_mm": 2.2,
+      "counterbore_radius_mm": 3.8,
+      "counterbore_depth_mm": 3,
+      "phase_deg": 22.5
+    },
+    "front_mount": {
+      "x_min_mm": 41,
+      "x_max_mm": 48,
+      "pitch_radius_mm": 40,
+      "count": 8,
+      "hole_radius_mm": 2.2,
+      "counterbore_radius_mm": 3.8,
+      "counterbore_depth_mm": 3,
+      "phase_deg": 22.5
+    },
+    "flexspline_teeth": 80,
+    "circular_spline_teeth": 82,
+    "flexspline_root_radius_mm": 32.4,
+    "flexspline_tip_radius_mm": 33.8,
+    "circular_spline_tip_radius_mm": 34.4,
+    "circular_spline_root_radius_mm": 35.3
+  },
+  "nominal_envelope_mm": {
+    "body_diameter": 110,
+    "length": 96,
+    "x_min": -48,
+    "x_max": 48
+  },
+  "interfaces": {
+    "rear_mount": {
+      "x_min_mm": -48,
+      "x_max_mm": -42,
+      "pitch_radius_mm": 48,
+      "count": 8,
+      "hole_radius_mm": 2.2,
+      "counterbore_radius_mm": 3.8,
+      "counterbore_depth_mm": 3,
+      "phase_deg": 22.5
+    },
+    "front_mount": {
+      "x_min_mm": 41,
+      "x_max_mm": 48,
+      "pitch_radius_mm": 40,
+      "count": 8,
+      "hole_radius_mm": 2.2,
+      "counterbore_radius_mm": 3.8,
+      "counterbore_depth_mm": 3,
+      "phase_deg": 22.5
+    }
+  },
+  "simplifications": [
+    "Rigid undeformed flexspline; simplified trapezoidal teeth with 0.6 mm radial clearance.",
+    "Nominal unthreaded fasteners and simplified bearing contacts."
+  ],
+  "part_count": 56,
+  "solid_count": 254,
+  "parts": [
+    {
+      "name": "case_screw_01",
+      "group": "fasteners",
+      "canonical_step": "parts/case_screw_01.step",
+      "presentation_step": "parts/case_screw_01.step",
+      "cutaway": false,
+      "omitted_from_cutaway": false,
+      "solid_count": 1,
+      "volume_mm3": 95.63698564695362,
+      "bbox_min_mm": [
+        -47.7,
+        47.8,
+        -3.2000000000000006
+      ],
+      "bbox_max_mm": [
+        -39.0,
+        54.2,
+        3.2000000000000006
+      ],
+      "color_rgba": [
+        0.2078431,
+        0.2431373,
+        0.2862745,
+        1.0
+      ],
+      "material": {
+        "name": "dark_steel",
+        "metalness": 0.82,
+        "roughness": 0.3
+      },
+      "explode": {
+        "offset_mm": [
+          -115,
+          0,
+          0
+        ],
+        "stage": 1
+      }
+    },
+    {
+      "name": "case_screw_02",
+      "group": "fasteners",
+      "canonical_step": "parts/case_screw_02.step",
+      "presentation_step": "parts/case_screw_02.step",
+      "cutaway": false,
+      "omitted_from_cutaway": false,
+      "solid_count": 1,
+      "volume_mm3": 95.63698564695368,
+      "bbox_min_mm": [
+        -47.7,
+        -3.199999999999997,
+        47.8
+      ],
+      "bbox_max_mm": [
+        -39.0,
+        3.2000000000000033,
+        54.2
+      ],
+      "color_rgba": [
+        0.2078431,
+        0.2431373,
+        0.2862745,
+        1.0
+      ],
+      "material": {
+        "name": "dark_steel",
+        "metalness": 0.82,
+        "roughness": 0.3
+      },
+      "explode": {
+        "offset_mm": [
+          -115,
+          0,
+          0
+        ],
+        "stage": 1
+      }
+    },
+    {
+      "name": "case_screw_03",
+      "group": "fasteners",
+      "canonical_step": "parts/case_screw_03.step",
+      "presentation_step": "parts/case_screw_03.step",
+      "cutaway": false,
+      "omitted_from_cutaway": false,
+      "solid_count": 1,
+      "volume_mm3": 95.63698564695362,
+      "bbox_min_mm": [
+        -47.7,
+        -54.2,
+        -3.1999999999999944
+      ],
+      "bbox_max_mm": [
+        -39.0,
+        -47.8,
+        3.200000000000007
+      ],
+      "color_rgba": [
+        0.2078431,
+        0.2431373,
+        0.2862745,
+        1.0
+      ],
+      "material": {
+        "name": "dark_steel",
+        "metalness": 0.82,
+        "roughness": 0.3
+      },
+      "explode": {
+        "offset_mm": [
+          -115,
+          0,
+          0
+        ],
+        "stage": 1
+      }
+    },
+    {
+      "name": "case_screw_04",
+      "group": "fasteners",
+      "canonical_step": "parts/case_screw_04.step",
+      "presentation_step": "parts/case_screw_04.step",
+      "cutaway": false,
+      "omitted_from_cutaway": false,
+      "solid_count": 1,
+      "volume_mm3": 95.63698564695365,
+      "bbox_min_mm": [
+        -47.7,
+        -3.2000000000000095,
+        -54.2
+      ],
+      "bbox_max_mm": [
+        -39.0,
+        3.199999999999991,
+        -47.8
+      ],
+      "color_rgba": [
+        0.2078431,
+        0.2431373,
+        0.2862745,
+        1.0
+      ],
+      "material": {
+        "name": "dark_steel",
+        "metalness": 0.82,
+        "roughness": 0.3
+      },
+      "explode": {
+        "offset_mm": [
+          -115,
+          0,
+          0
+        ],
+        "stage": 1
+      }
+    },
+    {
+      "name": "rear_cap",
+      "group": "rear_cap",
+      "canonical_step": "parts/rear_cap.step",
+      "presentation_step": "parts/rear_cap.step",
+      "cutaway": false,
+      "omitted_from_cutaway": false,
+      "solid_count": 1,
+      "volume_mm3": 53051.93376950143,
+      "bbox_min_mm": [
+        -48.000000000000014,
+        -55.0,
+        -55.0
+      ],
+      "bbox_max_mm": [
+        -41.999999999999986,
+        55.0,
+        55.0
+      ],
+      "color_rgba": [
+        0.7294118,
+        0.7647059,
+        0.8,
+        1.0
+      ],
+      "material": {
+        "name": "aluminium",
+        "metalness": 0.88,
+        "roughness": 0.28
+      },
+      "explode": {
+        "offset_mm": [
+          -92,
+          0,
+          0
+        ],
+        "stage": 2
+      }
+    },
+    {
+      "name": "motor_housing",
+      "group": "motor_housing",
+      "canonical_step": "parts/motor_housing.step",
+      "presentation_step": "presentation-parts/motor_housing.step",
+      "cutaway": true,
+      "omitted_from_cutaway": false,
+      "solid_count": 1,
+      "volume_mm3": 42418.56335942689,
+      "bbox_min_mm": [
+        -42.000000100000015,
+        -55.0,
+        -55.0
+      ],
+      "bbox_max_mm": [
+        1.4210854715202004e-14,
+        55.0,
+        55.0
+      ],
+      "color_rgba": [
+        0.7294118,
+        0.7647059,
+        0.8,
+        1.0
+      ],
+      "material": {
+        "name": "aluminium",
+        "metalness": 0.88,
+        "roughness": 0.28
+      },
+      "explode": {
+        "offset_mm": [
+          -64,
+          0,
+          0
+        ],
+        "stage": 2
+      }
+    },
+    {
+      "name": "stator",
+      "group": "stator",
+      "canonical_step": "parts/stator.step",
+      "presentation_step": "presentation-parts/stator.step",
+      "cutaway": true,
+      "omitted_from_cutaway": false,
+      "solid_count": 1,
+      "volume_mm3": 22721.426555760525,
+      "bbox_min_mm": [
+        -36.000000000000014,
+        -48.7,
+        -48.7
+      ],
+      "bbox_max_mm": [
+        -13.999999999999986,
+        48.7,
+        48.7
+      ],
+      "color_rgba": [
+        0.2078431,
+        0.2431373,
+        0.2862745,
+        1.0
+      ],
+      "material": {
+        "name": "dark_steel",
+        "metalness": 0.82,
+        "roughness": 0.3
+      },
+      "explode": {
+        "offset_mm": [
+          -36,
+          0,
+          0
+        ],
+        "stage": 2
+      }
+    },
+    {
+      "name": "winding_01",
+      "group": "windings",
+      "canonical_step": "parts/winding_01.step",
+      "presentation_step": "parts/winding_01.step",
+      "cutaway": false,
+      "omitted_from_cutaway": false,
+      "solid_count": 9,
+      "volume_mm3": 305.2053434621158,
+      "bbox_min_mm": [
+        -37.9200001,
+        38.2799999,
+        -4.920000125636775
+      ],
+      "bbox_max_mm": [
+        -13.0799999,
+        46.32000010000001,
+        4.920000124064543
+      ],
+      "color_rgba": [
+        0.7764706,
+        0.4901961,
+        0.2588235,
+        1.0
+      ],
+      "material": {
+        "name": "copper",
+        "metalness": 0.88,
+        "roughness": 0.25
+      },
+      "explode": {
+        "offset_mm": [
+          -36,
+          0,
+          0
+        ],
+        "stage": 2
+      }
+    },
+    {
+      "name": "winding_02",
+      "group": "windings",
+      "canonical_step": "parts/winding_02.step",
+      "presentation_step": "parts/winding_02.step",
+      "cutaway": false,
+      "omitted_from_cutaway": false,
+      "solid_count": 9,
+      "volume_mm3": 305.20534346211593,
+      "bbox_min_mm": [
+        -37.9200001,
+        30.84518301442551,
+        15.032885560767925
+      ],
+      "bbox_max_mm": [
+        -13.0799999,
+        42.42056614652413,
+        27.267114437870482
+      ],
+      "color_rgba": [
+        0.7764706,
+        0.4901961,
+        0.2588235,
+        1.0
+      ],
+      "material": {
+        "name": "copper",
+        "metalness": 0.88,
+        "roughness": 0.25
+      },
+      "explode": {
+        "offset_mm": [
+          -36,
+          0,
+          0
+        ],
+        "stage": 2
+      }
+    },
+    {
+      "name": "winding_03",
+      "group": "windings",
+      "canonical_step": "parts/winding_03.step",
+      "presentation_step": "parts/winding_03.step",
+      "cutaway": false,
+      "omitted_from_cutaway": false,
+      "solid_count": 9,
+      "volume_mm3": 305.2053434621159,
+      "bbox_min_mm": [
+        -37.9200001,
+        15.032885562129527,
+        30.84518301363939
+      ],
+      "bbox_max_mm": [
+        -13.0799999,
+        27.267114439232078,
+        42.420566145738015
+      ],
+      "color_rgba": [
+        0.7764706,
+        0.4901961,
+        0.2588235,
+        1.0
+      ],
+      "material": {
+        "name": "copper",
+        "metalness": 0.88,
+        "roughness": 0.25
+      },
+      "explode": {
+        "offset_mm": [
+          -36,
+          0,
+          0
+        ],
+        "stage": 2
+      }
+    },
+    {
+      "name": "winding_04",
+      "group": "windings",
+      "canonical_step": "parts/winding_04.step",
+      "presentation_step": "parts/winding_04.step",
+      "cutaway": false,
+      "omitted_from_cutaway": false,
+      "solid_count": 9,
+      "volume_mm3": 305.2053434621157,
+      "bbox_min_mm": [
+        -37.9200001,
+        -4.920000124064534,
+        38.2799999
+      ],
+      "bbox_max_mm": [
+        -13.0799999,
+        4.9200001256367845,
+        46.32000010000001
+      ],
+      "color_rgba": [
+        0.7764706,
+        0.4901961,
+        0.2588235,
+        1.0
+      ],
+      "material": {
+        "name": "copper",
+        "metalness": 0.88,
+        "roughness": 0.25
+      },
+      "explode": {
+        "offset_mm": [
+          -36,
+          0,
+          0
+        ],
+        "stage": 2
+      }
+    },
+    {
+      "name": "winding_05",
+      "group": "windings",
+      "canonical_step": "parts/winding_05.step",
+      "presentation_step": "parts/winding_05.step",
+      "cutaway": false,
+      "omitted_from_cutaway": false,
+      "solid_count": 9,
+      "volume_mm3": 305.205343462116,
+      "bbox_min_mm": [
+        -37.9200001,
+        -27.26711443787047,
+        30.845183014425515
+      ],
+      "bbox_max_mm": [
+        -13.0799999,
+        -15.032885560767921,
+        42.42056614652413
+      ],
+      "color_rgba": [
+        0.7764706,
+        0.4901961,
+        0.2588235,
+        1.0
+      ],
+      "material": {
+        "name": "copper",
+        "metalness": 0.88,
+        "roughness": 0.25
+      },
+      "explode": {
+        "offset_mm": [
+          -36,
+          0,
+          0
+        ],
+        "stage": 2
+      }
+    },
+    {
+      "name": "winding_06",
+      "group": "windings",
+      "canonical_step": "parts/winding_06.step",
+      "presentation_step": "parts/winding_06.step",
+      "cutaway": false,
+      "omitted_from_cutaway": false,
+      "solid_count": 9,
+      "volume_mm3": 305.20534346211593,
+      "bbox_min_mm": [
+        -37.9200001,
+        -42.420566145738015,
+        15.03288556212952
+      ],
+      "bbox_max_mm": [
+        -13.0799999,
+        -30.845183013639396,
+        27.267114439232074
+      ],
+      "color_rgba": [
+        0.7764706,
+        0.4901961,
+        0.2588235,
+        1.0
+      ],
+      "material": {
+        "name": "copper",
+        "metalness": 0.88,
+        "roughness": 0.25
+      },
+      "explode": {
+        "offset_mm": [
+          -36,
+          0,
+          0
+        ],
+        "stage": 2
+      }
+    },
+    {
+      "name": "winding_07",
+      "group": "windings",
+      "canonical_step": "parts/winding_07.step",
+      "presentation_step": "parts/winding_07.step",
+      "cutaway": false,
+      "omitted_from_cutaway": false,
+      "solid_count": 9,
+      "volume_mm3": 305.2053434621158,
+      "bbox_min_mm": [
+        -37.9200001,
+        -46.32000010000001,
+        -4.920000124064538
+      ],
+      "bbox_max_mm": [
+        -13.0799999,
+        -38.2799999,
+        4.92000012563678
+      ],
+      "color_rgba": [
+        0.7764706,
+        0.4901961,
+        0.2588235,
+        1.0
+      ],
+      "material": {
+        "name": "copper",
+        "metalness": 0.88,
+        "roughness": 0.25
+      },
+      "explode": {
+        "offset_mm": [
+          -36,
+          0,
+          0
+        ],
+        "stage": 2
+      }
+    },
+    {
+      "name": "winding_08",
+      "group": "windings",
+      "canonical_step": "parts/winding_08.step",
+      "presentation_step": "parts/winding_08.step",
+      "cutaway": false,
+      "omitted_from_cutaway": false,
+      "solid_count": 9,
+      "volume_mm3": 305.2053434621157,
+      "bbox_min_mm": [
+        -37.9200001,
+        -42.42056614652411,
+        -27.267114437870486
+      ],
+      "bbox_max_mm": [
+        -13.0799999,
+        -30.8451830144255,
+        -15.032885560767934
+      ],
+      "color_rgba": [
+        0.7764706,
+        0.4901961,
+        0.2588235,
+        1.0
+      ],
+      "material": {
+        "name": "copper",
+        "metalness": 0.88,
+        "roughness": 0.25
+      },
+      "explode": {
+        "offset_mm": [
+          -36,
+          0,
+          0
+        ],
+        "stage": 2
+      }
+    },
+    {
+      "name": "winding_09",
+      "group": "windings",
+      "canonical_step": "parts/winding_09.step",
+      "presentation_step": "parts/winding_09.step",
+      "cutaway": false,
+      "omitted_from_cutaway": false,
+      "solid_count": 9,
+      "volume_mm3": 305.20534346211576,
+      "bbox_min_mm": [
+        -37.9200001,
+        -27.267114439232085,
+        -42.420566145738
+      ],
+      "bbox_max_mm": [
+        -13.0799999,
+        -15.03288556212953,
+        -30.84518301363938
+      ],
+      "color_rgba": [
+        0.7764706,
+        0.4901961,
+        0.2588235,
+        1.0
+      ],
+      "material": {
+        "name": "copper",
+        "metalness": 0.88,
+        "roughness": 0.25
+      },
+      "explode": {
+        "offset_mm": [
+          -36,
+          0,
+          0
+        ],
+        "stage": 2
+      }
+    },
+    {
+      "name": "winding_10",
+      "group": "windings",
+      "canonical_step": "parts/winding_10.step",
+      "presentation_step": "parts/winding_10.step",
+      "cutaway": false,
+      "omitted_from_cutaway": false,
+      "solid_count": 9,
+      "volume_mm3": 305.2053434621157,
+      "bbox_min_mm": [
+        -37.9200001,
+        -4.9200001256367845,
+        -46.32000010000001
+      ],
+      "bbox_max_mm": [
+        -13.0799999,
+        4.920000124064534,
+        -38.2799999
+      ],
+      "color_rgba": [
+        0.7764706,
+        0.4901961,
+        0.2588235,
+        1.0
+      ],
+      "material": {
+        "name": "copper",
+        "metalness": 0.88,
+        "roughness": 0.25
+      },
+      "explode": {
+        "offset_mm": [
+          -36,
+          0,
+          0
+        ],
+        "stage": 2
+      }
+    },
+    {
+      "name": "winding_11",
+      "group": "windings",
+      "canonical_step": "parts/winding_11.step",
+      "presentation_step": "parts/winding_11.step",
+      "cutaway": false,
+      "omitted_from_cutaway": false,
+      "solid_count": 9,
+      "volume_mm3": 305.2053434621158,
+      "bbox_min_mm": [
+        -37.9200001,
+        15.032885560767932,
+        -42.42056614652412
+      ],
+      "bbox_max_mm": [
+        -13.0799999,
+        27.267114437870486,
+        -30.84518301442551
+      ],
+      "color_rgba": [
+        0.7764706,
+        0.4901961,
+        0.2588235,
+        1.0
+      ],
+      "material": {
+        "name": "copper",
+        "metalness": 0.88,
+        "roughness": 0.25
+      },
+      "explode": {
+        "offset_mm": [
+          -36,
+          0,
+          0
+        ],
+        "stage": 2
+      }
+    },
+    {
+      "name": "winding_12",
+      "group": "windings",
+      "canonical_step": "parts/winding_12.step",
+      "presentation_step": "parts/winding_12.step",
+      "cutaway": false,
+      "omitted_from_cutaway": false,
+      "solid_count": 9,
+      "volume_mm3": 305.20534346211605,
+      "bbox_min_mm": [
+        -37.9200001,
+        30.84518301363938,
+        -27.267114439232095
+      ],
+      "bbox_max_mm": [
+        -13.0799999,
+        42.420566145738,
+        -15.032885562129541
+      ],
+      "color_rgba": [
+        0.7764706,
+        0.4901961,
+        0.2588235,
+        1.0
+      ],
+      "material": {
+        "name": "copper",
+        "metalness": 0.88,
+        "roughness": 0.25
+      },
+      "explode": {
+        "offset_mm": [
+          -36,
+          0,
+          0
+        ],
+        "stage": 2
+      }
+    },
+    {
+      "name": "rotor_drum",
+      "group": "rotor",
+      "canonical_step": "parts/rotor_drum.step",
+      "presentation_step": "parts/rotor_drum.step",
+      "cutaway": false,
+      "omitted_from_cutaway": false,
+      "solid_count": 1,
+      "volume_mm3": 26274.772990151298,
+      "bbox_min_mm": [
+        -34.00000000000001,
+        -33.8,
+        -33.800000000000004
+      ],
+      "bbox_max_mm": [
+        -0.9999999999999925,
+        33.8,
+        33.800000000000004
+      ],
+      "color_rgba": [
+        0.2078431,
+        0.2431373,
+        0.2862745,
+        1.0
+      ],
+      "material": {
+        "name": "dark_steel",
+        "metalness": 0.82,
+        "roughness": 0.3
+      },
+      "explode": {
+        "offset_mm": [
+          -12,
+          0,
+          0
+        ],
+        "stage": 2
+      }
+    },
+    {
+      "name": "magnet_01",
+      "group": "magnets",
+      "canonical_step": "parts/magnet_01.step",
+      "presentation_step": "parts/magnet_01.step",
+      "cutaway": false,
+      "omitted_from_cutaway": false,
+      "solid_count": 1,
+      "volume_mm3": 832.7997099124407,
+      "bbox_min_mm": [
+        -29.999999999999993,
+        0.7417060911750781,
+        -36.59129019112468
+      ],
+      "bbox_max_mm": [
+        -3.999999999999992,
+        13.26523220118348,
+        -31.688267555615145
+      ],
+      "color_rgba": [
+        0.3254902,
+        0.3529412,
+        0.3882353,
+        1.0
+      ],
+      "material": {
+        "name": "magnet",
+        "metalness": 0.72,
+        "roughness": 0.31
+      },
+      "explode": {
+        "offset_mm": [
+          -12,
+          0,
+          0
+        ],
+        "stage": 2
+      }
+    },
+    {
+      "name": "magnet_02",
+      "group": "magnets",
+      "canonical_step": "parts/magnet_02.step",
+      "presentation_step": "parts/magnet_02.step",
+      "cutaway": false,
+      "omitted_from_cutaway": false,
+      "solid_count": 1,
+      "volume_mm3": 832.7997099124404,
+      "bbox_min_mm": [
+        -29.999999999999993,
+        13.693387455197062,
+        -33.50040013577177
+      ],
+      "bbox_max_mm": [
+        -3.999999999999992,
+        25.30937784163106,
+        -24.560374710031684
+      ],
+      "color_rgba": [
+        0.3254902,
+        0.3529412,
+        0.3882353,
+        1.0
+      ],
+      "material": {
+        "name": "magnet",
+        "metalness": 0.72,
+        "roughness": 0.31
+      },
+      "explode": {
+        "offset_mm": [
+          -12,
+          0,
+          0
+        ],
+        "stage": 2
+      }
+    },
+    {
+      "name": "magnet_03",
+      "group": "magnets",
+      "canonical_step": "parts/magnet_03.step",
+      "presentation_step": "parts/magnet_03.step",
+      "cutaway": false,
+      "omitted_from_cutaway": false,
+      "solid_count": 1,
+      "volume_mm3": 832.7997099124407,
+      "bbox_min_mm": [
+        -29.999999999999993,
+        24.560374710031688,
+        -25.30937784163106
+      ],
+      "bbox_max_mm": [
+        -3.999999999999992,
+        33.50040013577177,
+        -13.693387455197062
+      ],
+      "color_rgba": [
+        0.3254902,
+        0.3529412,
+        0.3882353,
+        1.0
+      ],
+      "material": {
+        "name": "magnet",
+        "metalness": 0.72,
+        "roughness": 0.31
+      },
+      "explode": {
+        "offset_mm": [
+          -12,
+          0,
+          0
+        ],
+        "stage": 2
+      }
+    },
+    {
+      "name": "magnet_04",
+      "group": "magnets",
+      "canonical_step": "parts/magnet_04.step",
+      "presentation_step": "parts/magnet_04.step",
+      "cutaway": false,
+      "omitted_from_cutaway": false,
+      "solid_count": 1,
+      "volume_mm3": 832.7997099124403,
+      "bbox_min_mm": [
+        -29.999999999999993,
+        31.688267555615138,
+        -13.265232201183485
+      ],
+      "bbox_max_mm": [
+        -3.999999999999992,
+        36.59129019112468,
+        -0.7417060911750801
+      ],
+      "color_rgba": [
+        0.3254902,
+        0.3529412,
+        0.3882353,
+        1.0
+      ],
+      "material": {
+        "name": "magnet",
+        "metalness": 0.72,
+        "roughness": 0.31
+      },
+      "explode": {
+        "offset_mm": [
+          -12,
+          0,
+          0
+        ],
+        "stage": 2
+      }
+    },
+    {
+      "name": "magnet_05",
+      "group": "magnets",
+      "canonical_step": "parts/magnet_05.step",
+      "presentation_step": "parts/magnet_05.step",
+      "cutaway": false,
+      "omitted_from_cutaway": false,
+      "solid_count": 1,
+      "volume_mm3": 832.7997099124407,
+      "bbox_min_mm": [
+        -29.999999999999993,
+        31.688267555615145,
+        0.7417060911750706
+      ],
+      "bbox_max_mm": [
+        -3.999999999999992,
+        36.59129019112468,
+        13.265232201183473
+      ],
+      "color_rgba": [
+        0.3254902,
+        0.3529412,
+        0.3882353,
+        1.0
+      ],
+      "material": {
+        "name": "magnet",
+        "metalness": 0.72,
+        "roughness": 0.31
+      },
+      "explode": {
+        "offset_mm": [
+          -12,
+          0,
+          0
+        ],
+        "stage": 2
+      }
+    },
+    {
+      "name": "magnet_06",
+      "group": "magnets",
+      "canonical_step": "parts/magnet_06.step",
+      "presentation_step": "parts/magnet_06.step",
+      "cutaway": false,
+      "omitted_from_cutaway": false,
+      "solid_count": 1,
+      "volume_mm3": 832.7997099124409,
+      "bbox_min_mm": [
+        -29.999999999999993,
+        24.560374710031688,
+        13.693387455197065
+      ],
+      "bbox_max_mm": [
+        -3.999999999999992,
+        33.50040013577178,
+        25.309377841631065
+      ],
+      "color_rgba": [
+        0.3254902,
+        0.3529412,
+        0.3882353,
+        1.0
+      ],
+      "material": {
+        "name": "magnet",
+        "metalness": 0.72,
+        "roughness": 0.31
+      },
+      "explode": {
+        "offset_mm": [
+          -12,
+          0,
+          0
+        ],
+        "stage": 2
+      }
+    },
+    {
+      "name": "magnet_07",
+      "group": "magnets",
+      "canonical_step": "parts/magnet_07.step",
+      "presentation_step": "parts/magnet_07.step",
+      "cutaway": false,
+      "omitted_from_cutaway": false,
+      "solid_count": 1,
+      "volume_mm3": 832.7997099124408,
+      "bbox_min_mm": [
+        -29.999999999999993,
+        13.693387455197069,
+        24.560374710031684
+      ],
+      "bbox_max_mm": [
+        -3.999999999999992,
+        25.30937784163107,
+        33.50040013577177
+      ],
+      "color_rgba": [
+        0.3254902,
+        0.3529412,
+        0.3882353,
+        1.0
+      ],
+      "material": {
+        "name": "magnet",
+        "metalness": 0.72,
+        "roughness": 0.31
+      },
+      "explode": {
+        "offset_mm": [
+          -12,
+          0,
+          0
+        ],
+        "stage": 2
+      }
+    },
+    {
+      "name": "magnet_08",
+      "group": "magnets",
+      "canonical_step": "parts/magnet_08.step",
+      "presentation_step": "parts/magnet_08.step",
+      "cutaway": false,
+      "omitted_from_cutaway": false,
+      "solid_count": 1,
+      "volume_mm3": 832.7997099124404,
+      "bbox_min_mm": [
+        -29.999999999999993,
+        0.7417060911750819,
+        31.68826755561514
+      ],
+      "bbox_max_mm": [
+        -3.999999999999992,
+        13.265232201183487,
+        36.59129019112468
+      ],
+      "color_rgba": [
+        0.3254902,
+        0.3529412,
+        0.3882353,
+        1.0
+      ],
+      "material": {
+        "name": "magnet",
+        "metalness": 0.72,
+        "roughness": 0.31
+      },
+      "explode": {
+        "offset_mm": [
+          -12,
+          0,
+          0
+        ],
+        "stage": 2
+      }
+    },
+    {
+      "name": "magnet_09",
+      "group": "magnets",
+      "canonical_step": "parts/magnet_09.step",
+      "presentation_step": "parts/magnet_09.step",
+      "cutaway": false,
+      "omitted_from_cutaway": false,
+      "solid_count": 1,
+      "volume_mm3": 832.7997099124404,
+      "bbox_min_mm": [
+        -29.999999999999993,
+        -13.265232201183476,
+        31.688267555615145
+      ],
+      "bbox_max_mm": [
+        -3.999999999999992,
+        -0.741706091175074,
+        36.59129019112468
+      ],
+      "color_rgba": [
+        0.3254902,
+        0.3529412,
+        0.3882353,
+        1.0
+      ],
+      "material": {
+        "name": "magnet",
+        "metalness": 0.72,
+        "roughness": 0.31
+      },
+      "explode": {
+        "offset_mm": [
+          -12,
+          0,
+          0
+        ],
+        "stage": 2
+      }
+    },
+    {
+      "name": "magnet_10",
+      "group": "magnets",
+      "canonical_step": "parts/magnet_10.step",
+      "presentation_step": "parts/magnet_10.step",
+      "cutaway": false,
+      "omitted_from_cutaway": false,
+      "solid_count": 1,
+      "volume_mm3": 832.7997099124403,
+      "bbox_min_mm": [
+        -29.999999999999993,
+        -25.309377841631058,
+        24.560374710031688
+      ],
+      "bbox_max_mm": [
+        -3.999999999999992,
+        -13.693387455197058,
+        33.50040013577177
+      ],
+      "color_rgba": [
+        0.3254902,
+        0.3529412,
+        0.3882353,
+        1.0
+      ],
+      "material": {
+        "name": "magnet",
+        "metalness": 0.72,
+        "roughness": 0.31
+      },
+      "explode": {
+        "offset_mm": [
+          -12,
+          0,
+          0
+        ],
+        "stage": 2
+      }
+    },
+    {
+      "name": "magnet_11",
+      "group": "magnets",
+      "canonical_step": "parts/magnet_11.step",
+      "presentation_step": "parts/magnet_11.step",
+      "cutaway": false,
+      "omitted_from_cutaway": false,
+      "solid_count": 1,
+      "volume_mm3": 832.7997099124411,
+      "bbox_min_mm": [
+        -29.999999999999993,
+        -33.50040013577178,
+        13.693387455197076
+      ],
+      "bbox_max_mm": [
+        -3.999999999999992,
+        -24.560374710031688,
+        25.309377841631076
+      ],
+      "color_rgba": [
+        0.3254902,
+        0.3529412,
+        0.3882353,
+        1.0
+      ],
+      "material": {
+        "name": "magnet",
+        "metalness": 0.72,
+        "roughness": 0.31
+      },
+      "explode": {
+        "offset_mm": [
+          -12,
+          0,
+          0
+        ],
+        "stage": 2
+      }
+    },
+    {
+      "name": "magnet_12",
+      "group": "magnets",
+      "canonical_step": "parts/magnet_12.step",
+      "presentation_step": "parts/magnet_12.step",
+      "cutaway": false,
+      "omitted_from_cutaway": false,
+      "solid_count": 1,
+      "volume_mm3": 832.7997099124407,
+      "bbox_min_mm": [
+        -29.999999999999993,
+        -36.59129019112468,
+        0.7417060911750625
+      ],
+      "bbox_max_mm": [
+        -3.999999999999992,
+        -31.68826755561515,
+        13.26523220118347
+      ],
+      "color_rgba": [
+        0.3254902,
+        0.3529412,
+        0.3882353,
+        1.0
+      ],
+      "material": {
+        "name": "magnet",
+        "metalness": 0.72,
+        "roughness": 0.31
+      },
+      "explode": {
+        "offset_mm": [
+          -12,
+          0,
+          0
+        ],
+        "stage": 2
+      }
+    },
+    {
+      "name": "magnet_13",
+      "group": "magnets",
+      "canonical_step": "parts/magnet_13.step",
+      "presentation_step": "parts/magnet_13.step",
+      "cutaway": false,
+      "omitted_from_cutaway": false,
+      "solid_count": 1,
+      "volume_mm3": 832.7997099124407,
+      "bbox_min_mm": [
+        -29.999999999999993,
+        -36.59129019112468,
+        -13.265232201183473
+      ],
+      "bbox_max_mm": [
+        -3.999999999999992,
+        -31.688267555615145,
+        -0.7417060911750706
+      ],
+      "color_rgba": [
+        0.3254902,
+        0.3529412,
+        0.3882353,
+        1.0
+      ],
+      "material": {
+        "name": "magnet",
+        "metalness": 0.72,
+        "roughness": 0.31
+      },
+      "explode": {
+        "offset_mm": [
+          -12,
+          0,
+          0
+        ],
+        "stage": 2
+      }
+    },
+    {
+      "name": "magnet_14",
+      "group": "magnets",
+      "canonical_step": "parts/magnet_14.step",
+      "presentation_step": "parts/magnet_14.step",
+      "cutaway": false,
+      "omitted_from_cutaway": false,
+      "solid_count": 1,
+      "volume_mm3": 832.7997099124406,
+      "bbox_min_mm": [
+        -29.999999999999993,
+        -33.50040013577176,
+        -25.30937784163107
+      ],
+      "bbox_max_mm": [
+        -3.999999999999992,
+        -24.56037471003168,
+        -13.69338745519707
+      ],
+      "color_rgba": [
+        0.3254902,
+        0.3529412,
+        0.3882353,
+        1.0
+      ],
+      "material": {
+        "name": "magnet",
+        "metalness": 0.72,
+        "roughness": 0.31
+      },
+      "explode": {
+        "offset_mm": [
+          -12,
+          0,
+          0
+        ],
+        "stage": 2
+      }
+    },
+    {
+      "name": "magnet_15",
+      "group": "magnets",
+      "canonical_step": "parts/magnet_15.step",
+      "presentation_step": "parts/magnet_15.step",
+      "cutaway": false,
+      "omitted_from_cutaway": false,
+      "solid_count": 1,
+      "volume_mm3": 832.7997099124407,
+      "bbox_min_mm": [
+        -29.999999999999993,
+        -25.30937784163107,
+        -33.50040013577177
+      ],
+      "bbox_max_mm": [
+        -3.999999999999992,
+        -13.69338745519707,
+        -24.56037471003168
+      ],
+      "color_rgba": [
+        0.3254902,
+        0.3529412,
+        0.3882353,
+        1.0
+      ],
+      "material": {
+        "name": "magnet",
+        "metalness": 0.72,
+        "roughness": 0.31
+      },
+      "explode": {
+        "offset_mm": [
+          -12,
+          0,
+          0
+        ],
+        "stage": 2
+      }
+    },
+    {
+      "name": "magnet_16",
+      "group": "magnets",
+      "canonical_step": "parts/magnet_16.step",
+      "presentation_step": "parts/magnet_16.step",
+      "cutaway": false,
+      "omitted_from_cutaway": false,
+      "solid_count": 1,
+      "volume_mm3": 832.7997099124408,
+      "bbox_min_mm": [
+        -29.999999999999993,
+        -13.26523220118348,
+        -36.591290191124685
+      ],
+      "bbox_max_mm": [
+        -3.999999999999992,
+        -0.7417060911750731,
+        -31.688267555615145
+      ],
+      "color_rgba": [
+        0.3254902,
+        0.3529412,
+        0.3882353,
+        1.0
+      ],
+      "material": {
+        "name": "magnet",
+        "metalness": 0.72,
+        "roughness": 0.31
+      },
+      "explode": {
+        "offset_mm": [
+          -12,
+          0,
+          0
+        ],
+        "stage": 2
+      }
+    },
+    {
+      "name": "rotor_shaft",
+      "group": "shaft",
+      "canonical_step": "parts/rotor_shaft.step",
+      "presentation_step": "parts/rotor_shaft.step",
+      "cutaway": false,
+      "omitted_from_cutaway": false,
+      "solid_count": 1,
+      "volume_mm3": 11922.344120373262,
+      "bbox_min_mm": [
+        -40.0,
+        -13.0,
+        -13.000000000000005
+      ],
+      "bbox_max_mm": [
+        15.000000000000004,
+        13.0,
+        13.000000000000005
+      ],
+      "color_rgba": [
+        0.5490196,
+        0.6,
+        0.654902,
+        1.0
+      ],
+      "material": {
+        "name": "steel",
+        "metalness": 0.93,
+        "roughness": 0.24
+      },
+      "explode": {
+        "offset_mm": [
+          -12,
+          0,
+          0
+        ],
+        "stage": 2
+      }
+    },
+    {
+      "name": "gear_housing",
+      "group": "gear_housing",
+      "canonical_step": "parts/gear_housing.step",
+      "presentation_step": "presentation-parts/gear_housing.step",
+      "cutaway": true,
+      "omitted_from_cutaway": false,
+      "solid_count": 1,
+      "volume_mm3": 45503.464167106955,
+      "bbox_min_mm": [
+        -1.1546319456101628e-14,
+        -52.0,
+        -52.0
+      ],
+      "bbox_max_mm": [
+        40.000000000000014,
+        52.0,
+        52.0
+      ],
+      "color_rgba": [
+        0.7294118,
+        0.7647059,
+        0.8,
+        1.0
+      ],
+      "material": {
+        "name": "aluminium",
+        "metalness": 0.88,
+        "roughness": 0.28
+      },
+      "explode": {
+        "offset_mm": [
+          25,
+          0,
+          0
+        ],
+        "stage": 2
+      }
+    },
+    {
+      "name": "circular_spline",
+      "group": "circular_spline",
+      "canonical_step": "parts/circular_spline.step",
+      "presentation_step": "presentation-parts/circular_spline.step",
+      "cutaway": true,
+      "omitted_from_cutaway": false,
+      "solid_count": 1,
+      "volume_mm3": 25151.728041927145,
+      "bbox_min_mm": [
+        2.9999999999999902,
+        -44.0,
+        -44.0
+      ],
+      "bbox_max_mm": [
+        14.00000000000001,
+        44.0,
+        44.0
+      ],
+      "color_rgba": [
+        0.5490196,
+        0.6,
+        0.654902,
+        1.0
+      ],
+      "material": {
+        "name": "steel",
+        "metalness": 0.93,
+        "roughness": 0.24
+      },
+      "explode": {
+        "offset_mm": [
+          18,
+          0,
+          0
+        ],
+        "stage": 2
+      }
+    },
+    {
+      "name": "flexspline",
+      "group": "flexspline",
+      "canonical_step": "parts/flexspline.step",
+      "presentation_step": "presentation-parts/flexspline.step",
+      "cutaway": true,
+      "omitted_from_cutaway": false,
+      "solid_count": 1,
+      "volume_mm3": 16883.59562878794,
+      "bbox_min_mm": [
+        2.9999999999999925,
+        -33.79495453702116,
+        -33.79495453702116
+      ],
+      "bbox_max_mm": [
+        33.00000000000001,
+        33.79495453702116,
+        33.79495453702116
+      ],
+      "color_rgba": [
+        0.7960784,
+        0.8313726,
+        0.8666667,
+        1.0
+      ],
+      "material": {
+        "name": "polished",
+        "metalness": 0.97,
+        "roughness": 0.18
+      },
+      "explode": {
+        "offset_mm": [
+          46,
+          0,
+          0
+        ],
+        "stage": 2
+      }
+    },
+    {
+      "name": "wave_generator",
+      "group": "wave_generator",
+      "canonical_step": "parts/wave_generator.step",
+      "presentation_step": "parts/wave_generator.step",
+      "cutaway": false,
+      "omitted_from_cutaway": false,
+      "solid_count": 1,
+      "volume_mm3": 15498.858860926033,
+      "bbox_min_mm": [
+        3.999999999999994,
+        -25.8,
+        -28.0
+      ],
+      "bbox_max_mm": [
+        13.000000000000007,
+        25.8,
+        28.000000000000004
+      ],
+      "color_rgba": [
+        0.2078431,
+        0.2431373,
+        0.2862745,
+        1.0
+      ],
+      "material": {
+        "name": "dark_steel",
+        "metalness": 0.82,
+        "roughness": 0.3
+      },
+      "explode": {
+        "offset_mm": [
+          4,
+          0,
+          0
+        ],
+        "stage": 2
+      }
+    },
+    {
+      "name": "wave_bearing_outer",
+      "group": "wave_bearing",
+      "canonical_step": "parts/wave_bearing_outer.step",
+      "presentation_step": "presentation-parts/wave_bearing_outer.step",
+      "cutaway": true,
+      "omitted_from_cutaway": false,
+      "solid_count": 1,
+      "volume_mm3": 756.0871039394547,
+      "bbox_min_mm": [
+        4.399999999999993,
+        -28.5,
+        -30.7
+      ],
+      "bbox_max_mm": [
+        12.600000000000007,
+        28.5,
+        30.700000000000003
+      ],
+      "color_rgba": [
+        0.7960784,
+        0.8313726,
+        0.8666667,
+        1.0
+      ],
+      "material": {
+        "name": "polished",
+        "metalness": 0.97,
+        "roughness": 0.18
+      },
+      "explode": {
+        "offset_mm": [
+          4,
+          0,
+          0
+        ],
+        "stage": 2
+      }
+    },
+    {
+      "name": "wave_bearing_balls",
+      "group": "wave_bearing",
+      "canonical_step": "parts/wave_bearing_balls.step",
+      "presentation_step": "parts/wave_bearing_balls.step",
+      "cutaway": false,
+      "omitted_from_cutaway": false,
+      "solid_count": 36,
+      "volume_mm3": 92.60786824251994,
+      "bbox_min_mm": [
+        7.65,
+        -27.950000000000003,
+        -30.150000000000002
+      ],
+      "bbox_max_mm": [
+        9.35,
+        27.950000000000003,
+        30.150000000000002
+      ],
+      "color_rgba": [
+        0.7960784,
+        0.8313726,
+        0.8666667,
+        1.0
+      ],
+      "material": {
+        "name": "polished",
+        "metalness": 0.97,
+        "roughness": 0.18
+      },
+      "explode": {
+        "offset_mm": [
+          4,
+          0,
+          0
+        ],
+        "stage": 2
+      }
+    },
+    {
+      "name": "output_bearing_inner",
+      "group": "output_bearing",
+      "canonical_step": "parts/output_bearing_inner.step",
+      "presentation_step": "parts/output_bearing_inner.step",
+      "cutaway": false,
+      "omitted_from_cutaway": false,
+      "solid_count": 1,
+      "volume_mm3": 7037.1675440411345,
+      "bbox_min_mm": [
+        21.999999999999993,
+        -36.0,
+        -36.0
+      ],
+      "bbox_max_mm": [
+        38.00000000000001,
+        36.0,
+        36.0
+      ],
+      "color_rgba": [
+        0.7960784,
+        0.8313726,
+        0.8666667,
+        1.0
+      ],
+      "material": {
+        "name": "polished",
+        "metalness": 0.97,
+        "roughness": 0.18
+      },
+      "explode": {
+        "offset_mm": [
+          70,
+          0,
+          0
+        ],
+        "stage": 2
+      }
+    },
+    {
+      "name": "output_bearing_outer",
+      "group": "output_bearing",
+      "canonical_step": "parts/output_bearing_outer.step",
+      "presentation_step": "presentation-parts/output_bearing_outer.step",
+      "cutaway": true,
+      "omitted_from_cutaway": false,
+      "solid_count": 1,
+      "volume_mm3": 8846.724912508827,
+      "bbox_min_mm": [
+        21.99999999999999,
+        -45.0,
+        -45.0
+      ],
+      "bbox_max_mm": [
+        38.000000000000014,
+        45.0,
+        45.0
+      ],
+      "color_rgba": [
+        0.7960784,
+        0.8313726,
+        0.8666667,
+        1.0
+      ],
+      "material": {
+        "name": "polished",
+        "metalness": 0.97,
+        "roughness": 0.18
+      },
+      "explode": {
+        "offset_mm": [
+          70,
+          0,
+          0
+        ],
+        "stage": 2
+      }
+    },
+    {
+      "name": "output_bearing_rollers",
+      "group": "output_bearing",
+      "canonical_step": "parts/output_bearing_rollers.step",
+      "presentation_step": "parts/output_bearing_rollers.step",
+      "cutaway": false,
+      "omitted_from_cutaway": false,
+      "solid_count": 28,
+      "volume_mm3": 2233.5969784786566,
+      "bbox_min_mm": [
+        26.676598128423226,
+        -42.823401871576785,
+        -42.82340187157678
+      ],
+      "bbox_max_mm": [
+        33.323401871576785,
+        42.823401871576785,
+        42.82340187157678
+      ],
+      "color_rgba": [
+        0.7960784,
+        0.8313726,
+        0.8666667,
+        1.0
+      ],
+      "material": {
+        "name": "polished",
+        "metalness": 0.97,
+        "roughness": 0.18
+      },
+      "explode": {
+        "offset_mm": [
+          70,
+          0,
+          0
+        ],
+        "stage": 2
+      }
+    },
+    {
+      "name": "output_bearing_separators",
+      "group": "output_bearing",
+      "canonical_step": "parts/output_bearing_separators.step",
+      "presentation_step": "parts/output_bearing_separators.step",
+      "cutaway": false,
+      "omitted_from_cutaway": false,
+      "solid_count": 28,
+      "volume_mm3": 473.0880000000001,
+      "bbox_min_mm": [
+        28.4,
+        -41.69812205638369,
+        -41.69812205638369
+      ],
+      "bbox_max_mm": [
+        31.599999999999998,
+        41.69812205638369,
+        41.69812205638369
+      ],
+      "color_rgba": [
+        0.6862745,
+        0.572549,
+        0.3176471,
+        1.0
+      ],
+      "material": {
+        "name": "brass",
+        "metalness": 0.82,
+        "roughness": 0.29
+      },
+      "explode": {
+        "offset_mm": [
+          70,
+          0,
+          0
+        ],
+        "stage": 2
+      }
+    },
+    {
+      "name": "output_flange",
+      "group": "output_flange",
+      "canonical_step": "parts/output_flange.step",
+      "presentation_step": "parts/output_flange.step",
+      "cutaway": false,
+      "omitted_from_cutaway": false,
+      "solid_count": 1,
+      "volume_mm3": 70663.15711920043,
+      "bbox_min_mm": [
+        33.99999999999999,
+        -49.0,
+        -49.0
+      ],
+      "bbox_max_mm": [
+        48.000000000000014,
+        49.0,
+        49.0
+      ],
+      "color_rgba": [
+        0.7294118,
+        0.7647059,
+        0.8,
+        1.0
+      ],
+      "material": {
+        "name": "aluminium",
+        "metalness": 0.88,
+        "roughness": 0.28
+      },
+      "explode": {
+        "offset_mm": [
+          104,
+          0,
+          0
+        ],
+        "stage": 2
+      }
+    },
+    {
+      "name": "encoder_post_-30_-13",
+      "group": "encoder",
+      "canonical_step": "parts/encoder_post_-30_-13.step",
+      "presentation_step": "parts/encoder_post_-30_-13.step",
+      "cutaway": false,
+      "omitted_from_cutaway": false,
+      "solid_count": 1,
+      "volume_mm3": 1.5550883635269468,
+      "bbox_min_mm": [
+        -31.4,
+        -52.199999999999996,
+        -14.4
+      ],
+      "bbox_max_mm": [
+        -28.6,
+        -51.8,
+        -11.6
+      ],
+      "color_rgba": [
+        0.6862745,
+        0.572549,
+        0.3176471,
+        1.0
+      ],
+      "material": {
+        "name": "brass",
+        "metalness": 0.82,
+        "roughness": 0.29
+      },
+      "explode": {
+        "offset_mm": [
+          -64,
+          -10,
+          0
+        ],
+        "stage": 2
+      }
+    },
+    {
+      "name": "encoder_post_-30_-1",
+      "group": "encoder",
+      "canonical_step": "parts/encoder_post_-30_-1.step",
+      "presentation_step": "parts/encoder_post_-30_-1.step",
+      "cutaway": false,
+      "omitted_from_cutaway": false,
+      "solid_count": 1,
+      "volume_mm3": 1.5550883635269475,
+      "bbox_min_mm": [
+        -31.4,
+        -52.199999999999996,
+        -2.4
+      ],
+      "bbox_max_mm": [
+        -28.6,
+        -51.8,
+        0.4
+      ],
+      "color_rgba": [
+        0.6862745,
+        0.572549,
+        0.3176471,
+        1.0
+      ],
+      "material": {
+        "name": "brass",
+        "metalness": 0.82,
+        "roughness": 0.29
+      },
+      "explode": {
+        "offset_mm": [
+          -64,
+          -10,
+          0
+        ],
+        "stage": 2
+      }
+    },
+    {
+      "name": "encoder_post_-10_-13",
+      "group": "encoder",
+      "canonical_step": "parts/encoder_post_-10_-13.step",
+      "presentation_step": "parts/encoder_post_-10_-13.step",
+      "cutaway": false,
+      "omitted_from_cutaway": false,
+      "solid_count": 1,
+      "volume_mm3": 1.5550883635269477,
+      "bbox_min_mm": [
+        -11.4,
+        -52.199999999999996,
+        -14.4
+      ],
+      "bbox_max_mm": [
+        -8.6,
+        -51.8,
+        -11.6
+      ],
+      "color_rgba": [
+        0.6862745,
+        0.572549,
+        0.3176471,
+        1.0
+      ],
+      "material": {
+        "name": "brass",
+        "metalness": 0.82,
+        "roughness": 0.29
+      },
+      "explode": {
+        "offset_mm": [
+          -64,
+          -10,
+          0
+        ],
+        "stage": 2
+      }
+    },
+    {
+      "name": "encoder_post_-10_-1",
+      "group": "encoder",
+      "canonical_step": "parts/encoder_post_-10_-1.step",
+      "presentation_step": "parts/encoder_post_-10_-1.step",
+      "cutaway": false,
+      "omitted_from_cutaway": false,
+      "solid_count": 1,
+      "volume_mm3": 1.5550883635269472,
+      "bbox_min_mm": [
+        -11.4,
+        -52.199999999999996,
+        -2.4
+      ],
+      "bbox_max_mm": [
+        -8.6,
+        -51.8,
+        0.4
+      ],
+      "color_rgba": [
+        0.6862745,
+        0.572549,
+        0.3176471,
+        1.0
+      ],
+      "material": {
+        "name": "brass",
+        "metalness": 0.82,
+        "roughness": 0.29
+      },
+      "explode": {
+        "offset_mm": [
+          -64,
+          -10,
+          0
+        ],
+        "stage": 2
+      }
+    },
+    {
+      "name": "encoder_pcb",
+      "group": "encoder",
+      "canonical_step": "parts/encoder_pcb.step",
+      "presentation_step": "parts/encoder_pcb.step",
+      "cutaway": false,
+      "omitted_from_cutaway": false,
+      "solid_count": 1,
+      "volume_mm3": 469.10495667735097,
+      "bbox_min_mm": [
+        -32.5,
+        -53.4,
+        -15.0
+      ],
+      "bbox_max_mm": [
+        -7.5,
+        -52.199999999999996,
+        1.0
+      ],
+      "color_rgba": [
+        0.0627451,
+        0.3686274,
+        0.2941176,
+        1.0
+      ],
+      "material": {
+        "name": "pcb",
+        "metalness": 0.1,
+        "roughness": 0.45
+      },
+      "explode": {
+        "offset_mm": [
+          -64,
+          -10,
+          0
+        ],
+        "stage": 2
+      }
+    },
+    {
+      "name": "encoder_ic",
+      "group": "encoder",
+      "canonical_step": "parts/encoder_ic.step",
+      "presentation_step": "parts/encoder_ic.step",
+      "cutaway": false,
+      "omitted_from_cutaway": false,
+      "solid_count": 1,
+      "volume_mm3": 42.0,
+      "bbox_min_mm": [
+        -23.5,
+        -54.4,
+        -10.0
+      ],
+      "bbox_max_mm": [
+        -16.5,
+        -53.4,
+        -4.0
+      ],
+      "color_rgba": [
+        0.0980392,
+        0.1490196,
+        0.172549,
+        1.0
+      ],
+      "material": {
+        "name": "chip",
+        "metalness": 0.15,
+        "roughness": 0.44
+      },
+      "explode": {
+        "offset_mm": [
+          -64,
+          -10,
+          0
+        ],
+        "stage": 2
+      }
+    },
+    {
+      "name": "encoder_connector",
+      "group": "encoder",
+      "canonical_step": "parts/encoder_connector.step",
+      "presentation_step": "parts/encoder_connector.step",
+      "cutaway": false,
+      "omitted_from_cutaway": false,
+      "solid_count": 1,
+      "volume_mm3": 42.0,
+      "bbox_min_mm": [
+        -23.5,
+        -55.4,
+        -2.5
+      ],
+      "bbox_max_mm": [
+        -16.5,
+        -53.4,
+        0.5
+      ],
+      "color_rgba": [
+        0.2,
+        0.227451,
+        0.2627451,
+        1.0
+      ],
+      "material": {
+        "name": "polymer",
+        "metalness": 0.05,
+        "roughness": 0.48
+      },
+      "explode": {
+        "offset_mm": [
+          -64,
+          -10,
+          0
+        ],
+        "stage": 2
+      }
+    },
+    {
+      "name": "encoder_contacts",
+      "group": "encoder",
+      "canonical_step": "parts/encoder_contacts.step",
+      "presentation_step": "parts/encoder_contacts.step",
+      "cutaway": false,
+      "omitted_from_cutaway": false,
+      "solid_count": 14,
+      "volume_mm3": 2.3099999999999925,
+      "bbox_min_mm": [
+        -23.25,
+        -53.699999999999996,
+        -11.55
+      ],
+      "bbox_max_mm": [
+        -16.75,
+        -53.4,
+        -2.6
+      ],
+      "color_rgba": [
+        0.6862745,
+        0.572549,
+        0.3176471,
+        1.0
+      ],
+      "material": {
+        "name": "brass",
+        "metalness": 0.82,
+        "roughness": 0.29
+      },
+      "explode": {
+        "offset_mm": [
+          -64,
+          -10,
+          0
+        ],
+        "stage": 2
+      }
+    }
+  ]
+}

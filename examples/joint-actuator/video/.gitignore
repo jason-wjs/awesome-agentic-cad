@@ -1,0 +1,10 @@
+node_modules
+.hyperframes/
+/snapshots/
+.thumbnails/
+dist/
+out/
+assets/*.bin.gz
+assets/joint-*.json
+assets/scene.bundle.js
+assets/scene.bundle.js.LEGAL.txt

@@ -1,0 +1,55 @@
+{
+  "checked_at_utc": "2026-10-27T06:57:32.910187+00:00",
+  "checker_sha256": "a40fe42ea54185ed73b28d0019f6135cee0ebd15f0882e226b10097a004c56c3",
+  "input_sha256": [
+    "2fe9b5011d586c06086c4e017389473cf44541e0be8e7367a741a42a25eaa17b",
+    "5b0e4aea8ad781a4f4f915343ce33a42481308068a99175c93d72b06aa1445ed"
+  ],
+  "passed": true,
+  "same_part_names": true,
+  "assembly_bbox_change_mm": 0.0,
+  "bore_change_mm": [
+    20,
+    30
+  ],
+  "changed_parts": [
+    {
+      "name": "flexspline",
+      "volume_change_mm3": -1555.088363526862
+    },
+    {
+      "name": "output_flange",
+      "volume_change_mm3": -5497.78714378213
+    },
+    {
+      "name": "rear_cap",
+      "volume_change_mm3": -2362.556215315846
+    },
+    {
+      "name": "rotor_drum",
+      "volume_change_mm3": -1460.8405839192274
+    },
+    {
+      "name": "rotor_shaft",
+      "volume_change_mm3": 5183.627878423171
+    },
+    {
+      "name": "wave_generator",
+      "volume_change_mm3": -4439.070409411024
+    }
+  ],
+  "mounting_interfaces": {
+    "rear_cap": {
+      "passed": true,
+      "material_changed_outside_revised_bore_mm3": 0.0,
+      "expected_material_removed_mm3": 2362.556215315864,
+      "measured_material_removed_mm3": 2362.556215315846
+    },
+    "output_flange": {
+      "passed": true,
+      "material_changed_outside_revised_bore_mm3": 0.0,
+      "expected_material_removed_mm3": 5497.787143782138,
+      "measured_material_removed_mm3": 5497.78714378213
+    }
+  }
+}

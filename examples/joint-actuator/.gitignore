@@ -1,0 +1,5 @@
+.venv/
+__pycache__/
+generated/local-*/
+generated/bore-*/parts/
+generated/bore-*/presentation-parts/

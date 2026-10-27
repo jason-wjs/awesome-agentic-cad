@@ -1,0 +1,12 @@
+{
+  "config": "config-20.json",
+  "model_sha256": "4b7ee111497cfa27a2e3fea0e6717c813c2a1a32b0d60930718ab4af147f758a",
+  "config_sha256": "09c76430b7848ce786f8a4d6682931ee735f68adfb2f09728364c97e85ee190e",
+  "bore_mm": 20,
+  "part_count": 56,
+  "solid_count": 254,
+  "elapsed_seconds": 7.609,
+  "assembly_sha256": "2fe9b5011d586c06086c4e017389473cf44541e0be8e7367a741a42a25eaa17b",
+  "cutaway_sha256": "63480ac50bcc85fab83284b2cdad34f65583d366206624a940e6be2c38307f03",
+  "native_valid": true
+}

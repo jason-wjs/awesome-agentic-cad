@@ -1,0 +1,33 @@
+{
+  "source": "HyperFrames snapshot, final scene",
+  "frames": [
+    {
+      "file": "generated/cutaway.png",
+      "time_seconds": 0,
+      "width": 1280,
+      "height": 720,
+      "sha256": "fc2f300ee96a91d4c060b86d34db5b6903acefd6a367e8e1ce5efaebaa1a8f0f"
+    },
+    {
+      "file": "generated/assembly.png",
+      "time_seconds": 3.5,
+      "width": 1280,
+      "height": 720,
+      "sha256": "be546c3b0dcd816a6233175061114c866a9556653e09bdd218a99b23b35fa81d"
+    },
+    {
+      "file": "generated/exploded.png",
+      "time_seconds": 6.5,
+      "width": 1280,
+      "height": 720,
+      "sha256": "187a4f05789837c3d6a32399b613e633f91ccca34fb44d57e8b1bf7ed158331e"
+    },
+    {
+      "file": "generated/bore-comparison.png",
+      "time_seconds": 10.5,
+      "width": 1280,
+      "height": 720,
+      "sha256": "ad79b19be602c4b80e399b1c3beca2f614e4a4d6160f35fd52d76bb7b992d60e"
+    }
+  ]
+}

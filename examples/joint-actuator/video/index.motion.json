@@ -1,0 +1,8 @@
+{
+  "duration": 12,
+  "assertions": [
+    {"kind": "staysInFrame", "selector": "#header"},
+    {"kind": "staysInFrame", "selector": "#comparison"},
+    {"kind": "keepsMoving", "withinSelector": "#root", "maxStaticSec": 3.2}
+  ]
+}

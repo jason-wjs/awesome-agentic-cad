@@ -1,0 +1,11 @@
+{
+  "bore_mm": 20,
+  "rear_mount": {"x_min_mm": -48, "x_max_mm": -42, "pitch_radius_mm": 48, "count": 8, "hole_radius_mm": 2.2, "counterbore_radius_mm": 3.8, "counterbore_depth_mm": 3, "phase_deg": 22.5},
+  "front_mount": {"x_min_mm": 41, "x_max_mm": 48, "pitch_radius_mm": 40, "count": 8, "hole_radius_mm": 2.2, "counterbore_radius_mm": 3.8, "counterbore_depth_mm": 3, "phase_deg": 22.5},
+  "flexspline_teeth": 80,
+  "circular_spline_teeth": 82,
+  "flexspline_root_radius_mm": 32.4,
+  "flexspline_tip_radius_mm": 33.8,
+  "circular_spline_tip_radius_mm": 34.4,
+  "circular_spline_root_radius_mm": 35.3
+}

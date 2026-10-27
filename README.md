@@ -4,14 +4,14 @@ Open-source tools for automating mechanical CAD with AI agents.
 
 **English** · [简体中文](README.zh-CN.md) · [Suggest a tool](https://github.com/jason-wjs/awesome-agentic-cad/issues/new)
 
-[![A screw-driven linear stage: assembly, motion, exploded view, and travel revision.](assets/stage-motion.gif)](examples/linear-stage-v2)
+[![A hollow-shaft robot joint: cutaway, exploded view, and bore revision.](assets/joint-actuator.gif)](examples/joint-actuator)
 
 ## Common setups
 
 | Start with | Tools & first steps |
 |---|---|
 | **Your coding agent** | Add [text-to-cad](https://www.texttocad.dev/install) to create and edit models from natural language. For full multi-agent workflows, see [MAC](https://github.com/Pan-Chera/Multi-Agent-CAD#quick-start) or [AI-CAD](https://github.com/ai-cad-labs/ai-cad#get-exploring--quickstart). |
-| **Python scripts** | Model with [CadQuery](https://cadquery.readthedocs.io/en/latest/examples.html) or [build123d](https://build123d.readthedocs.io/en/latest/introductory_examples.html), and inspect the result in [OCP CAD Viewer](https://bernhard-42.github.io/ocp_viewer_docs/viewers/ocp_vscode/installation/). See the [linear stage example](examples/linear-stage-v2). |
+| **Python scripts** | Model with [CadQuery](https://cadquery.readthedocs.io/en/latest/examples.html) or [build123d](https://build123d.readthedocs.io/en/latest/introductory_examples.html), and inspect the result in [OCP CAD Viewer](https://bernhard-42.github.io/ocp_viewer_docs/viewers/ocp_vscode/installation/). See the [joint actuator example](examples/joint-actuator). |
 | **Desktop CAD** | [FreeCAD](https://wiki.freecad.org/Getting_started) + [FreeCAD MCP](https://github.com/neka-nat/freecad-mcp/blob/main/docs/installation.md) to let an agent inspect and work on an open model. |
 
 [Modeling](#modeling) · [Agents & integrations](#agents--integrations) · [Viewing & debugging](#viewing--debugging) · [Drawings & file exchange](#drawings--file-exchange) · [Benchmarks](#benchmarks)
